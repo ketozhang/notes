@@ -1,17 +1,29 @@
 BUILD_PATH = _site
-NOTEBOOKS = Astrophysics Computer_Science Data_Science Finance Mathematics Physics Others
+_ROOT_PAGES = index.html
+_NOTEBOOKS = Astrophysics Computer_Science Data_Science Finance Mathematics Physics Others
+
+ROOT_PAGES = $(_ROOT_PAGES:%=$(BUILD_PATH)/%)
+NOTEBOOKS = $(_NOTEBOOKS:%=$(BUILD_PATH)/%)
+TOCS = $(_NOTEBOOKS:%=%/_toc.yml)
 
 
-all : docs
-
-docs :
-	-mkdir docs/
-	+$(MAKE) $(NOTEBOOKS)
-
-.PHONY: $(NOTEBOOKS)
-$(NOTEBOOKS):
-	jb toc from-project $@ -f jb-book > $@/_toc.yml
-	jb build $@ --path-output $(BUILD_PATH)/$@
+all : build
 
 clean:
 	-rm -rf $(BUILD_PATH)
+
+########################################
+
+build : $(ROOT_PAGES) $(NOTEBOOKS)
+	cp index.html $(BUILD_PATH)
+
+tocs : $(TOCS)
+
+$(BUILD_PATH)/%: %/_toc.yml
+	jb build $* --path-output $(@D)
+
+%/_toc.yml:
+	jb toc from-project $* -f jb-book > $@
+
+$(BUILD_PATH)/%.html :
+	cp $@ $(BUILD_PATH)

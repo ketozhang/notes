@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Joint Probability &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joint Probability &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1113,7 +1109,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="joint-probability">
+  <div class="tex2jax_ignore mathjax_ignore section" id="joint-probability">
 <h1>Joint Probability<a class="headerlink" href="#joint-probability" title="Permalink to this headline">#</a></h1>
 <p>The <strong>joint probability distribution</strong> describes the chance of the values of multiple random variables. The joint distribution is denoted as,</p>
 <div class="math notranslate nohighlight">
@@ -1146,7 +1142,7 @@ P(X_1 = x_1, X_2 = x_2, \ldots, X_n = x_n)
     \]</div>
 </li>
 </ul>
-<section id="derived-from-conditional-probability">
+<div class="section" id="derived-from-conditional-probability">
 <h2>Derived from Conditional Probability<a class="headerlink" href="#derived-from-conditional-probability" title="Permalink to this headline">#</a></h2>
 <p>Take two random variables <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span>. The joint probability for some value <span class="math notranslate nohighlight">\(x,y\)</span> can be determined by the relationship with the conditional probability,</p>
 <div class="math notranslate nohighlight">
@@ -1165,8 +1161,8 @@ P(Y=y \mid X=x) = \frac{P(X=x, Y=y)}{P(Y=y)}
 <p>In general the probability of a joint probability is given by the <strong>chain rule</strong>,</p>
 <div class="math notranslate nohighlight">
 \[ \boxed{P\left(\bigcap_{i=1}^n X_i\right) = \prod_{i=1}^n P\left(X_i \Bigg\lvert \bigcap_{j\neq  i}^{n}X_j \right)}\]</div>
-</section>
-<section id="independent-joint-probability">
+</div>
+<div class="section" id="independent-joint-probability">
 <h2>Independent Joint Probability<a class="headerlink" href="#independent-joint-probability" title="Permalink to this headline">#</a></h2>
 <p>Random variables are considered independent if the their probability distribution are separable. For instance for <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1179,24 +1175,24 @@ P(Y=y \mid X=x) = \frac{P(X=x, Y=y)}{P(Y=y)}
 \[
     P(x \mid y) = P(x)
 \]</div>
-</section>
-<section id="marginal-probability">
+</div>
+<div class="section" id="marginal-probability">
 <h2>Marginal Probability<a class="headerlink" href="#marginal-probability" title="Permalink to this headline">#</a></h2>
 <p>The marginal probability is a posterior probability summing over all joint probability for each prior event. For instance given that <span class="math notranslate nohighlight">\(X\)</span> is a random variable of the posterior and <span class="math notranslate nohighlight">\(Y\)</span> of the prior</p>
 <div class="math notranslate nohighlight">
 \[
     P_X(x) = \sum_{y \in \Omega_Y} P(x, y) = \sum_{y \in \Omega_Y}{P(x \mid y)P(y)}
 \]</div>
-</section>
-<section id="expectation-value">
+</div>
+<div class="section" id="expectation-value">
 <h2>Expectation Value<a class="headerlink" href="#expectation-value" title="Permalink to this headline">#</a></h2>
 <p>The expectation value of a joint probability follows linearity such that,</p>
 <div class="math notranslate nohighlight">
 \[ \mathbb E[aX+bY+c] = \sum_{x \in X}{\sum_{y \in Y}}{P(x,y)(ax+by+c)} \]</div>
-</section>
-<section id="union-probability">
+</div>
+<div class="section" id="union-probability">
 <h2>Union Probability<a class="headerlink" href="#union-probability" title="Permalink to this headline">#</a></h2>
-<section id="inclusion-exclusion-formula">
+<div class="section" id="inclusion-exclusion-formula">
 <h3>Inclusion-Exclusion Formula<a class="headerlink" href="#inclusion-exclusion-formula" title="Permalink to this headline">#</a></h3>
 <p>The inclusion exclusion formula defines the probability of the union of two or more events.</p>
 <p>Let’s start simply with the union of two events which states:</p>
@@ -1210,17 +1206,17 @@ P(Y=y \mid X=x) = \frac{P(X=x, Y=y)}{P(Y=y)}
 \[
     P\left(\bigcup_{i=1}^n A_i\right) = \sum_i^n P(A_i) - \mathop{\sum\sum}\limits_{1\le i &lt; j \le n}P(A_iA_j) + \ldots + (-1)^{n+1}P(A_1,A_2, \ldots, A_n)
 \]</div>
-</section>
-<section id="boole-s-inequality">
+</div>
+<div class="section" id="boole-s-inequality">
 <h3>Boole’s Inequality<a class="headerlink" href="#boole-s-inequality" title="Permalink to this headline">#</a></h3>
 <p><strong>Boole’s Inequality</strong> is an upper bound for the union of two or more events. It’s simply says that the probability of a collection of event is no greater than the sum of all its probabilities,</p>
 <div class="math notranslate nohighlight">
 \[
     P\left(\bigcup_{i=1}^nA_i\right) \le \sum_{i=1}^{n} P(A_i)
 \]</div>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1270,7 +1266,7 @@ P(Y=y \mid X=x) = \frac{P(X=x, Y=y)}{P(Y=y)}
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

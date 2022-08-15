@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Matrix Formalism &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrix Formalism &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1089,9 +1085,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="matrix-formalism">
+  <div class="tex2jax_ignore mathjax_ignore section" id="matrix-formalism">
 <h1>Matrix Formalism<a class="headerlink" href="#matrix-formalism" title="Permalink to this headline">#</a></h1>
-<section id="transition-matrix">
+<div class="section" id="transition-matrix">
 <h2>Transition Matrix<a class="headerlink" href="#transition-matrix" title="Permalink to this headline">#</a></h2>
 <p>For simplicity, consider that <span class="math notranslate nohighlight">\(X_t:\set{1,2,3}\)</span> for all <span class="math notranslate nohighlight">\(t \ge 0\)</span> composes a stationary Markov chain. We can repesent a transition from <span class="math notranslate nohighlight">\(X_t\)</span> to <span class="math notranslate nohighlight">\(X_{t+1}\)</span> as a matrix with entries as probability <span class="math notranslate nohighlight">\(P_{ij} = P(i \to j)\)</span> of changing from state <span class="math notranslate nohighlight">\(i\)</span> to <span class="math notranslate nohighlight">\(j\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1133,8 +1129,8 @@ P(2) = P^2
 \[
 P(n) = P^n
 \]</div>
-</section>
-<section id="probability-of-state">
+</div>
+<div class="section" id="probability-of-state">
 <h2>Probability of State<a class="headerlink" href="#probability-of-state" title="Permalink to this headline">#</a></h2>
 <p>The probability of a state in some iteration <span class="math notranslate nohighlight">\(t\)</span> is the state <span class="math notranslate nohighlight">\(i_n\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1145,8 +1141,8 @@ P(n) = P^n
 <li><p><span class="math notranslate nohighlight">\(\vec P(0)\)</span> : Initial state vector</p></li>
 <li><p><span class="math notranslate nohighlight">\(P\)</span> : Transition Probability matrix (constant throughout iteration)</p></li>
 </ul>
-</section>
-<section id="first-step-equation">
+</div>
+<div class="section" id="first-step-equation">
 <h2>First Step Equation<a class="headerlink" href="#first-step-equation" title="Permalink to this headline">#</a></h2>
 <p>The average time <span class="math notranslate nohighlight">\(\tau = \avg{t}\)</span> it takes for some state in all the possible states (<span class="math notranslate nohighlight">\(i \in \Omega\)</span>) to end up in some subset of that state (<span class="math notranslate nohighlight">\(\Omega_f \subset \Omega\)</span>) is given by the <strong>first step equation</strong>:</p>
 <div class="math notranslate nohighlight">
@@ -1156,8 +1152,8 @@ P(n) = P^n
 <ul class="simple">
 <li><p>The problem of average time to reach some state <span class="math notranslate nohighlight">\(f\)</span> in Markov chain is called the <strong>Hitting Time</strong> problem.</p></li>
 </ul>
-</section>
-<section id="probability-of-hitting-one-before-the-other">
+</div>
+<div class="section" id="probability-of-hitting-one-before-the-other">
 <h2>Probability of Hitting One Before the Other<a class="headerlink" href="#probability-of-hitting-one-before-the-other" title="Permalink to this headline">#</a></h2>
 <p>Let <span class="math notranslate nohighlight">\(\Omega_A\)</span> and <span class="math notranslate nohighlight">\(\Omega_B\)</span> be two disjoint subsets of <span class="math notranslate nohighlight">\(\Omega\)</span>. The probability <span class="math notranslate nohighlight">\(\alpha(i)\)</span> that starting at the initial state <span class="math notranslate nohighlight">\(i \in \Omega\)</span>, we reach a state in <span class="math notranslate nohighlight">\(\Omega_A\)</span> before <span class="math notranslate nohighlight">\(\Omega_B\)</span> is:</p>
 <div class="math notranslate nohighlight">
@@ -1168,8 +1164,8 @@ P(n) = P^n
     \alpha(i) = \sum_{j\in\Omega} P_{ij}\alpha(j) \quad &amp;i \not\in \Omega_A \cup \Omega_B
 \end{align*}
 \end{split}\]</div>
-</section>
-<section id="stationary-distribution">
+</div>
+<div class="section" id="stationary-distribution">
 <h2>Stationary Distribution<a class="headerlink" href="#stationary-distribution" title="Permalink to this headline">#</a></h2>
 <p>When running the Markov chain we can end up at some state <span class="math notranslate nohighlight">\(i\)</span> at some iteration <span class="math notranslate nohighlight">\(t\)</span> such that the distribution <span class="math notranslate nohighlight">\(P_i(t)\)</span> is stationary meaning it’s invariant under the transition probability matrix <span class="math notranslate nohighlight">\(P\)</span>:</p>
 <div class="math notranslate nohighlight">
@@ -1182,8 +1178,8 @@ P_i(t) = P_i(t)P
 \[\begin{split}
 \vec P(t) = \vec P(t_0) \qquad t \ge t_0\\
 \end{split}\]</div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1233,7 +1229,7 @@ P_i(t) = P_i(t)P
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

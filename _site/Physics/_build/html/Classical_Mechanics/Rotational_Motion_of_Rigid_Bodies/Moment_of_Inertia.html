@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Moment of Inertia &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moment of Inertia &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Physics</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -666,9 +662,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="moment-of-inertia">
+  <div class="tex2jax_ignore mathjax_ignore section" id="moment-of-inertia">
 <h1>Moment of Inertia<a class="headerlink" href="#moment-of-inertia" title="Permalink to this headline">#</a></h1>
-<section id="moment">
+<div class="section" id="moment">
 <h2>Moment<a class="headerlink" href="#moment" title="Permalink to this headline">#</a></h2>
 <p>When one begin classical mechanics you’ve likely taken for granted that the <strong>moment</strong> is the <strong>moment of inertia</strong>. The <strong>moment</strong> is defined as</p>
 <div class="math notranslate nohighlight">
@@ -679,11 +675,11 @@ I = \int{r \d m}
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(r_\alpha\)</span> : distance away from the origin (often the origin of rotation).</p></li>
 </ul>
-</section>
-<section id="product-of-inertia">
+</div>
+<div class="section" id="product-of-inertia">
 <h2>Product of Inertia<a class="headerlink" href="#product-of-inertia" title="Permalink to this headline">#</a></h2>
-</section>
-<section id="inertia-tensor-and-inertia-matrix">
+</div>
+<div class="section" id="inertia-tensor-and-inertia-matrix">
 <h2>Inertia Tensor and Inertia Matrix<a class="headerlink" href="#inertia-tensor-and-inertia-matrix" title="Permalink to this headline">#</a></h2>
 <p>The moment of inertia can be described as a rank/degree 2 tensor (a <span class="math notranslate nohighlight">\(3 \times 3\)</span> matrix) :</p>
 <div class="math notranslate nohighlight">
@@ -726,15 +722,15 @@ I = \int{r \d m}
 </tr>
 </tbody>
 </table>
-<section id="surface-area-of-a-cone">
+<div class="section" id="surface-area-of-a-cone">
 <h3>Surface Area of a Cone<a class="headerlink" href="#surface-area-of-a-cone" title="Permalink to this headline">#</a></h3>
-<section id="naive">
+<div class="section" id="naive">
 <h4>Naive<a class="headerlink" href="#naive" title="Permalink to this headline">#</a></h4>
 <div class="math notranslate nohighlight">
 \[\begin{split} r(z) = \frac{R}{h}z\\
 \boxed{\int_0^h{2\pi r \d z} }\end{split}\]</div>
-</section>
-<section id="correct">
+</div>
+<div class="section" id="correct">
 <h4>Correct<a class="headerlink" href="#correct" title="Permalink to this headline">#</a></h4>
 <div class="math notranslate nohighlight">
 \[\begin{split}\int_0^h{2\pi r \d s}\\
@@ -744,10 +740,10 @@ ds^2 = dr^2 + dz^2 \implies ds = \sqrt{1 + \frac{dr^2}{dz^2}} \d z = \sqrt{1 + \
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(ds\)</span>: Differential path along the inclined plane of the cone</p></li>
 </ul>
-</section>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -797,7 +793,7 @@ ds^2 = dr^2 + dz^2 \implies ds = \sqrt{1 + \frac{dr^2}{dz^2}} \d z = \sqrt{1 + \
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

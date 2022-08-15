@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>The Schrodinger Equation &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Schrodinger Equation &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Physics</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -736,7 +732,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="the-schrodinger-equation">
+  <div class="tex2jax_ignore mathjax_ignore section" id="the-schrodinger-equation">
 <h1>The Schrodinger Equation<a class="headerlink" href="#the-schrodinger-equation" title="Permalink to this headline">#</a></h1>
 <p>The Schrodinger equation is an equation followed by all of non-relativstic quantum mechanics. It states that for a quantum mechanical system there exist a wavefunction <span class="math notranslate nohighlight">\(\Psi(x,t)\)</span> that satisfies the Schrodinger equation given by,</p>
 <div class="math notranslate nohighlight">
@@ -752,7 +748,7 @@ title="Print to PDF"
     -\frac{\partial V}{\partial x} &amp;= m\frac{d^2x}{dt^2} \tag{Partial Derivative Form}
 \end{align}
 \]</div>
-<section id="separation-by-variables">
+<div class="section" id="separation-by-variables">
 <h2>Separation By Variables<a class="headerlink" href="#separation-by-variables" title="Permalink to this headline">#</a></h2>
 <p>The separation by variables may be applied to the Schrodinger Equation to separate into the product of two solutions given by,</p>
 <div class="math notranslate nohighlight">
@@ -764,11 +760,11 @@ title="Print to PDF"
 <p>If you were to plug in the separated solution into the Schrodinger equation you will get a very important relationship,</p>
 <div class="math notranslate nohighlight">
 \[ \frac{i\hbar }{\varphi}\frac{\partial \varphi}{\partial t} = H\hat \psi = \text{constant} \]</div>
-<section id="derivation">
+<div class="section" id="derivation">
 <h3>Derivation<a class="headerlink" href="#derivation" title="Permalink to this headline">#</a></h3>
-</section>
-</section>
-<section id="time-independent-schrodinger-equation">
+</div>
+</div>
+<div class="section" id="time-independent-schrodinger-equation">
 <h2>Time Independent Schrodinger Equation<a class="headerlink" href="#time-independent-schrodinger-equation" title="Permalink to this headline">#</a></h2>
 <p>The <strong>Time Independent Schrodinger Equation (TISE)</strong> is the separated spacial equation of the Schrodinger Equation for the spacial wavefunction <span class="math notranslate nohighlight">\(\psi(x)\)</span> given by,</p>
 <div class="math notranslate nohighlight">
@@ -778,43 +774,43 @@ title="Print to PDF"
 <li><p>The TISE is special equation called the eigenvector <span class="math notranslate nohighlight">\(\psi\)</span> and eigenvalue <span class="math notranslate nohighlight">\(E\)</span> problem. It states that for some system describe by its Hamiltonian there exist solution(s) (the wavefunction) with energy <span class="math notranslate nohighlight">\(E\)</span>.</p></li>
 <li><p>If there are more than one solution with energy <span class="math notranslate nohighlight">\(E\)</span> we consider those solution to be <strong>degenerate</strong>.</p></li>
 </ul>
-</section>
-<section id="general-solution">
+</div>
+<div class="section" id="general-solution">
 <h2>General Solution<a class="headerlink" href="#general-solution" title="Permalink to this headline">#</a></h2>
 <p>Once again we would love to know the solution (a wavefunction) of a system given by some Hamiltonian <span class="math notranslate nohighlight">\(\hat H\)</span>. We cannot do so without solving for the <a class="reference external" href="#time-independent-schrodinger-equation">Time Independent Schrodinger Equation</a> which gives us the spacial wavefunction <span class="math notranslate nohighlight">\(\psi(x)\)</span>. Knowing <span class="math notranslate nohighlight">\(\psi(x)\)</span> we can write a general solution,</p>
 <div class="math notranslate nohighlight">
 \[ \Psi(x,t) = \sum{c_n\Psi_n(x,t)} =  \sum{c_n\psi_n(x)\varphi_n(t)}\]</div>
 <div class="math notranslate nohighlight">
 \[ \boxed{\Psi(x,t) = \sum{c_n\psi_ne^{\frac{-iE_nt}{\hbar}}}} \]</div>
-</section>
-<section id="examples">
+</div>
+<div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h2>
-<section id="infinite-square-well">
+<div class="section" id="infinite-square-well">
 <h3>Infinite Square Well<a class="headerlink" href="#infinite-square-well" title="Permalink to this headline">#</a></h3>
-</section>
-<section id="finite-square-well-scattering-state">
+</div>
+<div class="section" id="finite-square-well-scattering-state">
 <h3>Finite Square Well (Scattering State)<a class="headerlink" href="#finite-square-well-scattering-state" title="Permalink to this headline">#</a></h3>
-</section>
-<section id="finite-square-well-bounded-state">
+</div>
+<div class="section" id="finite-square-well-bounded-state">
 <h3>Finite Square Well (Bounded State)<a class="headerlink" href="#finite-square-well-bounded-state" title="Permalink to this headline">#</a></h3>
-</section>
-<section id="free-particle">
+</div>
+<div class="section" id="free-particle">
 <h3>Free Particle<a class="headerlink" href="#free-particle" title="Permalink to this headline">#</a></h3>
-</section>
-<section id="potential-step-scattering-state">
+</div>
+<div class="section" id="potential-step-scattering-state">
 <h3>Potential Step (Scattering State)<a class="headerlink" href="#potential-step-scattering-state" title="Permalink to this headline">#</a></h3>
-</section>
-<section id="potential-step-bound-state">
+</div>
+<div class="section" id="potential-step-bound-state">
 <h3>Potential Step (Bound State)<a class="headerlink" href="#potential-step-bound-state" title="Permalink to this headline">#</a></h3>
-</section>
-<section id="delta-potential-scattering-state">
+</div>
+<div class="section" id="delta-potential-scattering-state">
 <h3>Delta Potential (Scattering State)<a class="headerlink" href="#delta-potential-scattering-state" title="Permalink to this headline">#</a></h3>
-</section>
-<section id="delta-potential-bound-state">
+</div>
+<div class="section" id="delta-potential-bound-state">
 <h3>Delta Potential (Bound State)<a class="headerlink" href="#delta-potential-bound-state" title="Permalink to this headline">#</a></h3>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -864,7 +860,7 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

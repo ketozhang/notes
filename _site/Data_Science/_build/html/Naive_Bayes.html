@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Naive Bayes &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naive Bayes &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -1049,7 +1045,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="naive-bayes">
+  <div class="tex2jax_ignore mathjax_ignore section" id="naive-bayes">
 <h1>Naive Bayes<a class="headerlink" href="#naive-bayes" title="Permalink to this headline">#</a></h1>
 <p>The Naive Bayes is an algorithm for classification. Let’s first define Naive Bayes it for two categories. <span class="math notranslate nohighlight">\(Y\)</span> is either in category <span class="math notranslate nohighlight">\(A\)</span> or category <span class="math notranslate nohighlight">\(B\)</span> where <span class="math notranslate nohighlight">\(Y\)</span> has features notated as the random variable <span class="math notranslate nohighlight">\(\Phi=\set{\phi_1,\phi_2,\ldots,\phi_n}\)</span></p>
 <div class="math notranslate nohighlight">
@@ -1058,7 +1054,7 @@ title="Print to PDF"
 <li><p>This formula is interpreted as the odds that <span class="math notranslate nohighlight">\(Y\)</span> is either <span class="math notranslate nohighlight">\(A\)</span> vs <span class="math notranslate nohighlight">\(B\)</span> given <span class="math notranslate nohighlight">\(\Phi\)</span></p></li>
 <li><p>Naive Bayes is naive simply because we assume a commutative/independent relation between each feature (order does not matter).</p></li>
 </ul>
-<section id="python-sklearn">
+<div class="section" id="python-sklearn">
 <h2>Python - sklearn<a class="headerlink" href="#python-sklearn" title="Permalink to this headline">#</a></h2>
 <p>Naive bayes package: <code class="docutils literal notranslate"><span class="pre">sklearn.naive_bayes</span></code></p>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">__NB</span>
@@ -1067,8 +1063,8 @@ title="Print to PDF"
 <span class="n">Y_pred</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 </pre></div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1118,7 +1114,7 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

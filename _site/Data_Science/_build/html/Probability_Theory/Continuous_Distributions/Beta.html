@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Beta Distribution &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beta Distribution &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1059,7 +1055,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="beta-distribution">
+  <div class="tex2jax_ignore mathjax_ignore section" id="beta-distribution">
 <h1>Beta Distribution<a class="headerlink" href="#beta-distribution" title="Permalink to this headline">#</a></h1>
 <p>The Beta density function is given as,</p>
 <div class="math notranslate nohighlight">
@@ -1071,7 +1067,7 @@ title="Print to PDF"
 f(x; r, s) = \frac{(r+s-1)!}{(r-1)!(s-1)!}x^{r-1}(1-x)^{s-1} \quad \text{for } r &gt; 0, s &gt; 0
 \]</div>
 <p>It is a important density function because many other density function are a version of the beta function. These density functions are said to be in the Beta family (e.g., Uniform).</p>
-<section id="uniform-ordered-statistics">
+<div class="section" id="uniform-ordered-statistics">
 <h2>Uniform Ordered Statistics<a class="headerlink" href="#uniform-ordered-statistics" title="Permalink to this headline">#</a></h2>
 <p>Consider a number line of <span class="math notranslate nohighlight">\([0,1]\)</span>. At uniformly random we select <span class="math notranslate nohighlight">\(n\)</span> values from the number line. Let <span class="math notranslate nohighlight">\(U_{(k)}\)</span> be the random variable for the value of <span class="math notranslate nohighlight">\(k\)</span>th lowest value on the number line. In otherwords, <span class="math notranslate nohighlight">\(U_{(k)}\)</span> is the <span class="math notranslate nohighlight">\(k\)</span>th value in the number line when each of the <span class="math notranslate nohighlight">\(n\)</span> values are ordered.</p>
 <p>It is found that <span class="math notranslate nohighlight">\(U_{(k)}\)</span> follows the beta distribution</p>
@@ -1079,8 +1075,8 @@ f(x; r, s) = \frac{(r+s-1)!}{(r-1)!(s-1)!}x^{r-1}(1-x)^{s-1} \quad \text{for } r
 \[
 U_{(k)} \sim \text{Beta}(k, n-k+1)
 \]</div>
-</section>
-<section id="beta-integral">
+</div>
+<div class="section" id="beta-integral">
 <h2>Beta Integral<a class="headerlink" href="#beta-integral" title="Permalink to this headline">#</a></h2>
 <p>The beta integral is a type of integral in the form of,</p>
 <div class="math notranslate nohighlight">
@@ -1088,8 +1084,8 @@ U_{(k)} \sim \text{Beta}(k, n-k+1)
 \int_0^1 x^{r-1}(1-x)^{s-1}~ dx= \frac{(r-1)!(s-1)!}{(r+s-1)!}
 \]</div>
 <p>This derives the normalization factor for the beta distribution.</p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1139,7 +1135,7 @@ U_{(k)} \sim \text{Beta}(k, n-k+1)
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

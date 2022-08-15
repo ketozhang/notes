@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Probabilistic Linear Regression &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Probabilistic Linear Regression &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1063,7 +1059,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="probabilistic-linear-regression">
+  <div class="tex2jax_ignore mathjax_ignore section" id="probabilistic-linear-regression">
 <h1>Probabilistic Linear Regression<a class="headerlink" href="#probabilistic-linear-regression" title="Permalink to this headline">#</a></h1>
 <p>Linear regression on random variables (i.e., <strong>probabilistic linear regression</strong>) builds the foundation for linear regression on empirical data. Here on, take <span class="math notranslate nohighlight">\(Y\)</span> and <span class="math notranslate nohighlight">\(X\)</span> to be some random variable; for useful cases, these two random variables should not be independent.</p>
 <p>The major difference between probabilistic and empirical linear regression other than nature of its variable is what we know about <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span>. In probabilistic linear regression, one may have an insight on <span class="math notranslate nohighlight">\(X\)</span> and/or <span class="math notranslate nohighlight">\(Y\)</span>. From here on, take the mean, SD, and correlation of <span class="math notranslate nohighlight">\(X, Y\)</span> be <span class="math notranslate nohighlight">\(\mu_X,~ \mu_Y,~ \sigma_X,~ \sigma_Y,~ r(X,Y)\)</span>.</p>
@@ -1085,7 +1081,7 @@ title="Print to PDF"
 	\]</div>
 </li>
 </ul>
-<section id="linear-least-squares">
+<div class="section" id="linear-least-squares">
 <h2>Linear Least Squares<a class="headerlink" href="#linear-least-squares" title="Permalink to this headline">#</a></h2>
 <p>The <strong>linear least squares</strong> or <strong>ordinary least squares</strong> (<strong>OLS</strong>) takes the linear model <span class="math notranslate nohighlight">\(\hat y(X)\)</span> as,</p>
 <div class="math notranslate nohighlight">
@@ -1111,7 +1107,7 @@ title="Print to PDF"
 \[
 \boxed{\hat y(X) = r(X, Y) \frac{\sigma_Y}{\sigma_X} X + \mu_Y - r(X, Y) \frac{\sigma_Y}{\sigma_X} \mu_X}
 \]</div>
-<section id="standard-units">
+<div class="section" id="standard-units">
 <h3>Standard Units<a class="headerlink" href="#standard-units" title="Permalink to this headline">#</a></h3>
 <p>It is easier to work with standard units for the calculations above. Take <span class="math notranslate nohighlight">\(\theta^*\)</span> to be the solution for th linear model <span class="math notranslate nohighlight">\(\hat y(X^*)\)</span> with standard random variables <span class="math notranslate nohighlight">\(X^*, Y^*\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1180,9 +1176,9 @@ $$
 It&#39;s not a surprise that the prediction error is depends on the correlation. At worst case, $\rho=0$ so the error is at maximum.
 </pre></div>
 </div>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1232,7 +1228,7 @@ It&#39;s not a surprise that the prediction error is depends on the correlation.
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Quantum Scattering Theory &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantum Scattering Theory &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Physics</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -628,7 +624,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="quantum-scattering-theory">
+  <div class="tex2jax_ignore mathjax_ignore section" id="quantum-scattering-theory">
 <h1>Quantum Scattering Theory<a class="headerlink" href="#quantum-scattering-theory" title="Permalink to this headline">#</a></h1>
 <!-- TOC -->
 <ul class="simple">
@@ -657,7 +653,7 @@ $<span class="math notranslate nohighlight">\( \psi(r,\theta)_\text{out} \approx
 :
     $$ dP = \abs{\psi_\text{inc}}^2 \d V $$ -->
 <p>Now all we need to do is solve for <span class="math notranslate nohighlight">\(f(\theta)\)</span>; this is not trivial and requires a good amount of assumptions. There are two prevailing methods which are the <strong>partial wave analysis</strong> and the <strong>Born approximation</strong>. I will only cover the first</p>
-<section id="partial-wave-analysis">
+<div class="section" id="partial-wave-analysis">
 <h2>Partial Wave Analysis<a class="headerlink" href="#partial-wave-analysis" title="Permalink to this headline">#</a></h2>
 <p>The partial wave analysis takes the wavefunction at every three separate regions <span class="math notranslate nohighlight">\(r \gg 0\)</span>, <span class="math notranslate nohighlight">\(r \not\gg 0\)</span>, and <span class="math notranslate nohighlight">\(r = 0\)</span> respectively called the <strong>radiation zone</strong> (or <strong>asymptotic region</strong>), <strong>intermediate region</strong>, and <strong>scattering region</strong>. In every region we assume the following:</p>
 <ul class="simple">
@@ -709,8 +705,8 @@ $$
 \boxed{ \sigma = 4\pi \sum_{\ell = 0}^{\infty}{(2\ell + \ell)\abs{a_\ell}^2} }
 \end{split}\]</div>
 <p>Now we need only to solve for <span class="math notranslate nohighlight">\(a_\ell\)</span> the partial wave amplitude.</p>
-</section>
-<section id="phase-shifts">
+</div>
+<div class="section" id="phase-shifts">
 <h2>Phase Shifts<a class="headerlink" href="#phase-shifts" title="Permalink to this headline">#</a></h2>
 <p>The answer to <span class="math notranslate nohighlight">\(a_\ell\)</span> is a phase shift to see why we must rewrite the wavefunction expanding <span class="math notranslate nohighlight">\(e^{ikz}\)</span> with <strong>Rayleigh’s formula</strong> just so we can represent everything in spherical coordinates,</p>
 <div class="math notranslate nohighlight">
@@ -730,8 +726,8 @@ $$
 \[\begin{split}\boxed{ a_\ell = \frac{1}{2ikr}\left(e^{2i\delta_\ell} - 1\right) = \frac{1}{k}e^{i\delta_\ell}\sin(\delta_\ell)}\\
 \boxed{D(\theta) = \abs{\sum_{\ell = 0}^{\infty}{\frac{2\ell + 1}{k}e^{i\delta_\ell}\sin(\delta_\ell) P_\ell(\cos\theta)} }^2}\\
 \boxed{\sigma = \frac{4\pi}{k^2}\sum_{\ell = 0}^\infty{(2\ell + 1) \sin^2{(\delta_\ell)}}}\end{split}\]</div>
-</section>
-<section id="cross-sections">
+</div>
+<div class="section" id="cross-sections">
 <h2>Cross Sections<a class="headerlink" href="#cross-sections" title="Permalink to this headline">#</a></h2>
 <p>The <strong>differential scattering cross-section</strong> describes the ratio of the incident particle going through an infinitesimal <strong>cross-sectional area</strong> <span class="math notranslate nohighlight">\(\d \sigma\)</span> to the outgoing solid angle <span class="math notranslate nohighlight">\(\d \Omega\)</span> so,</p>
 <div class="math notranslate nohighlight">
@@ -751,8 +747,8 @@ $$
 <p>It is customary to ignore <span class="math notranslate nohighlight">\(dt\)</span> such that <span class="math notranslate nohighlight">\(\d N\)</span> may be interpreted as the number of particles per second so set <span class="math notranslate nohighlight">\(\d N \rightarrow \d N / \d t\)</span></p>
 <div class="math notranslate nohighlight">
 \[\boxed{ D(\theta) = \frac{1}{\mathcal L} \frac{dN}{d\Omega} }\]</div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -802,7 +798,7 @@ $$
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Expected Value &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expected Value &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -1119,7 +1115,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="expected-value">
+  <div class="section" id="expected-value">
 <h1>Expected Value<a class="headerlink" href="#expected-value" title="Permalink to this headline">#</a></h1>
 <p>The expected value or expectation value of <span class="math notranslate nohighlight">\(X\)</span> is the mean of <span class="math notranslate nohighlight">\(X\)</span>. For the discrete case, the epected value is given by,</p>
 <div class="math notranslate nohighlight">
@@ -1135,8 +1131,8 @@ title="Print to PDF"
 </ul>
 <div class="math notranslate nohighlight">
 \[ \Expected{aX+Y+b} = a\Expected{X} + \Expected{Y} + b \]</div>
-</section>
-<section id="variance">
+</div>
+<div class="section" id="variance">
 <h1>Variance<a class="headerlink" href="#variance" title="Permalink to this headline">#</a></h1>
 <p>The variance is defined as the average of the data’s squared deviation from the mean, here deviation means <span class="math notranslate nohighlight">\(\Delta X = X - \Expected{X}\)</span></p>
 <div class="math notranslate nohighlight">
@@ -1161,8 +1157,8 @@ $<span class="math notranslate nohighlight">\( \Var{X+Y} = \Var{X} + \Var{Y} \)<
 <p>Another useful quantity that is used a lot more than the variance is called the <strong>standard deviation</strong>, which is just the square root of variance:</p>
 <div class="math notranslate nohighlight">
 \[ \mathbf{SD}[X] = \sqrt{\Var{X}} \]</div>
-</section>
-<section id="covariance">
+</div>
+<div class="section" id="covariance">
 <h1>Covariance<a class="headerlink" href="#covariance" title="Permalink to this headline">#</a></h1>
 <p>The covariance describe how two variables vary jointly,</p>
 <div class="math notranslate nohighlight">
@@ -1193,16 +1189,16 @@ $<span class="math notranslate nohighlight">\(
 <p>Like variance, there is another version of covariance that is used more called <strong>correlation</strong>,</p>
 <div class="math notranslate nohighlight">
 \[\boxed{ \Corr{X,Y} = \frac{\Cov{X,Y}}{\SD{X}\SD{Y}} }\]</div>
-</section>
-<section id="two-value-example">
+</div>
+<div class="section" id="two-value-example">
 <h1>Two Value Example<a class="headerlink" href="#two-value-example" title="Permalink to this headline">#</a></h1>
 <p>Let’s do an example of a system of two values with probability <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(1-p\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} \Expected{X} = p \\
 \Var{X} = p(1-p)
 \end{split}\]</div>
-</section>
-<section id="statistics-with-multiple-samples">
+</div>
+<div class="section" id="statistics-with-multiple-samples">
 <h1>Statistics with Multiple Samples<a class="headerlink" href="#statistics-with-multiple-samples" title="Permalink to this headline">#</a></h1>
 <p>This part will be a bit confusing, consider that we take multiple samples labeled <span class="math notranslate nohighlight">\(X_i\)</span> indexed with <span class="math notranslate nohighlight">\(i\)</span>’s. A useful quantity to get from these samples is the average value (<strong>not expected value</strong>) which is also called the <strong>sample mean</strong>,</p>
 <div class="math notranslate nohighlight">
@@ -1221,12 +1217,12 @@ $<span class="math notranslate nohighlight">\(
 <li><p><span class="math notranslate nohighlight">\(\sigma\)</span> : Standard deviation of all samples</p></li>
 <li><p><span class="math notranslate nohighlight">\( \SD{X} \)</span> : This is also known as the <strong>standard error</strong>, <span class="math notranslate nohighlight">\(\SD{X} = \mathbf{SE}(X)\)</span></p></li>
 </ul>
-</section>
-<section id="bootstrap-sampling">
+</div>
+<div class="section" id="bootstrap-sampling">
 <h1>Bootstrap Sampling<a class="headerlink" href="#bootstrap-sampling" title="Permalink to this headline">#</a></h1>
 <p>A bootstrap sample is a method that samples the sample.</p>
-</section>
-<section id="average-sample-loss">
+</div>
+<div class="section" id="average-sample-loss">
 <h1>Average Sample Loss<a class="headerlink" href="#average-sample-loss" title="Permalink to this headline">#</a></h1>
 <p>We will now redefine our loss function to be even more general</p>
 <div class="math notranslate nohighlight">
@@ -1234,13 +1230,13 @@ $<span class="math notranslate nohighlight">\(
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\ell(Y_i,f(X_i))\)</span> : Loss function given some parametric model <span class="math notranslate nohighlight">\(f\)</span></p></li>
 </ul>
-</section>
-<section id="risk-and-expected-loss">
+</div>
+<div class="section" id="risk-and-expected-loss">
 <h1>Risk and Expected Loss<a class="headerlink" href="#risk-and-expected-loss" title="Permalink to this headline">#</a></h1>
 <p>Risk is the expected value of the loss function,</p>
 <div class="math notranslate nohighlight">
 \[ R(\theta) =  \Expected{\ell(Y,f_\theta(X))}\]</div>
-</section>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1290,7 +1286,7 @@ $<span class="math notranslate nohighlight">\(
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

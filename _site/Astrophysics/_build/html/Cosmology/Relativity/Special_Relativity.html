@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Special Relativity &#8212; Keto | Astrophysics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -685,12 +681,12 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="special-relativity">
+  <div class="tex2jax_ignore mathjax_ignore section" id="special-relativity">
 <h1>Special Relativity<a class="headerlink" href="#special-relativity" title="Permalink to this headline">#</a></h1>
 <blockquote>
 <div><p>**IMPORTANT: ** From here on out, I will be using natural units where <span class="math notranslate nohighlight">\(c=1\)</span>. This means that it’s important to know that time <span class="math notranslate nohighlight">\(t\)</span> has the units of length in <a class="reference external" href="#spacetime">Minkowski space</a>. Please take this moment for a deep breath because you’re ready to learn natural units (if you haven’t).</p>
 </div></blockquote>
-<section id="spacetime">
+<div class="section" id="spacetime">
 <h2>Spacetime<a class="headerlink" href="#spacetime" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><p><em>Alias: Minkowski Space</em></p>
@@ -728,8 +724,8 @@ title="Print to PDF"
     x^\mu \equiv x^\mu(t, x^i)
 \end{equation}
 \]</div>
-</section>
-<section id="metric">
+</div>
+<div class="section" id="metric">
 <h2>Metric<a class="headerlink" href="#metric" title="Permalink to this headline">#</a></h2>
 <p>A bit about metric. Metric is defined to deal with measuring length <span class="math notranslate nohighlight">\(S\)</span> (differential: <span class="math notranslate nohighlight">\(ds\)</span>) given some coordinate system. You should be familiar with the metric for Euclidean surface (flat surface) say for a 2D Euclidean surface in cartesian coordinate should be,</p>
 <div class="math notranslate nohighlight">
@@ -778,7 +774,7 @@ g_{\mu\nu} = \begin{pmatrix}
 \end{pmatrix} \tag{Polar}
 \end{align}
 \end{split}\]</div>
-<section id="spacetime-interval">
+<div class="section" id="spacetime-interval">
 <h3>Spacetime Interval<a class="headerlink" href="#spacetime-interval" title="Permalink to this headline">#</a></h3>
 <p>The spacetime interval is the length of the 4-positional vector which of course by Pythagorean law 4-dimensional space,</p>
 <div class="math notranslate nohighlight">
@@ -795,8 +791,8 @@ g_{\mu\nu} = \begin{pmatrix}
     ds^2 = \eta_{\mu\nu}dx^\mu dx^\nu\\ \nonumber \\
     \eta_{\mu\nu} \equiv \begin{pmatrix} -1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end{pmatrix}\\
 \end{gather}\end{split}\]</div>
-</section>
-<section id="proper-time">
+</div>
+<div class="section" id="proper-time">
 <h3>Proper Time<a class="headerlink" href="#proper-time" title="Permalink to this headline">#</a></h3>
 <p>A convention to consider the length or spacetime interval to increase with time is to define the term <span class="math notranslate nohighlight">\(\tau\)</span> to be the <strong>proper time</strong>. All it is, is the negative of length in spacetime,</p>
 <div class="math notranslate nohighlight">
@@ -816,9 +812,9 @@ g_{\mu\nu} = \begin{pmatrix}
 \end{align*}
 \end{split}\]</div>
 <p>Notice that if <span class="math notranslate nohighlight">\(d\tau\)</span> is maximum when <span class="math notranslate nohighlight">\(dx^i=0\)</span>. That would mean if the observer was moving then its proper time interval must be shorter than another observer at rest.</p>
-</section>
-</section>
-<section id="lorentz-transformation">
+</div>
+</div>
+<div class="section" id="lorentz-transformation">
 <h2>Lorentz Transformation<a class="headerlink" href="#lorentz-transformation" title="Permalink to this headline">#</a></h2>
 <p>The Lorentz transformation describes how one can shift from one reference frame to another such that the spacetime interval is invariant. This means there exist a matrix transformation <span class="math notranslate nohighlight">\(\Lambda\)</span> that,</p>
 <div class="math notranslate nohighlight">
@@ -828,8 +824,8 @@ g_{\mu\nu} = \begin{pmatrix}
     \boxed{\eta = \Lambda^\mu \eta \Lambda^\nu}
 \end{gather}
 \end{split}\]</div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {

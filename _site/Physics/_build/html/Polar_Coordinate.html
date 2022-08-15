@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>2D Polar Coordinate &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2D Polar Coordinate &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Physics</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -642,7 +638,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="d-polar-coordinate">
+  <div class="section" id="d-polar-coordinate">
 <h1>2D Polar Coordinate<a class="headerlink" href="#d-polar-coordinate" title="Permalink to this headline">#</a></h1>
 <p>The two-dimensional polar coordinate uses the two parameter vectors <span class="math notranslate nohighlight">\(\boldsymbol{r}\)</span> and angle vector <span class="math notranslate nohighlight">\(\boldsymbol{\phi}\)</span>. It is simply defined by unit vectors,</p>
 <div class="math notranslate nohighlight">
@@ -651,7 +647,7 @@ title="Print to PDF"
 \]</div>
 <div class="math notranslate nohighlight">
 \[ \boldsymbol{\phi} = \phi\boldsymbol{\hat \phi} \]</div>
-<section id="cartesian-to-polar">
+<div class="section" id="cartesian-to-polar">
 <h2>Cartesian to Polar<a class="headerlink" href="#cartesian-to-polar" title="Permalink to this headline">#</a></h2>
 <p>We make the transformation given <span class="math notranslate nohighlight">\(x, y\)</span> by,</p>
 <div class="math notranslate nohighlight">
@@ -671,8 +667,8 @@ title="Print to PDF"
 <ul class="simple">
 <li><p>This transformation is not mathematically general since we use <span class="math notranslate nohighlight">\(\arctan\)</span>. More properly use <span class="math notranslate nohighlight">\(\arctan2\)</span></p></li>
 </ul>
-</section>
-<section id="velocity">
+</div>
+<div class="section" id="velocity">
 <h2>Velocity<a class="headerlink" href="#velocity" title="Permalink to this headline">#</a></h2>
 <p>There is an unfamiliar property for the rate of change in polar coordinates compared to cartesian coordinates. Most prominent is velocity, <span class="math notranslate nohighlight">\(\boldsymbol{\dot r}\)</span> which is,</p>
 <div class="math notranslate nohighlight">
@@ -685,7 +681,7 @@ title="Print to PDF"
 \end{align}\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\boxed{\boldsymbol{v} \equiv v_r \boldsymbol{\hat r} + v_\phi  \boldsymbol{\hat \phi}} \]</div>
-<section id="derivation">
+<div class="section" id="derivation">
 <h3>Derivation<a class="headerlink" href="#derivation" title="Permalink to this headline">#</a></h3>
 <p>Naively one may assume <span class="math notranslate nohighlight">\(d\boldsymbol{\hat r}/dt = 0\)</span> however this is not the case because <span class="math notranslate nohighlight">\(\boldsymbol{\hat r}\)</span> is allowed to change directions over time<a class="footnote-reference brackets" href="#directions" id="id1">1</a>. Let’s take for granted and assume <span class="math notranslate nohighlight">\(d\boldsymbol{\hat r}/dt = \dot \phi \boldsymbol{\hat \phi}\)</span></p>
 <div class="math notranslate nohighlight">
@@ -702,9 +698,9 @@ title="Print to PDF"
 \end{align}\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\boxed{\boldsymbol{v} \equiv v_r \boldsymbol{\hat r} + v_\phi  \boldsymbol{\hat \phi}} \]</div>
-</section>
-</section>
-<section id="acceleration">
+</div>
+</div>
+<div class="section" id="acceleration">
 <h2>Acceleration<a class="headerlink" href="#acceleration" title="Permalink to this headline">#</a></h2>
 <p>The second time derivative or acceleration is defined as,</p>
 <div class="math notranslate nohighlight">
@@ -732,8 +728,8 @@ title="Print to PDF"
 <dd><p>When learning vectors in cartesian coordinates we take for granted that <span class="math notranslate nohighlight">\(d\boldsymbol{\hat x}/dt = 0\)</span> which is definitely true since <span class="math notranslate nohighlight">\(\boldsymbol{\hat x}\)</span> never changes directions.</p>
 </dd>
 </dl>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -783,7 +779,7 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

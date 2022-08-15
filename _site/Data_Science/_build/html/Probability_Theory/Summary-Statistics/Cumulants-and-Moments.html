@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Cumulants and Moments &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cumulants and Moments &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1063,9 +1059,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="cumulants-and-moments">
+  <div class="tex2jax_ignore mathjax_ignore section" id="cumulants-and-moments">
 <h1>Cumulants and Moments<a class="headerlink" href="#cumulants-and-moments" title="Permalink to this headline">#</a></h1>
-<section id="moment-generating-function">
+<div class="section" id="moment-generating-function">
 <h2>Moment Generating Function<a class="headerlink" href="#moment-generating-function" title="Permalink to this headline">#</a></h2>
 <p>The <strong>moment generating function (MGF)</strong> is some function that defines for some random variable <span class="math notranslate nohighlight">\(X\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1098,7 +1094,7 @@ M_{X + Y}(t) = M_X(t)M_Y(t)
 $$
 </pre></div>
 </div>
-<section id="central-limit-theorem">
+<div class="section" id="central-limit-theorem">
 <h3>Central Limit Theorem<a class="headerlink" href="#central-limit-theorem" title="Permalink to this headline">#</a></h3>
 <p>If two distribution are the same if they have the same MGF, it is natural to think if one MGF tends towards another at some asymptotic limit, the the distribution tends towards the other. This is the basis for using MGF with CLT.</p>
 <p>Consider a sum <span class="math notranslate nohighlight">\(S\)</span> of iid random variables <span class="math notranslate nohighlight">\(X_1, X_2, \ldots, X_n\)</span>. The standardized form is,</p>
@@ -1121,11 +1117,11 @@ M_{S^*}(t) &amp;= \left[ M_{X^*}(t/\sqrt{n}) \right]^n\\
 M_{S^*}(t) \approx \left(1 + \frac{t^2}{n} + \right)^n \rightarrow e^{t^2 / 2}, \quad \text{as } n \to \infty
 \]</div>
 <p>Thus the sums of iid random variables has the MGF that tends towards the MGF of normal as <span class="math notranslate nohighlight">\(n\)</span> grows large.</p>
-</section>
-</section>
+</div>
+</div>
 <div class="toctree-wrapper compound">
 </div>
-</section>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1175,7 +1171,7 @@ M_{S^*}(t) \approx \left(1 + \frac{t^2}{n} + \right)^n \rightarrow e^{t^2 / 2}, 
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

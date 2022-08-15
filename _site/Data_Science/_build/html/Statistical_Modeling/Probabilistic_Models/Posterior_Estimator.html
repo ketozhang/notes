@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Posterior Estimator &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posterior Estimator &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1089,7 +1085,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="posterior-estimator">
+  <div class="tex2jax_ignore mathjax_ignore section" id="posterior-estimator">
 <h1>Posterior Estimator<a class="headerlink" href="#posterior-estimator" title="Permalink to this headline">#</a></h1>
 <p>With an assumption of the likelihood function (i.e., the distribution of the data), we can determine the distribution of the parameters which is the posterior distribution. Using Bayes rule we find that,</p>
 <div class="math notranslate nohighlight">
@@ -1100,18 +1096,18 @@ P(\theta \mid X) = \frac{P(X \mid \theta) P(\theta)}{P(X)}
 <li><p><span class="math notranslate nohighlight">\( P(X \mid \theta) \)</span> : the likelihood function</p></li>
 <li><p><span class="math notranslate nohighlight">\( P(X) \)</span> : the normalization distribution called the evidence.</p></li>
 </ul>
-<section id="expectation-of-posterior">
+<div class="section" id="expectation-of-posterior">
 <h2>Expectation of Posterior<a class="headerlink" href="#expectation-of-posterior" title="Permalink to this headline">#</a></h2>
 <p>If there must be one value instead of a distribution, the expectation is one natural choice</p>
-</section>
-<section id="maximum-a-posterior">
+</div>
+<div class="section" id="maximum-a-posterior">
 <h2>Maximum a Posterior<a class="headerlink" href="#maximum-a-posterior" title="Permalink to this headline">#</a></h2>
 <p>If there must be one value, then the mode or <strong>maximum a posteriori</strong> (<strong>MAP</strong>) is a another natural choice.</p>
-</section>
-<section id="bayesian-update">
+</div>
+<div class="section" id="bayesian-update">
 <h2>Bayesian Update<a class="headerlink" href="#bayesian-update" title="Permalink to this headline">#</a></h2>
-</section>
-<section id="motivating-example">
+</div>
+<div class="section" id="motivating-example">
 <h2>Motivating Example<a class="headerlink" href="#motivating-example" title="Permalink to this headline">#</a></h2>
 <p>Consider a coin where we do not know the chance of heads <span class="math notranslate nohighlight">\(p\)</span>. Let’s take the prior that <span class="math notranslate nohighlight">\(p\)</span> is uniformally any value between 0 and 1. That is,</p>
 <div class="math notranslate nohighlight">
@@ -1161,8 +1157,8 @@ f(p \mid H_1) = 2p
 \[
 P(H_2 \mid H_1) = \int_0^1 P(H_2 \mid p) \cdot f(p \mid H_1) ~dp = \frac{2}{3}
 \]</div>
-</section>
-<section id="beta-and-binomial-update">
+</div>
+<div class="section" id="beta-and-binomial-update">
 <h2>Beta and Binomial Update<a class="headerlink" href="#beta-and-binomial-update" title="Permalink to this headline">#</a></h2>
 <p>We are interested in <span class="math notranslate nohighlight">\(n\)</span> IID Bernoulli trials where we define the sum as <span class="math notranslate nohighlight">\(S = \sum{I_k}\)</span>.</p>
 <p>The Bayesian update rule is,</p>
@@ -1209,8 +1205,8 @@ P(S_n = k) = {n \choose k}\frac{C(r,s)}{C(r+k, s+n-k)}
 $$
 </pre></div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1260,7 +1256,7 @@ $$
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

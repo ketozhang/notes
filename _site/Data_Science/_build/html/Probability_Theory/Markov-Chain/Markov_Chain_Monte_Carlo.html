@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Markov Chain Monte Carlo &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markov Chain Monte Carlo &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1063,7 +1059,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="markov-chain-monte-carlo">
+  <div class="tex2jax_ignore mathjax_ignore section" id="markov-chain-monte-carlo">
 <h1>Markov Chain Monte Carlo<a class="headerlink" href="#markov-chain-monte-carlo" title="Permalink to this headline">#</a></h1>
 <p>The MCMC is a sampling algorithm to determine some underlying probability distribution often the posterior distribution representing the outcome or sample space <span class="math notranslate nohighlight">\(S\)</span>. In terms of the Markov chain, the desired probability distribution is the long-run proportion of state distribution <span class="math notranslate nohighlight">\(\pi\)</span> of some stationary Markov chain of sample space <span class="math notranslate nohighlight">\(S\)</span> (e.g., some paramter space) satisfying the balance equation:</p>
 <div class="math notranslate nohighlight">
@@ -1079,7 +1075,7 @@ title="Print to PDF"
 \[
 P(X_{t+1} = j \mid X_t = i) = \pi(j)
 \]</div>
-<section id="metropolis-hastings-algorithm">
+<div class="section" id="metropolis-hastings-algorithm">
 <h2>Metropolis-Hastings Algorithm<a class="headerlink" href="#metropolis-hastings-algorithm" title="Permalink to this headline">#</a></h2>
 <p>Known as the classical and easiest to understand algorithm of MCMC, the <strong>Metroplis-Hastings Algorithm</strong> takes advantage of detailed balance in Markov chains.</p>
 <p>Recall a Markov chain is in detailed balance if at the long wrong for all states in the state space <span class="math notranslate nohighlight">\((i,j \in S)\)</span>, the long-run proportion of steps in state <span class="math notranslate nohighlight">\(i\)</span> entering state <span class="math notranslate nohighlight">\(j\)</span> is equivalent to the long-run proportion of steps in state <span class="math notranslate nohighlight">\(j\)</span> entering state <span class="math notranslate nohighlight">\(i\)</span>:</p>
@@ -1110,7 +1106,7 @@ r(i,j) := \frac{\pi(j)}{\pi(i)}
 * Repeat until you&#39;re satisfied (in some cases this is when the chain converges; in many others it&#39;s when your deadline is coming or you run out of patience).
 </pre></div>
 </div>
-<section id="proof-of-metropolis-algorithm-gives-detailed-balance">
+<div class="section" id="proof-of-metropolis-algorithm-gives-detailed-balance">
 <h3>Proof of Metropolis-Algorithm Gives Detailed Balance<a class="headerlink" href="#proof-of-metropolis-algorithm-gives-detailed-balance" title="Permalink to this headline">#</a></h3>
 <p>Now, does this algorithm develop a Markov chain that satisfy detailed balance:</p>
 <div class="math notranslate nohighlight">
@@ -1148,9 +1144,9 @@ r(i,j) := \frac{\pi(j)}{\pi(i)}
 </li>
 <li><p><span class="math notranslate nohighlight">\(r(i,j) \ge 1 \implies \pi(j) \ge \pi(i)\)</span>, equivalent to the previous case if you swap <span class="math notranslate nohighlight">\(i\)</span> and <span class="math notranslate nohighlight">\(j\)</span>.</p></li>
 </ul>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1200,7 +1196,7 @@ r(i,j) := \frac{\pi(j)}{\pi(i)}
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

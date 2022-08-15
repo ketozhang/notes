@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Uniform Prior &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uniform Prior &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1059,7 +1055,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="uniform-prior">
+  <div class="section" id="uniform-prior">
 <h1>Uniform Prior<a class="headerlink" href="#uniform-prior" title="Permalink to this headline">#</a></h1>
 <p>Using a uniform prior, the MAP becomes the MLE</p>
 <div class="highlight-Example notranslate"><div class="highlight"><pre><span></span>Suppose we want to find the chance of head $p$ of a possibly unfair coin. However we have no reason to expect the coin to be unfair as most coin tosses are fair-ish. We take the uniform prior.
@@ -1097,8 +1093,8 @@ $$
 At large $n$, these two are nearly equal. We have found that the observed propotion of heads is the MAP.
 </pre></div>
 </div>
-</section>
-<section id="disproportionate-prior">
+</div>
+<div class="section" id="disproportionate-prior">
 <h1>Disproportionate Prior<a class="headerlink" href="#disproportionate-prior" title="Permalink to this headline">#</a></h1>
 <p>Suppose you want to determine the chance of an event <span class="math notranslate nohighlight">\(p\)</span>. If you believe the event is disproportionate, that is, you believe on average there is <span class="math notranslate nohighlight">\(x\)</span> events out of <span class="math notranslate nohighlight">\(n\)</span>.</p>
 <div class="math notranslate nohighlight">
@@ -1119,7 +1115,7 @@ $$
 We take the prior distribution to be $p \sim \text{Beta}(7, 3)$.
 </pre></div>
 </div>
-</section>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1169,7 +1165,7 @@ We take the prior distribution to be $p \sim \text{Beta}(7, 3)$.
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

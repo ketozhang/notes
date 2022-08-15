@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Vanishing Gradient Problem &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanishing Gradient Problem &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1049,12 +1045,12 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="vanishing-gradient-problem">
+  <div class="tex2jax_ignore mathjax_ignore section" id="vanishing-gradient-problem">
 <h1>Vanishing Gradient Problem<a class="headerlink" href="#vanishing-gradient-problem" title="Permalink to this headline">#</a></h1>
 <p>The vanishing gradient problem is an effect of unit saturation. This occurs when most of the training outputs of the activation function <span class="math notranslate nohighlight">\(\hat y\)</span> is close to region of zero gradient.</p>
 <p>For instance if <span class="math notranslate nohighlight">\(\hat y\)</span> is the sigmoid function, then unit saturation occurs when <span class="math notranslate nohighlight">\(\hat y\)</span> is close to 0 or 1.</p>
 <p>Being in zero curvature region causes gradient descent to get stuck since the step size becomes too small. Hence appropriately named the <strong>vanishing gradient problem</strong>.</p>
-<section id="solutions">
+<div class="section" id="solutions">
 <h2>Solutions<a class="headerlink" href="#solutions" title="Permalink to this headline">#</a></h2>
 <p>Solutions for mitigating this effect includes:</p>
 <ol>
@@ -1072,8 +1068,8 @@ title="Print to PDF"
 <li><p>Use different loss function like cross-entropy.</p></li>
 <li><p>Use a different activation function. A famous replacement for sigmoid is the rectified linear unit (ReLU).</p></li>
 </ol>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1123,7 +1119,7 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

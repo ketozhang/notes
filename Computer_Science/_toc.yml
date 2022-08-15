@@ -1,10 +1,16 @@
 format: jb-book
 root: index
 chapters:
+- file: Algorithms/index
+  sections:
+  - file: Algorithms/Search/Binary_Search
+    sections:
+    - file: Algorithms/Search/Hash_Search
 - file: Computer_Architecture/index
   sections:
   - file: Computer_Architecture/CS61C_Review
   - file: Computer_Architecture/Floating_Point
+  - file: Computer_Architecture/index copy
   - file: Computer_Architecture/IO
   - file: Computer_Architecture/Speedup
 - file: Cpp/index
@@ -15,8 +21,9 @@ chapters:
   - file: Cpp/Imports
   - file: Cpp/Introduction
   - file: Cpp/User-Defined_Types
-- file: Data_Structure/Linked_List
+- file: Data_Structure/index
   sections:
+  - file: Data_Structure/Linked_List
   - file: Data_Structure/Trees/Binary_Search_Tree
     sections:
     - file: Data_Structure/Trees/Red_Black_Tree
@@ -80,8 +87,9 @@ chapters:
     - file: Database_Systems/SQL/Set-Operations
     - file: Database_Systems/SQL/String-Formatting
     - file: Database_Systems/SQL/Views
-- file: Design_Patterns/SOLID_Design_Principles
+- file: Design_Patterns/index
   sections:
+  - file: Design_Patterns/SOLID_Design_Principles
   - file: Design_Patterns/Behavioral/Template_Method
   - file: Design_Patterns/Creational/Abstract_Method
     sections:
@@ -96,5 +104,17 @@ chapters:
   - file: JavaScript/Datatypes
   - file: JavaScript/Objects
   - file: JavaScript/Operators
-- file: Web_Development/Nginx
+- file: Python/index
+  sections:
+  - file: Python/Extensions/C++_with_Pybind11
+  - file: Python/Installation/Linux
+  - file: Python/Packaging/Package_Dependencies
+    sections:
+    - file: Python/Packaging/Project_Structure
+  - file: Python/Versions/Python3_5
+    sections:
+    - file: Python/Versions/Python3_6
+- file: Web_Development/index
+  sections:
+  - file: Web_Development/Nginx
 

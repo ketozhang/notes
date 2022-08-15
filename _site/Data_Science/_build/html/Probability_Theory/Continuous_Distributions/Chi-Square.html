@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Chi-Square Distribution &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi-Square Distribution &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1069,22 +1065,22 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="chi-square-distribution">
+  <div class="tex2jax_ignore mathjax_ignore section" id="chi-square-distribution">
 <h1>Chi-Square Distribution<a class="headerlink" href="#chi-square-distribution" title="Permalink to this headline">#</a></h1>
 <p>The chi-square distribution is given by,</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{\frac{1}{2}^{n/2}}{\Gamma(n/2)} x^{\frac{n}{2} - 1}e^{- \frac{1}{2}x}
 \]</div>
-<section id="member-of-the-gamma-distribution">
+<div class="section" id="member-of-the-gamma-distribution">
 <h2>Member of the Gamma Distribution<a class="headerlink" href="#member-of-the-gamma-distribution" title="Permalink to this headline">#</a></h2>
 <p>The chi-square distribution is a member of the gamma distribution,</p>
 <div class="math notranslate nohighlight">
 \[
 \chi^n_k = \text{gamma}(n/2, 1/2)
 \]</div>
-</section>
-<section id="relation-to-normal-distribution">
+</div>
+<div class="section" id="relation-to-normal-distribution">
 <h2>Relation to Normal Distribution<a class="headerlink" href="#relation-to-normal-distribution" title="Permalink to this headline">#</a></h2>
 <p>The <span class="math notranslate nohighlight">\(\chi^2_n\)</span> distribution with <span class="math notranslate nohighlight">\(n\)</span> degrees of freedom is the sum of squares of <span class="math notranslate nohighlight">\(n\)</span> iid standard normal random variables <span class="math notranslate nohighlight">\(Z_1, Z_2, \ldots, Z_n\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1112,8 +1108,8 @@ $$
 We now see that $Z^2 = \chi_1^2$ the squared standard normal is the chi-square with one degree of freedom.
 </pre></div>
 </div>
-</section>
-<section id="unbiased-estimator-of-sd-with-known-mean">
+</div>
+<div class="section" id="unbiased-estimator-of-sd-with-known-mean">
 <h2>Unbiased Estimator of SD with Known Mean<a class="headerlink" href="#unbiased-estimator-of-sd-with-known-mean" title="Permalink to this headline">#</a></h2>
 <p>Given iid <span class="math notranslate nohighlight">\(\text{Normal}(\mu, \sigma^2)\)</span> random variables <span class="math notranslate nohighlight">\(X_1, X_2, \ldots, X_n\)</span>, the unbiased estimator of <span class="math notranslate nohighlight">\(\sigma\)</span> is,</p>
 <div class="math notranslate nohighlight">
@@ -1123,8 +1119,8 @@ We now see that $Z^2 = \chi_1^2$ the squared standard normal is the chi-square w
     E(Y) = \sigma^2
 \end{gather*}
 \end{split}\]</div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1174,7 +1170,7 @@ We now see that $Z^2 = \chi_1^2$ the squared standard normal is the chi-square w
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

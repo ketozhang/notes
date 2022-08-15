@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Probability Scenarios &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Probability Scenarios &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1087,9 +1083,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="probability-scenarios">
+  <div class="tex2jax_ignore mathjax_ignore section" id="probability-scenarios">
 <h1>Probability Scenarios<a class="headerlink" href="#probability-scenarios" title="Permalink to this headline">#</a></h1>
-<section id="degeneracy-problem">
+<div class="section" id="degeneracy-problem">
 <h2>Degeneracy Problem<a class="headerlink" href="#degeneracy-problem" title="Permalink to this headline">#</a></h2>
 <p>The degeneracy or distinct problem ask the question:</p>
 <center>***If there are $n$ trials which each trial choose from $N$ possible values, what are the chances that all trials are distinct***</center>
@@ -1104,7 +1100,7 @@ title="Print to PDF"
 <ul class="simple">
 <li><p>Classicaly this is known as the <strong>Birthday Problem</strong></p></li>
 </ul>
-<section id="small-n-and-large-n">
+<div class="section" id="small-n-and-large-n">
 <h3>Small <span class="math notranslate nohighlight">\(N\)</span> and Large <span class="math notranslate nohighlight">\(n\)</span><a class="headerlink" href="#small-n-and-large-n" title="Permalink to this headline">#</a></h3>
 <p>For sufficiently small <span class="math notranslate nohighlight">\(N\)</span> and large <span class="math notranslate nohighlight">\(n\)</span>, the probability can be approximated as,</p>
 <div class="math notranslate nohighlight">
@@ -1116,9 +1112,9 @@ title="Print to PDF"
 \[
     P(\text{distinct}) \approx e^{\frac{(1-n)n}{2N}}
 \]</div>
-</section>
-</section>
-<section id="derangement-problem">
+</div>
+</div>
+<div class="section" id="derangement-problem">
 <h2>Derangement Problem<a class="headerlink" href="#derangement-problem" title="Permalink to this headline">#</a></h2>
 <p>Let <span class="math notranslate nohighlight">\(A_1,A_2,\ldots,A_n\)</span> be the set of outcomes such that <span class="math notranslate nohighlight">\(i\)</span>th position of a sequence is a fixed point (e.g., the <span class="math notranslate nohighlight">\(i\)</span>th key is use on the <span class="math notranslate nohighlight">\(i\)</span>th box).</p>
 <p>A <strong>derangement</strong> is defined as the set of outcomes such that there are no fixed point. It is much easier to define this with a random variable <span class="math notranslate nohighlight">\(X\)</span> which counts the number of fixed point. The derangement is when <span class="math notranslate nohighlight">\(X=0\)</span>. Let the cardinality of the derangement be <span class="math notranslate nohighlight">\(D_n\)</span>,</p>
@@ -1128,8 +1124,8 @@ title="Print to PDF"
 \[ \abs{\bigcup A_i} = \sum_{k=1}^n (-1)^{k-1}{n \choose k}(n-k)! \]</div>
 <div class="math notranslate nohighlight">
 \[\boxed{D_n = n! \sum_{k=2}^n \frac{(-1)^k}{k!}}\]</div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1179,7 +1175,7 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

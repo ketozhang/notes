@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Introduction &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1089,9 +1085,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
-<section id="linear-transformation">
+<div class="section" id="linear-transformation">
 <h2>Linear Transformation<a class="headerlink" href="#linear-transformation" title="Permalink to this headline">#</a></h2>
 <p>Consider the linear transformation,</p>
 <div class="math notranslate nohighlight">
@@ -1122,8 +1118,8 @@ $$
 </div>
 <p>Proof (for <span class="math notranslate nohighlight">\(a&lt;0\)</span>)
 : Using the same prove as before, you can see that only the inequality sign flips which we can take the complement where the derivative ignores the complement.</p>
-</section>
-<section id="examples">
+</div>
+<div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h2>
 <ul>
 <li><p>Normal Density</p>
@@ -1141,8 +1137,8 @@ $$
 	\]</div>
 </li>
 </ul>
-</section>
-<section id="monotonic-transformation">
+</div>
+<div class="section" id="monotonic-transformation">
 <h2>Monotonic Transformation<a class="headerlink" href="#monotonic-transformation" title="Permalink to this headline">#</a></h2>
 <p>Let’s begin by witha motivating example. Given uniform function <span class="math notranslate nohighlight">\(U \sim \text{Uniform}(0,1)\)</span>. and a monotonically increasing function <span class="math notranslate nohighlight">\(F\)</span>, we define <span class="math notranslate nohighlight">\(U\)</span> to be the monotonically increasing trasnformation of <span class="math notranslate nohighlight">\(X\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1177,12 +1173,12 @@ f_Y(y) &amp;= \frac{dF_Y}{dy}\\
 &amp;= \frac{f_X(x)}{g'(x)} \tag{Derivative of Inverse Functions}
 \end{align*}
 \end{split}\]</div>
-</section>
-<section id="bitonic-transformation">
+</div>
+<div class="section" id="bitonic-transformation">
 <h2>Bitonic Transformation<a class="headerlink" href="#bitonic-transformation" title="Permalink to this headline">#</a></h2>
 <p>The name Bitonic isn’t convention name so let’s define it. A <strong>bitonically increasing function</strong> a function <span class="math notranslate nohighlight">\(g(x)\)</span> that the absolute value of <span class="math notranslate nohighlight">\(g(x)\)</span> increase as <span class="math notranslate nohighlight">\(x\)</span> increases for the function <span class="math notranslate nohighlight">\(g(x_0 + x)\)</span> where <span class="math notranslate nohighlight">\(g(x_0)\)</span> is some global minima.</p>
-</section>
-<section id="two-to-one-transformation">
+</div>
+<div class="section" id="two-to-one-transformation">
 <h2>Two-to-One Transformation<a class="headerlink" href="#two-to-one-transformation" title="Permalink to this headline">#</a></h2>
 <p>A <strong>Two-to-One function</strong> is a function <span class="math notranslate nohighlight">\(g(x)\)</span> that for every value <span class="math notranslate nohighlight">\(y\)</span>, there exists two <span class="math notranslate nohighlight">\(x\)</span> that satisfies <span class="math notranslate nohighlight">\(g(x) = y\)</span>.
 An example of a two-to-one function is <span class="math notranslate nohighlight">\(g(x)=x^2\)</span> since to the right of <span class="math notranslate nohighlight">\(x_0=0\)</span>, the function is monotinically increasing and to the left the function is monotonically decreasing. Thus, the absolute value of <span class="math notranslate nohighlight">\(g(x)\)</span> is increasing on both sides.</p>
@@ -1199,8 +1195,8 @@ f_Y(y) &amp;= \frac{f_X(x_1)}{g'(x_1)} + \frac{f_X(x_2)}{g'(x_2)}\\
 &amp;= \frac{f_X(x_1)}{2x_1} + \frac{f_X(x_2)}{\abs{2x_2}}
 \end{align*}
 \end{split}\]</div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1250,7 +1246,7 @@ f_Y(y) &amp;= \frac{f_X(x_1)}{g'(x_1)} + \frac{f_X(x_2)}{g'(x_2)}\\
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

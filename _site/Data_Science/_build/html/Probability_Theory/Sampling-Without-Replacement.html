@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Sampling without Replacement &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sampling without Replacement &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -1073,7 +1069,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="sampling-without-replacement">
+  <div class="tex2jax_ignore mathjax_ignore section" id="sampling-without-replacement">
 <h1>Sampling without Replacement<a class="headerlink" href="#sampling-without-replacement" title="Permalink to this headline">#</a></h1>
 <p>We begin using sampling without replacement by considering a sample size of <span class="math notranslate nohighlight">\(k\)</span> chosen out of a population of also size <span class="math notranslate nohighlight">\(n=k\)</span>. Each possible outcome of a sample is unique (we will be dealing with grouping later). Thus the total number of sequences is like shuffling a card of deck with each cards begin unique,</p>
 <div class="math notranslate nohighlight">
@@ -1085,7 +1081,7 @@ title="Print to PDF"
 \[
 P(\text{sequence of $n$ samples}) = \frac{1}{n!}
 \]</div>
-<section id="symmetry-between-slots">
+<div class="section" id="symmetry-between-slots">
 <h2>Symmetry (between slots)<a class="headerlink" href="#symmetry-between-slots" title="Permalink to this headline">#</a></h2>
 <p>Notice that the probability of any particular sequence does not depend on the actual elements in a sequence. Another way to state this is that every sequence has equal chances of occuring. Thus if you were to imagine a sequence of <span class="math notranslate nohighlight">\(n\)</span> slots where each slot can be represented as a random variable <span class="math notranslate nohighlight">\(X_i\)</span> for <span class="math notranslate nohighlight">\(1 \le i \le n\)</span>, then notice that any particular <span class="math notranslate nohighlight">\(X_i\)</span> has the probability of being value <span class="math notranslate nohighlight">\(k\)</span> by,</p>
 <ol class="simple">
@@ -1110,8 +1106,8 @@ P(X_i = k) = \frac{(n-1)!}{n} = \frac{1}{n}
     \]</div>
 </li>
 </ul>
-</section>
-<section id="simple-random-sample">
+</div>
+<div class="section" id="simple-random-sample">
 <h2>Simple Random Sample<a class="headerlink" href="#simple-random-sample" title="Permalink to this headline">#</a></h2>
 <p>Sampling without replacement for <span class="math notranslate nohighlight">\(k \le n\)</span> is called a <strong>simple random sample (SRS)</strong>. Succinctly, an SRS creates a sample that is a subset of a finite population.</p>
 <p>Once again consider a deck of size <span class="math notranslate nohighlight">\(n=52\)</span> and we like a sample of size <span class="math notranslate nohighlight">\(k \le n\)</span>. The total number of possible ordered sequences is,</p>
@@ -1125,14 +1121,14 @@ P(X_i = k) = \frac{(n-1)!}{n} = \frac{1}{n}
 |\text{unordered sequence of $k$ samples}| = {n \choose k}
 \]</div>
 <p>Thus, the probability depends if you’re counting ordered or unordred sequences.</p>
-<section id="hypergeometric-probability">
+<div class="section" id="hypergeometric-probability">
 <h3>Hypergeometric Probability<a class="headerlink" href="#hypergeometric-probability" title="Permalink to this headline">#</a></h3>
 <p>Let’s now consider grouping. It only makes sense to group something if the elements in a group are considered indistinguishable for the problem; in other words, we are dealing with unordered sequences. Let the size of such group be <span class="math notranslate nohighlight">\(G\)</span> where <span class="math notranslate nohighlight">\(G \le N\)</span> and <span class="math notranslate nohighlight">\(N\)</span> is the size of the population. Let the number of samples be is <span class="math notranslate nohighlight">\(n\)</span>. Let the random variable <span class="math notranslate nohighlight">\(X\)</span> be the number of outcomes that is part of the group of size <span class="math notranslate nohighlight">\(G\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[ P(X=g) = \frac{\binom{G}{g} \binom{N-G}{n-g}}{\binom{N}{n}} \]</div>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1182,7 +1178,7 @@ P(X_i = k) = \frac{(n-1)!}{n} = \frac{1}{n}
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Time-Dependent Perturbation Theory &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time-Dependent Perturbation Theory &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Physics</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -632,7 +628,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="time-dependent-perturbation-theory">
+  <div class="tex2jax_ignore mathjax_ignore section" id="time-dependent-perturbation-theory">
 <h1>Time-Dependent Perturbation Theory<a class="headerlink" href="#time-dependent-perturbation-theory" title="Permalink to this headline">#</a></h1>
 <!-- TOC -->
 <ul class="simple">
@@ -655,7 +651,7 @@ title="Print to PDF"
 <div class="math notranslate nohighlight">
 \[ H\Psi = i\hbar \frac{\partial \Psi}{\partial t} \]</div>
 <p>Note that the goal of TDPT is to solve for <span class="math notranslate nohighlight">\(c_k(t)\)</span> for each wavefunction which determines the probability of measuring the wavefunction at some given time <span class="math notranslate nohighlight">\(t\)</span>.</p>
-<section id="system-of-two-eigenvalues">
+<div class="section" id="system-of-two-eigenvalues">
 <h2>System of Two Eigenvalues<a class="headerlink" href="#system-of-two-eigenvalues" title="Permalink to this headline">#</a></h2>
 <p>For a system of two eigenvalues <span class="math notranslate nohighlight">\(H^0\psi_a = E_a\)</span> and <span class="math notranslate nohighlight">\(H^0\psi_b = E_b\)</span>, we can write a nice solution for <span class="math notranslate nohighlight">\(c_k(t)\)</span> which is,</p>
 <div class="math notranslate nohighlight">
@@ -669,7 +665,7 @@ title="Print to PDF"
 <ul class="simple">
 <li><p>In many cases the diagonal matrices are zero <span class="math notranslate nohighlight">\(H_{aa}' = H_{bb}' = 0\)</span></p></li>
 </ul>
-<section id="proof">
+<div class="section" id="proof">
 <h3>Proof<a class="headerlink" href="#proof" title="Permalink to this headline">#</a></h3>
 <p>Plugging in the wavefunction <span class="math notranslate nohighlight">\(\Psi(t)\)</span> into the TDSE we find that,</p>
 <div class="math notranslate nohighlight">
@@ -708,9 +704,9 @@ title="Print to PDF"
 <div class="math notranslate nohighlight">
 \[ \boxed{P^1_{a\rightarrow b} = \abs{c_b^1}^2} \tag{First Order}\]</div>
 <p>Therefore this generalizes to any initial state <span class="math notranslate nohighlight">\(\psi_k\)</span> with <span class="math notranslate nohighlight">\(c_k(0)=0\)</span> transitioning to another state <span class="math notranslate nohighlight">\(\psi_b\)</span>.</p>
-</section>
-</section>
-<section id="example-sinusoidal-perturbations">
+</div>
+</div>
+<div class="section" id="example-sinusoidal-perturbations">
 <h2>Example - Sinusoidal Perturbations<a class="headerlink" href="#example-sinusoidal-perturbations" title="Permalink to this headline">#</a></h2>
 <p>Consider the perturbed Hamiltonian,</p>
 <div class="math notranslate nohighlight">
@@ -734,8 +730,8 @@ title="Print to PDF"
     c_b^1 = \int{H'_{ba}(t)e^{i\omega_{ba} t}dt} = -\frac{V_{ba}}{2\hbar}\left[\frac{e^{i(\omega_{ba} + \omega)t} - 1}{\omega_{ba} + \omega} + \frac{e^{i(\omega_{ba} - \omega)t} - 1}{\omega_{ba} - \omega} \right]
 \end{gather}
 \]</div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -785,7 +781,7 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

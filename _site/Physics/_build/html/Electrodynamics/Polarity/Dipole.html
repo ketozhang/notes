@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Dipole &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dipole &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Physics</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -642,7 +638,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="dipole">
+  <div class="tex2jax_ignore mathjax_ignore section" id="dipole">
 <h1>Dipole<a class="headerlink" href="#dipole" title="Permalink to this headline">#</a></h1>
 <p>The dipole is the second term (<span class="math notranslate nohighlight">\(n=1\)</span>) of the multipole expansion. This is useful when at large <span class="math notranslate nohighlight">\(r\)</span> when the total charge at large distance is zero.</p>
 <div class="math notranslate nohighlight">
@@ -660,14 +656,14 @@ V(\boldsymbol{r}) = \frac{1}{4\pi\epsilon_0}\frac{\boldsymbol{\hat r}}{r^2}\cdot
 \[
 \boxed{V(\boldsymbol{r}) = \frac{1}{4\pi\epsilon_0} \frac{\boldsymbol{p} \cdot \boldsymbol{\hat r}}{r^2}}
 \]</div>
-<section id="physical-dipole">
+<div class="section" id="physical-dipole">
 <h2>Physical Dipole<a class="headerlink" href="#physical-dipole" title="Permalink to this headline">#</a></h2>
 <p>The physical dipole is a simplest dipole of two point charges opposite charge with mangitude <span class="math notranslate nohighlight">\(q\)</span> and distance vector <span class="math notranslate nohighlight">\(\boldsymbol d = \boldsymbol r'_+ - \boldsymbol r'_-\)</span>, the dipole moment is given by,</p>
 <div class="math notranslate nohighlight">
 \[
 \boxed{\boldsymbol p = q \boldsymbol d}
 \]</div>
-<section id="torque">
+<div class="section" id="torque">
 <h3>Torque<a class="headerlink" href="#torque" title="Permalink to this headline">#</a></h3>
 <p>For the dipole, if a uniform electric field was applied a torque may be experience with,</p>
 <div class="math notranslate nohighlight">
@@ -675,9 +671,9 @@ V(\boldsymbol{r}) = \frac{1}{4\pi\epsilon_0}\frac{\boldsymbol{\hat r}}{r^2}\cdot
 \boxed{\boldsymbol \tau = \boldsymbol{p} \times \boldsymbol{E}}
 \]</div>
 <p>This behavior often describes what if an electric field is applied to a molecule with some polarity</p>
-</section>
-</section>
-<section id="polarization">
+</div>
+</div>
+<div class="section" id="polarization">
 <h2>Polarization<a class="headerlink" href="#polarization" title="Permalink to this headline">#</a></h2>
 <p>A polarized object has a quantity called the polarization defined as,</p>
 <div class="math notranslate nohighlight">
@@ -690,8 +686,8 @@ V(\boldsymbol{r}) = \frac{1}{4\pi\epsilon_0}\frac{\boldsymbol{\hat r}}{r^2}\cdot
 \mathrm d \boldsymbol \sigma = \boldsymbol r \mathrm d \mathcal V\\
 \boldsymbol P = \boldsymbol r \frac{\mathrm d q}{\mathrm d \mathcal V} = \frac{\mathrm d q}{d \boldsymbol \sigma}
 \end{split}\]</div>
-</section>
-<section id="bound-charges">
+</div>
+<div class="section" id="bound-charges">
 <h2>Bound Charges<a class="headerlink" href="#bound-charges" title="Permalink to this headline">#</a></h2>
 <p>For a distriubtion of dipole we may integrate the potential of the dipole along the infinitestimal geometry. Let’s use a 3D object with a 2D surface with infinitestimal <span class="math notranslate nohighlight">\(\mathrm d \mathcal V\)</span> and <span class="math notranslate nohighlight">\(\mathrm d A\)</span> respectively. Let the object be centered at the origin and the potential point be at distance <span class="math notranslate nohighlight">\(d\)</span> away from the origin such that <span class="math notranslate nohighlight">\(d \gg r'\)</span> for every point on the distribution. The integral form of the dipole potential is,</p>
 <div class="math notranslate nohighlight">
@@ -710,10 +706,10 @@ V(\boldsymbol{r}) = \frac{1}{4\pi\epsilon_0}\Bigg[\oint_{S} \frac{\sigma_b}{d}\m
 <li><p><span class="math notranslate nohighlight">\(\sigma_b\)</span> : Charge density of the surface</p></li>
 <li><p><span class="math notranslate nohighlight">\(\rho_b\)</span> : Charge density of the volume</p></li>
 </ul>
-</section>
+</div>
 <div class="toctree-wrapper compound">
 </div>
-</section>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -763,7 +759,7 @@ V(\boldsymbol{r}) = \frac{1}{4\pi\epsilon_0}\Bigg[\oint_{S} \frac{\sigma_b}{d}\m
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

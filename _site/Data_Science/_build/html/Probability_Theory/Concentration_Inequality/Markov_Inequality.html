@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Markov’s Inequality &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markov’s Inequality &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1059,7 +1055,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="markov-s-inequality">
+  <div class="tex2jax_ignore mathjax_ignore section" id="markov-s-inequality">
 <h1>Markov’s Inequality<a class="headerlink" href="#markov-s-inequality" title="Permalink to this headline">#</a></h1>
 <p>Markov’s inequality at its simplest deals with the expected value (or first moment) of the distribution. For a non-negative random variable <span class="math notranslate nohighlight">\(X\)</span> with a finite expected value <span class="math notranslate nohighlight">\(\mathbb E[X]\)</span>, the probability that its at least the constant constant <span class="math notranslate nohighlight">\(c\)</span> is,</p>
 <div class="math notranslate nohighlight">
@@ -1091,15 +1087,15 @@ P(X \ge n\mu) \le \frac{1}{n}
 \[
   P(X \ge c) \le \frac{E[X]}{c}
   \]</div>
-<section id="markov-s-inequality-monotonically-increasing-function">
+<div class="section" id="markov-s-inequality-monotonically-increasing-function">
 <h2>Markov’s Inequality - Monotonically Increasing Function<a class="headerlink" href="#markov-s-inequality-monotonically-increasing-function" title="Permalink to this headline">#</a></h2>
 <p>To generalize the simple Markov’s inequality, we allow the first moment to be of any monotonically increasing function <span class="math notranslate nohighlight">\(\varphi(X)\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[
 P(X \ge c) \le \frac{\mathbb E[\varphi(X)]}{\varphi(c)}
 \]</div>
-</section>
-<section id="general-moment-markov-inequality">
+</div>
+<div class="section" id="general-moment-markov-inequality">
 <h2>General Moment Markov Inequality<a class="headerlink" href="#general-moment-markov-inequality" title="Permalink to this headline">#</a></h2>
 <p>Any <span class="math notranslate nohighlight">\(k\)</span>-th moment is also a monotonically increasing function thus w e can generalize the moment to any <span class="math notranslate nohighlight">\(k\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1111,8 +1107,8 @@ P(X \ge c) \le \frac{\mathbb E[X^k]}{c^k}
 \[
 P(\abs{Y} \ge c) \le \frac{\mathbb E[\abs{Y}^k]}{c^k}
 \]</div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1162,7 +1158,7 @@ P(\abs{Y} \ge c) \le \frac{\mathbb E[\abs{Y}^k]}{c^k}
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

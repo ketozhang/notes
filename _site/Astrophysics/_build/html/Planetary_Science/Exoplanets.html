@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exoplanets &#8212; Keto | Astrophysics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -35,13 +34,10 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -807,10 +803,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="exoplanets">
+  <div class="tex2jax_ignore mathjax_ignore section" id="exoplanets">
 <h1>Exoplanets<a class="headerlink" href="#exoplanets" title="Permalink to this headline">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="observation-of-exoplanets">
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="observation-of-exoplanets">
 <h1>Observation of Exoplanets<a class="headerlink" href="#observation-of-exoplanets" title="Permalink to this headline">#</a></h1>
 <p>Exoplanets are rarely ever directly observed because they are so far. The two primary difficulties of direct observation are:</p>
 <ul class="simple">
@@ -825,12 +821,12 @@ title="Print to PDF"
 <li><p>Large radius to diminish the bad inclination effects during transit.</p></li>
 <li><p>Low density stars (less massive and large radius) to increase wobbling and decrease the inclination effects.</p></li>
 </ul>
-<section id="pulsar-timing">
+<div class="section" id="pulsar-timing">
 <h2>Pulsar Timing<a class="headerlink" href="#pulsar-timing" title="Permalink to this headline">#</a></h2>
 <p>The first exoplanet to be discovered was discovered by pulsar timing.</p>
 <p>First a bit about pulsar. Pulsars are spinning neutron stars that emits radio waves with periodic strength. The period of these waves are very well known and very stable. While stable, any sort of gravitational effect onto the star may cause the superpositions in its waves. This is how the first two exoplanet was found on the same pulsar <strong>PSR 1257+12</strong></p>
-</section>
-<section id="doppler-shift-and-radial-velocity">
+</div>
+<div class="section" id="doppler-shift-and-radial-velocity">
 <h2>Doppler Shift and Radial Velocity<a class="headerlink" href="#doppler-shift-and-radial-velocity" title="Permalink to this headline">#</a></h2>
 <p>With the fundamentals of Kepler’s laws and the Doppler shift, planets are found by measuring the star’s radial velocity that has an amplitude of <span class="math notranslate nohighlight">\(K\)</span>. Using this amplitude we may find the planet’s mass (<span class="math notranslate nohighlight">\(M_p\)</span>) with known host star’s mass (<span class="math notranslate nohighlight">\(M_\star\)</span>). The host star’s mass (<span class="math notranslate nohighlight">\(M_\star\)</span>) is guessed with an accuracy of ~10% using the spectral characteristic of the star.</p>
 <p>The planet’s mass (<span class="math notranslate nohighlight">\(M_p\)</span>) is then,</p>
@@ -850,8 +846,8 @@ However it is much easier to assume <span class="math notranslate nohighlight">\
 <li><p><strong>Eccentricity:</strong> Can be judged from the shape of the radial velocity wave (eccentric orbits has sinusoidal that leans)</p></li>
 <li><p><strong>Inclination:</strong> No information of the radial velocity can be found if the inclination is face-on (<span class="math notranslate nohighlight">\(i=90^\circ\)</span>). Most of the time inclination are not available giving only a false mass (<span class="math notranslate nohighlight">\(M_p\sin i\)</span>)</p></li>
 </ul>
-</section>
-<section id="wobble-astrometry">
+</div>
+<div class="section" id="wobble-astrometry">
 <h2>Wobble Astrometry<a class="headerlink" href="#wobble-astrometry" title="Permalink to this headline">#</a></h2>
 <p>While astrometry is a valid method, so far not a single exoplanet has been found using this method. Astrometry of planet detection looks at the wobble of the host star. We know that the star would wobble at an amount of,</p>
 <div class="math notranslate nohighlight">
@@ -860,7 +856,7 @@ However it is much easier to assume <span class="math notranslate nohighlight">\
 <span class="math notranslate nohighlight">\(d\)</span> - distance away from the Solar System
 <span class="math notranslate nohighlight">\(\Delta \theta\)</span> - Radians if <span class="math notranslate nohighlight">\(a/d\)</span> are unitless and arcsecs if <span class="math notranslate nohighlight">\(a/d\)</span> are in <span class="math notranslate nohighlight">\(\rm{pc/AU}\)</span></p>
 <p>Note that astrometry is even more accurate than radial velocity because it does not need to worry about inclination therefore the mass measure is the true mass. Once again astrometry fails to discover any so far waiting to be changed in 2020 – the launch of GAIA space telescope</p>
-<section id="wobble-accuracy-rayleigh-criterion">
+<div class="section" id="wobble-accuracy-rayleigh-criterion">
 <h3>Wobble Accuracy - Rayleigh Criterion<a class="headerlink" href="#wobble-accuracy-rayleigh-criterion" title="Permalink to this headline">#</a></h3>
 <p><strong>Not the same as the parallax limit</strong></p>
 <p>The Rayleigh criterion sets the limit for how accurate can we measure wobbles (i.e., angles). The angle <span class="math notranslate nohighlight">\(\Delta \theta\)</span> one detects must be greater than or equal to,</p>
@@ -874,21 +870,21 @@ However it is much easier to assume <span class="math notranslate nohighlight">\
 \end{split}\]</div>
 <p><span class="math notranslate nohighlight">\(\Delta x\)</span> - the spacial length of the wobble. This is the same amount as <span class="math notranslate nohighlight">\(\Delta x = \frac{M_p}{M_\star}a\)</span> ,
 <span class="math notranslate nohighlight">\(d\)</span> - distance away from the Solar System</p>
-</section>
-</section>
-<section id="transit-photometry">
+</div>
+</div>
+<div class="section" id="transit-photometry">
 <h2>Transit Photometry<a class="headerlink" href="#transit-photometry" title="Permalink to this headline">#</a></h2>
  <div style="text-align:center;height:400px"><img src="Transit-spectroscopy.png"></div>
 As a planet transits the host star, a dip in the host star's flux is apparent that looks like a square well. Transits give information about the planet's radius and orbital period. Spectroscopic observations can determine the composition of the planet's atmosphere as well as its albedo indicating existence of cloud.
-<section id="inclination-requirements">
+<div class="section" id="inclination-requirements">
 <h3>Inclination Requirements<a class="headerlink" href="#inclination-requirements" title="Permalink to this headline">#</a></h3>
 <p>The transit method works well if the inclination is quite edge on to line of sight such that</p>
 <div class="math notranslate nohighlight">
 \[\cos i &lt; \frac{R_\star + R_p}{r_\text{min}}\]</div>
 <p><span class="math notranslate nohighlight">\(r_\text{min}\)</span> - distance between the host star and planet when the planet is closest to observer.</p>
 <p>The inclination can be measured from the asymmetry of the <a class="reference external" href="#rossiter-mclaughlin-effect">Rossiter-McLaughlin Effect</a></p>
-</section>
-<section id="radius-from-transit">
+</div>
+<div class="section" id="radius-from-transit">
 <h3>Radius from Transit<a class="headerlink" href="#radius-from-transit" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Radius (<span class="math notranslate nohighlight">\(R\)</span>) - obtained by the dip in the light curve governed by a ratio:</p></li>
@@ -896,16 +892,16 @@ As a planet transits the host star, a dip in the host star's flux is apparent th
 <div class="math notranslate nohighlight">
 \[\frac{\Delta L}{L} = \left(\frac{R_p}{R_\star}\right)^2\]</div>
 <p>While not perfect considering any variation of the host star luminosity (e.g., sunspots and limb darkening by the planet)</p>
-</section>
-<section id="orbital-period-from-transit">
+</div>
+<div class="section" id="orbital-period-from-transit">
 <h3>Orbital Period from Transit<a class="headerlink" href="#orbital-period-from-transit" title="Permalink to this headline">#</a></h3>
 <p>May be obtained either by Kepler’s equation knowing the mass of the planet and star (via radial velocity measurements) or waiting long enough for the light curve to reach half-period.</p>
-</section>
-<section id="limb-darkening">
+</div>
+<div class="section" id="limb-darkening">
 <h3>Limb Darkening<a class="headerlink" href="#limb-darkening" title="Permalink to this headline">#</a></h3>
 <p>One would expect near the edges as the planet crosses the sun. If the planet has an atmosphere, the flux would not be perfectly boxy but curvy. This curvy nature is stronger at shorter wavelength due a greater flux from the Planck function (<span class="math notranslate nohighlight">\(\nu \propto E_\gamma \propto F\)</span>).</p>
-</section>
-<section id="occultation-secondary-eclipse">
+</div>
+<div class="section" id="occultation-secondary-eclipse">
 <h3>Occultation - Secondary Eclipse<a class="headerlink" href="#occultation-secondary-eclipse" title="Permalink to this headline">#</a></h3>
 <p><strong>Occultation</strong> or <strong>secondary eclipse</strong> occurs when the planet transits behind the star.</p>
 <ul class="simple">
@@ -913,26 +909,26 @@ As a planet transits the host star, a dip in the host star's flux is apparent th
 <li><p>The planet’s flux can be measured from the <span class="math notranslate nohighlight">\(\Delta F\)</span>. If the spectra is measured we can see which wavelength does the planet emit more indicating it composition.</p></li>
 <li><p><span class="math notranslate nohighlight">\(\Delta F\)</span> during the secondary eclipse is much less apparent than the primary eclipse since the planet is not as bright as the star</p></li>
 </ul>
-</section>
-<section id="rossiter-mclaughlin-effect">
+</div>
+<div class="section" id="rossiter-mclaughlin-effect">
 <h3>Rossiter-McLaughlin Effect<a class="headerlink" href="#rossiter-mclaughlin-effect" title="Permalink to this headline">#</a></h3>
 <div style="text-align:center;height:150px"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Rossiter-McLaughlin_effect.svg/726px-Rossiter-McLaughlin_effect.svg.png"></div>
 <p>As the star rotates, the star would emit gas towards the observer (blue-shifted) on side and away from the observer (red-shifted) on the other side. If the planet would to obscure emission, it would seem like the star only emits one side of its gas (either blue-shifted or red-shifted). It’s easier to understand if you look at the image above.</p>
-</section>
-</section>
-<section id="gravitational-microlensing">
+</div>
+</div>
+<div class="section" id="gravitational-microlensing">
 <h2>Gravitational Microlensing<a class="headerlink" href="#gravitational-microlensing" title="Permalink to this headline">#</a></h2>
 <p>While very rare, microlensing is a valid way to see planets that are way too far or too small for the other methods to detect. This section will not cover the mechanics but just planet finding. See <span class="xref myst">Gravitational Lensing</span> for more information.</p>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="exoplanet-statistics">
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="exoplanet-statistics">
 <h1>Exoplanet Statistics<a class="headerlink" href="#exoplanet-statistics" title="Permalink to this headline">#</a></h1>
-<section id="star-metallicities">
+<div class="section" id="star-metallicities">
 <h2>Star Metallicities<a class="headerlink" href="#star-metallicities" title="Permalink to this headline">#</a></h2>
 <p>Because terrestrial planets are made up of majority heavy elements. It makes sense that the greater metalicity a star has, the higher chance the star is to produce a terrestrial planet.</p>
 <p>The star’s metallicities does not affect planets with the size greater than or equal to Neptune.</p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {

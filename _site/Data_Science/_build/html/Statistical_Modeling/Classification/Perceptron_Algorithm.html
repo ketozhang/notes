@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Percepton Algorithm &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percepton Algorithm &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1059,7 +1055,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="percepton-algorithm">
+  <div class="tex2jax_ignore mathjax_ignore section" id="percepton-algorithm">
 <h1>Percepton Algorithm<a class="headerlink" href="#percepton-algorithm" title="Permalink to this headline">#</a></h1>
 <p>The perceptron algorithm is the most simplest form of what now called the neural network. The algorithm can be used to classify a binary class. The goal is to find some weights <span class="math notranslate nohighlight">\(\theta\)</span> that satisfies the following:
 $<span class="math notranslate nohighlight">\(
@@ -1082,7 +1078,7 @@ R(X,\theta) = \sum_{i=1}^{n} L(\theta_i, y_i) = \sum_{i \in W} |X_i^\top \theta|
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(W\)</span>: A set indices where <span class="math notranslate nohighlight">\(\hat y_i\)</span> is wrong.</p></li>
 </ul>
-<section id="feature-parameter-space-symmetry">
+<div class="section" id="feature-parameter-space-symmetry">
 <h2>Feature &amp; Parameter Space Symmetry<a class="headerlink" href="#feature-parameter-space-symmetry" title="Permalink to this headline">#</a></h2>
 <p>The percepton algorithm’s constrain allows for a nice symmetry between feature <span class="math notranslate nohighlight">\(X_i\)</span> and parameter space <span class="math notranslate nohighlight">\(\theta\)</span> which may be stated as:</p>
 <ul class="simple">
@@ -1090,8 +1086,8 @@ R(X,\theta) = \sum_{i=1}^{n} L(\theta_i, y_i) = \sum_{i \in W} |X_i^\top \theta|
 <li><p>In <span class="math notranslate nohighlight">\(\theta\)</span> parameter space, the parameters are points while the features are vectors that draws a hyperplane at the origin.</p></li>
 </ul>
 <p>It is very useful to look at the parameter space because there may exist a region bounded by the feature hyperplanes that determines the values of <span class="math notranslate nohighlight">\(\theta\)</span> which correctly classifies any linearly separable set of training data <span class="math notranslate nohighlight">\(X\)</span>.</p>
-</section>
-<section id="perceptron-convergence-theorem">
+</div>
+<div class="section" id="perceptron-convergence-theorem">
 <h2>Perceptron Convergence Theorem<a class="headerlink" href="#perceptron-convergence-theorem" title="Permalink to this headline">#</a></h2>
 <p>For the modified perceptron classifier,</p>
 <div class="math notranslate nohighlight">
@@ -1109,8 +1105,8 @@ R(X,\theta) = \sum_{i=1}^{n} L(\theta_i, y_i) = \sum_{i \in W} |X_i^\top \theta|
 <dd><p>This constraint can be removed by adding a bias term <span class="math notranslate nohighlight">\(\theta_0\)</span> along with transforming the design matrix with ones.</p>
 </dd>
 </dl>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1160,7 +1156,7 @@ R(X,\theta) = \sum_{i=1}^{n} L(\theta_i, y_i) = \sum_{i \in W} |X_i^\top \theta|
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

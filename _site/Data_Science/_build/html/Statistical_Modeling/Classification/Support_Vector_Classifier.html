@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Support Vector Classifier &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support Vector Classifier &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1093,10 +1089,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="support-vector-classifier">
+  <div class="tex2jax_ignore mathjax_ignore section" id="support-vector-classifier">
 <h1>Support Vector Classifier<a class="headerlink" href="#support-vector-classifier" title="Permalink to this headline">#</a></h1>
 <p>Given that not all data can be fitted by a <strong>maximal margin classifier</strong> (MMC), the <strong>Support Vector Classifier</strong> attempts to generalize this classifier.</p>
-<section id="hard-margin-svc">
+<div class="section" id="hard-margin-svc">
 <h2>Hard Margin SVC<a class="headerlink" href="#hard-margin-svc" title="Permalink to this headline">#</a></h2>
 <p>This term is equivalent to the MMC which perfectly separates a linearly separable dataset in the feature space. As usually it’s easier to talk about binary classes. The goal of hard margin SVC is to separate one class of points away from the other class by a hyperplane decision boundary in the feature space given by,
 $<span class="math notranslate nohighlight">\(
@@ -1117,8 +1113,8 @@ $<span class="math notranslate nohighlight">\(
 y_i(X^\top\theta + \theta_0) \ge 1~; \qquad i \in [1,n]
 \end{gather}
 \)</span>$</p>
-</section>
-<section id="soft-margin-svc">
+</div>
+<div class="section" id="soft-margin-svc">
 <h2>Soft Margin SVC<a class="headerlink" href="#soft-margin-svc" title="Permalink to this headline">#</a></h2>
 <p>To be <strong>soft margin</strong> is to allow some training points to lie within the margin <span class="math notranslate nohighlight">\(y(X_i) \le M\)</span> and some points to be on the wrong side of the decision boundary. This could lead to training error but improve MMC in:</p>
 <ul class="simple">
@@ -1156,8 +1152,8 @@ y_i(X^\top\theta + \theta_0) \ge 1~; \qquad i \in [1,n]
     \epsilon_i \ge 0\\
 \end{gather*}
 \end{split}\]</div>
-</section>
-<section id="solutions-to-svc">
+</div>
+<div class="section" id="solutions-to-svc">
 <h2>Solutions to SVC<a class="headerlink" href="#solutions-to-svc" title="Permalink to this headline">#</a></h2>
 <p>The solution (the hyperplane) to the SVC optimizing problem can be shown to always take the form,</p>
 <div class="math notranslate nohighlight">
@@ -1175,10 +1171,10 @@ $<span class="math notranslate nohighlight">\(K(X_i,x) = \exp\left(-\gamma \sum_
 </li>
 <li><p><span class="math notranslate nohighlight">\(\alpha_i\)</span>: Nonzero only for support vectors.</p></li>
 </ul>
-</section>
-<section id="nonlinear-feature-transformation">
+</div>
+<div class="section" id="nonlinear-feature-transformation">
 <h2>Nonlinear Feature Transformation<a class="headerlink" href="#nonlinear-feature-transformation" title="Permalink to this headline">#</a></h2>
-<section id="feature-lifting">
+<div class="section" id="feature-lifting">
 <h3>Feature Lifting<a class="headerlink" href="#feature-lifting" title="Permalink to this headline">#</a></h3>
 <p>For example, a parabolic feature transformation adds another dimension to the feature vector where the new dimension is <span class="math notranslate nohighlight">\(X_{i, d+1} = \lvert{X_i}^2\rvert\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1191,9 +1187,9 @@ $<span class="math notranslate nohighlight">\(K(X_i,x) = \exp\left(-\gamma \sum_
 <p>Effectively this adds a squared length feature as the <span class="math notranslate nohighlight">\((d+1)\)</span>th dimension that lifs feature points up higher if they are further away from the origin. A hyperplane can then slice through the gap if say class A is lifted higher than class B.</p>
 <p>Theorem
 : <span class="math notranslate nohighlight">\(\Phi(X)\)</span> are linearly separable iff <span class="math notranslate nohighlight">\(X\)</span> is separable by a hypersphere.</p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1243,7 +1239,7 @@ $<span class="math notranslate nohighlight">\(K(X_i,x) = \exp\left(-\gamma \sum_
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

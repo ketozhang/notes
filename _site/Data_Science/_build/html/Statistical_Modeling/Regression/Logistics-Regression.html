@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Logistics Regression &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logistics Regression &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1099,7 +1095,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="logistics-regression">
+  <div class="tex2jax_ignore mathjax_ignore section" id="logistics-regression">
 <h1>Logistics Regression<a class="headerlink" href="#logistics-regression" title="Permalink to this headline">#</a></h1>
 <p>The <strong>logistic regression</strong> transforms the linear regression problem with the <strong>logistic</strong> or <strong>sigmoid function</strong> <span class="math notranslate nohighlight">\(s(z)\)</span> used for posterior distribution estimation and classification<a class="footnote-reference brackets" href="#id2" id="id1">1</a>.</p>
 <p>We will motivate this with a binary problem where <span class="math notranslate nohighlight">\(Y: \{0,1\}\)</span> notice that the logistic function transforms the linear regression to the interval <span class="math notranslate nohighlight">\([0,1]\)</span>.
@@ -1136,7 +1132,7 @@ The objective function is then,
 \theta^* = \mathop{\arg\max}_{\theta} \bigg[\log P(X \mid Y=1) \bigg] \label{eq:objective}
 \)</span>$</p>
 <p>The solution to this is discussion in the <a class="reference external" href="#solution">Solution</a> section.</p>
-<section id="solutions">
+<div class="section" id="solutions">
 <h2>Solutions<a class="headerlink" href="#solutions" title="Permalink to this headline">#</a></h2>
 <p>The gradient for the objective function <span class="math notranslate nohighlight">\(\eqref{eq:objective}\)</span>  (let’s denote it as <span class="math notranslate nohighlight">\(\log P\)</span> for brevity is,
 $<span class="math notranslate nohighlight">\(
@@ -1167,8 +1163,8 @@ Where \)</span>\Omega \in \mathbb R^{d \times d}<span class="math notranslate no
 \end{gather*}
 \)</span><span class="math notranslate nohighlight">\(
 Unfortunately the solution is not well behaved if \)</span>X^\top X​$ is not always positive definite. However, a ridge regularization discussed in the section <a class="reference external" href="#regularization">Regularization</a> can guarantee this.</p>
-</section>
-<section id="decision-rule">
+</div>
+<div class="section" id="decision-rule">
 <h2>Decision Rule<a class="headerlink" href="#decision-rule" title="Permalink to this headline">#</a></h2>
 <p>The decision rule is simple following the Bayes optimal rule:
 $<span class="math notranslate nohighlight">\(
@@ -1177,8 +1173,8 @@ $<span class="math notranslate nohighlight">\(
 0 &amp; \text{otherwise.}
 \end{cases}
 \)</span>$</p>
-</section>
-<section id="regularization">
+</div>
+<div class="section" id="regularization">
 <h2>Regularization<a class="headerlink" href="#regularization" title="Permalink to this headline">#</a></h2>
 <p>The most practical regularization is to add the <span class="math notranslate nohighlight">\(L_2\)</span> (Ridge) regularization which guarantees that Newton’s method is solvable by inversion because the Hessian is positive definite.
 $<span class="math notranslate nohighlight">\(
@@ -1187,11 +1183,11 @@ H_\theta(\log P) = X^\top \Omega X + 2\lambda I\\
 \Delta \theta = -X^\top(y-s)[X^\top \Omega X + 2\lambda I]^{-1}
 \end{gather*}
 \)</span>$</p>
-</section>
-<section id="multiclass-generalization">
+</div>
+<div class="section" id="multiclass-generalization">
 <h2>Multiclass Generalization<a class="headerlink" href="#multiclass-generalization" title="Permalink to this headline">#</a></h2>
-</section>
-<section id="equivalence-to-loss-function">
+</div>
+<div class="section" id="equivalence-to-loss-function">
 <h2>Equivalence to Loss Function<a class="headerlink" href="#equivalence-to-loss-function" title="Permalink to this headline">#</a></h2>
 <p>The logistics regression is linear regression with a logistic loss function. We motivate using logistic loss with the example of data that comes from two classes <span class="math notranslate nohighlight">\(y: {0,1}\)</span>. The probability that we receive <span class="math notranslate nohighlight">\(y=0\)</span> along with some data <span class="math notranslate nohighlight">\(x\)</span> is <span class="math notranslate nohighlight">\(P(y=0 \mid x)\)</span>. The probability of the other class is then ​<span class="math notranslate nohighlight">\(1 - P(y=0 \mid x)\)</span>.
 $<span class="math notranslate nohighlight">\(
@@ -1211,8 +1207,8 @@ P(X \mid \hat y) = \sum_{i=1}^n  \bigg[ \log P(y_i \mid X_i) + \log\Big(1-P(y_i 
 <p>$$s_i’ = s_i(1-s_i)​</p>
 </li>
 </ul>
-</section>
-<section id="properties">
+</div>
+<div class="section" id="properties">
 <h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Differs from LDA or QDA by emphasizing the decision boundary</p></li>
@@ -1226,8 +1222,8 @@ P(X \mid \hat y) = \sum_{i=1}^n  \bigg[ \log P(y_i \mid X_i) + \log\Big(1-P(y_i 
 <dd><p>It’s unfortunate that it’s called logistics regression, but the fact that logistic regression does estimate a posterior distribution is why it’s justifiable.</p>
 </dd>
 </dl>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1277,7 +1273,7 @@ P(X \mid \hat y) = \sum_{i=1}^n  \bigg[ \log P(y_i \mid X_i) + \log\Big(1-P(y_i 
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

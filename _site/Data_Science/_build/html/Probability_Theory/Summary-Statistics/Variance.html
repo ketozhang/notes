@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Variance &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variance &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1117,7 +1113,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="variance">
+  <div class="tex2jax_ignore mathjax_ignore section" id="variance">
 <h1>Variance<a class="headerlink" href="#variance" title="Permalink to this headline">#</a></h1>
 <p>The variance is motivated by wanting to know how far away is <span class="math notranslate nohighlight">\(E[X] = \mu\)</span> away from some true answer in the random variable <span class="math notranslate nohighlight">\(X\)</span>. That is, the variance is the expected value of the squared deviance of <span class="math notranslate nohighlight">\(\mu\)</span> or the <strong>root mean square</strong> of <span class="math notranslate nohighlight">\(X\)</span>. The variance is defined as,</p>
 <div class="math notranslate nohighlight">
@@ -1170,7 +1166,7 @@ If all random variable are independent:
 $$\text{Var}\left[\sum X_i\right] = \sum \text{Var}[X_i] $$
 </pre></div>
 </div>
-<section id="method-of-indiciators">
+<div class="section" id="method-of-indiciators">
 <h2>Method of Indiciators<a class="headerlink" href="#method-of-indiciators" title="Permalink to this headline">#</a></h2>
 <p>The variance of indicators are nice to use because,</p>
 <div class="math notranslate nohighlight">
@@ -1209,8 +1205,8 @@ $$\text{Var}\left[\sum X_i\right] = \sum \text{Var}[X_i] $$
 \[
 \text{Var}\left[\sum_{k=1}^n I_k \right] = \sum_{i=1}^n p_iq_i + n(n-1)\sum_{i \neq j}(p_{ij} - p_ip_j)
 \]</div>
-</section>
-<section id="variance-by-conditioning">
+</div>
+<div class="section" id="variance-by-conditioning">
 <h2>Variance by Conditioning<a class="headerlink" href="#variance-by-conditioning" title="Permalink to this headline">#</a></h2>
 <div class="math notranslate nohighlight">
 \[
@@ -1218,7 +1214,7 @@ $$\text{Var}\left[\sum X_i\right] = \sum \text{Var}[X_i] $$
 \]</div>
 <p>I’d like to call the “Var is EVar plus VarE”.</p>
 <!-- TODO: Proof -->
-<section id="conditional-variance">
+<div class="section" id="conditional-variance">
 <h3>Conditional Variance<a class="headerlink" href="#conditional-variance" title="Permalink to this headline">#</a></h3>
 <p>Like the expectation, the variance of a random variable can be conditioned on another. The conditional variance of some random variable <span class="math notranslate nohighlight">\(X\)</span> given <span class="math notranslate nohighlight">\(Y=y\)</span> is,</p>
 <div class="math notranslate nohighlight">
@@ -1233,9 +1229,9 @@ $$\text{Var}\left[\sum X_i\right] = \sum \text{Var}[X_i] $$
 &amp;= \sum_{x \in \Omega_X} (x - \mu_X) \sum_{y \in \Omega_Y} P(X=x \mid Y=y)P(Y=y)
 \end{align*}
 \end{split}\]</div>
-</section>
-</section>
-<section id="mean-squared-error">
+</div>
+</div>
+<div class="section" id="mean-squared-error">
 <h2>Mean Squared Error<a class="headerlink" href="#mean-squared-error" title="Permalink to this headline">#</a></h2>
 <p>The variance is related to the mean squared error if we replace the prediciton <span class="math notranslate nohighlight">\(\mu\)</span> with some arbritrary constant <span class="math notranslate nohighlight">\(c\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1252,8 +1248,8 @@ $$\text{Var}\left[\sum X_i\right] = \sum \text{Var}[X_i] $$
 \[
 \text{MSE}(c) \ge \sigma_X^2
 \]</div>
-</section>
-<section id="covariance">
+</div>
+<div class="section" id="covariance">
 <h2>Covariance<a class="headerlink" href="#covariance" title="Permalink to this headline">#</a></h2>
 <p>By the motivation of summing variances, the covariance is the expected value of the product of deviances of two random variables,</p>
 <div class="math notranslate nohighlight">
@@ -1324,7 +1320,7 @@ $$
 $<span class="math notranslate nohighlight">\(
 	\text{Cov}[X,Y] &gt; 0 \implies \Big( \abs{X - E[X]} &gt; 0 \land \abs{Y - E[Y]} &lt; 0 \Big) \lor \Big(\abs{X - E[X]} &lt; 0 \land \abs{Y - E[Y]} &gt; 0 \Big)
 	\)</span>$</p>
-<section id="covariance-of-random-vector">
+<div class="section" id="covariance-of-random-vector">
 <h3>Covariance of Random Vector<a class="headerlink" href="#covariance-of-random-vector" title="Permalink to this headline">#</a></h3>
 <p>The random vector <span class="math notranslate nohighlight">\(X\)</span> of size <span class="math notranslate nohighlight">\(n\)</span> has a <span class="math notranslate nohighlight">\(n \times n\)</span> positive semidefinite matrix called the <strong>covariance matrix</strong> <span class="math notranslate nohighlight">\(\Sigma\)</span> where each element is,</p>
 <div class="math notranslate nohighlight">
@@ -1338,9 +1334,9 @@ $<span class="math notranslate nohighlight">\(
 $$
 </pre></div>
 </div>
-</section>
-</section>
-<section id="correlation">
+</div>
+</div>
+<div class="section" id="correlation">
 <h2>Correlation<a class="headerlink" href="#correlation" title="Permalink to this headline">#</a></h2>
 <div class="math notranslate nohighlight">
 \[
@@ -1369,8 +1365,8 @@ $$ -1 \le \text{Corr}[X,Y] \le 1  $$
 <p>Perfectly Correlated or Anticorrelated
 : 	$<span class="math notranslate nohighlight">\(  X = Y \implies \text{Corr}[X,Y] = 1  \)</span><span class="math notranslate nohighlight">\(
 	\)</span><span class="math notranslate nohighlight">\(  X = -Y \implies \text{Corr}[X,Y] = -1 \)</span>$</p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1420,7 +1416,7 @@ $$ -1 \le \text{Corr}[X,Y] \le 1  $$
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

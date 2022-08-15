@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Training &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1049,7 +1045,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="training">
+  <div class="tex2jax_ignore mathjax_ignore section" id="training">
 <h1>Training<a class="headerlink" href="#training" title="Permalink to this headline">#</a></h1>
 <p>From here on, we will deal with only single layer NN for simplicity.</p>
 <p>The final loss function is given as <span class="math notranslate nohighlight">\(\mathcal L (z,y)\)</span> where <span class="math notranslate nohighlight">\(z = h(X_i)\)</span> and is a vector of size <span class="math notranslate nohighlight">\(k\)</span>. <span class="math notranslate nohighlight">\(h(X_i)\)</span> is treated as <span class="math notranslate nohighlight">\(k\)</span> predictions of the label vector <span class="math notranslate nohighlight">\(y\)</span> hence the loss function actually takes in <span class="math notranslate nohighlight">\(Y \in \mathbb R^{n \times k}\)</span></p>
@@ -1064,7 +1060,7 @@ title="Print to PDF"
 <li><p>Gradient descent update to the weights.</p></li>
 </ol>
 <p>Now the hard part is computing the gradient. Naively one may compute the gradient for each weight (i.e., each edge) of the NN which would cost <span class="math notranslate nohighlight">\(\Theta(\text{edges})^2\)</span>. The better idea is to update the edges as it goes through dynamic programming. Using this idea we get <strong>backpropagation</strong>.</p>
-<section id="backpropagation">
+<div class="section" id="backpropagation">
 <h2>Backpropagation<a class="headerlink" href="#backpropagation" title="Permalink to this headline">#</a></h2>
 <p>An update rule that cost <span class="math notranslate nohighlight">\(\mathcal O(\text{edges})\)</span> to calculate the gradient. There’s two parts of back pass which is forward pass and backward propagating.</p>
 <p>We simplify the problem by doing stochastic gradient descent on one sample point.
@@ -1078,8 +1074,8 @@ The goal is to solve for,</p>
 $<span class="math notranslate nohighlight">\(
 \nabla_{T_i^{(1)}}L = \underbrace{\frac{\partial L}{\partial h_i}}_\text{back pass} \overbrace{\nabla_{T_i^{(1)}} h_i}^\text{foward pass}
 \)</span>$</p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1129,7 +1125,7 @@ $<span class="math notranslate nohighlight">\(
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

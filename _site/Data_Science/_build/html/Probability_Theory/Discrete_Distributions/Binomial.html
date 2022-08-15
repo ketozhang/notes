@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Binomial &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binomial &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1069,7 +1065,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="binomial">
+  <div class="tex2jax_ignore mathjax_ignore section" id="binomial">
 <h1>Binomial<a class="headerlink" href="#binomial" title="Permalink to this headline">#</a></h1>
 <p>The binomial distribution is given as,</p>
 <div class="math notranslate nohighlight">
@@ -1085,7 +1081,7 @@ title="Print to PDF"
 $<span class="math notranslate nohighlight">\(
     M_X(t) = (q+pe^t)^n
     \)</span>$</p>
-<section id="relations-to-bernoulli-trials">
+<div class="section" id="relations-to-bernoulli-trials">
 <h2>Relations to Bernoulli Trials<a class="headerlink" href="#relations-to-bernoulli-trials" title="Permalink to this headline">#</a></h2>
 <p>The bernoulli distribution is the indicator decomposition of the Binomial distribution by letting <span class="math notranslate nohighlight">\(X\)</span> be the binomial random variable that is the number of times the bernoulli trial succeeds:</p>
 <div class="math notranslate nohighlight">
@@ -1093,8 +1089,8 @@ $<span class="math notranslate nohighlight">\(
 I_k \sim \text{Bernoulli}(p)\\
 X = \sum_{k=1}^n I_k
 \end{split}\]</div>
-</section>
-<section id="poisson-limit">
+</div>
+<div class="section" id="poisson-limit">
 <h2>Poisson Limit<a class="headerlink" href="#poisson-limit" title="Permalink to this headline">#</a></h2>
 <p>The poisson distribution can be derived by the limit of the binomial distribution as <span class="math notranslate nohighlight">\(np\)</span> tends to some constant <span class="math notranslate nohighlight">\(\lambda\)</span>. Let <span class="math notranslate nohighlight">\(np \rightarrow \lambda\)</span> where <span class="math notranslate nohighlight">\(n \rightarrow \infty\)</span> and <span class="math notranslate nohighlight">\(p \rightarrow 0\)</span>.</p>
 <div class="math notranslate nohighlight">
@@ -1131,16 +1127,16 @@ p_k = e^{-(n-\lambda)}\frac{(n-\lambda)^{(n-k)}}{(n-k)!}
 \[
 \boxed{P(X=k) \approx \text{Poisson}(n-k;nq)}
 \]</div>
-</section>
-<section id="normal-limit-of-the-binomial-distribution">
+</div>
+<div class="section" id="normal-limit-of-the-binomial-distribution">
 <h2>Normal Limit of the Binomial Distribution<a class="headerlink" href="#normal-limit-of-the-binomial-distribution" title="Permalink to this headline">#</a></h2>
 <p>Because the binomial distribution is <span class="math notranslate nohighlight">\(n\)</span> IID Bernoulli trials of chance <span class="math notranslate nohighlight">\(p\)</span>, at large number of trials the central limit theorem applies such that distribution converges,</p>
 <div class="math notranslate nohighlight">
 \[
 X \to \text{Normal}(np,~ npq)
 \]</div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1190,7 +1186,7 @@ X \to \text{Normal}(np,~ npq)
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

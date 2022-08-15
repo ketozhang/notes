@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Gaussian or Normal Distribution &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaussian or Normal Distribution &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1093,7 +1089,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="gaussian-or-normal-distribution">
+  <div class="tex2jax_ignore mathjax_ignore section" id="gaussian-or-normal-distribution">
 <h1>Gaussian or Normal Distribution<a class="headerlink" href="#gaussian-or-normal-distribution" title="Permalink to this headline">#</a></h1>
 <p>The most prevalent distribution appearing in countless fields is the Gaussian or normal distribution.</p>
 <div class="math notranslate nohighlight">
@@ -1171,7 +1167,7 @@ Notably, any distribution with an MGF that is the exponential of a degree 2 poly
 		\avg{x}_c = \mu ,\quad \avg{x^2}_c = \sigma^2,\quad \avg{x^n}_c = 0, \quad \ldots,\quad  \avg{x^n}_c = 0\\
 		\avg{x} = \mu ,\quad \avg{x^2} = \sigma^2 + \mu^2,\quad \avg{x^n} = 3\sigma^2\mu + \mu^3, \quad \ldots
 	\)</span>$</p>
-<section id="multivariate-normal">
+<div class="section" id="multivariate-normal">
 <h2>Multivariate Normal<a class="headerlink" href="#multivariate-normal" title="Permalink to this headline">#</a></h2>
 <p>Let <span class="math notranslate nohighlight">\(X\)</span> have the multivariate normal distribution with mean vector <span class="math notranslate nohighlight">\(\mu\)</span> and covariance matrix <span class="math notranslate nohighlight">\(\Sigma\)</span>. Let <span class="math notranslate nohighlight">\(x\)</span> represent the vector value of at some <span class="math notranslate nohighlight">\(X\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1221,7 +1217,7 @@ $$
 $$
 </pre></div>
 </div>
-<section id="covariance-matrix">
+<div class="section" id="covariance-matrix">
 <h3>Covariance Matrix<a class="headerlink" href="#covariance-matrix" title="Permalink to this headline">#</a></h3>
 <p>The covariance matrix <span class="math notranslate nohighlight">\(\Sigma\)</span> is a semipositive definite (symmetric) matrix</p>
 <p>Independence and Diagonal Covariance Matrix
@@ -1229,8 +1225,8 @@ $$
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$$ P(\vec{x}) = \prod{P(X_i)} $$
 </pre></div>
 </div>
-</section>
-<section id="independence-out-of-bivariate-normal">
+</div>
+<div class="section" id="independence-out-of-bivariate-normal">
 <h3>Independence out of Bivariate Normal<a class="headerlink" href="#independence-out-of-bivariate-normal" title="Permalink to this headline">#</a></h3>
 <p>The multivariate normal has interesting independence properties emerge from a collection of dependent normal random variables.</p>
 <p>Consider two independent standard normal random variable <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Z\)</span>. The surface of the joint distribution maps a perfect circle. We may always define another normal random variable dependent of <span class="math notranslate nohighlight">\(X\)</span> and/or <span class="math notranslate nohighlight">\(Z\)</span> by taking the following linear combination,</p>
@@ -1240,9 +1236,9 @@ Y = \rho X + \sqrt{1-\rho^2}~ Z
 \]</div>
 <p>such that <span class="math notranslate nohighlight">\(\mu_Y = 0,~ \sigma_Y = 1, ~ \text{Cov}(X, Y) = \rho, ~ r(X,Y) = \rho\)</span>.</p>
 <p>Therefore, all bivariate normal distribution can express its normal random variables as the sum of two independent random variables.</p>
-</section>
-</section>
-<section id="relation-to-rayleigh-distribution">
+</div>
+</div>
+<div class="section" id="relation-to-rayleigh-distribution">
 <h2>Relation to Rayleigh Distribution<a class="headerlink" href="#relation-to-rayleigh-distribution" title="Permalink to this headline">#</a></h2>
 <p>Given two independent random variable <span class="math notranslate nohighlight">\(X,Y\)</span> with standard normal distribution, let</p>
 <div class="math notranslate nohighlight">
@@ -1254,12 +1250,12 @@ R = \sqrt{X^2 + Y^2}
 \[
 f_R(r) = re^{-\frac{1}{2}r^2}, \quad \text{for } r&gt;0
 \]</div>
-</section>
-<section id="relation-to-chi-square-distribution">
+</div>
+<div class="section" id="relation-to-chi-square-distribution">
 <h2>Relation to Chi-Square Distribution<a class="headerlink" href="#relation-to-chi-square-distribution" title="Permalink to this headline">#</a></h2>
 <p>See <a class="reference external" href="./Chi-Square#Relation_to_Normal_Distribution">Chi-Square</a>.</p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1309,7 +1305,7 @@ f_R(r) = re^{-\frac{1}{2}r^2}, \quad \text{for } r&gt;0
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

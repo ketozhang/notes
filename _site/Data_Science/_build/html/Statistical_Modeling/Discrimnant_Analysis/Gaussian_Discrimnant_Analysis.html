@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Gaussian Discrimnant Analysis &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaussian Discrimnant Analysis &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1093,9 +1089,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="gaussian-discrimnant-analysis">
+  <div class="tex2jax_ignore mathjax_ignore section" id="gaussian-discrimnant-analysis">
 <h1>Gaussian Discrimnant Analysis<a class="headerlink" href="#gaussian-discrimnant-analysis" title="Permalink to this headline">#</a></h1>
-<section id="multivariate-gaussian">
+<div class="section" id="multivariate-gaussian">
 <h2>Multivariate Gaussian<a class="headerlink" href="#multivariate-gaussian" title="Permalink to this headline">#</a></h2>
 <p>Recall the multivariate gaussian can be represented as in terms of a quadratic function quadratic function <span class="math notranslate nohighlight">\(q(x)\)</span> which is called the <strong>quadratic form</strong>,</p>
 <div class="math notranslate nohighlight">
@@ -1115,7 +1111,7 @@ Q(x) = v^\top\Sigma^{-1} v
 \[
 |v| \longrightarrow \left\lvert\Sigma^{-1/2} v\right\rvert
 \]</div>
-<section id="quadratic-discrimnant-analysis">
+<div class="section" id="quadratic-discrimnant-analysis">
 <h3>Quadratic Discrimnant Analysis<a class="headerlink" href="#quadratic-discrimnant-analysis" title="Permalink to this headline">#</a></h3>
 <p>For each class in <span class="math notranslate nohighlight">\(c : \{1,2,3,\ldots,C\}\)</span> there exists a <strong>sample covariance matrix</strong> <span class="math notranslate nohighlight">\(\hat\Sigma\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1127,8 +1123,8 @@ Q(x) = v^\top\Sigma^{-1} v
 \[
 \hat y = \mathop{\arg\max}_c \bigg[Q_c(x) - Q_d(x)\bigg]
 \]</div>
-</section>
-<section id="linear-discrimnant-analysis">
+</div>
+<div class="section" id="linear-discrimnant-analysis">
 <h3>Linear Discrimnant Analysis<a class="headerlink" href="#linear-discrimnant-analysis" title="Permalink to this headline">#</a></h3>
 <p>Every class has the same sample covariance matrix which is calculated by the mean of each class’s covariance matrix. This is called the <strong>pooled within-class covariance matrix</strong>,</p>
 <div class="math notranslate nohighlight">
@@ -1140,17 +1136,17 @@ Q(x) = v^\top\Sigma^{-1} v
 \[
 \hat y = \mathop{\arg\max}_c \bigg[(\mu_c-\mu_d)^\top \Sigma^{-1} x - + \log \frac{\pi_c}{\pi_d}\bigg]
 \]</div>
-</section>
-</section>
-<section id="transformations">
+</div>
+</div>
+<div class="section" id="transformations">
 <h2>Transformations<a class="headerlink" href="#transformations" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Decorrelating: <span class="math notranslate nohighlight">\(XU\)</span></p></li>
 <li><p>Sphering: <span class="math notranslate nohighlight">\(X\hat\Sigma^{-1/2}​\)</span></p></li>
 <li><p>Whitening: Decorrelating + Sphering</p></li>
 </ul>
-</section>
-<section id="relations-to-principal-component-analysis">
+</div>
+<div class="section" id="relations-to-principal-component-analysis">
 <h2>Relations to Principal Component Analysis<a class="headerlink" href="#relations-to-principal-component-analysis" title="Permalink to this headline">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1178,10 +1174,10 @@ P(x) &amp;= \left(2 \pi \prod \sigma_j^2 \right)^{-1/2}\exp\left[-\frac{1}{2} \s
 \end{align*}\\
 u = Q^\top(x-\mu)
 \end{split}\]</div>
-</section>
+</div>
 <div class="toctree-wrapper compound">
 </div>
-</section>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1231,7 +1227,7 @@ u = Q^\top(x-\mu)
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

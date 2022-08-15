@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Spectral Graph Clustering &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spectral Graph Clustering &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1113,7 +1109,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="spectral-graph-clustering">
+  <div class="tex2jax_ignore mathjax_ignore section" id="spectral-graph-clustering">
 <h1>Spectral Graph Clustering<a class="headerlink" href="#spectral-graph-clustering" title="Permalink to this headline">#</a></h1>
 <p>Take a weighted, undirected graph <span class="math notranslate nohighlight">\(G(V,E)\)</span> that has no self-edges where the weights are <span class="math notranslate nohighlight">\(w_{ij}\)</span> of edge <span class="math notranslate nohighlight">\((i,j) =  (j,i)\)</span>. The weight is zero if there is no edge between the vertices.</p>
 <p>The goal is to cut <span class="math notranslate nohighlight">\(G\)</span> into two or more graphs of similar sizes but don’t cut too much edge weight. This is to minimize th sparcity:</p>
@@ -1140,7 +1136,7 @@ For every vertex <span class="math notranslate nohighlight">\(y = 1\)</span> or 
 </li>
 <li><p><span class="math notranslate nohighlight">\(\text{Mass}(G)\)</span> : Number of vertices in <span class="math notranslate nohighlight">\(G\)</span> or assign vertex weights.</p></li>
 </ul>
-<section id="laplacian-matrix-properties">
+<div class="section" id="laplacian-matrix-properties">
 <h2>Laplacian Matrix Properties<a class="headerlink" href="#laplacian-matrix-properties" title="Permalink to this headline">#</a></h2>
 <ul>
 <li><p>The Laplacian matrix is a positive definite matrix.</p></li>
@@ -1152,11 +1148,11 @@ For every vertex <span class="math notranslate nohighlight">\(y = 1\)</span> or 
 <p>Thus <span class="math notranslate nohighlight">\(y^\top L y = 0\)</span>.</p>
 </li>
 </ul>
-</section>
-<section id="bisection">
+</div>
+<div class="section" id="bisection">
 <h2>Bisection<a class="headerlink" href="#bisection" title="Permalink to this headline">#</a></h2>
 <p>A bisection occur when <span class="math notranslate nohighlight">\(|G_1| = |G_2| = \frac{n}{2}\)</span>. With the indicator vector <span class="math notranslate nohighlight">\(1^\top = 0\)</span> is an equivalent definition.</p>
-<section id="bisection-minimization">
+<div class="section" id="bisection-minimization">
 <h3>Bisection Minimization<a class="headerlink" href="#bisection-minimization" title="Permalink to this headline">#</a></h3>
 <p>The minimum bisection problem is to find <span class="math notranslate nohighlight">\(y\)</span> that minimzes</p>
 <div class="math notranslate nohighlight">
@@ -1172,8 +1168,8 @@ For every vertex <span class="math notranslate nohighlight">\(y = 1\)</span> or 
 \min \frac{y^\top L y}{y^\top y}
 \]</div>
 <p>The solution is to let <span class="math notranslate nohighlight">\(\lambda_2\)</span> be the second smallest eigenvalue of <span class="math notranslate nohighlight">\(L\)</span> with eigenvector <span class="math notranslate nohighlight">\(v_2\)</span> called the <strong>Fielder vector</strong>.</p>
-</section>
-<section id="sweep-cut-alogirhtm">
+</div>
+<div class="section" id="sweep-cut-alogirhtm">
 <h3>Sweep Cut Alogirhtm<a class="headerlink" href="#sweep-cut-alogirhtm" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>Compute the fielder vector <span class="math notranslate nohighlight">\(v_2\)</span> of <span class="math notranslate nohighlight">\(L\)</span></p></li>
@@ -1181,9 +1177,9 @@ For every vertex <span class="math notranslate nohighlight">\(y = 1\)</span> or 
 <li><p>Choose minimum sparsity cuts for the <span class="math notranslate nohighlight">\(n-1\)</span> cuts between successive components.
 A cut here means choosing any successive coponents all components to the left is <span class="math notranslate nohighlight">\(G_1\)</span> and to the right is <span class="math notranslate nohighlight">\(G_2\)</span>.</p></li>
 </ol>
-</section>
-</section>
-<section id="vertex-masses">
+</div>
+</div>
+<div class="section" id="vertex-masses">
 <h2>Vertex Masses<a class="headerlink" href="#vertex-masses" title="Permalink to this headline">#</a></h2>
 <p>Adding a mass to vertices gives <span class="math notranslate nohighlight">\(M\)</span> a diagonal matrix. The sparsity minimization constraints changed by adding new constraints:</p>
 <div class="math notranslate nohighlight">
@@ -1209,17 +1205,17 @@ $<span class="math notranslate nohighlight">\(
     \]</div>
 </li>
 </ul>
-</section>
-<section id="normalized-cut">
+</div>
+<div class="section" id="normalized-cut">
 <h2>Normalized Cut<a class="headerlink" href="#normalized-cut" title="Permalink to this headline">#</a></h2>
 <p>Set vertix <span class="math notranslate nohighlight">\(i\)</span>’s mass <span class="math notranslate nohighlight">\(M_{ii} = L_{ii}\)</span>. This is popular for image segmentation (taking out objects or layers from an image).</p>
-</section>
-<section id="spectral-vectors">
+</div>
+<div class="section" id="spectral-vectors">
 <h2>Spectral Vectors<a class="headerlink" href="#spectral-vectors" title="Permalink to this headline">#</a></h2>
 <p>Given multiple eigenvectors <span class="math notranslate nohighlight">\(V \in \mathbb R^{n,k}\)</span> the <strong>spectral vector</strong> are the row vectors <span class="math notranslate nohighlight">\(V_j^\top\)</span>.</p>
 <p>In k-means clustering, the set of spectral vectors for the individual clusters points along similar directions and orthogonal to other cluster’s spectral vectors.</p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1269,7 +1265,7 @@ $<span class="math notranslate nohighlight">\(
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

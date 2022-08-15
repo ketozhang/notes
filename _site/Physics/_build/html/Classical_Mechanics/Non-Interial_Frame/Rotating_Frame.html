@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Rotating Frame &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotating Frame &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Physics</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -628,9 +624,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="rotating-frame">
+  <div class="tex2jax_ignore mathjax_ignore section" id="rotating-frame">
 <h1>Rotating Frame<a class="headerlink" href="#rotating-frame" title="Permalink to this headline">#</a></h1>
-<section id="notation-and-review">
+<div class="section" id="notation-and-review">
 <h2>Notation and Review<a class="headerlink" href="#notation-and-review" title="Permalink to this headline">#</a></h2>
 <p>Because rotational frame are difficult and often not remembered let’s have some quick review:</p>
 <p>Angular momentum vector
@@ -647,8 +643,8 @@ As a function of time, $\boldsymbol{\omega}(t)$ may change on either magnitude $
 : The velocity vector if you remember has a magnitude of <span class="math notranslate nohighlight">\(v = \omega r\)</span>. Because thedirection of the velocity is always perpendicular to the angular velocity vector <span class="math notranslate nohighlight">\(\boldsymbol{\omega}\)</span> and the distance away from the axis <span class="math notranslate nohighlight">\(\mathbf{r}\)</span> we can easily see that therelationship should be a cross product,</p>
 <div class="math notranslate nohighlight">
 \[ \mathbf{v} = \boldsymbol\omega \times \mathbf r \]</div>
-</section>
-<section id="time-derivatives-in-rotating-frame">
+</div>
+<div class="section" id="time-derivatives-in-rotating-frame">
 <h2>Time Derivatives in Rotating Frame<a class="headerlink" href="#time-derivatives-in-rotating-frame" title="Permalink to this headline">#</a></h2>
 <p>Consider two frames <span class="math notranslate nohighlight">\(S\)</span> (rotating frame of angular frequency <span class="math notranslate nohighlight">\(\mathbf \Omega\)</span>) and rest frame <span class="math notranslate nohighlight">\(S_0\)</span> with and arbitrary vector <span class="math notranslate nohighlight">\(\mathbf Q\)</span> defined in the <span class="math notranslate nohighlight">\(S\)</span> frame with basis stationary in respect to <span class="math notranslate nohighlight">\(S\)</span></p>
 <div class="math notranslate nohighlight">
@@ -670,8 +666,8 @@ As a function of time, $\boldsymbol{\omega}(t)$ may change on either magnitude $
 \dot{\mathbf Q}_0=  \dot{\mathbf Q} + \sum{Q_i (\mathbf\Omega \times \mathbf e_i)}\\
 \boxed{\dot{\mathbf Q}_0=  \dot{\mathbf Q} + \mathbf\Omega \times \mathbf Q}
 \end{split}\]</div>
-</section>
-<section id="newton-s-second-law-in-rotating-frame">
+</div>
+<div class="section" id="newton-s-second-law-in-rotating-frame">
 <h2>Newton’s Second Law in Rotating Frame<a class="headerlink" href="#newton-s-second-law-in-rotating-frame" title="Permalink to this headline">#</a></h2>
 <p>To form Newton’s second law we need to define acceleration <span class="math notranslate nohighlight">\(\ddot{\mathbf r}_0\)</span> in the rest frame <span class="math notranslate nohighlight">\(S_0\)</span>. Let’s apply the time derivative using the relation of <span class="math notranslate nohighlight">\(\dot{\mathbf Q_0}\)</span> above,</p>
 <div class="math notranslate nohighlight">
@@ -697,8 +693,8 @@ As a function of time, $\boldsymbol{\omega}(t)$ may change on either magnitude $
 <li><p><span class="math notranslate nohighlight">\(\mathbf F\)</span> : The force apprent to observers in the rotating frame <span class="math notranslate nohighlight">\(S\)</span>, notice that it is no longer simply <span class="math notranslate nohighlight">\(\mathbf F = m \mathbf a\)</span> but the extra terms which most people call <strong>ficticious force</strong></p></li>
 </ul>
 <hr class="docutils" />
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -748,7 +744,7 @@ As a function of time, $\boldsymbol{\omega}(t)$ may change on either magnitude $
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

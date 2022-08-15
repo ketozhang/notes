@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Poisson Distribution &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poisson Distribution &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1103,7 +1099,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="poisson-distribution">
+  <div class="tex2jax_ignore mathjax_ignore section" id="poisson-distribution">
 <h1>Poisson Distribution<a class="headerlink" href="#poisson-distribution" title="Permalink to this headline">#</a></h1>
 <p>The Poisson distribution describes the process where <span class="math notranslate nohighlight">\(k\)</span> events occur at a unit interval given that the average number of events per unit interval is <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
 <div class="math notranslate nohighlight">
@@ -1141,11 +1137,11 @@ $$
 :::
 </pre></div>
 </div>
-<section id="poissonization">
+<div class="section" id="poissonization">
 <h2>Poissonization<a class="headerlink" href="#poissonization" title="Permalink to this headline">#</a></h2>
 <p>Poissonization is the process of letting the number of trials <span class="math notranslate nohighlight">\(N \sim \text{Poisson}(\lambda)\)</span>. Doing so causes some families of distribution to inherit independence amongst their category. To get a better idea of what this mean let’s take a look at few distributions</p>
-</section>
-<section id="binomial">
+</div>
+<div class="section" id="binomial">
 <h2>Binomial<a class="headerlink" href="#binomial" title="Permalink to this headline">#</a></h2>
 <p>Let <span class="math notranslate nohighlight">\(S \sim \text{Binomial}(N, p)\)</span>. The marginal distribution on <span class="math notranslate nohighlight">\(N\)</span> shows that</p>
 <div class="math notranslate nohighlight">
@@ -1174,8 +1170,8 @@ $$
 </pre></div>
 </div>
 <p>This suggest <span class="math notranslate nohighlight">\(S\)</span> and <span class="math notranslate nohighlight">\(F\)</span> are independent!</p>
-</section>
-<section id="multinomial">
+</div>
+<div class="section" id="multinomial">
 <h2>Multinomial<a class="headerlink" href="#multinomial" title="Permalink to this headline">#</a></h2>
 <p>The same as the binomial occurs with multionmial. For some category <span class="math notranslate nohighlight">\(X\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1183,11 +1179,11 @@ $$
   P(X=x) = \text{Poisson}(s; \lambda p_x)
   \]</div>
 <p>All categories are independent from each other and distributed as <span class="math notranslate nohighlight">\(\text{Poisson}(x_i; \lambda_{x_i})\)</span>.</p>
-</section>
-<section id="poisson-process">
+</div>
+<div class="section" id="poisson-process">
 <h2>Poisson Process<a class="headerlink" href="#poisson-process" title="Permalink to this headline">#</a></h2>
 <p>The poisson distribution describes a process called the <strong>Poisson process</strong> which describe the chance that <span class="math notranslate nohighlight">\(k\)</span> events occur if the rate of occurance is on average <span class="math notranslate nohighlight">\(\lambda\)</span> (a measure of number of events per unit time). However, this description does not seem complete. Let me motivate this confusion. Doesn’t it make more sense to ask what’s the chance that <span class="math notranslate nohighlight">\(k\)</span> events occur in the next <span class="math notranslate nohighlight">\(t\)</span> seconds. It is indeed a more natural question to ask.</p>
-<section id="first-description-number-of-arrivals">
+<div class="section" id="first-description-number-of-arrivals">
 <h3>First Description - Number of Arrivals<a class="headerlink" href="#first-description-number-of-arrivals" title="Permalink to this headline">#</a></h3>
 <p>The answer to that natural question is called the <strong>first description</strong> of the Poisson process.</p>
 <p>Consider a unit interval such that:</p>
@@ -1208,8 +1204,8 @@ N_0 \sim \text{Poisson}(\lambda)
 \[
 N \sim \text{Poisson}(\lambda t)
 \]</div>
-</section>
-<section id="second-description-inter-arrival-waiting-time">
+</div>
+<div class="section" id="second-description-inter-arrival-waiting-time">
 <h3>Second Description - Inter-Arrival Waiting Time<a class="headerlink" href="#second-description-inter-arrival-waiting-time" title="Permalink to this headline">#</a></h3>
 <p>Let <span class="math notranslate nohighlight">\(G_k\)</span> be the inter-arrival time that is the length of the time interval between <span class="math notranslate nohighlight">\(T_k\)</span> and <span class="math notranslate nohighlight">\(T_{k-1}\)</span>, where <span class="math notranslate nohighlight">\(T_i\)</span> is the time of the <span class="math notranslate nohighlight">\(i\)</span>th arrival</p>
 <div class="math notranslate nohighlight">
@@ -1227,9 +1223,9 @@ This is the survival function of the exponential distribution. The same can be s
 </div>
 <p>Memoryless property
 : Because each time interval is disjoint <span class="math notranslate nohighlight">\(G_k\)</span> is mutually independent of each other <span class="math notranslate nohighlight">\(k\)</span> for all <span class="math notranslate nohighlight">\(k\)</span>.</p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1279,7 +1275,7 @@ This is the survival function of the exponential distribution. The same can be s
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>

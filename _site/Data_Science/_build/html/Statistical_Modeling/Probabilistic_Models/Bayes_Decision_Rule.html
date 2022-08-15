@@ -4,9 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Bayes Decision Rule &#8212; My Jupyter Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bayes Decision Rule &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -35,13 +34,10 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -94,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      <h1 class="site-logo" id="site-title">Keto | Data Science</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -1059,7 +1055,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="bayes-decision-rule">
+  <div class="tex2jax_ignore mathjax_ignore section" id="bayes-decision-rule">
 <h1>Bayes Decision Rule<a class="headerlink" href="#bayes-decision-rule" title="Permalink to this headline">#</a></h1>
 <p>For some loss function <span class="math notranslate nohighlight">\(L\)</span> the <strong>Bayes Decision Rule</strong> simply chooses the class with the maximum posterior distribution scaled by the loss of misclassification. For the cases of two classes, the decision rule looks like,</p>
 <div class="math notranslate nohighlight">
@@ -1067,7 +1063,7 @@ title="Print to PDF"
 \hat y(x) = \mathop{\arg\max}_A L(\neg A,A)P(A\mid x)
 \]</div>
 <p>A motivation why the sign is greater than is because we assign a greater loss if say class <span class="math notranslate nohighlight">\(A\)</span> was classified wrong. If it was classified wrong, there should be a greater chance that the classifier will change its decision rule to choose classify <span class="math notranslate nohighlight">\(A\)</span> better.</p>
-<section id="zero-one-loss">
+<div class="section" id="zero-one-loss">
 <h2>Zero-One Loss<a class="headerlink" href="#zero-one-loss" title="Permalink to this headline">#</a></h2>
 <p>The risk function for the 0-1 loss is,</p>
 <div class="math notranslate nohighlight">
@@ -1075,8 +1071,8 @@ title="Print to PDF"
 R(\hat y) = P(\hat y(x)\text{ is wrong})
 \]</div>
 <p>This suggest that the decision boundary is the set of all points where <span class="math notranslate nohighlight">\(\set{x : P(A \mid x) = 0.5}\)</span></p>
-</section>
-<section id="gaussian-decision-rule">
+</div>
+<div class="section" id="gaussian-decision-rule">
 <h2>Gaussian Decision Rule<a class="headerlink" href="#gaussian-decision-rule" title="Permalink to this headline">#</a></h2>
 <p>For the case of two classes <span class="math notranslate nohighlight">\(Y \in \set{1,2}\)</span> such that each class has a <span class="math notranslate nohighlight">\(\text{Normal}(\mu_y, \sigma_y^2)\)</span> distribution and a possible prior for the chance that a sample comes from a class <span class="math notranslate nohighlight">\(P(Y=y)\)</span> called the mixing parameter, the probability of a sample <span class="math notranslate nohighlight">\(x\)</span> is,</p>
 <div class="math notranslate nohighlight">
@@ -1088,10 +1084,10 @@ P(X=x) = P(X=x \mid Y=1)P(Y=1) + P(X=x \mid Y=1)P(Y=2)
 \[
 \hat y(x) = \mathop{\arg\max}_y P(X=x\mid Y=y) P(Y=y)
 \]</div>
-</section>
+</div>
 <div class="toctree-wrapper compound">
 </div>
-</section>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1141,7 +1137,7 @@ P(X=x) = P(X=x \mid Y=1)P(Y=1) + P(X=x \mid Y=1)P(Y=2)
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book community<br/>
+    By Keto D. Zhang<br/>
   
       &copy; Copyright 2022.<br/>
 </p>
