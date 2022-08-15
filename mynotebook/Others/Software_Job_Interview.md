@@ -1,6 +1,4 @@
----
-title: Software Job Interview
----
+#  Software Job Interview
 
 ## Data Structure and Algorithms
 

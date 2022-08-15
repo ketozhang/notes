@@ -1,6 +1,4 @@
----
-title: Lagrangian and QTF
----
+#  Lagrangian and QTF
 
 ## Phase
 

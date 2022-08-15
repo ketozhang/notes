@@ -1,14 +1,12 @@
----
-title: Complex Polar Coordinate
----
+#  Complex Polar Coordinate
 
 Complex polar coordinates is easier to deal with and shorter to write than trigonometric cartesian form of the waves. We consider any complex cartesian coordinate can be written in polar coordinates in the form,
 
 $$ a + bi = Ae^{i\theta} $$
 
-Where, 
+Where,
 
-$$ 
+$$
 \begin{align}
     e^{i\theta} &= \cos \theta + i\sin \theta \tag{Euler's Formula} \\
     A &= \| a + ib \| = \sqrt{a^2 + b^2} \tag{amplitude or length} \\
@@ -27,7 +25,7 @@ $$
     %\label{eq: euler-cos}
     \cos\theta &= \frac{e^{i\theta} + e^{-i\theta}}{2} \\
     %\label{eq: euler-sin}
-    \sin\theta &= \frac{e^{i\theta} - e^{-i\theta}}{2i} 
+    \sin\theta &= \frac{e^{i\theta} - e^{-i\theta}}{2i}
 \end{align}
 $$
 

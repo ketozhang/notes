@@ -1,6 +1,4 @@
----
-title: Heuristics
----
+#  Heuristics
 
 ## Performance
 

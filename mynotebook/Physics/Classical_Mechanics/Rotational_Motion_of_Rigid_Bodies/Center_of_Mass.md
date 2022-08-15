@@ -1,6 +1,4 @@
----
-title: Center of Mass
----
+#  Center of Mass
 
 <!-- TOC -->
 

@@ -1,6 +1,4 @@
----
-title: Specific Mechanical Energy
----
+#  Specific Mechanical Energy
 
 The energy of an orbit is given by the kinetic energy of the reduced mass $m$ and the gravitational potential energy,
 

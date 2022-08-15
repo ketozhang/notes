@@ -1,6 +1,4 @@
----
-title: Matrix Formalism
----
+#  Matrix Formalism
 
 ## Transition Matrix
 

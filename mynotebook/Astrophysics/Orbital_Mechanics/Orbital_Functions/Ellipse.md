@@ -1,6 +1,4 @@
----
-title: Ellipse
----
+#  Ellipse
 
 ## Eccentricity
 

@@ -1,6 +1,4 @@
----
-title: Dipole
----
+#  Dipole
 
 The dipole is the second term ($n=1$) of the multipole expansion. This is useful when at large $r$ when the total charge at large distance is zero.
 

@@ -1,6 +1,4 @@
----
-title: Errors
----
+#  Errors
 
 ## Throw Error
 

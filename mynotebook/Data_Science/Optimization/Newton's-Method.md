@@ -1,6 +1,4 @@
----
-title: Newton's Method
----
+#  Newton's Method
 
 The Newton's method is an optimization method requiring the curvature of the interested optimization problem $L(\theta)$.
 

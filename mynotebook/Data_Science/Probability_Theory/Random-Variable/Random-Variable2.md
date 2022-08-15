@@ -1,6 +1,4 @@
----
-title: Random Variable
----
+#  Random Variable
 
 Formally, the **random variable** is defined as a function that maps the outcome space to the real space,
 

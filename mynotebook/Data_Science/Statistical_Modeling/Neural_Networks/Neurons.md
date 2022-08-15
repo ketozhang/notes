@@ -1,4 +1,2 @@
----
-title: Neurons
----
+#  Neurons
 

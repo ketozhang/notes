@@ -1,6 +1,4 @@
----
-title: Conditional Probability
----
+#  Conditional Probability
 
 A conditional probability can be generalized by the phrase.
 

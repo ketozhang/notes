@@ -1,3 +1,1 @@
----
-title: Frequentist vs Bayesian
----
+#  Frequentist vs Bayesian

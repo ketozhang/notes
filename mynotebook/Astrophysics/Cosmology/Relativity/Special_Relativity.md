@@ -1,6 +1,4 @@
----
-title: Special Relativity
----
+#  Special Relativity
 > **IMPORTANT: ** From here on out, I will be using natural units where $c=1$. This means that it's important to know that time $t$ has the units of length in [Minkowski space](#spacetime). Please take this moment for a deep breath because you're ready to learn natural units (if you haven't).
 
 ## Spacetime
@@ -8,7 +6,7 @@ title: Special Relativity
 
 Naturally, one would think that a certain event happen at some fixed time for example an object at time $t_0$ can be at some position $x(t_0)=x_0$ but, it's impossible for the object to be in another position at the same time. In math, one can say that $x(t)$ is a well-defined function such that the vertical line passes for a time vs position graph.
 
-> We ignore the world of quantum mechanics where the position of an object may be in multiple places at the same time determined by some wavefunction. 
+> We ignore the world of quantum mechanics where the position of an object may be in multiple places at the same time determined by some wavefunction.
 
 This axiom (assumption of our universe) is not true! $x(t)$ is not a well-defined function where we do allow an object to be in two different places at the same time $t_0$. We need to include $t$ in our function such that we define a new concept of position which is a position in **spacetime**. In 3D Euclidean space, this would now be a 4D Euclidean spacetime called the **Minkowski** space. To preserve a position unit the 4th dimension is $ct$ such that,
 
@@ -52,7 +50,7 @@ $$
 $$
 
 * $S = \int{ds}$
-* Let's use the differential form to be very general. 
+* Let's use the differential form to be very general.
 
 The value of $S$ should not be any different in polar coordinate. To preserve $S$ we modify the equation
 

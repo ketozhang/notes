@@ -1,6 +1,4 @@
----
-title: Sampling without Replacement
----
+#  Sampling without Replacement
 We begin using sampling without replacement by considering a sample size of $k$ chosen out of a population of also size $n=k$. Each possible outcome of a sample is unique (we will be dealing with grouping later). Thus the total number of sequences is like shuffling a card of deck with each cards begin unique,
 
 $$

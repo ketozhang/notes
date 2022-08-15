@@ -1,6 +1,4 @@
----
-title: Transactions
----
+#  Transactions
 
 The solution to concurrency control is to treat the user's queries as a single transaction. A  **transaction** (or Xact) is a batch of queries that are extracted to line by line instructions.
 

@@ -1,6 +1,4 @@
----
-title: Shuffling
----
+#  Shuffling
 
 You can optimize shuffling
 

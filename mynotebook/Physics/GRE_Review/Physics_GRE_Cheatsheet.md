@@ -1,6 +1,4 @@
----
-title: Physics GRE Cheatsheet
----
+#  Physics GRE Cheatsheet
 
 [Tips Table](https://www.notion.so/005ec877d2374e92b2787461f0de8f32)
 

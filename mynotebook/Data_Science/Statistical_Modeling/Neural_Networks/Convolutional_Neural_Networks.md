@@ -1,6 +1,4 @@
----
-title: Convolutional Neural Networks
----
+#  Convolutional Neural Networks
 
 **Convolutional Neural Networks (CNNs)** are used for amount of features that implements same transformation to different subsets of the features. CNNs are often used for images hence features are pixel values and a single convolution is a single subset of the image being transformed.
 

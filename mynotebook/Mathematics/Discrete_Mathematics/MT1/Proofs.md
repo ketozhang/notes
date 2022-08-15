@@ -1,6 +1,4 @@
----
-title: Proofs
----
+#  Proofs
 
 ## Proof by Contradiction
 For a single statement $P$ (does not have to be an implication), a proof by contradiction is done by first assuming $\neg P$ is true then find another statement $R$ that is true and also $\neg R$ is true.

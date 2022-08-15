@@ -1,6 +1,4 @@
----
-title: Hydrogen
----
+#  Hydrogen
 The Hydrogen atom has a classical hamiltonian of,
 
 $$

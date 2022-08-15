@@ -1,6 +1,4 @@
----
-title: Relational Algebra
----
+#  Relational Algebra
 
 ## Relational Calculus
 Relational calculus is a declarative representation of queries with operation description which we see in relational algebra (Codd's Theorem).

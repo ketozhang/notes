@@ -1,6 +1,4 @@
----
-title: Sorting
----
+#  Sorting
 
 ## Streaming
 

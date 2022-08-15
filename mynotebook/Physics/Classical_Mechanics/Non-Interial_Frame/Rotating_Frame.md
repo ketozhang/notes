@@ -1,6 +1,4 @@
----
-title: Rotating Frame
----
+#  Rotating Frame
 
 ## Notation and Review
 Because rotational frame are difficult and often not remembered let's have some quick review:
@@ -14,7 +12,7 @@ Angular momentum vector
     * $\hat \omega$ : Direction of rotation
 
     As a function of time, $\boldsymbol{\omega}(t)$ may change on either magnitude $\omega$ and/or direction $\hat \omega$
- 
+
 Velocity vector
 : The velocity vector if you remember has a magnitude of $v = \omega r$. Because thedirection of the velocity is always perpendicular to the angular velocity vector $\boldsymbol{\omega}$ and the distance away from the axis $\mathbf{r}$ we can easily see that therelationship should be a cross product,
 

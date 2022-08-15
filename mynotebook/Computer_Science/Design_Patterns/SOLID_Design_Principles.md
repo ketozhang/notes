@@ -1,6 +1,4 @@
----
-title: SOLID Design Principles
----
+#  SOLID Design Principles
 
 # Single-Responsibility Principle
 

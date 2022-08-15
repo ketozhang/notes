@@ -1,6 +1,4 @@
----
-title: Posterior Estimator
----
+#  Posterior Estimator
 
 With an assumption of the likelihood function (i.e., the distribution of the data), we can determine the distribution of the parameters which is the posterior distribution. Using Bayes rule we find that,
 

@@ -1,6 +1,4 @@
----
-title: Computability
----
+#  Computability
 From here on, a program is the same thing as a strip/tape of instructions. A program can be denoted like a function $P(x)=y$ where $x$ is the input and $y$ the output.
 
 ## Self-Replicating Program

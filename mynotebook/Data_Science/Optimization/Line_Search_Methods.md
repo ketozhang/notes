@@ -1,6 +1,4 @@
----
-title: Line Search Methods
----
+#  Line Search Methods
 
 Finds a local minimum a long a search direction by solving an optimization problem in one-dimension.
 

@@ -1,6 +1,4 @@
----
-title: Storage Hardware
----
+#  Storage Hardware
 
 Storage on hardware for DBMS differs from CPU architecture by:
 

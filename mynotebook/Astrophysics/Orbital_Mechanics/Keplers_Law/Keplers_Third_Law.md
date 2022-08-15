@@ -1,6 +1,4 @@
----
-title: Kepler's Third Law
----
+#  Kepler's Third Law
 
 Kepler's third law states the orbital period as a simple relationship to its semi-major axis and mass of the system. Most commonly, this relationship is stated as a proportion to the semi-major axis,
 

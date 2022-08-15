@@ -1,6 +1,4 @@
----
-title: Visualization
----
+#  Visualization
 
 ## Packages
 * matplotlib

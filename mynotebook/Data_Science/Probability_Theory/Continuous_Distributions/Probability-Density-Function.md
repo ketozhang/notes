@@ -1,6 +1,4 @@
----
-title: Probability Density Function
----
+#  Probability Density Function
 
 For a continuous random variable $X$ there may exist a **probability density function (PDF)** $f_X$ which is the density of probability among its events. We can find the probability of a continuous event $A = [a,b]$ by integrating over the PDF,
 

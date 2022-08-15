@@ -1,6 +1,4 @@
----
-title: Adaptive Boosting
----
+#  Adaptive Boosting
 
 **Adaptive boosting** or **AdaBoost** is an ensemble method that:
 

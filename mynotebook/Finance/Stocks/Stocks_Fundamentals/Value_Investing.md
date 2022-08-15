@@ -1,6 +1,4 @@
----
-title: Value Investing
----
+#  Value Investing
 
 ## Fundamentals
 

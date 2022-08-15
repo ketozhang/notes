@@ -1,6 +1,4 @@
----
-title: Training
----
+#  Training
 
 From here on, we will deal with only single layer NN for simplicity.
 
@@ -20,7 +18,7 @@ Now the hard part is computing the gradient. Naively one may compute the gradien
 
 ## Backpropagation
 
-An update rule that cost $\mathcal O(\text{edges})$ to calculate the gradient. There's two parts of back pass which is forward pass and backward propagating. 
+An update rule that cost $\mathcal O(\text{edges})$ to calculate the gradient. There's two parts of back pass which is forward pass and backward propagating.
 
 We simplify the problem by doing stochastic gradient descent on one sample point.
 The goal is to solve for,

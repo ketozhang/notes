@@ -1,6 +1,4 @@
----
-title: Sampling Without Replacement
----
+#  Sampling Without Replacement
 
 The process of sampling without replacement takes $k$ items from a a set of $n$ possible items
 

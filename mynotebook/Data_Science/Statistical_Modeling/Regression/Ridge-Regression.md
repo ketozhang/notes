@@ -1,6 +1,4 @@
----
-title: Ridge Regression
----
+#  Ridge Regression
 
 The ridge regression is regression with the $L_2$ regularization,
 $$

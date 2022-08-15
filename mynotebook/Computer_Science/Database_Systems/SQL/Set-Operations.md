@@ -1,6 +1,4 @@
----
-title: Set Operations
----
+#  Set Operations
 
 All set operations output a set of unique values unless the keyword `ALL` is appended after.
 

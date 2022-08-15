@@ -1,6 +1,4 @@
----
-title: Inter-Operator Parallelism
----
+#  Inter-Operator Parallelism
 
 ## Types of Partitioning
 

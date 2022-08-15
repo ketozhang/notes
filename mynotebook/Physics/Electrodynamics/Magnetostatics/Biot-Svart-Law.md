@@ -1,6 +1,4 @@
----
-title: Biot Savart Law
----
+#  Biot Savart Law
 
 ## Magnetic Monopole
 

@@ -1,6 +1,4 @@
----
-title: Numerical Integration
----
+#  Numerical Integration
 
 ## Trapezoidal Rule
 

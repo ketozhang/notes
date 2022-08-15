@@ -1,6 +1,4 @@
----
-title: Introduction
----
+#  Introduction
 From here on out matrix are $A \in \mathbb R^{m \times n}$ and vectors $v \in \mathbb R^{1 \times n}$ are column vectors. It is also equivalent to simply denote vectors as a matrix with a single column dimension.
 
 ## Matrix Gradient

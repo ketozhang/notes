@@ -1,6 +1,4 @@
----
-title: Introduction
----
+#  Introduction
 
 The buffer management handles interactions between the RAM and the disk. It creates the illusion that the file system is always working with the RAM. The buffer management handles read/write request passed to the RAM and in which decides if it needs to interact with the disk.
 

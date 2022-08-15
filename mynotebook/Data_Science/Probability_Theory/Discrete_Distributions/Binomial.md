@@ -1,6 +1,4 @@
----
-title: Binomial
----
+#  Binomial
 
 The binomial distribution is given as,
 

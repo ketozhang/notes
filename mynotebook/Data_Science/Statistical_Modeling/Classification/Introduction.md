@@ -1,6 +1,4 @@
----
-title: Introduction to Support Vector Machine
----
+#  Introduction to Support Vector Machine
 
 ## Decision Bound
 

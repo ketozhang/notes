@@ -1,6 +1,4 @@
----
-title: Chain Rule
----
+#  Chain Rule
 
 ## Scalar-Scalar
 

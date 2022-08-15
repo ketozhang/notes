@@ -1,6 +1,4 @@
----
-title: Probability Scenarios
----
+#  Probability Scenarios
 
 ## Degeneracy Problem
 

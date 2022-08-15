@@ -1,6 +1,4 @@
----
-title: Planning
----
+#  Planning
 
 # Left Join
 The following optimizes a left join.

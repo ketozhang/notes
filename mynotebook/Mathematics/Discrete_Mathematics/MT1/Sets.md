@@ -1,6 +1,4 @@
----
-title: Set
----
+#  Set
 A set (notated as a capitalized letter) is a collection of objects called elements or members.
 
 ## Notation

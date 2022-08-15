@@ -1,6 +1,4 @@
----
-title: Bernoulli
----
+#  Bernoulli
 $$
 I \sim \text{Bernoulli}(p)
 $$

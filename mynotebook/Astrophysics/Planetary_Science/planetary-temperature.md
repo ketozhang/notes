@@ -1,6 +1,4 @@
----
-title: Planetary Temperature
----
+#  Planetary Temperature
 
 # Solar Insolation
 

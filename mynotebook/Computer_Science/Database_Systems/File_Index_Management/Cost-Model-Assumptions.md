@@ -1,6 +1,4 @@
----
-title: Cost Model Assumptions
----
+#  Cost Model Assumptions
 
 * **B**: Number of data blocks in the file
 * **R**: Number of records per block

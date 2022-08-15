@@ -1,6 +1,4 @@
----
-title: Graphs
----
+#  Graphs
 
 A graph is a set of pairs of vertices which the pairs are connected by some relationship. The syntax for a graph is for instance,
 

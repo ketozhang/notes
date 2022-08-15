@@ -1,6 +1,4 @@
----
-title: Linear Acceleration
----
+#  Linear Acceleration
 
 We begin studying mechanics on an non intertial frame with cases of linear acceleration. To do so imagine an inertial frame $S_0$ and an accelerating frame $S$. Relative to $S_0$, $S$ is moving at a velocity $\mathbf{V}$ and acceleration $\mathbf{A}$. A ball of mass $m$ is in the $S$ frame, let's explore the forces on the ball.
 

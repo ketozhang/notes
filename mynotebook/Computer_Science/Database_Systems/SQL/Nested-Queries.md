@@ -1,6 +1,4 @@
----
-title: Nested Queries
----
+#  Nested Queries
 
 ## Where Predicate
 

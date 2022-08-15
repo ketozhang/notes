@@ -1,6 +1,4 @@
----
-title: Geometric Distribution
----
+#  Geometric Distribution
 
 The probability of the first success given by $p$ to be at position $n$.
 

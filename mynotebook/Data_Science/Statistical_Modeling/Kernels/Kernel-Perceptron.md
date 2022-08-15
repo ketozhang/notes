@@ -1,6 +1,4 @@
----
-title: Kernel Perceptron
----
+#  Kernel Perceptron
 
 Recall the perceptron update rule while there exist an $y_i$ that's misclassified:
 

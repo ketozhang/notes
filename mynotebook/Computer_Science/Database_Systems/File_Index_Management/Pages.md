@@ -1,6 +1,4 @@
----
-title: Pages
----
+#  Pages
 
 ## Fixed Length Records
 Pages will pack records (i.e., there is empty spaces between records)

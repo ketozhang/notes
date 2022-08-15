@@ -1,6 +1,4 @@
----
-title: Page Replacement
----
+#  Page Replacement
 
 A page replacement takes note in the buffer whether or not the page to be replaced is either pinned or dirty.
 

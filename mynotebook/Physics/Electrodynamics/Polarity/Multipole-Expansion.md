@@ -1,6 +1,4 @@
----
-title: Multipole Expansion
----
+#  Multipole Expansion
 
 At a large distance $d$ from a charge source, we can approximate the charge to be a point source. However, we wish to generalize for any distance away from a source. Consider a charge source well-structured in an $n$-pole configuration. The potential located at $\boldsymbol r$ from the origin and $d$ distance away from the a geometric slice of the source $\mathrm d \mathcal V$ located at $\boldsymbol r'$ is given by,
 

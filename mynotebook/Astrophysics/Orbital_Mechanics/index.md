@@ -1,4 +1,2 @@
----
-title: Orbital Mechanics
----
+#  Orbital Mechanics
 

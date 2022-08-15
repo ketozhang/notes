@@ -1,6 +1,4 @@
----
-title: Normal Forms
----
+#  Normal Forms
 
 ## First Normal Form
 

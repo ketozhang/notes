@@ -1,8 +1,6 @@
----
-title: Free Particle
----
+#  Free Particle
 
-We believe that every fundamental particle in the universe follows the particle-wave duality. This rule does not only apply to quantum mechanics but to all physics which for now we ignore relativity. 
+We believe that every fundamental particle in the universe follows the particle-wave duality. This rule does not only apply to quantum mechanics but to all physics which for now we ignore relativity.
 
 When we say particle we often think of the particle independent of outside influence. In otherwords we call this a **free particle**.
 

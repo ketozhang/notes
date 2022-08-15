@@ -1,3 +1,1 @@
----
-title: Sudden Approximation
----
+#  Sudden Approximation

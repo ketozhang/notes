@@ -1,6 +1,4 @@
----
-title: Spontaneous Emission
----
+#  Spontaneous Emission
 
 ## Einstein's Coefficients
 

@@ -1,6 +1,4 @@
----
-title: Linear Regression
----
+#  Linear Regression
 
 Consider a dataset as a matrix of $X \in \mathbb{R}^{n\times d+1}$ where we've extracted $n$ numbers of data records/rows and $d$ numbers of feature columns along with one extra column for the intercept. For each row, we have a measurement or response $y \in \mathbb R^{n \times 1}$
 

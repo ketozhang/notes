@@ -1,6 +1,4 @@
----
-title: Electrostatics
----
+#  Electrostatics
 
 ## Coulomb's Law
 

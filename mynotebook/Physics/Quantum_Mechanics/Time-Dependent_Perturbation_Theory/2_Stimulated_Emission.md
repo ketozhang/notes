@@ -1,6 +1,4 @@
----
-title: Stimulated Emission
----
+#  Stimulated Emission
 
 ## Coherent Electromagnetic Waves
 
@@ -23,7 +21,7 @@ $$
 \end{gather}
 $$
 
-Notice that $z_{ab}$ is always integrate to zero since $z|\psi|^2$ is always odd. Of course, this only applies to wavefunctions that can be considered even or odd with $z$. 
+Notice that $z_{ab}$ is always integrate to zero since $z|\psi|^2$ is always odd. Of course, this only applies to wavefunctions that can be considered even or odd with $z$.
 
 The probability of transition between $a$ to $b$ for the case that $\omega \gg \omega_0$ (true for our light source) is,
 

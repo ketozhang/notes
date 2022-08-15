@@ -1,6 +1,4 @@
----
-title: Index Notation
----
+#  Index Notation
 
 Dot Product
 :
@@ -9,7 +7,7 @@ $$
 $$
 Vector - Matrix Multiplication
 
-: 
+:
 $$
 (Ax)_i = A_{i}^\top x = \sum_{j}A_{ij}x_j
 $$

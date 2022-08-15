@@ -1,6 +1,4 @@
----
-title: Logistics Regression
----
+#  Logistics Regression
 
 The **logistic regression** transforms the linear regression problem with the **logistic** or **sigmoid function** $s(z)$ used for posterior distribution estimation and classification[^1].
 

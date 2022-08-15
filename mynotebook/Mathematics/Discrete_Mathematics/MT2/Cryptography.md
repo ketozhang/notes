@@ -1,6 +1,4 @@
----
-title: Cryptography
----
+#  Cryptography
 
 The basics of cryptography begins with a story of Alice wanting to send a message $x$ to Bob. They both know Eve who is an eavesdropper thus they need a why to send their messages securily. Alice encrypts her message with an ecryption $E$ such that the message send to Bob is $E(x)$. Bob on the other hand has a decryption $D$ such that $D(E(x)) = x$.
 

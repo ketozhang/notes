@@ -1,6 +1,4 @@
----
-title: Quantum Scattering Theory
----
+#  Quantum Scattering Theory
 
 <!-- TOC -->
 
@@ -33,7 +31,7 @@ $$
 $$
 
 <!-- Proof
-: 
+:
     $$ dP = \abs{\psi_\text{inc}}^2 \d V $$ -->
 
 Now all we need to do is solve for $f(\theta)$; this is not trivial and requires a good amount of assumptions. There are two prevailing methods which are the **partial wave analysis** and the **Born approximation**. I will only cover the first

@@ -1,6 +1,4 @@
----
-title: k-Nearest Neighbors
----
+#  k-Nearest Neighbors
 
 **k-Nearest Neighbors** (**k-NN**) is used in both classification and regression. The predictor predicts the aggregate of the $k$ nearest training label using some distance metric $d(z,x)$.
 

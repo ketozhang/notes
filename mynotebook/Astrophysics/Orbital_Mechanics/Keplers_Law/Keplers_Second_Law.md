@@ -1,6 +1,4 @@
----
-title: Kepler's Second Law
----
+#  Kepler's Second Law
 
 Kepler's second law is most commonly stated as the sweeping motion of the satellite maps out equal area of the section for equal time intervals.
 

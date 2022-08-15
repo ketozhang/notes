@@ -1,6 +1,4 @@
----
-title: Reversible Process
----
+#  Reversible Process
 
 A Markov chain is considered a reversible chain if its reverse sequence $Y_0, Y_1, \ldots, Y_n$ has the same one-step transition probability as the forward sequence $X_0, X_1, \ldots, X_n$. This implies, a chain is reversible if the chain is in detailed balance with positive solution $\pi(i)$ for all states $i$,
 

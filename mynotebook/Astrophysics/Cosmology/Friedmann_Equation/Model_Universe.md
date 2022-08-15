@@ -1,6 +1,4 @@
----
-title: Model Universe
----
+#  Model Universe
 
 <!-- TOC -->
 

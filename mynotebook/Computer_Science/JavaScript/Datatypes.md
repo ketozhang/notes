@@ -1,6 +1,4 @@
----
-title: Datatypes
----
+#  Datatypes
 
 Here are the following common datatypes in JavaScript,
 

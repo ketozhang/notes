@@ -1,6 +1,4 @@
----
-title: Poisson Distribution
----
+#  Poisson Distribution
 
 The Poisson distribution describes the process where $k$ events occur at a unit interval given that the average number of events per unit interval is $\lambda$.
 

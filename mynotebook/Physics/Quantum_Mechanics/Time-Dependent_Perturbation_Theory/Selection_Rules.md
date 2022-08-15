@@ -1,6 +1,4 @@
----
-title: Selection Rules
----
+#  Selection Rules
 
 Recall that every emission rate requires the calculation of the matrix element $\bra{\psi_b}\mathbf{r}\ket{\psi_a}$
 

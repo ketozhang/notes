@@ -1,6 +1,4 @@
----
-title: Linear Program
----
+#  Linear Program
 
 A linear program is a linear optimization convex function (defined by the matrix $L$) with a linear inequality constraint. The goal is to find the paramters $\theta$ that minimizes the optimization function:
 

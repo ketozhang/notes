@@ -1,6 +1,4 @@
----
-title: Linear Model
----
+#  Linear Model
 
 Consider a dataset as a matrix of $X \in \mathbb{R}^{m\times n}$ where we've extracted $m$ numbers of data records/rows and $n$ numbers of feature columns. We may map the dataset $X_0$ to a feature function which outputs the design matrix $X = f(X_0)$. Our linear model can easily be written in the form of a dot product,
 

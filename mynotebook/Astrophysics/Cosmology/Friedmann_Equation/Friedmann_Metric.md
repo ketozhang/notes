@@ -1,6 +1,4 @@
----
-title: Friedmann Robertson Walker Metric
----
+#  Friedmann Robertson Walker Metric
 
 The Friedmann Robertson Walker Metric (FRW) describes the metric of the expanding flat universe. It is defined as,
 

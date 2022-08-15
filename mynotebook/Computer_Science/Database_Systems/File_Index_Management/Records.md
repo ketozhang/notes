@@ -1,6 +1,4 @@
----
-title: Records
----
+#  Records
 
 A record is a row of columns called fields.
 

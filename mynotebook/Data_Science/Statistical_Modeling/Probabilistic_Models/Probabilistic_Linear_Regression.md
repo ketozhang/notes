@@ -1,6 +1,4 @@
----
-title: Probabilistic Linear Regression
----
+#  Probabilistic Linear Regression
 Linear regression on random variables (i.e., **probabilistic linear regression**) builds the foundation for linear regression on empirical data. Here on, take $Y$ and $X$ to be some random variable; for useful cases, these two random variables should not be independent.
 
 The major difference between probabilistic and empirical linear regression other than nature of its variable is what we know about $X$ and $Y$. In probabilistic linear regression, one may have an insight on $X$ and/or $Y$. From here on, take the mean, SD, and correlation of $X, Y$ be $\mu_X,~ \mu_Y,~ \sigma_X,~ \sigma_Y,~ r(X,Y)$.

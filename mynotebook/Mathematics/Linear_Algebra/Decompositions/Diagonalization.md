@@ -1,6 +1,4 @@
----
-title: Diagonalization
----
+#  Diagonalization
 
 The diagonalization or eigendecomposition transforms decomposes a square matrix,
 

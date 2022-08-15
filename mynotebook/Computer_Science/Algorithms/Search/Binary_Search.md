@@ -1,6 +1,4 @@
----
-title: Binary Search
----
+#  Binary Search
 
 A logarithmic search algorithm to find a value in a sorted array.
 

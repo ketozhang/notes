@@ -1,6 +1,4 @@
----
-title: Options Pricing
----
+#  Options Pricing
 
 An option is derived from the price of the stock but is also effected by time (negatively) and implied volatility (also negatively). This model comes from the Black-Scholes formula.
 

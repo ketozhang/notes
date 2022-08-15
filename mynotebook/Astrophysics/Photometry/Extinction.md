@@ -1,6 +1,4 @@
----
-title: Extinction
----
+#  Extinction
 
 ## Total Extinction
 

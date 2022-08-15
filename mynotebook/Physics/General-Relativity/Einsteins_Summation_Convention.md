@@ -1,6 +1,4 @@
----
-title: Einstein's Summation Convention
----
+#  Einstein's Summation Convention
 
 ## Contravariant "Upstairs" Vector
 

@@ -1,3 +1,1 @@
----
-title: Probability Theory
----
+#  Probability Theory

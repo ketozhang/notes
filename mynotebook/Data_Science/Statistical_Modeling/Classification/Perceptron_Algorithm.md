@@ -1,6 +1,4 @@
----
-title: Percepton Algorithm
----
+#  Percepton Algorithm
 
 The perceptron algorithm is the most simplest form of what now called the neural network. The algorithm can be used to classify a binary class. The goal is to find some weights $\theta$ that satisfies the following:
 $$

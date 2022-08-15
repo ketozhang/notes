@@ -1,6 +1,4 @@
----
-title: Kernel Logistic Regression
----
+#  Kernel Logistic Regression
 
 Let's take the logistic regression algorithm with gradient descent. The kernel form for the update rule is
 

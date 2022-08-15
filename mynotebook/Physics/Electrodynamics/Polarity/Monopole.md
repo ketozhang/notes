@@ -1,6 +1,4 @@
----
-title: Monopole
----
+#  Monopole
 
 The monopole is the first term ($n=0$) of the multipole expansion. For a charge source of total charge $Q$,
 

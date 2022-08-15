@@ -1,6 +1,4 @@
----
-title: Coriolis Force
----
+#  Coriolis Force
 
 <!-- TOC -->
 

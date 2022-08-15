@@ -1,6 +1,4 @@
----
-title: Introduction
----
+#  Introduction
 
 Kernels are used like mathematical magic that is able to fit complicated curve with a collection simple functions called a kernel.
 

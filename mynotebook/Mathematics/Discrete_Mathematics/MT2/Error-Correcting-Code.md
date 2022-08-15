@@ -1,6 +1,4 @@
----
-title: Error Correcting Code
----
+#  Error Correcting Code
 
 Let a bit sequence be $m_1,m_2,\ldots,m_n$ of $n$ bits.
 We will be dealing with two types of errors:

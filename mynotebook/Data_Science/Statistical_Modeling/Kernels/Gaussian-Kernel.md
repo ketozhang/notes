@@ -1,6 +1,4 @@
----
-title: Gaussian Kernel
----
+#  Gaussian Kernel
 
 The **gaussian kernel** or the **radial basis function kernel** is,
 
@@ -8,7 +6,7 @@ $$
 k(x,z) = \exp\left(-\frac{|x-z|^2}{2\sigma^2}\right)
 $$
 
-This kernel is used for the design transformation 
+This kernel is used for the design transformation
 
 $$
 \Phi(x) = \exp\left(-\frac{x^2}{2\sigma^2}\right)\left[1, \frac{x}{\sigma \sqrt{1!}}, \frac{x^2}{\sigma^2 \sqrt{2!}} \ldots\right]^\top

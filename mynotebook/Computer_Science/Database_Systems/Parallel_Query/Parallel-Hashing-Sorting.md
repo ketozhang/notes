@@ -1,6 +1,4 @@
----
-title: Parallel Hashing and Sorting
----
+#  Parallel Hashing and Sorting
 
 ## Hash Join
 

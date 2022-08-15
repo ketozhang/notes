@@ -1,6 +1,4 @@
----
-title: Joint Probability
----
+#  Joint Probability
 The **joint probability distribution** describes the chance of the values of multiple random variables. The joint distribution is denoted as,
 
 $$

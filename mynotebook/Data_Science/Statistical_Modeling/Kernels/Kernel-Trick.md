@@ -1,6 +1,4 @@
----
-title: Kernel Trick
----
+#  Kernel Trick
 
 To explain the kernel trick we will look at the example of the polynomial design function $\Phi(x)$.
 

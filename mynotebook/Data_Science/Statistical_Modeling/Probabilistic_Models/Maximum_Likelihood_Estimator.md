@@ -1,6 +1,4 @@
----
-title: Maximum Likelihood Estimator
----
+#  Maximum Likelihood Estimator
 
 The maximum likelihood estimator (MLE)
 

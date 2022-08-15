@@ -1,6 +1,4 @@
----
-title: Vector Equation
----
+#  Vector Equation
 
 The **vector equation** (aka the **vis-viva equation**) is given by:
 

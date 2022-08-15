@@ -1,6 +1,4 @@
----
-title: Paradigms of Physics
----
+#  Paradigms of Physics
 
 All of the major topics of Physics which one may wish to learn. Box is checked if there exists a notebook here about the topic.
 

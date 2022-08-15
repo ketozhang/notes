@@ -1,6 +1,4 @@
----
-title: Builder
----
+#  Builder
 
 Construct complex objects step by step allowing different object types with the same construction code.
 

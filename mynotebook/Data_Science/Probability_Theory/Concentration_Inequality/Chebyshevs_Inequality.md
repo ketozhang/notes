@@ -1,6 +1,4 @@
----
-title: Chebyshev's Inequality
----
+#  Chebyshev's Inequality
 
 Corollary of the Markov's inequality is the Chebyshev's inequality. Suppose $X$ (not necessarily non-negative) has a finite expected value then its deviation from the mean follows,
 

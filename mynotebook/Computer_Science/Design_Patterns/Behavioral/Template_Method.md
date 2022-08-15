@@ -1,6 +1,4 @@
----
-title: Template Method
----
+#  Template Method
 
 Defines commons steps of an algorithm in a superclass but allows subclasses to override specific steps of the algorithm without changing its structure.
 

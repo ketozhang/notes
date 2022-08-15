@@ -1,6 +1,4 @@
----
-title: Non-Degenerate Perturbation Theory
----
+#  Non-Degenerate Perturbation Theory
 
 Given a easily solvable solution to the Schrodinger equation denoted as,
 

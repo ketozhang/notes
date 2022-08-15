@@ -1,6 +1,4 @@
----
-title: Hubble Constant
----
+#  Hubble Constant
 
 
 \[

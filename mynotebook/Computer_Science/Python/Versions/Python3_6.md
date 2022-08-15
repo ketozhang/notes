@@ -1,6 +1,4 @@
----
-title: Python 3.6
----
+#  Python 3.6
 
 Here lists the new features since Python 3.5 adopted or to be adopted into my codes.
 

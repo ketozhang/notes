@@ -1,6 +1,4 @@
----
-title: Loss Function
----
+#  Loss Function
 
 The **loss function** is a function that describe the cost, error, or loss resulting from a choice of a model. Mathematically you may interpret this as the function that calculates the deviation of the model from the actual answer/system.
 
@@ -76,7 +74,7 @@ Other discrete loss function can be built to portray for instance great loss for
 
 ## Ensemble Loss Function
 
-Given $n$ sample points and predictions $(y,\hat y )$ we'd like to get a value out of the loss for among every sample point. Take the loss as a vector $L$ and apply some aggregation function $f$ to get the **ensemble loss function**. 
+Given $n$ sample points and predictions $(y,\hat y )$ we'd like to get a value out of the loss for among every sample point. Take the loss as a vector $L$ and apply some aggregation function $f$ to get the **ensemble loss function**.
 $$
 \mathcal L = f(L)
 $$

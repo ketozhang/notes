@@ -1,6 +1,4 @@
----
-title: Flux
----
+#  Flux
 
 ## Flux
 

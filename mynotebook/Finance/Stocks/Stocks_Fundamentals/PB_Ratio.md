@@ -1,6 +1,4 @@
----
-title: Price to Book Ratio
----
+#  Price to Book Ratio
 
 The P/B ratio is the dollar amount an investor is willing to pay per dollar amount of the company's book value.
 

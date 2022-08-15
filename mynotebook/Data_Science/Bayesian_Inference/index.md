@@ -1,6 +1,4 @@
----
-title: Bayesian Inference
----
+#  Bayesian Inference
 
 # Sources
 

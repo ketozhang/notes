@@ -1,6 +1,4 @@
----
-title: Life in the Universe
----
+#  Life in the Universe
 
 # Life in the Universe
 1. [Life in the Universe](#life-in-the-universe)
@@ -23,12 +21,12 @@ title: Life in the Universe
 5. [Extraterrestial Life](#extraterrestial-life)
     1. [Fermi Paradox](#fermi-paradox)
 # What is Life?
-Life is defined by NASA as a system described as 
+Life is defined by NASA as a system described as
 
 * **Chemical Darwinian:** a self-sustained chemical system capable of undergoing Darwinian evolution.
 * **Darwinian**: a system cpaable of evolution by natural selection.
 
- 
+
 
 # Environment for Life
 ## Requirement for Life
@@ -72,7 +70,7 @@ All of these three conditions resulted in the creation of amino acid in the prim
 The theory suggest not only the ingredients of life but life (e.g., microbes) itself existed in objects (e.g., asteroids) that would eventually land on a suitable environment (e.g., planets) and start life. This theory also implies the possibility of life on other planets if Earth was a process of panspermia.
 
 ## Formation of Oxygen Atmosphere
-Oxygen are theorized to be formed majorly by living things around 2-3 Gyr through photosynthesis. It is crucial to prove that life can live without oxygen. 
+Oxygen are theorized to be formed majorly by living things around 2-3 Gyr through photosynthesis. It is crucial to prove that life can live without oxygen.
 
 # Development of Life
 We'll now dwell on the theory from the Miller-Urey experiment such that life began with a non-equilibrium impact. We may crudely summarize the formation of life in these steps:
@@ -81,12 +79,12 @@ We'll now dwell on the theory from the Miller-Urey experiment such that life beg
 2. First should be RNA (not DNA due to DNA being too twice as complex as RNA).
 3. Cellular formation where organic molecules live in these lipid membranes
     * Eurkaryotes and prokaryotes
-4. Evolution of eukaryotes to bodied life 
+4. Evolution of eukaryotes to bodied life
 
 ## Evidence of Very Early Life
 
 ### Banded Iron Formation and Cyanobacteria
-We'll go all the way back 3.85 Gyr which is the age of the oldest sedimentary rocks discovered. The sedimentary rocks have **banded iron formation (BIF)** that has two colors red (iron-rich) and gray (iron-poor). 
+We'll go all the way back 3.85 Gyr which is the age of the oldest sedimentary rocks discovered. The sedimentary rocks have **banded iron formation (BIF)** that has two colors red (iron-rich) and gray (iron-poor).
 
 * These feature are probably caused by **cyanobacteria** (found in the rocks as microfossils) at near-surface waters that interact with $\rm{O_2}$ and bond with $\rm{Fe}$ forming iron-oxides $\rm{FeO}$ that gets deposited in the rocks in a periodic way alternating bands.
 * The variation of the colored bands are probably due to fluctuation of $\rm{O_2}$ content in the atmosphere.
@@ -98,7 +96,7 @@ The **stromatolites** are structures aged at most 3.8 Gyr at near-surface water 
 
 * The eukaryotes seems to also live without oxygen.
 
-## Extinctions and Impacts of Life 
+## Extinctions and Impacts of Life
 Extinctions and impacts are the great dangers of life with the possibility of wiping all of life. I will consider extinction as a part of the impacts.
 
 * Life cannot have lived too early in the Earth's age due to a very high rate and large impact (asteroid fields size of planetesimals)

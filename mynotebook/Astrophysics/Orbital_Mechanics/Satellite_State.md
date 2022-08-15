@@ -1,6 +1,4 @@
----
-title: Satellite State
----
+#  Satellite State
 
 The classical Keplarian set of parameters that describe the state of the satellite is given by:
 

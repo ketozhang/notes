@@ -1,8 +1,6 @@
----
-title: Einstein's Field Equation
----
+#  Einstein's Field Equation
 
-Einstein's general relativity proposed the idea that the energy density and pressure of the universe is directly related to spacetime curvature. 
+Einstein's general relativity proposed the idea that the energy density and pressure of the universe is directly related to spacetime curvature.
 
 If the universe was purely made of up mass thus only gravity matters, the field equation (equation for how a free particle moves in some space) for the universe will be the Poisson equation:
 

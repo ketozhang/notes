@@ -1,6 +1,4 @@
----
-title: Cosmological Redshift
----
+#  Cosmological Redshift
 
 Recall that redshift $z$ is defined as,
 

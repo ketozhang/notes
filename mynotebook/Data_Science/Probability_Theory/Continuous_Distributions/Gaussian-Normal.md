@@ -1,6 +1,4 @@
----
-title: Gaussian or Normal Distribution
----
+#  Gaussian or Normal Distribution
 
 The most prevalent distribution appearing in countless fields is the Gaussian or normal distribution.
 

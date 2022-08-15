@@ -1,6 +1,4 @@
----
-title: Discrete Distributions
----
+#  Discrete Distributions
 
 1. Bernoulli
 1. Binomial

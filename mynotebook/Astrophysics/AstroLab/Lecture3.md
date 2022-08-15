@@ -1,6 +1,4 @@
----
-title: Lecture 3
----
+#  Lecture 3
 
 # Stellar Spectroscopy
 

@@ -1,6 +1,4 @@
----
-title: Join Operators
----
+#  Join Operators
 
 A single I/O in the operator model includes:
 

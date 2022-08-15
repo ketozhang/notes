@@ -1,6 +1,4 @@
----
-title: Bayes Decision Rule
----
+#  Bayes Decision Rule
 
 For some loss function $L$ the **Bayes Decision Rule** simply chooses the class with the maximum posterior distribution scaled by the loss of misclassification. For the cases of two classes, the decision rule looks like,
 

@@ -1,6 +1,4 @@
----
-title: Force
----
+#  Force
 
 Forced is defined with Newton's Second Law for a nonrelativistic inertial reference frame as,
 

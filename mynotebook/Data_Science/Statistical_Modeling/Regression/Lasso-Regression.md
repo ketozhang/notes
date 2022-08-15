@@ -1,6 +1,4 @@
----
-title: Lasso Regression
----
+#  Lasso Regression
 
 The **least absolute shrinkage and selection operator** (LASSO) regression is regression with $L_1$ loss,
 $$

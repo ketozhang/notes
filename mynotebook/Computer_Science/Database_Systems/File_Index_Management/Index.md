@@ -1,6 +1,4 @@
----
-title: Index
----
+#  Index
 
 **Index** is a data structure that enables fast lookup and modification of data entries by search keys. Often times the index is stored with the data pages which the whole file is called an **indexed file**
 

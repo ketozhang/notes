@@ -1,6 +1,4 @@
----
-title: Search Algorithm
----
+#  Search Algorithm
 
 ## Dynamic Programming
 We will implement dynamic programming (implementation changes depending on input and query) with the idea of principle of optimality.

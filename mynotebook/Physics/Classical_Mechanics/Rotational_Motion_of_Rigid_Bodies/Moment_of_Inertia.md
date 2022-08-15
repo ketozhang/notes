@@ -1,6 +1,4 @@
----
-title: Moment of Inertia
----
+#  Moment of Inertia
 
 ## Moment
 

@@ -1,6 +1,4 @@
----
-title: Simple Moving Average
----
+#  Simple Moving Average
 
 The **simple moving average** (**SMA**) for the stock price is a time series for each time the previous $N$-periods (often days) are average.
 

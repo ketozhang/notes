@@ -1,6 +1,4 @@
----
-title: Poisson and Laplace's equation
----
+#  Poisson and Laplace's equation
 
 The motivation for using the Laplace's equation in electrostatics is to solve for the electric potential $V(\boldsymbol r)$. Recall that from Gauss' law one may derive the Poisson equation,
 

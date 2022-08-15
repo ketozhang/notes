@@ -1,6 +1,4 @@
----
-title: Chi-Square Distribution
----
+#  Chi-Square Distribution
 
 The chi-square distribution is given by,
 

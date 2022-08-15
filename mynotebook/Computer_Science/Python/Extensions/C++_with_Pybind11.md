@@ -1,6 +1,4 @@
----
-title: C++ with Pybind11
----
+#  C++ with Pybind11
 
 ## Setup
 ```sh

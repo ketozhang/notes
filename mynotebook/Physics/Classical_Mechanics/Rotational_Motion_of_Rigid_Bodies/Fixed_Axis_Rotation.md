@@ -1,6 +1,4 @@
----
-title: Rotation about a Fixed Axis
----
+#  Rotation about a Fixed Axis
 
 <!-- TOC -->
 
@@ -9,7 +7,7 @@ title: Rotation about a Fixed Axis
 
 <!-- /TOC -->
 
-We will observe the rotation of a system of rigid bodies on a fixed axis ($\dot{\mathbf R} = 0$). 
+We will observe the rotation of a system of rigid bodies on a fixed axis ($\dot{\mathbf R} = 0$).
 
 ## Angular Momentum
 

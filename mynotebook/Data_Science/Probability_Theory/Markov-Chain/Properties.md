@@ -1,6 +1,4 @@
----
-title: Properties
----
+#  Properties
 
 ## Communication
 

@@ -1,6 +1,4 @@
----
-title: Beta Distribution
----
+#  Beta Distribution
 
 The Beta density function is given as,
 

@@ -1,6 +1,4 @@
----
-title: Objects
----
+#  Objects
 
 JavaScript objects comprised of the remaining datatypes built like Python dictionaries but implemented with hashes. The syntax for Java object can either be its legacy/original syntax or the more popular JSON (JavaScript Object Notation) syntax.
 

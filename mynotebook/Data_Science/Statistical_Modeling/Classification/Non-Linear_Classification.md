@@ -1,6 +1,4 @@
----
-title: Non-linear Classificaton
----
+#  Non-linear Classificaton
 
 ## Parabolic Transformations
 

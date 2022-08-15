@@ -1,6 +1,4 @@
----
-title: Introduction
----
+#  Introduction
 
 A probability density function (PDF) defines the continuous probability distribution. The PDF follows two basic rules,
 

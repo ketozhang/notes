@@ -1,6 +1,4 @@
----
-title: Binary Search Tree
----
+#  Binary Search Tree
 
 A binary search tree is a binary tree (each element having at most two child nodes) and requires all parents to be greater than their left child nodes and less than or equal to their right child node.
 

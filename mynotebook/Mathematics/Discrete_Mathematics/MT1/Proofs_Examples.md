@@ -1,6 +1,4 @@
----
-title: Proofs Examples
----
+#  Proofs Examples
 ## Stable Marriage
 
 * _**Theorem.** The stable marriage algorithm always halts._

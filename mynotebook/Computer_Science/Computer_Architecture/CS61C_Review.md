@@ -1,6 +1,4 @@
----
-title: CS61C Review
----
+#  CS61C Review
 
 ## Parallel Processing
 
@@ -19,7 +17,7 @@ There is 100 sets of branch instrucitons.
 
 ###### Unrolled
 ```c
-    int x; 
+    int x;
     for (x = 0; x < 20; x += 5 )
     {
         delete(x); // For loop here?
@@ -30,7 +28,7 @@ There is 100 sets of branch instrucitons.
     }
 ```
 
-There is now only 20 sets of branch instrucitons. 
+There is now only 20 sets of branch instrucitons.
 
 * One may make a for loop to do the unrolled statements. Many compilers are able to recognize these kinds of for loops.
 
@@ -62,7 +60,7 @@ Single instrucitons multiple data (**SIMD**) is a **data-level parallelism** des
     float eval_lagrange_fast(float *X, float *Y, float c, size_t n, size_t k) {
         float retval = 1, m[4];
         size_t i;
-        __m128 ret_vec = _mm_set1_ps(1); // single precision (sp) floating point vector vector <1, 1, 1, 1> 
+        __m128 ret_vec = _mm_set1_ps(1); // single precision (sp) floating point vector vector <1, 1, 1, 1>
         for (i = 0; i < n/4; i += 1) {
             if (i == k/4)
                 continue;
@@ -84,7 +82,7 @@ Single instrucitons multiple data (**SIMD**) is a **data-level parallelism** des
 
 ### MIMD - OpenMP
 
-Multiple instruction multiple data (**MIMD**) is a thread-level paralellism design. 
+Multiple instruction multiple data (**MIMD**) is a thread-level paralellism design.
 
 * Multithread in a single core allows the illusion of simultaneous multiprocessing. This is done by smart task managing by the operating system.
 * Each thread has separate registers and PC but the memory is shared.
@@ -143,7 +141,7 @@ The `critical` option creates a critical section for threads required to access 
 ```
 
 ###### Parallel For
-The `parallel for` option can be assigned to each thread by consecutive chunks. 
+The `parallel for` option can be assigned to each thread by consecutive chunks.
 
 ```c
 ##pragma omp parallel for{
@@ -168,11 +166,11 @@ int prod[NUM_THREADS]
 
 #### Shared Memory
 
-Because memory between are shared we can get a bug called a **race condition**. A race condition is caused due to the threads accessing the same memory (often when writing). 
+Because memory between are shared we can get a bug called a **race condition**. A race condition is caused due to the threads accessing the same memory (often when writing).
 
 * If all threads write to a memory then only the latest write is saved.
 
-The solution to this issue is to allow a thread to **lock** the data needed through the process called **atomic memory operatons (AMO)** . 
+The solution to this issue is to allow a thread to **lock** the data needed through the process called **atomic memory operatons (AMO)** .
 
 * The AMO is implemented onto the ISA with specific opcodes
 * See [critical section](#critical) for an example of OpenMP using AMO.

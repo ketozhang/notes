@@ -1,6 +1,4 @@
----
-title: Average
----
+#  Average
 
 The average of random variables $X = [X_1, X_2, \ldots, X_n]$ is a type of sums notably,
 

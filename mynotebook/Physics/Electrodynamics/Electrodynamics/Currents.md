@@ -1,6 +1,4 @@
----
-title: Currents
----
+#  Currents
 
 Current $\bvec I$ is the charge per unit time flowing through some wire. The SI unit is coulombs-per-second $(\mathrm{C\cdot s^{-1}})$ or **amperes** ($\mathrm A$),
 

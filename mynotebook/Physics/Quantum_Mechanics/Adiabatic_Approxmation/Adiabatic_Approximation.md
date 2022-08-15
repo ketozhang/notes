@@ -1,6 +1,4 @@
----
-title: Adiabatic Approximation
----
+#  Adiabatic Approximation
 
 The adiabatic approximation considers a time dependent Hamiltonian $H(t)$ that preserves the **adibataic theorem**
 
@@ -23,7 +21,7 @@ Proof
 : For a time-dependent Hamiltonian $H(t)$, the eigenfunction and eigenvalue changes with time
 
     $$H(t)\psi_n(t) = E_n(t)\psi_n(t)$$
- 
+
     In general the total wavefunction $\Psi(t)$ is a linear combination of each eigenstate however this time the $E_n(t)$ is no longer constant over time,
 
     $$
@@ -53,7 +51,7 @@ Proof
 
     Now let's apply the adibatic approximation. $\dot H$ is very small because the Hamiltonian changes slowly thus the whole second term droped in $\dot c_m(t)$
 
-    $$ 
+    $$
         \dot c_m(t) = - c_m\braket{\psi_m}{\dot \psi_m}
     $$
 
@@ -90,13 +88,13 @@ $$
 
 Say after some time $T$ the Hamiltonian return to it's original form therefore travel around the closed loop around $\mathbf R$,
 
-$$ 
+$$
 \boxed{\gamma_n(T) = i \oint{\braket{\psi_n}{\nabla_{\mathbf R}\psi_n}\d \mathbf R}}
 $$
 
 From Stoke's theorem we may write this as a surface integral,
 
-$$ 
+$$
 \boxed{\gamma_n(T) = i \int{\nabla_{\mathbf R} \times \braket{\psi_n}{\nabla_{\mathbf R}\psi_n}\d \mathbf a}}
 $$
 
@@ -104,7 +102,7 @@ $$
 
 Consider an electron splitting dodging the solenoid magnetic field. Let's center the coordinate system at the solenoid such that,
 
-$$ 
+$$
 \mathbf B(r) = \begin{cases}
     B_0 \hat z & r < a\\
     0 & r > a
@@ -113,7 +111,7 @@ $$
 
 The Aharonov-Bohm effect states there a geometric phase will occur to the wavefunction ofthe electron even if the electron does not travel through a nonzero magnetic field. The vector potential of the magnetic field is given by,
 
-$$ 
+$$
 \mathbf B = \nabla \times \mathbf A \\
 \mathbf A = \frac{\Phi}{2\pi r}\hat\phi \qquad (r>a)
 $$
@@ -124,7 +122,7 @@ $$ \left[ \frac{1}{2m}\left(\frac{h}{i}\nabla - q\mathbf A \right)^2 + V \right]
 
 This has the solutions,
 
-$$ 
+$$
 \Psi = e^{ig}\Psi'\\
 g(\mathbf r) \equiv \frac{q}{\hbar}\int_{\mathcal{O}}^{\mathbf r}{\mathbf A(\mathbf r')\cdot \d \mathbf r'} = \pm \frac{q\Phi}{2\hbar}
 $$

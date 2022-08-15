@@ -1,6 +1,4 @@
----
-title: Period luminosity Relation
----
+#  Period luminosity Relation
 
 ## Dereddening
 

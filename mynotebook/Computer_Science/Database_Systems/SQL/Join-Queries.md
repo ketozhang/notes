@@ -1,6 +1,4 @@
----
-title: Join Queries
----
+#  Join Queries
 
 The standard SQL join are part of the `FROM` clause. The syntax is,
 

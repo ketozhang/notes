@@ -1,6 +1,4 @@
----
-title: Examples
----
+#  Examples
 
 ## Bootstrap Problem
 Consider a population of size $n$ and a boostrap sample of size $N$. The variations of this problem are all either with or without replacement.

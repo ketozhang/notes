@@ -1,6 +1,4 @@
----
-title: Young's Double Slit for Electrons
----
+#  Young's Double Slit for Electrons
 
 Using the famous Young's double slit experiment we can see one of the most interesting properties of quantum particles; for now, let's focus on the electron.
 
@@ -19,7 +17,7 @@ The result show that the electron follows the property of waves:
 * The probability distribution of $P_{12}$ is not particle-like such that it's the sum of $P_1 + P_2$,
 
     $$ P_{12} \neq P_1 + P_2$$
-    
+
     Instead the electron is actually wave-like such that we define $P_1 = \lvert \phi_1 \rvert^2$ and $P_2 = \lvert \phi_2 \rvert^2$,
 
     $$
@@ -33,7 +31,7 @@ The result show that the electron follows the property of waves:
 
 ## Experiment 2 - Observed
 
-In this experiment instead of covering the hole, we place a detector at each hole to determine if the electron that landed at the wall comes from slit 1 or slit 2. 
+In this experiment instead of covering the hole, we place a detector at each hole to determine if the electron that landed at the wall comes from slit 1 or slit 2.
 
 The results show that the electron follows the property of particles:
 

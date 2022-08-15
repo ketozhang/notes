@@ -1,6 +1,4 @@
----
-title: The Schrodinger Equation
----
+#  The Schrodinger Equation
 
 The Schrodinger equation is an equation followed by all of non-relativstic quantum mechanics. It states that for a quantum mechanical system there exist a wavefunction $\Psi(x,t)$ that satisfies the Schrodinger equation given by,
 
@@ -11,7 +9,7 @@ $$ \boxed{i\hbar \frac{\partial \Psi}{\partial t} = \hat{H} \Psi} $$
 
 The Schrodinger equation is often describe as the equivalent of Newton's second law ($F=ma$) for quantum mechanics. Recall that Newton's second law is a partial derivative,
 
-$$ 
+$$
 \begin{align}
     -\frac{\partial V}{\partial x} &= m\frac{d^2x}{dt^2} \tag{Partial Derivative Form}
 \end{align}
@@ -19,11 +17,11 @@ $$
 
 ## Separation By Variables
 
-The separation by variables may be applied to the Schrodinger Equation to separate into the product of two solutions given by, 
+The separation by variables may be applied to the Schrodinger Equation to separate into the product of two solutions given by,
 
 $$\boxed{\Psi(x,t) = \psi(x)\varphi(t), \quad \varphi(t) = e^{\frac{-iEt}{\hbar}}}$$
 
-* $\psi$ : the spacial wavefunction defined as $\psi(x) \equiv \Psi(x)$ 
+* $\psi$ : the spacial wavefunction defined as $\psi(x) \equiv \Psi(x)$
 * $\varphi$ : the temporal wavefunction defined as $\varphi(t) \equiv \Psi(t)$.
 
 If you were to plug in the separated solution into the Schrodinger equation you will get a very important relationship,
@@ -54,7 +52,7 @@ $$ \boxed{\Psi(x,t) = \sum{c_n\psi_ne^{\frac{-iE_nt}{\hbar}}}} $$
 
 ### Finite Square Well (Scattering State)
 
-### Finite Square Well (Bounded State) 
+### Finite Square Well (Bounded State)
 
 ### Free Particle
 

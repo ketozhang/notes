@@ -1,6 +1,4 @@
----
-title: Degenerate Perturbation Theory
----
+#  Degenerate Perturbation Theory
 
 For the perturbed Hamiltonian $H = H^0 + H'$. If the eigenstates of $H^0$ are degenerate then there is a case where non-degenerate perturbation theory does not apply.
 

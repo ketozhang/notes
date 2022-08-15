@@ -1,6 +1,4 @@
----
-title: Entity Relationship Diagram
----
+#  Entity Relationship Diagram
 
 In an entity relationship diagram (ERD), we have the following objects:
 

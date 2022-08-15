@@ -1,6 +1,4 @@
----
-title: Hypergeometric
----
+#  Hypergeometric
 
 The hypergeomtric distribution is given as,
 

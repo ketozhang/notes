@@ -1,6 +1,4 @@
----
-title: Regression Tree
----
+#  Regression Tree
 
 Decision tree on regression differs by the loss function and the last step when predicting $\hat y$ given some sample point $z$.
 

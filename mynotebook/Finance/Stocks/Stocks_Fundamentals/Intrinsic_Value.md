@@ -1,6 +1,4 @@
----
-title: Intrinsic Value
----
+#  Intrinsic Value
 
 The intrinsic value is an estimate on a company's worth based on fundamental factors (e.g., cash flows, future growth, risk). Methodology that attempts to estimate the intrinsic value are called **valuation models**.
 

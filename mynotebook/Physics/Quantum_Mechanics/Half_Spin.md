@@ -1,6 +1,4 @@
----
-title: Half Spin
----
+#  Half Spin
 
 # Eigenvalue Relations
 

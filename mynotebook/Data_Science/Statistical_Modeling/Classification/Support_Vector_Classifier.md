@@ -1,6 +1,4 @@
----
-title: Support Vector Classifier
----
+#  Support Vector Classifier
 
 Given that not all data can be fitted by a **maximal margin classifier** (MMC), the **Support Vector Classifier** attempts to generalize this classifier.
 

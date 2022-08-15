@@ -1,6 +1,4 @@
----
-title: Abstract Method
----
+#  Abstract Method
 
 Produce families of related objects without specifying their concrete classes.
 

@@ -1,6 +1,4 @@
----
-title: Centrifugal Force
----
+#  Centrifugal Force
 
 <!-- TOC -->
 
@@ -33,14 +31,14 @@ The gravitational acceleration of Earth is affected by the centrifugal force suc
 
 $$ \mathbf g = \frac{\mathbf F_g}{m} + \frac{ m\Omega^2 \rho \hat \rho}{m} \\
 = \mathbf g_0 +  \Omega^2 \rho \hat \rho \\
-= \mathbf g_0 +  \Omega^2 R\sin\theta \hat \rho 
+= \mathbf g_0 +  \Omega^2 R\sin\theta \hat \rho
 $$
 
 * $R$ : radius of the Earth
 
 The angle between $\mathbf g$ and $ \mathbf g_0 $ can be calculated by using the components
 
-$$ 
+$$
 \boxed{\alpha \approx \frac{g_r}{g_\perp}}\\
 g_\perp = \Omega^2 R \sin \theta \cos\theta\\
 g_r = \Omega^2 R \sin^2 \theta

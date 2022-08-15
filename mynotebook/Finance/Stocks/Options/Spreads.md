@@ -1,6 +1,4 @@
----
-title: Spreads
----
+#  Spreads
 
 Spreads are simulataneous buying and selling of options of the same stock at different strike prices. Here we will only focus on vertical spreads.
 

@@ -1,6 +1,4 @@
----
-title: Jekyll Website (This Website)
----
+#  Jekyll Website (This Website)
 
 [Official Instructions](https://jekyllrb.com/docs/installation/)
 

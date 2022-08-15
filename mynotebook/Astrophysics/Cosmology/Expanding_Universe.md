@@ -1,6 +1,4 @@
----
-title: Expanding Universe
----
+#  Expanding Universe
 ## Scale Factor and Comoving Distance
 To begin talking about the expanding universe, one must have the notion of the scale factor and comoving distance. Imagine a cartesian grid drawn on the universe. Each tick mark in the grid corresponds to the **comoving distance** and the distance of each tick marks corresponds to the **scale factor**.
 

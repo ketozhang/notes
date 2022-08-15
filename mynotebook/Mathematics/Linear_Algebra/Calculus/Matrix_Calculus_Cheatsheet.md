@@ -1,6 +1,4 @@
----
-title: Matrix Calculus Cheatsheet
----
+#  Matrix Calculus Cheatsheet
 
 ## WRT Vector
 

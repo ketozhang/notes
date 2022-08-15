@@ -1,6 +1,4 @@
----
-title: Distributed Transaction
----
+#  Distributed Transaction
 
 A distributed transaction required a distributed database among many machines. Typically these machine follow the share-nothing set up.
 

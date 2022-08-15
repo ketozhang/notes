@@ -1,6 +1,4 @@
----
-title: Stable Marriage
----
+#  Stable Marriage
 
 The stable marriage problem is a matching problem where there are $n$ men and $n$ women who have a preference list that ranks every men and every women.
 

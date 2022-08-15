@@ -1,12 +1,10 @@
----
-title: Wavefunction
----
+#  Wavefunction
 
 Throughout quantum mechanics we use the wavefunction which is comparably used to describe "where a particle is". There are many interpretation of the wavefunction, however, the one most accepted is the [statistical interpretation](#statistical-interpretation). Unfortunately we can't get much further without agreeing that the statistical interpretation is sufficient.
 
 ## Statistical and Copenhagen Interpretation
 
-The wavefunction does not actually tell you where a particle is for some given time; instead the **wavefunction** $\Psi(x,t)$ correlates to the probability of the particle being in some position $x$ for some given time $t$. The definition above is definitely abstract and it is considered the **statistical interpretation** of the wavefunction. 
+The wavefunction does not actually tell you where a particle is for some given time; instead the **wavefunction** $\Psi(x,t)$ correlates to the probability of the particle being in some position $x$ for some given time $t$. The definition above is definitely abstract and it is considered the **statistical interpretation** of the wavefunction.
 
 * The most accepted explanation of why we must describe quantum system with probability is that any attempt to observe where the particle is will drastically change the actual position of the particle. In other words, physicist has accepted that it is impossible to measure the exactly position knowing its exact momentum (which is used in the Schrodinger equation). The acceptance of this limitation is called the **Copenhagen interpretation**.
 

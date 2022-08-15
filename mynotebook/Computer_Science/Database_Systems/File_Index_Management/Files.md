@@ -1,6 +1,4 @@
----
-title: Files
----
+#  Files
 
 The memory architecture for storing data uses a file hierarchy.
 

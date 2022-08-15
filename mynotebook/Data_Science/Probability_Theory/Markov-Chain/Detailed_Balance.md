@@ -1,6 +1,4 @@
----
-title: Detailed Balance
----
+#  Detailed Balance
 
 Consider a Markov chain where on the long run, for all states $i$ and $j$, the proportion (or chance) of states moving from $i$ to $j$ is the same as from $j$ to $i$. This suggest the following relation,
 

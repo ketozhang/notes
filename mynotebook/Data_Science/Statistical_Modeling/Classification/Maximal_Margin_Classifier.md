@@ -1,6 +1,4 @@
----
-title: Maximal Margin Classifier
----
+#  Maximal Margin Classifier
 
 Because there may exist infinitely many hyperplane that can classify the input data, we need to determine which hyperplane is the best fit. Naturally, points that are closer to the hyperplane are considered more ambiguous and error-prone than those further away from the hyperplane. Given this metric, we consider the best hyperplane to be one that is furthest away from its immediate neighboring data points. This method is coined the name **maximal margin classifier (MMC)**
 

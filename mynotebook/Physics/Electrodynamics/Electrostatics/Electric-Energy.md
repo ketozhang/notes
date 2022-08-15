@@ -1,6 +1,4 @@
----
-title: Electric Energy
----
+#  Electric Energy
 
 ## Work
 

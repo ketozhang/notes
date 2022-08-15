@@ -1,6 +1,4 @@
----
-title: N-Body Problem
----
+#  N-Body Problem
 
 ## Two Body Problem
 The two body problem is one at which two particles interacting at vector position $\boldsymbol{r_1}$ and $\boldsymbol{r_2}$ away from some arbitrary origin. The insignificance of this origin is what makes this problem difficult. The interaction of the two particle is some potential energy (e.g., gravitational potential, electrical potential) that has a distance dependent. The distance between the two particle is $r = \abs{\boldsymbol{r_1}-\boldsymbol{r_2}}$ thus their Lagrangian is,

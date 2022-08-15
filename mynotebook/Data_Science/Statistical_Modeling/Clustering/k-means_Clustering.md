@@ -1,6 +1,4 @@
----
-title: k-means Clustering
----
+#  k-means Clustering
 
 **k-means clustering** or **Lloyd's Algorithm** partitions $n$ points into $k$ disjoint clusters. Assign each input point $X_i$ a cluster label $y_i \in [1,k]$.
 

@@ -1,6 +1,4 @@
----
-title: Gamma Distribution
----
+#  Gamma Distribution
 
 The gamma distribution is given by,
 

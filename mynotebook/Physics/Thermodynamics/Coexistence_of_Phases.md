@@ -1,16 +1,14 @@
----
-title: "Coexistence of Phases"
----
+#  "Coexistence of Phases"
 
 # Coexistence of Phases
 
-Consider a substance in isothermal such that we are able to vary its volume and pressure. We may graph this in a curve called the **isotherm**. 
+Consider a substance in isothermal such that we are able to vary its volume and pressure. We may graph this in a curve called the **isotherm**.
 
 Let's focus on liquid and gas phase (all of this applies between solid-gas and solid-liquid as well). At a certain isotherm the two liquid and gas phase may coexist if:
 
 * the isotherm lies below a **critical temperature** $\tau_c$ such that
 * the two phases are in thermal, diffusive, and pressure equilibrium
-    
+
     $$\tau_l=\tau_g, \quad \mu_l=\mu_g, \quad P_l = P_g$$
 
 * note that the the substance will in a certain phase if that phase's chemical potential is the lowest:
@@ -57,8 +55,8 @@ Replacing this definition to $dP/d\tau$ above gives the **Clausius-Claperyon equ
 
 $$ \boxed{\frac{dP}{d\tau} = \frac{L}{\tau \Delta \nu}} $$
 
-## Clausius-Claperyon of the Ideal Gas 
-The Clausius-Claperyon relation has a useful form in the ideal gas such that 
+## Clausius-Claperyon of the Ideal Gas
+The Clausius-Claperyon relation has a useful form in the ideal gas such that
 
 * $\Delta \nu \approx v_g = V_g/N_g$ since gas takes up more volume by many orders $v_g / v_l \approx 10^3$
 * Ideal gas law is followed so that $\Delta v \approx V_g/N_g = \tau/P$
@@ -69,13 +67,13 @@ $$
 \begin{gathered}
     \frac{dP}{d\tau} = \frac{L}{\tau^2}P \\
     \boxed{\frac{d}{d\tau}\log{P} = \frac{L}{\tau^2}}
-\end{gathered} 
+\end{gathered}
 $$
 
 ### Coexistence Curve of the Ideal Gas
 If we assume that $L=L_0$ does not depend on temperature then we can easily integrate the Clausius-Claperyon equation to the coexistence curve.
 
-$$ 
+$$
 \begin{gathered}
     \int{\frac{dP}{P}} = L_0 \int{\frac{1}{\tau^2} d\tau} \\
     \boxed{P(\tau) = P_0e^{-L_0/\tau}}

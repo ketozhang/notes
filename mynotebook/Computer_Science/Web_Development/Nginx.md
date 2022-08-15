@@ -1,6 +1,4 @@
----
-title: Nginx
----
+#  Nginx
 
 For Ubuntu 18.04+
 

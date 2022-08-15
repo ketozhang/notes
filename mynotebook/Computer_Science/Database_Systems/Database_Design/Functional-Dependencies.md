@@ -1,6 +1,4 @@
----
-title: Functional Dependencies
----
+#  Functional Dependencies
 
 A functional dependence betweeen two attributes $X$ and $Y$ are notated as $X \rightarrow Y$. This implies for any two rows $r_1$ and $r_2$ in the table,
 

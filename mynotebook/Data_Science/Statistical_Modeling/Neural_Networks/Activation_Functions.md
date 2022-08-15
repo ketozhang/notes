@@ -1,6 +1,4 @@
----
-title: Activation Functions
----
+#  Activation Functions
 
 ## Softmax Function
 

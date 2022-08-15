@@ -1,6 +1,4 @@
----
-title: Specific Angular Momentum
----
+#  Specific Angular Momentum
 
 The angular momentum $\vec L = I\vec\omega$ in this system is purely the oribtal angular momentum of two point masses with $I=r^2m$. Thus,
 

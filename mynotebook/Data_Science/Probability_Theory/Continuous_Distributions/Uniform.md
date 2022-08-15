@@ -1,6 +1,4 @@
----
-title: Uniform (Continuous)
----
+#  Uniform (Continuous)
 
 $$
 f_X(x) = \frac{1}{a}; \qquad a \le x \le 1

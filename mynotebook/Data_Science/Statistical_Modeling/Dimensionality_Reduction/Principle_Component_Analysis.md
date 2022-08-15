@@ -1,6 +1,4 @@
----
-title: Principle Component Analysis
----
+#  Principle Component Analysis
 
 **Principle Component Analysis (PCA)** reduces the dimension by projecting onto another subspace that captures as much variation of the data as possible.
 

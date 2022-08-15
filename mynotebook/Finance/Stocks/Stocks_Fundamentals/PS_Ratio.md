@@ -1,6 +1,4 @@
----
-title: Price to Sale Ratio
----
+#  Price to Sale Ratio
 
 Replacing earnings with sales, the P/S ratio is the dollar amount an investor is willing to pay per dollar amount the company sells
 

@@ -1,6 +1,4 @@
----
-title: Iterators
----
+#  Iterators
 
 Each operator has an iterator interface which may streamline the output
 

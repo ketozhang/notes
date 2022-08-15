@@ -1,6 +1,4 @@
----
-title: Likelihood Ratio
----
+#  Likelihood Ratio
 
 The likliehood ratio statistics is used as a benchmark for m odel solution. The likelihood ratio is defined as the difference between the log-likelihood of the null $L_0$ and alternative hypothesis $L$.
 

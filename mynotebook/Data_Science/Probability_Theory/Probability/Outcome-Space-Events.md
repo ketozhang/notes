@@ -1,6 +1,4 @@
----
-title: Outcome Space and Events
----
+#  Outcome Space and Events
 
 We begin with introducing probability theory by thinking about how do we think the world works --- or at least a part of it. In probability theory, we assume there's **a world that has outcomes occurring by chance**. It is said that in this world, random processes exists.
 

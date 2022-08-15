@@ -1,6 +1,4 @@
----
-title: Floating Point
----
+#  Floating Point
 
 A floating point is a binary representation to include non-integer numbers along with $\pm \infty$ and `NaN`.
 

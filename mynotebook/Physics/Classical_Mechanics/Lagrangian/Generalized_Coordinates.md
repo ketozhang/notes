@@ -1,6 +1,4 @@
----
-title: Generalized Coordinates
----
+#  Generalized Coordinates
 
 ## Reducing Coordinates
 

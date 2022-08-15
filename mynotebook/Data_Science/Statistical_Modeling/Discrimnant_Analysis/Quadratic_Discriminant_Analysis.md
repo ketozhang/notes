@@ -1,6 +1,4 @@
----
-title: Quadratic Discriminant Analysis
----
+#  Quadratic Discriminant Analysis
 
 
 

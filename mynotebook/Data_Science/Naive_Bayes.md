@@ -1,6 +1,4 @@
----
-title: Naive Bayes
----
+#  Naive Bayes
 
 The Naive Bayes is an algorithm for classification. Let's first define Naive Bayes it for two categories. $Y$ is either in category $A$ or category $B$ where $Y$ has features notated as the random variable $\Phi=\set{\phi_1,\phi_2,\ldots,\phi_n}$
 

@@ -1,6 +1,4 @@
----
-title: Cepheid
----
+#  Cepheid
 
 Beware of overloaded terminology when explaining cepheids.
 

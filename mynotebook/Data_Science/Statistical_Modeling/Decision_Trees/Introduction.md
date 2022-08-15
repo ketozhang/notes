@@ -1,6 +1,4 @@
----
-title: Introduction
----
+#  Introduction
 
 The decision tree is a nonlinear method for classification and regression. The decision tree is a tree with two node types:
 
@@ -34,7 +32,7 @@ Now the problem left is to choose a loss function. A heuristic choice is the cro
 
 ## Splitting Boundary
 
-An algorithm of finding the bondary cost $\mathcal O(n \cdot d \cdot \texttt{depth})$. 
+An algorithm of finding the bondary cost $\mathcal O(n \cdot d \cdot \texttt{depth})$.
 
 ## Regression
 

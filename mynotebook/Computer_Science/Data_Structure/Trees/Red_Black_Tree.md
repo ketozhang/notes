@@ -1,6 +1,4 @@
----
-title: Red-black Tree
----
+#  Red-black Tree
 
 The red-black tree is a binary search tree with the following properties:
 

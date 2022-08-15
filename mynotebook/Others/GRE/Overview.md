@@ -1,6 +1,4 @@
----
-title: GRE Overview
----
+#  GRE Overview
 
 ## Quantitative Reasoning
 

@@ -1,6 +1,4 @@
----
-title: Mean Squared Error
----
+#  Mean Squared Error
 
 The **mean squared error** or more appropriately **mean squared deviance** of random variables $X = [X_1, X_2, \ldots, X_n]$ is a type of sums notably for an array of random variables,
 

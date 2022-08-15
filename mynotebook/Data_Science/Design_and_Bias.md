@@ -1,6 +1,4 @@
----
-title: Design and Bias
----
+#  Design and Bias
 ## Types of Data Sets
 
 The best data may be an exhaustive data set full of everything you need. This ideal data set is called a **census**.

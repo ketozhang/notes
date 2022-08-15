@@ -1,6 +1,4 @@
----
-title: The Eigenvector-Eigenvalue Problem
----
+#  The Eigenvector-Eigenvalue Problem
 
 The eigenvector-eigenvalue problem is one with the form of,
 

@@ -1,6 +1,4 @@
----
-title: Tidal Forces
----
+#  Tidal Forces
 
 ![](2018-03-05-15-22-03.png)
 

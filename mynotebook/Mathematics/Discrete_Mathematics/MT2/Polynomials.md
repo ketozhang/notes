@@ -1,6 +1,4 @@
----
-title: Polynomials
----
+#  Polynomials
 
 The polynomials is a set of functions in the form,
 

@@ -1,6 +1,4 @@
----
-title: Law of Large Numbers
----
+#  Law of Large Numbers
 
 For a sequence of iid random variables $X_1,\ldots,X_n$ let the **sample mean** be defined as,
 

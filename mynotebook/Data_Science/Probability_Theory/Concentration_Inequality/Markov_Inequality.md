@@ -1,6 +1,4 @@
----
-title: Markov's Inequality
----
+#  Markov's Inequality
 
 Markov's inequality at its simplest deals with the expected value (or first moment) of the distribution. For a non-negative random variable $X$ with a finite expected value $\mathbb E[X]$, the probability that its at least the constant constant $c$ is,
 

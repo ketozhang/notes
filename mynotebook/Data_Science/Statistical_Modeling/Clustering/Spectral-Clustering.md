@@ -1,6 +1,4 @@
----
-title: Spectral Graph Clustering
----
+#  Spectral Graph Clustering
 
 Take a weighted, undirected graph $G(V,E)$ that has no self-edges where the weights are $w_{ij}$ of edge $(i,j) =  (j,i)$. The weight is zero if there is no edge between the vertices.
 

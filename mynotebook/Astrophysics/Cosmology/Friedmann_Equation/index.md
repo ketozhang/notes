@@ -1,3 +1,1 @@
----
-title: Friedmann Equation
----
+#  Friedmann Equation

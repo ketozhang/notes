@@ -1,6 +1,4 @@
----
-title: Probability Generating Function
----
+#  Probability Generating Function
 
 ## Polynomial
 

@@ -1,6 +1,4 @@
----
-title: Confidence Intervals
----
+#  Confidence Intervals
 
 ## General
 

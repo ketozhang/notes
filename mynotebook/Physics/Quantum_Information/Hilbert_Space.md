@@ -1,6 +1,4 @@
----
-title: Hilbert Space
----
+#  Hilbert Space
 
 Axiom 1
 : A state is a ray in the Hilbert space. A ray is a general case of a vector that need not to have an origin and need not to be represented by basis vectors.

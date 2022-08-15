@@ -1,6 +1,4 @@
----
-title: Kernel Ridge Regression
----
+#  Kernel Ridge Regression
 
 Take some cenetered data $X, y$ such that we can confidently write the normal equation for ridge regression as:
 

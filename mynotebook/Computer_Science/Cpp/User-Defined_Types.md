@@ -1,6 +1,4 @@
----
-title: User-Defined Types
----
+#  User-Defined Types
 
 ## Structure
 

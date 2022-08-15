@@ -1,6 +1,4 @@
----
-title: Stan
----
+#  Stan
 
 ## Model Architecture
 

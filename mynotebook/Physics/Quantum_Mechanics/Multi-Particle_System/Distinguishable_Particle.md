@@ -1,6 +1,4 @@
----
-title: Distinguishable Particles
----
+#  Distinguishable Particles
 
 A system of distinguishable particles by statistics has a wavefunction equal to the product of each individual particle's wavefunction,
 

@@ -1,3 +1,1 @@
----
-title: Entity to Schema
----
+#  Entity to Schema

@@ -1,6 +1,4 @@
----
-title: Introduction to Clustering
----
+#  Introduction to Clustering
 
 A method to partition data into groups of similarity or nearby points. Some usage of clustering includes:
 

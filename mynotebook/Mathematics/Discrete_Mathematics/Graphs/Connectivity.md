@@ -1,6 +1,4 @@
----
-title: Connectivity
----
+#  Connectivity
 
 Theorem: Minimum Edges
 : A connected graph with $V$ vertices must have at least $E-1$ edges,,

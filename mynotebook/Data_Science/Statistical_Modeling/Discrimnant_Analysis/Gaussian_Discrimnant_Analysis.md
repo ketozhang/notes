@@ -1,6 +1,4 @@
----
-title: Gaussian Discrimnant Analysis
----
+#  Gaussian Discrimnant Analysis
 
 ## Multivariate Gaussian
 

@@ -1,6 +1,4 @@
----
-title: Planetary Rings
----
+#  Planetary Rings
 
 Planetary Rings
 =====
@@ -57,13 +55,13 @@ $$t_\text{flat} = \frac{\tau}{\mu}$$
 There are two spacial waves ($\frac{dN}{dV}$) one horizontal (**spiral density waves**) and vertical (**spiral bending waves**) are caused by orbital resonance with the moon. Spiral waves are affected throughout the ring system however are not considered gaps due to the weak gravitational affects of the moons.
 
 ## Shepherding
-We begin the formation of the gaps by a process called **shepherding** -- moon repels ring material on nearby orbits. This is due to the transfering of angular momentum from the ring material to the moon effectively increasing the ring material's eccentricity ($L\propto \sqrt{1-e^2}$). 
+We begin the formation of the gaps by a process called **shepherding** -- moon repels ring material on nearby orbits. This is due to the transfering of angular momentum from the ring material to the moon effectively increasing the ring material's eccentricity ($L\propto \sqrt{1-e^2}$).
 
 * One moon will push the ring material of two sides clearing the path for itself.
 * Two moons will push the ring material together creating a narrow band.
 
 ### Moonlets
-**Moonlets** has a radius of several kilometers causing gaps several times its radius. The moonlets are porous with a low density of about $\rho\le 500 \rm{\ kg\ m^{-3}}$ 
+**Moonlets** has a radius of several kilometers causing gaps several times its radius. The moonlets are porous with a low density of about $\rho\le 500 \rm{\ kg\ m^{-3}}$
 
 ## Ring Survival
 The ring its material very fast due to either sputtering, gas drag, Poynting-Robertson drag, or re-accretion. The replenishment of rings are caused by the same reason they were formed see [Formation](#formation)

@@ -1,6 +1,4 @@
----
-title: Exponential Decay Distribution
----
+#  Exponential Decay Distribution
 
 The exponential decay distribution is a continuous distribution,
 

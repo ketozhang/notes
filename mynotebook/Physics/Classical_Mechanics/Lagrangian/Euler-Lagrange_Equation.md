@@ -1,6 +1,4 @@
----
-title: Euler-Lagrange Equation
----
+#  Euler-Lagrange Equation
 
 Calculus of variations attempts to solve the shortest path problem problem in a form of the following integral,
 
@@ -19,7 +17,7 @@ $$
 \end{align}
 $$
 
-What we wish to find is $y(x)$ which is a curve that minimizes $S$. 
+What we wish to find is $y(x)$ which is a curve that minimizes $S$.
 
 Any function that satisfies the **Euler-Lagrange equation** (or shortly **Lagrange equations**) can construct the proper $y(x)$. The Lagrange equation is written as,
 
@@ -68,7 +66,7 @@ The two properties of the Lagrange equation are theorems that makes solving for 
 
 **Theorem 1: **
 : If $f[x(t),x'(t),t]$ is independent on any of its zeroth order derivative parameters $x$ such that,
-    
+
     $$ \frac{\partial f}{\partial x} = 0$$
 : then its derivative along say $x'$ is a constant $C$,
 
@@ -98,7 +96,7 @@ $$
     \frac{\partial f}{\partial y} = 0, \quad \frac{\partial f}{\partial y'} = \frac{y'}{(1+y'^2)^{1/2}} \nonumber\\
     \frac{y'}{(1+y'^2)^{1/2}} = C\\
 \end{gather}
-$$ 
+$$
 For some constant $C$.
 
 $$

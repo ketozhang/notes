@@ -1,6 +1,4 @@
----
-title: Estimators
----
+#  Estimators
 
 ## Unbiased Estimator
 

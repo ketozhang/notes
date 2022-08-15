@@ -1,6 +1,4 @@
----
-title: Ampere's Law
----
+#  Ampere's Law
 
 **Ampere's Law** is the curl of the magnetic field $\bvec B$,
 

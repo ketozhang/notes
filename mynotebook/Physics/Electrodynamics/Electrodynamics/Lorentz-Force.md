@@ -1,6 +1,4 @@
----
-title: Lorentz Force
----
+#  Lorentz Force
 
 The Lorentz force is the force of electromagnetism induced by the existence an flow of charges,
 

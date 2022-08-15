@@ -1,6 +1,4 @@
----
-title: Studying
----
+#  Studying
 
 - Learn
 - Organize

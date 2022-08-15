@@ -1,6 +1,4 @@
----
-title: Coplanar Maneuvers
----
+#  Coplanar Maneuvers
 
 Coplanar maneuvers are maneuvers that do not change the oribtal plane instead changes the orbit's size, shape, and location of the apsides.
 

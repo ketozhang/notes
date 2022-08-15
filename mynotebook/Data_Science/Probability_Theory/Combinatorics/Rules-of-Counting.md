@@ -1,6 +1,4 @@
----
-title: Rules of Counting
----
+#  Rules of Counting
 
 Combinatorics is the study of counting a systems that can be represented as a finite sets.
 

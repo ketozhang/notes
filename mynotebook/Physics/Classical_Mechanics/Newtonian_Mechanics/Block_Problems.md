@@ -1,6 +1,4 @@
----
-title: Block Problems
----
+#  Block Problems
 
 ## Two Block Stationary
 

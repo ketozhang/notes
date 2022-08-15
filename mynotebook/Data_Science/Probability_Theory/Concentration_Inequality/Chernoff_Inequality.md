@@ -1,6 +1,4 @@
----
-title: Chernoff Inequality
----
+#  Chernoff Inequality
 
 Because, Markov's inequality may take any monotonically increasing function, the function $g(X) = e^{tX}$ is a good choice since the RHS has the moment generating function $E(e^{tX}) = M_X(t)$,
 

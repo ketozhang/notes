@@ -1,6 +1,4 @@
----
-title: Kepler's First Law
----
+#  Kepler's First Law
 
 Kepler's first law states the equation of motion of two bodies influenced by each other's gravity travels an ellipse.
 

@@ -1,6 +1,4 @@
----
-title: Continuous Distribution
----
+#  Continuous Distribution
 
 1. Uniform
 1. Exponential

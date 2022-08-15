@@ -1,6 +1,4 @@
----
-title: Capacitor
----
+#  Capacitor
 
 ## Capacitance
 

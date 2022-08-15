@@ -1,6 +1,4 @@
----
-title: Energy Density
----
+#  Energy Density
 
 ## Critical Density
 The critical (energy) density corresponds to the case where $k = 0$,

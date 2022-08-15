@@ -1,6 +1,4 @@
----
-title: Cosmological Distances
----
+#  Cosmological Distances
 
 ## Luminosity Distance
 

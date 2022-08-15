@@ -1,6 +1,4 @@
----
-title: Logic
----
+#  Logic
 
 ## Proposition
 A proposition is a mathematical statement that is either True or False. In math, we do not focus on propositions that are vague either because the proposition contains a vague term or the answer can vaguely either be True or False.

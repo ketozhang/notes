@@ -1,6 +1,4 @@
----
-title: Electric Potential
----
+#  Electric Potential
 Here we describe the conservative thus scalar nature of the electric field as a conservative quantity called the **electric potential**,
 
 $$

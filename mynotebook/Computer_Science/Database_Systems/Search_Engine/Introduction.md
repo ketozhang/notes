@@ -1,6 +1,4 @@
----
-title: Introduction
----
+#  Introduction
 
 Text search is done with a search engine (aka informational retrieval system).
 

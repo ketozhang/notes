@@ -1,6 +1,4 @@
----
-title: Oscillators
----
+#  Oscillators
 
 ## Hooke's Law
 The equation for the force that governs simple harmonic motion comes from Hooke's law. In 1D that equation is famously written as,

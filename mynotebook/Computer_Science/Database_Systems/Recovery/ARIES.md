@@ -1,6 +1,4 @@
----
-title: ARIES
----
+#  ARIES
 
 The **Algorithms for Recovery and Isolation Exploiting Semantics (ARIES)** is a recovery algorithm began by preparing the logs using **Write Ahead Logging**. During recovery we perform the following phases:
 

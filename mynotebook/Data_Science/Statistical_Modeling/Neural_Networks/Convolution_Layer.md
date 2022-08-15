@@ -1,6 +1,4 @@
----
-title: Convolution Layer
----
+#  Convolution Layer
 
 ## Convolution
 

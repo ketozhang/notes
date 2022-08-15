@@ -1,6 +1,4 @@
----
-title: Recovery
----
+#  Recovery
 
 ## Disk & Buffer Management
 

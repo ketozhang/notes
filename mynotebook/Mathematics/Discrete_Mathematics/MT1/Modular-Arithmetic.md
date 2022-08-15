@@ -1,6 +1,4 @@
----
-title: Modular Arithmetic
----
+#  Modular Arithmetic
 
 The statement "$a$ modulo $b$" is how many learn modular arithmetic which treats $\text{mod}$ as an operator like,
 

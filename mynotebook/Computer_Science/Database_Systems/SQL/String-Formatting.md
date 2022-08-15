@@ -1,6 +1,4 @@
----
-title: String Formatting
----
+#  String Formatting
 
 ## Old Style
 

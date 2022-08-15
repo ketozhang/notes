@@ -1,6 +1,4 @@
----
-title: Fine Structure Hydrogen
----
+#  Fine Structure Hydrogen
 
 We wish to use perturbation theory to add some parts missing in the original hydrogen equation. We consider these perturbation to be very small compared to the unperturbed eigenvalues. Recall the hamiltonian for the unperturbed hydrogen which is basically the **Bohr model**,
 

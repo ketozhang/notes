@@ -1,6 +1,4 @@
----
-title: Central Limit Theorem
----
+#  Central Limit Theorem
 
 The Central Limit Theorem (CLT) states that given a sum distribution $S_n$ as a sum of $n$ iid random variables $X$ of mean $\mu$ and standard deviation $\sigma$,
 

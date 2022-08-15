@@ -1,6 +1,4 @@
----
-title: Feature Scaling
----
+#  Feature Scaling
 
 Feature scaling can improve gradient descent by scaling the contours that look too long (e.g., too elliptical) to something more symmetric (e.g., more spherical). The problem comes from units of features living in different orders of magntiudes.
 

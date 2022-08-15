@@ -1,6 +1,4 @@
----
-title: Locking
----
+#  Locking
 
 The locking scheme we will be using is called the **Two Phase Lock (2PL)** to guarantee conflict serializable schedule. The two phases refer to the phases of individual transactions. Those are:
 

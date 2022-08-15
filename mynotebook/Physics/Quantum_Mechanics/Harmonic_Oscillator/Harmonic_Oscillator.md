@@ -1,6 +1,4 @@
----
-title: Harmonic Oscillator
----
+#  Harmonic Oscillator
 
 The Hamiltonian for the harmonic oscillator follows the potential energy of Hooke's law (recall it is negative in magntiude). We consider the system to be similar to a mass $m$ attached to a spring of constant $k$ where we define the natural frequency as $\omega \equiv \sqrt{k/m}$:
 

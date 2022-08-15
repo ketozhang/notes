@@ -1,6 +1,4 @@
----
-title: Exoplanets
----
+#  Exoplanets
 
 # Observation of Exoplanets
 Exoplanets are rarely ever directly observed because they are so far. The two primary difficulties of direct observation are:
@@ -32,7 +30,7 @@ $$
 \end{gathered}
 $$
 
-The second line is a difficult polynomial with a solution of ([Wolfram Alpha](https://www.wolframalpha.com/input/?i=x%2Fa-x%5E(3%2F2)+%3D+y+solve+for+x)).  
+The second line is a difficult polynomial with a solution of ([Wolfram Alpha](https://www.wolframalpha.com/input/?i=x%2Fa-x%5E(3%2F2)+%3D+y+solve+for+x)).
 However it is much easier to assume $M_\star \gg M_p$
 
 $$M_p = \frac{K{M_\star}^{\frac{2}{3}}\sqrt{1-e^2}}{\sin i}\left(\frac{P}{2\pi G}\right)^{\frac{1}{3}}, \quad M_\star \gg M_p$$
@@ -46,8 +44,8 @@ Radial velocity detections are very successful however has two difficult paramet
 While astrometry is a valid method, so far not a single exoplanet has been found using this method. Astrometry of planet detection looks at the wobble of the host star. We know that the star would wobble at an amount of,
 
 $$\Delta \theta \le \frac{M_p}{M_\star}\frac{a}{d}$$
-$a$ - semi-major axis between planet and host star  
-$d$ - distance away from the Solar System  
+$a$ - semi-major axis between planet and host star
+$d$ - distance away from the Solar System
 $\Delta \theta$ - Radians if $a/d$ are unitless and arcsecs if $a/d$ are in $\rm{pc/AU}$
 
 Note that astrometry is even more accurate than radial velocity because it does not need to worry about inclination therefore the mass measure is the true mass. Once again astrometry fails to discover any so far waiting to be changed in 2020 -- the launch of GAIA space telescope
@@ -64,7 +62,7 @@ $$
 \end{aligned}
 $$
 
-$\Delta x$ - the spacial length of the wobble. This is the same amount as $\Delta x = \frac{M_p}{M_\star}a$ ,    
+$\Delta x$ - the spacial length of the wobble. This is the same amount as $\Delta x = \frac{M_p}{M_\star}a$ ,
 $d$ - distance away from the Solar System
 
 ## Transit Photometry
@@ -74,7 +72,7 @@ As a planet transits the host star, a dip in the host star's flux is apparent th
 ### Inclination Requirements
 The transit method works well if the inclination is quite edge on to line of sight such that
 
-$$\cos i < \frac{R_\star + R_p}{r_\text{min}}$$  
+$$\cos i < \frac{R_\star + R_p}{r_\text{min}}$$
 
 $r_\text{min}$ - distance between the host star and planet when the planet is closest to observer.
 
@@ -82,7 +80,7 @@ The inclination can be measured from the asymmetry of the [Rossiter-McLaughlin E
 ### Radius from Transit
 
 * Radius ($R$) - obtained by the dip in the light curve governed by a ratio:
- 
+
 $$\frac{\Delta L}{L} = \left(\frac{R_p}{R_\star}\right)^2$$
 
 While not perfect considering any variation of the host star luminosity (e.g., sunspots and limb darkening by the planet)
@@ -95,7 +93,7 @@ While not perfect considering any variation of the host star luminosity (e.g., s
  One would expect near the edges as the planet crosses the sun. If the planet has an atmosphere, the flux would not be perfectly boxy but curvy. This curvy nature is stronger at shorter wavelength due a greater flux from the Planck function ($\nu \propto E_\gamma \propto F$).
 
 ### Occultation - Secondary Eclipse
-**Occultation** or **secondary eclipse** occurs when the planet transits behind the star. 
+**Occultation** or **secondary eclipse** occurs when the planet transits behind the star.
 
 * The secondary eclipse are always square-like and does not have limb darkening since no radiation is penetrating the planet's atmosphere.
 * The planet's flux can be measured from the $\Delta F$. If the spectra is measured we can see which wavelength does the planet emit more indicating it composition.
@@ -107,7 +105,7 @@ While not perfect considering any variation of the host star luminosity (e.g., s
 As the star rotates, the star would emit gas towards the observer (blue-shifted) on side and away from the observer (red-shifted) on the other side. If the planet would to obscure emission, it would seem like the star only emits one side of its gas (either blue-shifted or red-shifted). It's easier to understand if you look at the image above.
 
 
- 
+
  ## Gravitational Microlensing
  While very rare, microlensing is a valid way to see planets that are way too far or too small for the other methods to detect. This section will not cover the mechanics but just planet finding. See [Gravitational Lensing](Gravitational_Lensing.md) for more information.
 

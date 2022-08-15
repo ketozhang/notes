@@ -1,6 +1,4 @@
----
-title: Schedules
----
+#  Schedules
 
 For transactions to satisfy isolaton, we need a scheduler called the **transaction manager**. The transaction manager must schedule actions such that the sequence of actions (or **schedule**) do not conflict with each other.
 

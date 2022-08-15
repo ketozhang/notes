@@ -1,6 +1,4 @@
----
-title: CS 189 Review
----
+#  CS 189 Review
 
 ## Probabilistic Models
 ## Discriminant Analyisis

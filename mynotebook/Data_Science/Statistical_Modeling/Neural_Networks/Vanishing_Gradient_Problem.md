@@ -1,6 +1,4 @@
----
-title: Vanishing Gradient Problem
----
+#  Vanishing Gradient Problem
 
 The vanishing gradient problem is an effect of unit saturation. This occurs when most of the training outputs of the activation function $\hat y$ is close to region of zero gradient.
 

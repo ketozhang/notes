@@ -1,6 +1,4 @@
----
-title: Two Body Equation
----
+#  Two Body Equation
 
 Consider the two body problem where the Moon orbits the Earth. To be general, let's take the coordinate system $S$ where $\vec r_1$ is the distance boldsymboltor to the Earth and $\vec r_2$ is the distance boldsymboltor to the Moon. The boldsymboltor between the Earth and Moon is $\Delta \vec r$
 

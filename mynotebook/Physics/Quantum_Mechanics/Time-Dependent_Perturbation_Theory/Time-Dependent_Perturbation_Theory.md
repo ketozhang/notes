@@ -1,6 +1,4 @@
----
-title: Time-Dependent Perturbation Theory
----
+#  Time-Dependent Perturbation Theory
 
 <!-- TOC -->
 

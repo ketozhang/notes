@@ -1,6 +1,4 @@
----
-title: Friedmann Equation
----
+#  Friedmann Equation
 
 The Friedmann equation applies the Friedmann metric,
 

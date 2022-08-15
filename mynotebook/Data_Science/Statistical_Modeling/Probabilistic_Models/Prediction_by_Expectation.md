@@ -1,6 +1,4 @@
----
-title: Prediction by Expectation
----
+#  Prediction by Expectation
 
 We can take advantage of the Law of Averages if what we like to predict, $Y$, is a random variable. However, if all we have is some data that is a random variable $X$, then the prediction for $Y$ can be expressed as the conditional expectation on $X$,
 

@@ -1,6 +1,4 @@
----
-title: Factory Method
----
+#  Factory Method
 
 Separates object (**product**) creation from usage in the main class (**creator**). The creation of the object is done in the superclass but allows the subclass to alter the type of objects to be created.
 

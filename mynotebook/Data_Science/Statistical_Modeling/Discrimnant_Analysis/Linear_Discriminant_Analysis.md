@@ -1,6 +1,4 @@
----
-title: Linear Discriminant Analysis
----
+#  Linear Discriminant Analysis
 
 ## Gaussian
 

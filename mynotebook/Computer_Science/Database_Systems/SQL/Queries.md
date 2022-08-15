@@ -1,6 +1,4 @@
----
-title: Queries
----
+#  Queries
 
 ## Table Creation
 ```sql

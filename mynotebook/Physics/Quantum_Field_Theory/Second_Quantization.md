@@ -1,6 +1,4 @@
----
-title: Second Quantization
----
+#  Second Quantization
 
 Let the set of annihilation and creator operators in both position and momentum be related by,
 

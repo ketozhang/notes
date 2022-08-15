@@ -1,6 +1,4 @@
----
-title: Cumulative Distribution Function
----
+#  Cumulative Distribution Function
 
 A cumulative distribution function is defined as the sum of the probabilty from the left to some point $x$ on the right,
 

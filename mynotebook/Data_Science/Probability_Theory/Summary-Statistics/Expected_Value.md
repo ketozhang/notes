@@ -1,6 +1,4 @@
----
-title: Expected Value
----
+#  Expected Value
 
 The **expected value** (aka **expectation**) is defined as,
 

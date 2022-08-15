@@ -1,6 +1,4 @@
----
-title: Cross Entropy
----
+#  Cross Entropy
 
 The cross entropy is a loss function for data that are naturally in the probability space. To explain **entropy**, we need the quantity called **surprise** which is the quanitty that can be interpreted as the surprise one feels if an event occurs if that even has probability $P(Y=c)$:
 

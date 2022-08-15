@@ -1,6 +1,4 @@
----
-title: Probability
----
+#  Probability
 
 ## Core Concepts
 1. [Outcome Space and Events](Outcomes-Space-Events)

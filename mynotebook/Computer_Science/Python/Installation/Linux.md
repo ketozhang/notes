@@ -1,6 +1,4 @@
----
-title: Ubuntu
----
+#  Ubuntu
 
 Instructions taken primarily from [Python 3's official docs](https://docs.python.org/3/using/unix.html).
 

@@ -1,6 +1,4 @@
----
-title: Fully Connected Layer
----
+#  Fully Connected Layer
 
 ## Architecture
 

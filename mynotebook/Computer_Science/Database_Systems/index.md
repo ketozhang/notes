@@ -1,6 +1,4 @@
----
-title: Database Systems
----
+#  Database Systems
 * SQL
 * File Management
 * Index Management

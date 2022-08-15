@@ -1,6 +1,4 @@
----
-title: Vuepress Website
----
+#  Vuepress Website
 
 ## Prerequisite
 * Node.js (>= 8)

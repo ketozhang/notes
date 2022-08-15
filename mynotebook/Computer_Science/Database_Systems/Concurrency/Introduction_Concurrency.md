@@ -1,6 +1,4 @@
----
-title: "Introduction: Concurrency"
----
+#  "Introduction: Concurrency"
 
 Allows multiple queries from multiple users to be executed in an efficient order.
 

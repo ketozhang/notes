@@ -1,6 +1,4 @@
----
-title: Lecture 2
----
+#  Lecture 2
 
 ## Likelihood Function
 

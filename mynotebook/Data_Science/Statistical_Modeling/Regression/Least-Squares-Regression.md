@@ -1,6 +1,4 @@
----
-title: Least Squares Regression
----
+#  Least Squares Regression
 
 The **linear least squares** is a linear model with $L_2$ lost function and mean error cost function $\mathcal L = \langle L_2(X) \rangle$. The linear model is given by,
 

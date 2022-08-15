@@ -1,6 +1,4 @@
----
-title: Countability
----
+#  Countability
 
 ## Bijection
 

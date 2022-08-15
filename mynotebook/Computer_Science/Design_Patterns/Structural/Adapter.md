@@ -1,6 +1,4 @@
----
-title: Adapter
----
+#  Adapter
 
 Allows objects of incompatible interfaces to interact. Also known as **wrapper**.
 

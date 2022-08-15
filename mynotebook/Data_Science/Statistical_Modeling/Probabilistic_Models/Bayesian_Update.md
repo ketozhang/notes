@@ -1,6 +1,4 @@
----
-title: Bayesian Update
----
+#  Bayesian Update
 
 The posterior distribution
 

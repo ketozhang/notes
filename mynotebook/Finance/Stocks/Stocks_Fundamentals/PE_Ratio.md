@@ -1,6 +1,4 @@
----
-title: Price to Earning Ratio
----
+#  Price to Earning Ratio
 
 The P/E ratio is the dollar amount an investor is willing to pay per dollar of annual earning. It is calculated by,
 

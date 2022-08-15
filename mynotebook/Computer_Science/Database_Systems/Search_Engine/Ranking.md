@@ -1,6 +1,4 @@
----
-title: Ranking
----
+#  Ranking
 
 ## Vector Space Model
 

@@ -1,6 +1,4 @@
----
-title: Introduction
----
+#  Introduction
 
 Let the chain be a set of random variables with element $X_t$ for the step $t \ge 0$ (or link) of the chain. The chain is aid to be a Markov chain if $X_{t+1}$ is only dependent on $X_t$ for all $t > 0$
 

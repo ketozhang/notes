@@ -1,7 +1,5 @@
 
----
-title: Views
----
+#  Views
 
 A view is a namespace for sql query similar to how functions are namespaces for code. This is syntaxed as,
 

@@ -1,6 +1,4 @@
----
-title: Sampling Probability
----
+#  Sampling Probability
 
 A sampling probability is often one at which follows these sampling rules. For $N$ individuals we wish gather the individuals into $n$ subsets:
 

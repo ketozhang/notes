@@ -1,6 +1,4 @@
----
-title: Linked List
----
+#  Linked List
 
 A sequential collection of elements where each element contains a value and a pointer.
 

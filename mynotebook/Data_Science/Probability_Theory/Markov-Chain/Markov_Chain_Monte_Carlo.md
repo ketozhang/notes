@@ -1,6 +1,4 @@
----
-title: Markov Chain Monte Carlo
----
+#  Markov Chain Monte Carlo
 
 The MCMC is a sampling algorithm to determine some underlying probability distribution often the posterior distribution representing the outcome or sample space $S$. In terms of the Markov chain, the desired probability distribution is the long-run proportion of state distribution $\pi$ of some stationary Markov chain of sample space $S$ (e.g., some paramter space) satisfying the balance equation:
 

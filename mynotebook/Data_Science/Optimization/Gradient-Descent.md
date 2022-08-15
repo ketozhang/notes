@@ -1,6 +1,4 @@
----
-title: Gradient Descent
----
+#  Gradient Descent
 
 Gradient descent is a iteratative optimizer that attempts to minimize the problem with only the information of the gradient. Here we will use it to minimize some loss function over the parameter space given by $\theta$. Recall that this gradient for this is,
 

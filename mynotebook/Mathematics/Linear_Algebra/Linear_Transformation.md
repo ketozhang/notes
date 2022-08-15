@@ -1,6 +1,4 @@
----
-title: Linear Transformation
----
+#  Linear Transformation
 
 A linear transformation is an operation on a vector that preserves the operations of addition and scalar multiplication,
 

@@ -1,6 +1,4 @@
----
-title: Nulls
----
+#  Nulls
 
 `NULL` follows many specific rules:
 

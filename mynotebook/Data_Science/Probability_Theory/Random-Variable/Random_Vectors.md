@@ -1,6 +1,4 @@
----
-title: Random Vectors
----
+#  Random Vectors
 
 A vector valued random variable or simply a random vector is a list of random variables.
 

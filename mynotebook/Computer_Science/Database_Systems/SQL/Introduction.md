@@ -1,6 +1,4 @@
----
-title: Introduction
----
+#  Introduction
 
 **SQL** is an **Relational Database Management System (RDBMS)**
 

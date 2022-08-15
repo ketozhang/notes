@@ -1,6 +1,4 @@
----
-title: Variance
----
+#  Variance
 
 The variance is motivated by wanting to know how far away is $E[X] = \mu$ away from some true answer in the random variable $X$. That is, the variance is the expected value of the squared deviance of $\mu$ or the **root mean square** of $X$. The variance is defined as,
 

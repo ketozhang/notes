@@ -1,6 +1,4 @@
----
-title: Cumulants and Moments
----
+#  Cumulants and Moments
 
 ## Moment Generating Function
 

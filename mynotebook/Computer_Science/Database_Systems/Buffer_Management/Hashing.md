@@ -1,6 +1,4 @@
----
-title: Hashing
----
+#  Hashing
 
 ## Divide and Conquer
 

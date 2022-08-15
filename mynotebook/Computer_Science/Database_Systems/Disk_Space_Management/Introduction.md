@@ -1,6 +1,4 @@
----
-title: Introduction
----
+#  Introduction
 
 We will focus only on hard disk drives when speaking of disks.
 

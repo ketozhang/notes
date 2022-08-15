@@ -1,6 +1,4 @@
----
-title: Bias Variance Tradeoff
----
+#  Bias Variance Tradeoff
 
 Bias
 : Error due in the hypothesis or model to fit the data.
