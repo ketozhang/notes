@@ -9,6 +9,12 @@ TOCS = $(_NOTEBOOKS:%=%/_toc.yml)
 
 all : build
 
+help:
+	@echo "all      Build site"
+	@echo "build    Same as make"
+	@echo "clean    remove build files"
+	@echo "tocs     build _toc.yml for each notebook"
+
 clean:
 	-rm -rf $(BUILD_PATH)
 
