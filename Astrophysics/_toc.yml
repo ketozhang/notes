@@ -1,0 +1,73 @@
+format: jb-book
+root: index
+chapters:
+- file: Astrobiology/index
+  sections:
+  - file: Astrobiology/Life_in_the_Universe
+- file: AstroLab/index
+  sections:
+  - file: AstroLab/Lecture0
+  - file: AstroLab/Lecture1
+  - file: AstroLab/Lecture2
+  - file: AstroLab/Lecture3
+  - file: AstroLab/Lecture4
+  - file: AstroLab/Presentation
+  - file: AstroLab/Stan
+  - file: AstroLab/Visualization
+- file: Cosmology/index
+  sections:
+  - file: Cosmology/Cosmological_Distances
+  - file: Cosmology/Cosmological_Redshift
+  - file: Cosmology/Expanding_Universe
+  - file: Cosmology/Gravitational_Lensing
+  - file: Cosmology/Hubble_Constant
+  - file: Cosmology/Friedmann_Equation/index
+    sections:
+    - file: Cosmology/Friedmann_Equation/Energy_Density
+    - file: Cosmology/Friedmann_Equation/Fluid_Equation
+    - file: Cosmology/Friedmann_Equation/Friedmann_Equation
+    - file: Cosmology/Friedmann_Equation/Friedmann_Metric
+    - file: Cosmology/Friedmann_Equation/Model_Universe
+  - file: Cosmology/Relativity/index
+    sections:
+    - file: Cosmology/Relativity/Curvature_Constant
+    - file: Cosmology/Relativity/Einstein's_Field_Equations
+    - file: Cosmology/Relativity/General_Relativity
+    - file: Cosmology/Relativity/Special_Relativity
+- file: Exoplanet/index
+  sections:
+  - file: Exoplanet/Microlensing
+- file: Orbital_Mechanics/index
+  sections:
+  - file: Orbital_Mechanics/Satellite_State
+  - file: Orbital_Mechanics/Specific_Angular_Momentum
+  - file: Orbital_Mechanics/Specific_Mechanical_Energy
+  - file: Orbital_Mechanics/Two_Body_Equation
+  - file: Orbital_Mechanics/Vector_Equation
+  - file: Orbital_Mechanics/Keplers_Law/Keplers_First_Law
+    sections:
+    - file: Orbital_Mechanics/Keplers_Law/Keplers_Second_Law
+    - file: Orbital_Mechanics/Keplers_Law/Keplers_Third_Law
+  - file: Orbital_Mechanics/Orbital_Functions/Ellipse
+  - file: Orbital_Mechanics/Orbital_Maneuvering/Coplanar__Maneuvers
+- file: Photometry/index
+  sections:
+  - file: Photometry/Extinction
+  - file: Photometry/Flux
+  - file: Photometry/Magnitude
+- file: Planetary_Science/index
+  sections:
+  - file: Planetary_Science/Asteroids
+  - file: Planetary_Science/Exoplanets
+  - file: Planetary_Science/Life_in_the_Universe
+  - file: Planetary_Science/Planet_Formation
+  - file: Planetary_Science/planetary-temperature
+  - file: Planetary_Science/Planetary_Rings
+- file: Supernovae/index
+  sections:
+  - file: Supernovae/Type_Ia/Standardization
+- file: Variable_Stars/index
+  sections:
+  - file: Variable_Stars/Cepheid
+  - file: Variable_Stars/Period_Luminosity_Relation
+

@@ -10,6 +10,7 @@ jupyter-book = "^0.13"
 matplotlib = "^3.5.1"
 
 [tool.poetry.dev-dependencies]
+cookiecutter = "^2.1.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

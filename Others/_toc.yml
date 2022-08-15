@@ -1,0 +1,11 @@
+format: jb-book
+root: index
+chapters:
+- file: Software_Job_Interview
+- file: Studying
+- file: GRE/Overview
+- file: Workflow/index
+  sections:
+  - file: Workflow/Jekyll_Website
+  - file: Workflow/Vuepress_Website
+
