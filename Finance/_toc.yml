@@ -1,3 +1,20 @@
 format: jb-book
 root: index
+chapters:
+- file: Stocks/index
+  sections:
+  - file: Stocks/Options/index
+    sections:
+    - file: Stocks/Options/Greeks
+    - file: Stocks/Options/Options_Pricing
+    - file: Stocks/Options/Spreads
+  - file: Stocks/Stocks_Fundamentals/index
+    sections:
+    - file: Stocks/Stocks_Fundamentals/Growth_Investing
+    - file: Stocks/Stocks_Fundamentals/Intrinsic_Value
+    - file: Stocks/Stocks_Fundamentals/PB_Ratio
+    - file: Stocks/Stocks_Fundamentals/PE_Ratio
+    - file: Stocks/Stocks_Fundamentals/PS_Ratio
+    - file: Stocks/Stocks_Fundamentals/Simple_Moving_Average
+    - file: Stocks/Stocks_Fundamentals/Value_Investing
 
