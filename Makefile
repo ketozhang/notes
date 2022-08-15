@@ -26,4 +26,4 @@ $(BUILD_PATH)/%: %/_toc.yml
 	jb toc from-project $* -f jb-book > $@
 
 $(BUILD_PATH)/%.html :
-	cp $@ $(BUILD_PATH)
+	cp $(@F) $(BUILD_PATH)
