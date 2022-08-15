@@ -1,3 +1,4 @@
+BUILD_PATH = _site
 NOTEBOOKS = Astrophysics Computer_Science Data_Science Finance Mathematics Physics Others
 
 
@@ -10,7 +11,7 @@ docs :
 .PHONY: $(NOTEBOOKS)
 $(NOTEBOOKS):
 	jb toc from-project $@ -f jb-book > $@/_toc.yml
-	jb build $@ --path-output docs/$@
+	jb build $@ --path-output $(BUILD_PATH)/$@
 
 clean:
-	-rm -rf docs/
+	-rm -rf $(BUILD_PATH)
