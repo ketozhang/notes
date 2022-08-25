@@ -1,10 +1,9 @@
 format: jb-book
 root: index
 chapters:
-- file: List_of_Topics_in_Physics
-- file: Polar_Coordinate
-- file: Classical_Mechanics/List_of_Kinetic_and_Potential_Energy
+- file: Classical_Mechanics/index
   sections:
+  - file: Classical_Mechanics/List_of_Kinetic_and_Potential_Energy
   - file: Classical_Mechanics/Lagrangian/Euler-Lagrange_Equation
     sections:
     - file: Classical_Mechanics/Lagrangian/Generalized_Coordinates
@@ -45,17 +44,27 @@ chapters:
     - file: Electrodynamics/Polarity/Monopole
     - file: Electrodynamics/Polarity/Multipole-Expansion
     - file: Electrodynamics/Polarity/Polarization
-- file: General-Relativity/Einsteins_Summation_Convention
-- file: GRE_Review/Flashcards
+- file: General-Relativity/index
   sections:
+  - file: General-Relativity/Einsteins_Summation_Convention
+- file: GRE_Review/index
+  sections:
+  - file: GRE_Review/Flashcards
   - file: GRE_Review/Physics_GRE_Cheatsheet
-- file: Quantum_Field_Theory/Coherent_State
+- file: Mathematics/index
   sections:
+  - file: Mathematics/Polar_Coordinate
+- file: Quantum_Field_Theory/index
+  sections:
+  - file: Quantum_Field_Theory/Coherent_State
   - file: Quantum_Field_Theory/Lagrangian_and_QTF
   - file: Quantum_Field_Theory/Second_Quantization
-- file: Quantum_Information/Hilbert_Space
-- file: Quantum_Mechanics/2_Stimulated_Emission
+- file: Quantum_Information/index
   sections:
+  - file: Quantum_Information/Hilbert_Space
+- file: Quantum_Mechanics/index
+  sections:
+  - file: Quantum_Mechanics/2_Stimulated_Emission
   - file: Quantum_Mechanics/Half_Spin
   - file: Quantum_Mechanics/Time-Dependent_Perturbation_Theory_Example
   - file: Quantum_Mechanics/Adiabatic_Approxmation/Adiabatic_Approximation
@@ -87,8 +96,9 @@ chapters:
   - file: Quantum_Mechanics/Time-Independent_Perturbation_Theory/Degenerate_Perturbation_Theory
     sections:
     - file: Quantum_Mechanics/Time-Independent_Perturbation_Theory/Non-Degenerate_Perturbation_Theory
-- file: Thermodynamics/Coexistence_of_Phases
+- file: Thermodynamics/index
   sections:
+  - file: Thermodynamics/Coexistence_of_Phases
   - file: Thermodynamics/Heat_Capacity
   - file: Thermodynamics/Laws_of_Thermodynamic
   - file: Thermodynamics/Probability_of_an_Energy_State
