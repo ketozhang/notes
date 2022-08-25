@@ -1,0 +1,1331 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python 3.6 &#8212; Keto | Compute Science</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="C++" href="../../Web_Development/index.html" />
+    <link rel="prev" title="Python 3.5" href="Python3_5.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Keto | Compute Science</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Computer Science
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../Algorithms/index.html">
+   Algorithms
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Algorithms/Search/index.html">
+     Search
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Algorithms/Search/Binary_Search.html">
+       Binary Search
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../Computer_Architecture/index.html">
+   Computer Architecture
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Computer_Architecture/CS61C_Review.html">
+     CS61C Review
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Computer_Architecture/Floating_Point.html">
+     Floating Point
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Computer_Architecture/IO.html">
+     Input Output (I/O)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Computer_Architecture/Speedup.html">
+     Speedup
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../Cpp/index.html">
+   C++
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Cpp/Classes.html">
+     Classes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Cpp/Errors.html">
+     Errors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Cpp/Function.html">
+     Function
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Cpp/Imports.html">
+     Imports
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Cpp/Introduction.html">
+     Introduction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Cpp/User-Defined_Types.html">
+     User-Defined Types
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../Data_Structure/index.html">
+   C++
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Data_Structure/Linked_List.html">
+     Linked List
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Data_Structure/Trees/index.html">
+     Trees
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Data_Structure/Trees/Binary_Search_Tree.html">
+       Binary Search Tree
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Data_Structure/Trees/Red_Black_Tree.html">
+       Red-black Tree
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../Database_Systems/index.html">
+   Database Systems
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Database_Systems/Buffer_Management/index.html">
+     Buffer Management
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Buffer_Management/Hashing.html">
+       Hashing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Buffer_Management/Introduction.html">
+       Introduction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Buffer_Management/Page_Replacement.html">
+       Page Replacement
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Buffer_Management/Sorting.html">
+       Sorting
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Database_Systems/Concurrency/index.html">
+     Concurrency
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Concurrency/Introduction_Concurrency.html">
+       “Introduction: Concurrency”
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Concurrency/Locking.html">
+       Locking
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Concurrency/Schedules.html">
+       Schedules
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Concurrency/Transaction.html">
+       Transactions
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Database_Systems/Database_Design/index.html">
+     Database Design
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Database_Design/Entity-Relationship-Model.html">
+       Constraints
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Database_Design/Entity-Relationships-Diagram.html">
+       Entity Relationship Diagram
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Database_Design/Entity-to-Schema.html">
+       Entity to Schema
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Database_Design/Functional-Dependencies.html">
+       Functional Dependencies
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Database_Design/Normal_Forms.html">
+       Normal Forms
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Database_Systems/Disk_Space_Management/index.html">
+     Disk Space Management
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Disk_Space_Management/Introduction.html">
+       Introduction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Disk_Space_Management/Storage-Hardware.html">
+       Storage Hardware
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Database_Systems/File_Index_Management/index.html">
+     File Index Management
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/File_Index_Management/Cost-Model-Assumptions.html">
+       Cost Model Assumptions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/File_Index_Management/Files.html">
+       Files
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/File_Index_Management/Index.html">
+       Index
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/File_Index_Management/Pages.html">
+       Pages
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/File_Index_Management/Records.html">
+       Records
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Database_Systems/Parallel_Query/index.html">
+     Parallel Query
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+    <label for="toctree-checkbox-13">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Parallel_Query/Distributed-Transaction.html">
+       Distributed Transaction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Parallel_Query/Inter-Operator-Parallelism.html">
+       Inter-Operator Parallelism
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Parallel_Query/Introduction.html">
+       Introduction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Parallel_Query/Parallel-Hashing-Sorting.html">
+       Parallel Hashing and Sorting
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Parallel_Query/Shuffling.html">
+       Shuffling
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Database_Systems/Query_Optimization/index.html">
+     Query Optimization
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+    <label for="toctree-checkbox-14">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Query_Optimization/Cost-Estimation.html">
+       Cost Estimation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Query_Optimization/Introduction.html">
+       Introduction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Query_Optimization/Planning.html">
+       Planning
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Query_Optimization/Search-Algorithm.html">
+       Search Algorithm
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Database_Systems/Recovery/index.html">
+     Recovery
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Recovery/ARIES.html">
+       ARIES
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Recovery/Recover.html">
+       Recovery
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Database_Systems/Relational_Operators/index.html">
+     Relational Operators
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+    <label for="toctree-checkbox-16">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Relational_Operators/Iterators.html">
+       Iterators
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Relational_Operators/Joins.html">
+       Join Operators
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Relational_Operators/Relational-Algebra.html">
+       Relational Algebra
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Database_Systems/Search_Engine/index.html">
+     Search Engine
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Search_Engine/Introduction.html">
+       Introduction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Search_Engine/Ranking.html">
+       Ranking
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/Search_Engine/Web_Crawlers_and_IR.html">
+       Web Crawlwers and IR
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Database_Systems/SQL/index.html">
+     SQL
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+    <label for="toctree-checkbox-18">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/SQL/Column-Expressions.html">
+       Column Expressions
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/SQL/Introduction.html">
+       Introduction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/SQL/Join-Queries.html">
+       Join Queries
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/SQL/Nested-Queries.html">
+       Nested Queries
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/SQL/Nulls.html">
+       Nulls
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/SQL/Queries.html">
+       Queries
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/SQL/Set-Operations.html">
+       Set Operations
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/SQL/String-Formatting.html">
+       String Formatting
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Database_Systems/SQL/Views.html">
+       Views
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../Design_Patterns/index.html">
+   C++
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+  <label for="toctree-checkbox-19">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Design_Patterns/SOLID_Design_Principles.html">
+     SOLID Design Principles
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Design_Patterns/Behavioral/index.html">
+     Behavioral
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+    <label for="toctree-checkbox-20">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Design_Patterns/Behavioral/Template_Method.html">
+       Template Method
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Design_Patterns/Creational/index.html">
+     Creational
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+    <label for="toctree-checkbox-21">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Design_Patterns/Creational/Abstract_Method.html">
+       Abstract Method
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Design_Patterns/Creational/Builder.html">
+       Builder
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Design_Patterns/Creational/Factory_Method.html">
+       Factory Method
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../Design_Patterns/Structural/index.html">
+     Structural
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+    <label for="toctree-checkbox-22">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../Design_Patterns/Structural/Adapter.html">
+       Adapter
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../JavaScript/index.html">
+   JavaScript
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+  <label for="toctree-checkbox-23">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../JavaScript/Conditional_Statements.html">
+     Conditional Statements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../JavaScript/Datatypes.html">
+     Datatypes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../JavaScript/Objects.html">
+     Objects
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../JavaScript/Operators.html">
+     Operators
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../index.html">
+   C++
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/>
+  <label for="toctree-checkbox-24">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Extensions/index.html">
+     Extensions
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/>
+    <label for="toctree-checkbox-25">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Extensions/C%2B%2B_with_Pybind11.html">
+       C++ with Pybind11
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Installation/index.html">
+     Installation
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/>
+    <label for="toctree-checkbox-26">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Installation/Linux.html">
+       Ubuntu
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Packaging/index.html">
+     Packaging
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/>
+    <label for="toctree-checkbox-27">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Packaging/Project_Structure.html">
+       Single-File Project Structure
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="index.html">
+     Versions
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/>
+    <label for="toctree-checkbox-28">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="Python3_5.html">
+       Python 3.5
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Python 3.6
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../Web_Development/index.html">
+   C++
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" type="checkbox"/>
+  <label for="toctree-checkbox-29">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../Web_Development/Nginx.html">
+     Nginx
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/Python/Versions/Python3_6.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#f-strings">
+   f-Strings
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#variable-type-syntax">
+   Variable Type Syntax
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#underscore-numerical-separator">
+   Underscore Numerical Separator
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#async-generators">
+   Async Generators
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#async-comprehension">
+   Async Comprehension
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#simpler-subclass-creation-and-customization">
+   Simpler Subclass Creation and Customization
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#file-system-path-protocol">
+   File System Path Protocol
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preserving-order-of-class-attribute-and-kwargs">
+   Preserving Order of Class Attribute and Kwargs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dictionary-implementation">
+   Dictionary Implementation
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Python 3.6</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#f-strings">
+   f-Strings
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#variable-type-syntax">
+   Variable Type Syntax
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#underscore-numerical-separator">
+   Underscore Numerical Separator
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#async-generators">
+   Async Generators
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#async-comprehension">
+   Async Comprehension
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#simpler-subclass-creation-and-customization">
+   Simpler Subclass Creation and Customization
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#file-system-path-protocol">
+   File System Path Protocol
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#preserving-order-of-class-attribute-and-kwargs">
+   Preserving Order of Class Attribute and Kwargs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dictionary-implementation">
+   Dictionary Implementation
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="python-3-6">
+<h1>Python 3.6<a class="headerlink" href="#python-3-6" title="Permalink to this headline">#</a></h1>
+<p>Here lists the new features since Python 3.5 adopted or to be adopted into my codes.</p>
+<div class="section" id="f-strings">
+<h2>f-Strings<a class="headerlink" href="#f-strings" title="Permalink to this headline">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Literal String Interpolation</p></td>
+<td><p><a class="reference external" href="https://www.python.org/dev/peps/pep-0498/">PEP 498</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>One of the most fundamental changes in string representation is the ease of us given by f-strings (f for format).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span>
+
+<span class="c1"># Suffixes are Precision</span>
+<span class="n">precision</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Three values of pi </span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s2">.</span><span class="si">{</span><span class="n">precision</span><span class="si">}}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="o">//</span> <span class="mf">3.14</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Three significant figures of pi </span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s2">.</span><span class="si">{</span><span class="n">precision</span><span class="si">}</span><span class="s2">g</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="o">//</span> <span class="mf">3.14</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Three decimals of pi </span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s2">.</span><span class="si">{</span><span class="n">precision</span><span class="si">}</span><span class="s2">f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="o">//</span> <span class="mf">3.141</span>
+
+
+
+<span class="c1"># String Size (default align right)</span>
+<span class="n">width</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pi</span><span class="si">:{</span><span class="n">width</span><span class="si">}</span><span class="s2">.</span><span class="si">{</span><span class="n">precision</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="o">//</span>  <span class="mf">3.14</span>
+
+<span class="c1"># Prefixes are formats</span>
+<span class="c1"># Exponential</span>
+<span class="nb">print</span> <span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s2">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># 3.141593e+00</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="variable-type-syntax">
+<h2>Variable Type Syntax<a class="headerlink" href="#variable-type-syntax" title="Permalink to this headline">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Syntax for Variable Annotations</p></td>
+<td><p><a class="reference external" href="https://www.python.org/dev/peps/pep-0526/">PEP 526</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Type Hints</p></td>
+<td><p><a class="reference external" href="https://www.python.org/dev/peps/pep-0484/">PEP 484</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span>
+
+<span class="n">d</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="underscore-numerical-separator">
+<h2>Underscore Numerical Separator<a class="headerlink" href="#underscore-numerical-separator" title="Permalink to this headline">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Underscores in Numeric Literals</p></td>
+<td><p><a class="reference external" href="https://www.python.org/dev/peps/pep-0515/">PEP 515</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Allow arbritrary underscore (<code class="docutils literal notranslate"><span class="pre">_</span></code>) placement between numbers as separators.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">addr</span> <span class="o">=</span> <span class="mh">0xCAFE_F00D</span>  <span class="c1"># 3405705229</span>
+<span class="mh">0xCAFE_F00D</span> <span class="o">==</span> <span class="mh">0xCAFEF00D</span> <span class="c1"># True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="async-generators">
+<h2>Async Generators<a class="headerlink" href="#async-generators" title="Permalink to this headline">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Asynchronous Generators</p></td>
+<td><p><a class="reference external" href="https://www.python.org/dev/peps/pep-0525/">PEP 525</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Coroutines with async and await syntax</p></td>
+<td><p><a class="reference external" href="https://www.python.org/dev/peps/pep-0492/">PEP 492</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span> <span class="nf">ticker</span><span class="p">(</span><span class="n">delay</span><span class="p">,</span> <span class="n">to</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Yield numbers from 0 to *to* every *delay* seconds.&quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">to</span><span class="p">):</span>
+        <span class="k">yield</span> <span class="n">i</span>
+        <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">delay</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="async-comprehension">
+<h2>Async Comprehension<a class="headerlink" href="#async-comprehension" title="Permalink to this headline">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Asynchronous Comprehension</p></td>
+<td><p><a class="reference external" href="https://www.python.org/dev/peps/pep-0530/">PEP 530</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Adds <code class="docutils literal notranslate"><span class="pre">async</span> <span class="pre">for</span></code> in list, set, dict comprehension and genrator expression:</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">async</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">async_iterator</span><span class="p">()</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Adds <code class="docutils literal notranslate"><span class="pre">await</span></code> for all kinds of comprehension:</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="p">[</span><span class="k">await</span> <span class="n">fun</span><span class="p">()</span> <span class="k">for</span> <span class="n">fun</span> <span class="ow">in</span> <span class="n">funcs</span> <span class="k">if</span> <span class="k">await</span> <span class="n">condition</span><span class="p">()]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="simpler-subclass-creation-and-customization">
+<h2>Simpler Subclass Creation and Customization<a class="headerlink" href="#simpler-subclass-creation-and-customization" title="Permalink to this headline">#</a></h2>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Philosopher</span><span class="p">:</span>
+    <span class="n">subclasses</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">def</span> <span class="nf">__init_subclass__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">default_name</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">__init_subclass__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">cls</span><span class="o">.</span><span class="n">default_name</span> <span class="o">=</span> <span class="n">default_name</span>
+        <span class="n">Philosopher</span><span class="o">.</span><span class="n">subclasses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">AustralianPhilosopher</span><span class="p">(</span><span class="n">Philosopher</span><span class="p">,</span> <span class="n">default_name</span><span class="o">=</span><span class="s2">&quot;Bruce&quot;</span><span class="p">):</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="file-system-path-protocol">
+<h2>File System Path Protocol<a class="headerlink" href="#file-system-path-protocol" title="Permalink to this headline">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Adding a file system path protocol</p></td>
+<td><p><a class="reference external" href="https://www.python.org/dev/peps/pep-0530/">PEP 530</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Historically, a path-like object must either be a <code class="docutils literal notranslate"><span class="pre">str</span></code> or <code class="docutils literal notranslate"><span class="pre">bytes</span></code>. However with the use of other path-like objectss like those in <code class="docutils literal notranslate"><span class="pre">pathlib</span></code>, a protocol is implement to more easily incorporate other path-like objects.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">os.PathLike</span></code> is an abstract base class that inherits functions in <code class="docutils literal notranslate"><span class="pre">os</span></code> and <code class="docutils literal notranslate"><span class="pre">os.path</span></code> modules.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">open()</span></code> make take in all <code class="docutils literal notranslate"><span class="pre">os.PathLike</span></code> objects (e.g., <code class="docutils literal notranslate"><span class="pre">pathlib</span></code>)</p></li>
+</ul>
+</div>
+<div class="section" id="preserving-order-of-class-attribute-and-kwargs">
+<h2>Preserving Order of Class Attribute and Kwargs<a class="headerlink" href="#preserving-order-of-class-attribute-and-kwargs" title="Permalink to this headline">#</a></h2>
+<p><a class="reference external" href="https://www.python.org/dev/peps/pep-0520/">PEP 520</a>
+<a class="reference external" href="https://www.python.org/dev/peps/pep-0468/">PEP 468</a></p>
+<p><code class="docutils literal notranslate"><span class="pre">__dict__</span></code> in classes and `**kwargs`` in function now preserve insertion order.</p>
+</div>
+<div class="section" id="dictionary-implementation">
+<h2>Dictionary Implementation<a class="headerlink" href="#dictionary-implementation" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">dict</span></code> uses 20% to 25% less memory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dict</span></code> is ordered by implementation detail, <strong>not permanent</strong>!</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Python/Versions"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Python3_5.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Python 3.5</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../../Web_Development/index.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">C++</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Keto D. Zhang<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
