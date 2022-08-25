@@ -44,12 +44,17 @@ chapters:
   - file: Orbital_Mechanics/Specific_Mechanical_Energy
   - file: Orbital_Mechanics/Two_Body_Equation
   - file: Orbital_Mechanics/Vector_Equation
-  - file: Orbital_Mechanics/Keplers_Law/Keplers_First_Law
+  - file: Orbital_Mechanics/Keplers_Law/index
     sections:
+    - file: Orbital_Mechanics/Keplers_Law/Keplers_First_Law
     - file: Orbital_Mechanics/Keplers_Law/Keplers_Second_Law
     - file: Orbital_Mechanics/Keplers_Law/Keplers_Third_Law
-  - file: Orbital_Mechanics/Orbital_Functions/Ellipse
-  - file: Orbital_Mechanics/Orbital_Maneuvering/Coplanar__Maneuvers
+  - file: Orbital_Mechanics/Orbital_Functions/index
+    sections:
+    - file: Orbital_Mechanics/Orbital_Functions/Ellipse
+  - file: Orbital_Mechanics/Orbital_Maneuvering/index
+    sections:
+    - file: Orbital_Mechanics/Orbital_Maneuvering/Coplanar__Maneuvers
 - file: Photometry/index
   sections:
   - file: Photometry/Extinction
@@ -65,7 +70,9 @@ chapters:
   - file: Planetary_Science/Planetary_Rings
 - file: Supernovae/index
   sections:
-  - file: Supernovae/Type_Ia/Standardization
+  - file: Supernovae/Type_Ia/index
+    sections:
+    - file: Supernovae/Type_Ia/Standardization
 - file: Variable_Stars/index
   sections:
   - file: Variable_Stars/Cepheid

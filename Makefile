@@ -1,5 +1,4 @@
 BUILD_PATH = _site
-_ROOT_PAGES = index.html
 _NOTEBOOKS = Astrophysics Computer_Science Data_Science Finance Mathematics Physics Others
 
 ROOT_PAGES = $(_ROOT_PAGES:%=$(BUILD_PATH)/%)
@@ -20,13 +19,12 @@ clean:
 
 ########################################
 
-build : $(ROOT_PAGES) $(NOTEBOOKS)
-	cp index.html $(BUILD_PATH)
+build : $(NOTEBOOKS)
 
 tocs : $(TOCS)
 
 $(BUILD_PATH)/%: %/_toc.yml
-	jb build $* --path-output $(@D)
+	jb build $* --path-output $@
 
 %/_toc.yml:
 	jb toc from-project $* -f jb-book > $@

@@ -3,7 +3,9 @@ root: index
 chapters:
 - file: Software_Job_Interview
 - file: Studying
-- file: GRE/Overview
+- file: GRE/index
+  sections:
+  - file: GRE/Overview
 - file: Workflow/index
   sections:
   - file: Workflow/Jekyll_Website
