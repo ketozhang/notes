@@ -1,0 +1,645 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software Job Interview &#8212; My Jupyter Book</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Studying" href="Studying.html" />
+    <link rel="prev" title="Others" href="index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    Others
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Software Job Interview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Studying.html">
+   Studying
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="GRE/index.html">
+   GRE
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="GRE/Overview.html">
+     GRE Overview
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Workflow/index.html">
+   Workflow
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/Software_Job_Interview.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-structure-and-algorithms">
+   Data Structure and Algorithms
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#basic">
+     Basic
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#intermediate">
+     Intermediate
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exotic">
+     Exotic
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources">
+   Resources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#systems-design">
+   Systems Design
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#backend">
+     Backend
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#web-server">
+     Web Server
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#frontend">
+     Frontend
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#improvements-for-performance">
+     Improvements for Performance
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Software Job Interview</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-structure-and-algorithms">
+   Data Structure and Algorithms
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#basic">
+     Basic
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#intermediate">
+     Intermediate
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exotic">
+     Exotic
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources">
+   Resources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#systems-design">
+   Systems Design
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#backend">
+     Backend
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#web-server">
+     Web Server
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#frontend">
+     Frontend
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#improvements-for-performance">
+     Improvements for Performance
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="software-job-interview">
+<h1>Software Job Interview<a class="headerlink" href="#software-job-interview" title="Permalink to this headline">#</a></h1>
+<div class="section" id="data-structure-and-algorithms">
+<h2>Data Structure and Algorithms<a class="headerlink" href="#data-structure-and-algorithms" title="Permalink to this headline">#</a></h2>
+<p>For every structure understand the Big-O time and space complexity for the following operations:</p>
+<ol class="simple">
+<li><p>Insert</p></li>
+<li><p>Delete</p></li>
+<li><p>Sort</p></li>
+<li><p>Bulk Insert</p></li>
+</ol>
+<div class="section" id="basic">
+<h3>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>List/Array</p>
+<ul>
+<li><p><a class="reference external" href="https://leetcode.com/problems/copy-list-with-random-pointer/">https://leetcode.com/problems/copy-list-with-random-pointer/</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> 1: Implementation is slow, very disorganized, plan it out</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> 2: Still quite slow O(N), organization is much better. If two array indexes each other, consider mapping them (dict).</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://leetcode.com/problems/merge-two-sorted-lists/">https://leetcode.com/problems/merge-two-sorted-lists/</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> 1: Failed, too much time generating MaxHeap, next time use standard library. Missed the fact that the list were sorted; could’ve used comparison because of this fact.</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> 2: Excellent!</p></li>
+</ul>
+</li>
+<li><p>Return the most common values of an array. If there’s a tie, return them all.</p></li>
+<li><p><a class="reference external" href="https://leetcode.com/discuss/interview-question/411357/">Zombie in Matrix</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> 1: Excellent, only issue is solution required mutation of the input. Requiring a deepcopy of an input is not a good indicator. You should’ve used the idea that only indices need to be iterated not the whole grid.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Dictionary/Map</p>
+<ul>
+<li><p><a class="reference external" href="https://leetcode.com/discuss/interview-question/542597/">Top K Frequently Mentioned Keywords</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> 1: Strings possible contain <code class="docutils literal notranslate"><span class="pre">[^a-z0-9]</span></code>, replace those with whitespace; the review itself doesn’t matter, just make sure to count each word once (set) then store them in a list. Counter returns value and count. Heapq would be easy to get first k.</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://leetcode.com/discuss/interview-question/373006">Favorite Genres</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> 1: Excellent, solution is equivalently <span class="math notranslate nohighlight">\(\mathcal O(N^2)\)</span></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Tree (CS 61B)</p>
+<ul class="contains-task-list">
+<li><p><a class="reference external" href="https://leetcode.com/problems/subtree-of-another-tree/submissions/">Subtree of Another Tree</a></p>
+<ul>
+<li><p>1: Excellent, it did take a while to fix some bugs. Solutions is a bit slow. Note that binary trees can be easily represented by strings.</p></li>
+</ul>
+</li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> Min/max heap</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Binary search tree</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Trie</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="intermediate">
+<h3>Intermediate<a class="headerlink" href="#intermediate" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Hashmaps (CS61B)</p></li>
+<li><p>Caches (CS 61B and 186)</p></li>
+<li><p>Graphs</p>
+<ul>
+<li><p><a class="reference external" href="https://leetcode.com/discuss/interview-question/436073/">Critical Nodes</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> 1: Failed, while a connected graph requires <span class="math notranslate nohighlight">\(E &gt;= N-1\)</span>, a disconnected graph can also have <span class="math notranslate nohighlight">\(E = N-1\)</span>.</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://leetcode.com/discuss/interview-question/372581">Critical Connections</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> 1: Failed to code up bridge algorithm. You need to pseudocode more before trying</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> 2: Success to code up brute force algorithm. Works really well and although slow <span class="math notranslate nohighlight">\(\mathcal O(E^2 + EV)\)</span> at worst case.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="exotic">
+<h3>Exotic<a class="headerlink" href="#exotic" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>B+ Trees (CS 186)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.google.com/document/d/1f_JZNuSEShzCPORxfSE8cAKR1RiqV7NgygyRtAncxVI/edit">Interview Behavior Question Guide</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=gNQ9-kgyHfo">Amazon System Design Preparation</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=mjZpZ_wcYFg">Amazon Code Sampling (SIP)</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=RzlUQCy84rQ">Two examples for each of Amazon’s 14 Leadership Principles</a></p></li>
+<li><p><a class="reference external" href="https://docs.google.com/document/d/188JrZmqv7Nm7EULXItESSLmSEr7vBziqRUPew2oyWKY/edit">Amazon Assessment Debugging</a></p></li>
+<li><p><a class="reference external" href="https://aonecode.com/amazon-online-assessment">Amazon Assessment Questions AC</a></p></li>
+<li><p><a class="reference external" href="https://leetcode.com/discuss/interview-question/344650/Amazon-Online-Assessment-Questions">Amazon Assessment Questions LC</a></p></li>
+<li><p><a class="reference external" href="https://leetcode.com/discuss/career/216554/from-0-to-clearing-uberappleamazonlinkedingoogle">LeetCoder Advice on 0 to Clearing all Interviews</a></p></li>
+<li><p><a class="reference external" href="https://github.com/donnemartin/system-design-primer">Scalable Systems Primer</a></p></li>
+</ul>
+</div>
+<div class="section" id="systems-design">
+<h2>Systems Design<a class="headerlink" href="#systems-design" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Don’t jump into solving problems</p></li>
+<li><p>Ask questions!</p>
+<ol class="simple">
+<li><p>Ask about the product (usually given)</p></li>
+<li><p>Ask about content</p></li>
+<li><p>Ask about users (size, usage)</p></li>
+<li><p>Ask about performance (throughput, concurrency)</p></li>
+<li><p>Ask about what action/API is needed</p></li>
+</ol>
+</li>
+<li><p>Start focusing on your expertise (backend, frontend, production server)</p></li>
+</ul>
+<div class="section" id="backend">
+<h3>Backend<a class="headerlink" href="#backend" title="Permalink to this headline">#</a></h3>
+<p>Defining the schema, just field names are fine</p>
+<ul class="simple">
+<li><p>Highlight possibly special fields to that particular product (e.g., multiple payment methods)</p></li>
+<li><p>Identify high-usage queries to determine schema indices/keys.</p></li>
+</ul>
+</div>
+<div class="section" id="web-server">
+<h3>Web Server<a class="headerlink" href="#web-server" title="Permalink to this headline">#</a></h3>
+<p>Defining the API</p>
+<ul class="simple">
+<li><p>Go through API URL endpoint structure (<code class="docutils literal notranslate"><span class="pre">domain/resource/params?query_params</span></code>)</p></li>
+<li><p>Speak in HTTP requests</p></li>
+<li><p>A POST and PUT would need a JSON input.</p></li>
+<li><p>Each definable actions can be grouped into individual services. Each services may belong to a database table, but they should interact.</p></li>
+</ul>
+</div>
+<div class="section" id="frontend">
+<h3>Frontend<a class="headerlink" href="#frontend" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Start with the front page with basic services (e.g., search box)</p></li>
+<li><p>Keep asking if they expect any other services (e.g., recommendations)</p></li>
+<li><p>Head to the next page  by following a service action (e.g., clicking the search bar)</p></li>
+</ul>
+</div>
+<div class="section" id="improvements-for-performance">
+<h3>Improvements for Performance<a class="headerlink" href="#improvements-for-performance" title="Permalink to this headline">#</a></h3>
+<ul>
+<li><p><strong>Load Balancer</strong></p>
+<p>The idea of having a router to route requests to specific computers in attempt to reduce the traffic/load of a single computer. The added benefit is redundancy of servers which if one goes down there exist other possible routes.</p>
+</li>
+<li><p><strong>Cached Database</strong></p>
+<p>A copy of the database whether it’s a full copy (rare) or a usage-base copy (more common) to both increase the data-access speed and create a layer of redundancy if the database goes down.</p>
+</li>
+<li><p><strong>Database Load Balancing</strong></p>
+<p>Similar to having multiple servers for web requests, multiple copies of a database on separate resources (often read-only copies) can not only solve load issues but also provide redundancy.</p>
+</li>
+<li><p><strong>Content Delivery Network</strong></p>
+<p>A network of servers (often intelligently geographically placed) to server web assets (images, videos, CSS, etc).</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Others</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Studying.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Studying</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book community<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
