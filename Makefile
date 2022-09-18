@@ -10,7 +10,7 @@ all : build
 
 help:
 	@echo "all      Build site"
-	@echo "build    Same as make"
+	@echo "build    Same as make all"
 	@echo "clean    remove build files"
 	@echo "tocs     build _toc.yml for each notebook"
 
@@ -20,6 +20,7 @@ clean:
 ########################################
 
 build : $(NOTEBOOKS)
+	pip freeze > requirements.lock
 
 tocs : $(TOCS)
 
