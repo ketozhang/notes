@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Sorting &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1059,28 +1063,28 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="sorting">
+  <section class="tex2jax_ignore mathjax_ignore" id="sorting">
 <h1>Sorting<a class="headerlink" href="#sorting" title="Permalink to this headline">#</a></h1>
-<div class="section" id="streaming">
+<section id="streaming">
 <h2>Streaming<a class="headerlink" href="#streaming" title="Permalink to this headline">#</a></h2>
 <p>Streaming is a strategy to have a function that maps input data from the database into the buffer and outputs it to the RAM and then loads it into the disk.</p>
 <ul class="simple">
 <li><p><strong>Single-pass:</strong> Simply a single stream of input to output.</p></li>
 <li><p><strong>Double Buffering:</strong> With two threads, one manages computation and the other manages loading and unloading the buffer.</p></li>
 </ul>
-</div>
-<div class="section" id="divide-and-conquer">
+</section>
+<section id="divide-and-conquer">
 <h2>Divide and Conquer<a class="headerlink" href="#divide-and-conquer" title="Permalink to this headline">#</a></h2>
-<div class="section" id="way-strawman-merge-sort">
+<section id="way-strawman-merge-sort">
 <h3>2-Way Strawman Merge Sort<a class="headerlink" href="#way-strawman-merge-sort" title="Permalink to this headline">#</a></h3>
 <ol class="simple">
 <li><p>For each page, sort them in the buffer and write to disk</p></li>
 <li><p>Now we will read from the disk which now has sorted pages and write this to another disk. We will allocate two input buffers to read two pages and merge them into one. Now the last buffer has two pages.</p></li>
 <li><p>We continue this with four input buffers, merge then write. Then double up every step.</p></li>
 </ol>
-</div>
-</div>
-<div class="section" id="full-external-merge-sort">
+</section>
+</section>
+<section id="full-external-merge-sort">
 <h2>Full External Merge Sort<a class="headerlink" href="#full-external-merge-sort" title="Permalink to this headline">#</a></h2>
 <p>We will now use the strawman sort much more efficiently. Instead of going back and forth we can fully sort <span class="math notranslate nohighlight">\(N\)</span> pages with <span class="math notranslate nohighlight">\(B &lt; N\)</span> sized buffer.</p>
 <ol class="simple">
@@ -1100,7 +1104,7 @@ $<span class="math notranslate nohighlight">\( 2N \cdot \#\text{passes} \)</span
 \[B \approx \sqrt{N}  \]</div>
 </li>
 </ul>
-<div class="section" id="problems">
+<section id="problems">
 <h3>Problems<a class="headerlink" href="#problems" title="Permalink to this headline">#</a></h3>
 <ol>
 <li><p><strong>Number and Size of Partition</strong></p>
@@ -1122,16 +1126,16 @@ $<span class="math notranslate nohighlight">\( 2N \cdot \#\text{passes} \)</span
     \end{cases}
 \end{gather*}
 \end{split}\]</div>
-</div>
-</div>
-<div class="section" id="parallel-sorting">
+</section>
+</section>
+<section id="parallel-sorting">
 <h2>Parallel Sorting<a class="headerlink" href="#parallel-sorting" title="Permalink to this headline">#</a></h2>
 <p>For <span class="math notranslate nohighlight">\(n\)</span> machines we will have <span class="math notranslate nohighlight">\(n\)</span> buffers with each buffer dedicated to a range of the data.</p>
 <ul class="simple">
 <li><p>We’d like each range to have the same amount of values from the data. However if the data is skewed, then this is a problem since one machine has more to do than the others.</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

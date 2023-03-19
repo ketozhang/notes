@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Speedup &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1019,7 +1023,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="speedup">
+  <section class="tex2jax_ignore mathjax_ignore" id="speedup">
 <h1>Speedup<a class="headerlink" href="#speedup" title="Permalink to this headline">#</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="#speedup">Speedup</a></p></li>
@@ -1027,8 +1031,8 @@ title="Print to PDF"
 <li><p><a class="reference external" href="#cache-blocking">Cache Blocking</a></p></li>
 </ul>
 <p>There are many ways to speedup a program. We’ll use matrix operations as the classical example. This section will not cover parallel processing.</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="unrolling">
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="unrolling">
 <h1>Unrolling<a class="headerlink" href="#unrolling" title="Permalink to this headline">#</a></h1>
 <p>Optimize the use of independent instruction to accumulate as much binary size (registers) as possible.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1039,14 +1043,14 @@ title="Print to PDF"
     <span class="n">result</span> <span class="o">+=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="cache-blocking">
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cache-blocking">
 <h1>Cache Blocking<a class="headerlink" href="#cache-blocking" title="Permalink to this headline">#</a></h1>
 <p>Optimize temporal locality of cache by changing the way we access data.</p>
 <ul class="simple">
 <li><p>For NxN matrix operations one method is to split the matrices into sub-matrix</p></li>
 </ul>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {

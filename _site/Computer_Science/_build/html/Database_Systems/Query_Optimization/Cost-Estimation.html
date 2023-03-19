@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Cost Estimation &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1015,7 +1019,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="cost-estimation">
+  <section class="tex2jax_ignore mathjax_ignore" id="cost-estimation">
 <h1>Cost Estimation<a class="headerlink" href="#cost-estimation" title="Permalink to this headline">#</a></h1>
 <table class="colwidths-auto table">
 <thead>
@@ -1044,7 +1048,7 @@ title="Print to PDF"
 </tr>
 </tbody>
 </table>
-<div class="section" id="selectivity">
+<section id="selectivity">
 <h2>Selectivity<a class="headerlink" href="#selectivity" title="Permalink to this headline">#</a></h2>
 <p>The ratio of output to to all possible outputs. This is similar to probability</p>
 <div class="math notranslate nohighlight">
@@ -1058,7 +1062,7 @@ $<span class="math notranslate nohighlight">\(P_\text{sel} = \frac{1}{\max(\text
 $<span class="math notranslate nohighlight">\(P_\text{sel} = \frac{\text{High}(t) - \text{value}}{\text{High}(t) - \text{Low}(t) + 1}\)</span>$</p></li>
 <li><p>Missing Information <span class="math notranslate nohighlight">\(\rightarrow\)</span> assume <span class="math notranslate nohighlight">\(1/10\)</span></p></li>
 </ul>
-<div class="section" id="joint-selectivity">
+<section id="joint-selectivity">
 <h3>Joint Selectivity<a class="headerlink" href="#joint-selectivity" title="Permalink to this headline">#</a></h3>
 <p>Selectivity on two or more tables by either <code class="docutils literal notranslate"><span class="pre">AND</span></code>, <code class="docutils literal notranslate"><span class="pre">OR</span></code>, or <code class="docutils literal notranslate"><span class="pre">JOIN</span></code> is calculated with the following two assumption:</p>
 <ul class="simple">
@@ -1081,9 +1085,9 @@ $<span class="math notranslate nohighlight">\(P_\text{sel} = \frac{\text{High}(t
 </ul>
 <div class="math notranslate nohighlight">
 \[ \prod P_\text{sel}(t_i) \cdot \abs{t_i} \]</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

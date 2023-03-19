@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Electrostatics &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1029,9 +1033,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="electrostatics">
+  <section class="tex2jax_ignore mathjax_ignore" id="electrostatics">
 <h1>Electrostatics<a class="headerlink" href="#electrostatics" title="Permalink to this headline">#</a></h1>
-<div class="section" id="coulomb-s-law">
+<section id="coulomb-s-law">
 <h2>Coulomb’s Law<a class="headerlink" href="#coulomb-s-law" title="Permalink to this headline">#</a></h2>
 <p>The force that a charge <span class="math notranslate nohighlight">\(q_1\)</span> feel from another charge <span class="math notranslate nohighlight">\(q_2\)</span> is governed by <strong>Coulomb’s law</strong>,</p>
 <div class="math notranslate nohighlight">
@@ -1039,8 +1043,8 @@ title="Print to PDF"
 \boldsymbol{F} = \frac{1}{4\pi\epsilon_0}\frac{q_1q_2}{d^2}\boldsymbol{\hat r}
 \]</div>
 <p><span class="math notranslate nohighlight">\(\epsilon_0\)</span> : permittivity of free space</p>
-</div>
-<div class="section" id="electric-field">
+</section>
+<section id="electric-field">
 <h2>Electric Field<a class="headerlink" href="#electric-field" title="Permalink to this headline">#</a></h2>
 <p>The electric field <span class="math notranslate nohighlight">\(\boldsymbol{E}\)</span> is a vector field. For a single charge <span class="math notranslate nohighlight">\(q\)</span>, the electric field produced will be.</p>
 <div class="math notranslate nohighlight">
@@ -1052,7 +1056,7 @@ title="Print to PDF"
 \[
 \boldsymbol{F} = q_0 \boldsymbol{E}
 \]</div>
-<div class="section" id="continuous-form">
+<section id="continuous-form">
 <h3>Continuous Form<a class="headerlink" href="#continuous-form" title="Permalink to this headline">#</a></h3>
 <p>Often, Coulomb’s law is used to calculate the force of a test particle felt by a continuous collection of charges (e.g., a charged sphere). It is much easier to use the continuous form of the electric field for some continuous shape with the characteristic geometry <span class="math notranslate nohighlight">\(\mathrm{d}V\)</span> and characteristic charge density <span class="math notranslate nohighlight">\(\mathrm{d}\rho\)</span>.</p>
 <p>Letting the origin be the center of the continuous charge,</p>
@@ -1075,22 +1079,22 @@ title="Print to PDF"
 <li><p><span class="math notranslate nohighlight">\(\boldsymbol{r}\)</span> : Position vector of each charge in the continuous charge collection.</p></li>
 <li><p>The negative sign is needed to correct for changing origins.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="flux">
+</section>
+</section>
+<section id="flux">
 <h2>Flux<a class="headerlink" href="#flux" title="Permalink to this headline">#</a></h2>
 <p>Rather than the electric field, what is also useful to solve for the electric force comes directly from interpretting Coulomb’s law with Gauss’ law. That is, the flux of the electric field which is the magnitude of the electric field line penetrating perpendicularly through some surface <span class="math notranslate nohighlight">\(S\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[ \Phi_E \equiv \int_{S} \boldsymbol{E} \cdot \mathrm d \boldsymbol a \]</div>
-<div class="section" id="gauss-law-integral-form">
+<section id="gauss-law-integral-form">
 <h3>Gauss’ Law Integral Form<a class="headerlink" href="#gauss-law-integral-form" title="Permalink to this headline">#</a></h3>
 <p>For a electric field source that can be fully contained by a closed surface that closed surface is penetrated by every electric field line produced by the charge enclosed by the surface. Thus the flux can equivalently describe the amount of charge enclosed by the surface. This is <strong>Gauss’ Law</strong>,</p>
 <div class="math notranslate nohighlight">
 \[
 \oint_{S} \boldsymbol{E} \cdot \mathrm d \boldsymbol a = \frac{Q_\mathrm{enc}}{\epsilon_0}
 \]</div>
-</div>
-<div class="section" id="gauss-law-differential-form">
+</section>
+<section id="gauss-law-differential-form">
 <h3>Gauss’ Law Differential Form<a class="headerlink" href="#gauss-law-differential-form" title="Permalink to this headline">#</a></h3>
 <p>By the divergence theorem we may transform the surface integral to a volume integral,</p>
 <div class="math notranslate nohighlight">
@@ -1105,9 +1109,9 @@ title="Print to PDF"
 \[
 \nabla \cdot \boldsymbol{E} = \frac{\rho}{\epsilon_0}
 \]</div>
-</div>
-</div>
-<div class="section" id="curl">
+</section>
+</section>
+<section id="curl">
 <h2>Curl<a class="headerlink" href="#curl" title="Permalink to this headline">#</a></h2>
 <p>The vector problem of the electric field can always be transformed into a much simpler scalar problem. This is proven because the curl of the electric field is always zero. We may use Stoke’s theorem to prove this.</p>
 <p>The line integral for a line enclosing the charge is always zero due to the nature of a electric field that follows the inverse square law,</p>
@@ -1121,8 +1125,8 @@ title="Print to PDF"
 \nabla \times \boldsymbol{E} = 0
 \]</div>
 <p>All of this is another way to say that the electric field is a conservative vector field thus the electric fieild is scalar in nature.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

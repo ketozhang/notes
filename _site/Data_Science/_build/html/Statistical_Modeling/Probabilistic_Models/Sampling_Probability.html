@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Sampling Probability &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1185,7 +1189,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="sampling-probability">
+  <section class="tex2jax_ignore mathjax_ignore" id="sampling-probability">
 <h1>Sampling Probability<a class="headerlink" href="#sampling-probability" title="Permalink to this headline">#</a></h1>
 <p>A sampling probability is often one at which follows these sampling rules. For <span class="math notranslate nohighlight">\(N\)</span> individuals we wish gather the individuals into <span class="math notranslate nohighlight">\(n\)</span> subsets:</p>
 <ol class="simple">
@@ -1193,7 +1197,7 @@ title="Print to PDF"
 <li><p>Order does not matter</p></li>
 </ol>
 <p>The probability of a given subset following these two rules being chosen can be solved two ways:</p>
-<div class="section" id="brute-force-number-of-configurations">
+<section id="brute-force-number-of-configurations">
 <h2>Brute Force - Number of Configurations<a class="headerlink" href="#brute-force-number-of-configurations" title="Permalink to this headline">#</a></h2>
 <p>The brute force methods requires the knowledge of all possible configurations. This is the method that is often first taught in statistics and following our rules it sounds like we have to use <strong>combination</strong> (order does not matter). Recall the combination is defined as the number of configuration of group one can make with <span class="math notranslate nohighlight">\(n\)</span> things and each group has <span class="math notranslate nohighlight">\(k\)</span> things. Combination also simply quoted as the “<span class="math notranslate nohighlight">\(n\)</span> choose <span class="math notranslate nohighlight">\(k\)</span>” function which is,</p>
 <div class="math notranslate nohighlight">
@@ -1230,14 +1234,14 @@ P(A) = \frac{C_A}{C_\text{Pairs}} = \frac{2!(n-2)!(n-1)}{n!}
 $$
 </pre></div>
 </div>
-</div>
-<div class="section" id="probability-by-recursion">
+</section>
+<section id="probability-by-recursion">
 <h2>Probability by Recursion<a class="headerlink" href="#probability-by-recursion" title="Permalink to this headline">#</a></h2>
 <p>You may also find the probability by multiplying</p>
 <div class="math notranslate nohighlight">
 \[ \mathcal{P}(A) = P(A) \cdot P(\neg A) \]</div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

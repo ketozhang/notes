@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Likelihood Ratio &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1175,7 +1179,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="likelihood-ratio">
+  <section class="tex2jax_ignore mathjax_ignore" id="likelihood-ratio">
 <h1>Likelihood Ratio<a class="headerlink" href="#likelihood-ratio" title="Permalink to this headline">#</a></h1>
 <p>The likliehood ratio statistics is used as a benchmark for m odel solution. The likelihood ratio is defined as the difference between the log-likelihood of the null <span class="math notranslate nohighlight">\(L_0\)</span> and alternative hypothesis <span class="math notranslate nohighlight">\(L\)</span>.</p>
 <div class="math notranslate nohighlight">
@@ -1187,7 +1191,7 @@ title="Print to PDF"
 \[
 \Lambda^* \equiv \mathop{\arg\max}_{H} L - \mathop{\arg\max}_{H_0} L_0
 \]</div>
-<div class="section" id="relation-to-chi-squared-distribution">
+<section id="relation-to-chi-squared-distribution">
 <h2>Relation to Chi-Squared Distribution<a class="headerlink" href="#relation-to-chi-squared-distribution" title="Permalink to this headline">#</a></h2>
 <p>By <strong>Wilks’ theorem</strong>, as the sample size grows large assuminng the null hypothesis is true, the following test statistics <span class="math notranslate nohighlight">\(D\)</span> approaches the <span class="math notranslate nohighlight">\(\chi^2_k\)</span> distribution</p>
 <div class="math notranslate nohighlight">
@@ -1205,8 +1209,8 @@ D \sim \chi^2_k\,. \tag{as $N \to \infty$}
   \]</div>
 </li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Python 3.6 &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1079,10 +1083,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="python-3-6">
+  <section class="tex2jax_ignore mathjax_ignore" id="python-3-6">
 <h1>Python 3.6<a class="headerlink" href="#python-3-6" title="Permalink to this headline">#</a></h1>
 <p>Here lists the new features since Python 3.5 adopted or to be adopted into my codes.</p>
-<div class="section" id="f-strings">
+<section id="f-strings">
 <h2>f-Strings<a class="headerlink" href="#f-strings" title="Permalink to this headline">#</a></h2>
 <table class="colwidths-auto table">
 <thead>
@@ -1116,8 +1120,8 @@ title="Print to PDF"
 <span class="nb">print</span> <span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s2">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># 3.141593e+00</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="variable-type-syntax">
+</section>
+<section id="variable-type-syntax">
 <h2>Variable Type Syntax<a class="headerlink" href="#variable-type-syntax" title="Permalink to this headline">#</a></h2>
 <table class="colwidths-auto table">
 <thead>
@@ -1139,8 +1143,8 @@ title="Print to PDF"
 <span class="n">d</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="underscore-numerical-separator">
+</section>
+<section id="underscore-numerical-separator">
 <h2>Underscore Numerical Separator<a class="headerlink" href="#underscore-numerical-separator" title="Permalink to this headline">#</a></h2>
 <table class="colwidths-auto table">
 <thead>
@@ -1159,8 +1163,8 @@ title="Print to PDF"
 <span class="mh">0xCAFE_F00D</span> <span class="o">==</span> <span class="mh">0xCAFEF00D</span> <span class="c1"># True</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="async-generators">
+</section>
+<section id="async-generators">
 <h2>Async Generators<a class="headerlink" href="#async-generators" title="Permalink to this headline">#</a></h2>
 <table class="colwidths-auto table">
 <thead>
@@ -1184,8 +1188,8 @@ title="Print to PDF"
         <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">delay</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="async-comprehension">
+</section>
+<section id="async-comprehension">
 <h2>Async Comprehension<a class="headerlink" href="#async-comprehension" title="Permalink to this headline">#</a></h2>
 <table class="colwidths-auto table">
 <thead>
@@ -1207,8 +1211,8 @@ title="Print to PDF"
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="p">[</span><span class="k">await</span> <span class="n">fun</span><span class="p">()</span> <span class="k">for</span> <span class="n">fun</span> <span class="ow">in</span> <span class="n">funcs</span> <span class="k">if</span> <span class="k">await</span> <span class="n">condition</span><span class="p">()]</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="simpler-subclass-creation-and-customization">
+</section>
+<section id="simpler-subclass-creation-and-customization">
 <h2>Simpler Subclass Creation and Customization<a class="headerlink" href="#simpler-subclass-creation-and-customization" title="Permalink to this headline">#</a></h2>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Philosopher</span><span class="p">:</span>
     <span class="n">subclasses</span> <span class="o">=</span> <span class="p">[]</span>
@@ -1221,8 +1225,8 @@ title="Print to PDF"
     <span class="k">pass</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="file-system-path-protocol">
+</section>
+<section id="file-system-path-protocol">
 <h2>File System Path Protocol<a class="headerlink" href="#file-system-path-protocol" title="Permalink to this headline">#</a></h2>
 <table class="colwidths-auto table">
 <thead>
@@ -1241,21 +1245,21 @@ title="Print to PDF"
 <li><p><code class="docutils literal notranslate"><span class="pre">os.PathLike</span></code> is an abstract base class that inherits functions in <code class="docutils literal notranslate"><span class="pre">os</span></code> and <code class="docutils literal notranslate"><span class="pre">os.path</span></code> modules.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">open()</span></code> make take in all <code class="docutils literal notranslate"><span class="pre">os.PathLike</span></code> objects (e.g., <code class="docutils literal notranslate"><span class="pre">pathlib</span></code>)</p></li>
 </ul>
-</div>
-<div class="section" id="preserving-order-of-class-attribute-and-kwargs">
+</section>
+<section id="preserving-order-of-class-attribute-and-kwargs">
 <h2>Preserving Order of Class Attribute and Kwargs<a class="headerlink" href="#preserving-order-of-class-attribute-and-kwargs" title="Permalink to this headline">#</a></h2>
 <p><a class="reference external" href="https://www.python.org/dev/peps/pep-0520/">PEP 520</a>
 <a class="reference external" href="https://www.python.org/dev/peps/pep-0468/">PEP 468</a></p>
 <p><code class="docutils literal notranslate"><span class="pre">__dict__</span></code> in classes and `**kwargs`` in function now preserve insertion order.</p>
-</div>
-<div class="section" id="dictionary-implementation">
+</section>
+<section id="dictionary-implementation">
 <h2>Dictionary Implementation<a class="headerlink" href="#dictionary-implementation" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">dict</span></code> uses 20% to 25% less memory</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">dict</span></code> is ordered by implementation detail, <strong>not permanent</strong>!</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

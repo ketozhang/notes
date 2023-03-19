@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Probability of an Energy State &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1066,10 +1070,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="probability-of-an-energy-state">
+  <section class="tex2jax_ignore mathjax_ignore" id="probability-of-an-energy-state">
 <h1>Probability of an Energy State<a class="headerlink" href="#probability-of-an-energy-state" title="Permalink to this headline">#</a></h1>
 <p>Often times the energy of the system becomes very useful to characterize the state of the system (basis for Quantum physics).</p>
-<div class="section" id="boltzmann-factor">
+<section id="boltzmann-factor">
 <h2>Boltzmann Factor<a class="headerlink" href="#boltzmann-factor" title="Permalink to this headline">#</a></h2>
 <p>The boltzmann factor is the un-normalized probability (aka weight) of a the energy state of a system next to a very large resevoir.</p>
 <div class="math notranslate nohighlight">
@@ -1083,8 +1087,8 @@ title="Print to PDF"
 <li><p>The boltzman factor is the RHS of the second line above.</p></li>
 <li><p>To determine the probability of whether a system is in a energy state given all energy states requires the partition function.</p></li>
 </ul>
-</div>
-<div class="section" id="partition-function">
+</section>
+<section id="partition-function">
 <h2>Partition Function<a class="headerlink" href="#partition-function" title="Permalink to this headline">#</a></h2>
 <p>The <strong>partition function</strong> is the normalization function of the <span class="xref myst">boltzmann factor</span>.</p>
 <div class="math notranslate nohighlight">
@@ -1092,10 +1096,10 @@ title="Print to PDF"
 <p>The subscript <span class="math notranslate nohighlight">\(s\)</span> may be confusing and is used to account for degenerate states for instance <span class="math notranslate nohighlight">\(\varepsilon_{1/2} = \varepsilon_{-1/2}\)</span> (if spin is considered a state). We will implore the use of the multiplicity function <span class="math notranslate nohighlight">\(g(\varepsilon)\)</span> to account for multiplicity and remove <span class="math notranslate nohighlight">\(\varepsilon_s\)</span> in favor of <span class="math notranslate nohighlight">\(\varepsilon\)</span></p>
 <div class="math notranslate nohighlight">
 \[\boxed{Z(\tau, \varepsilon)) \equiv \sum_\varepsilon{g(\varepsilon)e^{-\varepsilon/\tau}}}\]</div>
-</div>
-<div class="section" id="usage">
+</section>
+<section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">#</a></h2>
-<div class="section" id="thermal-average-energy">
+<section id="thermal-average-energy">
 <h3>Thermal Average Energy<a class="headerlink" href="#thermal-average-energy" title="Permalink to this headline">#</a></h3>
 <p>Because we have the probability of an energy state we can get the average energy state.</p>
 <div class="math notranslate nohighlight">
@@ -1105,13 +1109,13 @@ title="Print to PDF"
     \boxed{\langle{U}\rangle = \frac{\sum \varepsilon_s e^{-\varepsilon_s/\tau}}{Z} = \tau^2 \frac{\partial}{\partial \tau}\left[\log Z\right]}
 \end{gathered}
 \end{split}\]</div>
-</div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="probability-of-energy-and-number-state">
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="probability-of-energy-and-number-state">
 <h1>Probability of Energy and Number State<a class="headerlink" href="#probability-of-energy-and-number-state" title="Permalink to this headline">#</a></h1>
 <p>Now let’s consider the system able to transfer particles between another system. We would like to know the probability of finding the system in some energy and number state <span class="math notranslate nohighlight">\(P(N,\varepsilon)\)</span></p>
-<div class="section" id="gibbs-factor">
+<section id="gibbs-factor">
 <h2>Gibbs Factor<a class="headerlink" href="#gibbs-factor" title="Permalink to this headline">#</a></h2>
 <p>Like the Boltzmann factor we need to determine how such system is weighted. The system of energy and number state is weighted as,</p>
 <div class="math notranslate nohighlight">
@@ -1128,8 +1132,8 @@ title="Print to PDF"
 <p>which is called the <strong>absolute activity</strong></p>
 <div class="math notranslate nohighlight">
 \[\boxed{P(N,\varepsilon) \propto \lambda^Ne^{-\varepsilon/\tau}}\]</div>
-</div>
-<div class="section" id="gibbs-sum">
+</section>
+<section id="gibbs-sum">
 <h2>Gibbs Sum<a class="headerlink" href="#gibbs-sum" title="Permalink to this headline">#</a></h2>
 <p><em>Alias: Grand sum</em></p>
 <p>The Gibbs sum is the normalization function consider all possible energy states and all possible number states.</p>
@@ -1145,10 +1149,10 @@ title="Print to PDF"
 \[
 Z(\tau, \mu) \equiv \sum_{\{N,\;\varepsilon\}}g(\varepsilon)\lambda^Ne^{-\varepsilon/\tau}
 \]</div>
-</div>
-<div class="section" id="id1">
+</section>
+<section id="id1">
 <h2>Usage<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-<div class="section" id="average-number-of-particles">
+<section id="average-number-of-particles">
 <h3>Average Number of Particles<a class="headerlink" href="#average-number-of-particles" title="Permalink to this headline">#</a></h3>
 <p>Like for the Boltzmann factor <span class="math notranslate nohighlight">\(Z(\tau, \varepsilon))\)</span> we have the thermal average energy, the Gibbs sum <span class="math notranslate nohighlight">\(Z(\tau, \varepsilon), N)\)</span> we have the average number of particles,</p>
 <div class="math notranslate nohighlight">
@@ -1159,9 +1163,9 @@ Z(\tau, \mu) \equiv \sum_{\{N,\;\varepsilon\}}g(\varepsilon)\lambda^Ne^{-\vareps
     \boxed{\langle N \rangle = \lambda \frac{\partial}{\partial \lambda} [\log{Z(\tau, \varepsilon),N)}]}
 \end{gathered}
 \end{split}\]</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

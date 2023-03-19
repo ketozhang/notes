@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Parallel Hashing and Sorting &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1021,16 +1025,16 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="parallel-hashing-and-sorting">
+  <section class="tex2jax_ignore mathjax_ignore" id="parallel-hashing-and-sorting">
 <h1>Parallel Hashing and Sorting<a class="headerlink" href="#parallel-hashing-and-sorting" title="Permalink to this headline">#</a></h1>
-<div class="section" id="hash-join">
+<section id="hash-join">
 <h2>Hash Join<a class="headerlink" href="#hash-join" title="Permalink to this headline">#</a></h2>
 <p>We first distribute the workload with <span class="math notranslate nohighlight">\(h_n\)</span> and apply the divide phase. Then we continue with the next phase locally.</p>
 <ul class="simple">
 <li><p>Two tuples that need to join always end up at the same machine</p></li>
 </ul>
-</div>
-<div class="section" id="sort-merge-join">
+</section>
+<section id="sort-merge-join">
 <h2>Sort-Merge Join<a class="headerlink" href="#sort-merge-join" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Partition data by range at pass 0</p>
@@ -1040,12 +1044,12 @@ title="Print to PDF"
 </li>
 <li><p>Remaining pass are local.</p></li>
 </ul>
-</div>
-<div class="section" id="symmetric-join">
+</section>
+<section id="symmetric-join">
 <h2>Symmetric Join<a class="headerlink" href="#symmetric-join" title="Permalink to this headline">#</a></h2>
 <p>We can add symmetry to either hash or sort join to allow for a paralleled pipeline that’s always streaming. We do this by doing a local merge on both <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(S\)</span> as the input comes.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

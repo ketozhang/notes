@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Conditional Statements &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1019,57 +1023,57 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="conditional-statements">
+  <section class="tex2jax_ignore mathjax_ignore" id="conditional-statements">
 <h1>Conditional Statements<a class="headerlink" href="#conditional-statements" title="Permalink to this headline">#</a></h1>
-<div class="section" id="if-statement">
+<section id="if-statement">
 <h2>If Statement<a class="headerlink" href="#if-statement" title="Permalink to this headline">#</a></h2>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">([</span><span class="nx">cond</span><span class="p">])</span> <span class="p">{</span>
-    <span class="p">[</span><span class="nx">body</span><span class="p">]</span>
-<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">([</span><span class="nx">cond</span><span class="p">]){</span>
-    <span class="p">[</span><span class="nx">body</span><span class="p">]</span>
-<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-    <span class="p">[</span><span class="nx">body</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">([</span><span class="nx">cond</span><span class="p">])</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="nx">body</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">([</span><span class="nx">cond</span><span class="p">]){</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="nx">body</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="nx">body</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="while-and-do-while-loop">
+</section>
+<section id="while-and-do-while-loop">
 <h2>While and Do-While Loop<a class="headerlink" href="#while-and-do-while-loop" title="Permalink to this headline">#</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">while</span></code> statements are the same as Java,</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="p">[</span><span class="nx">cond</span><span class="p">]</span> <span class="p">{</span>
-    <span class="p">[</span><span class="nx">body</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">while</span><span class="w"> </span><span class="p">[</span><span class="nx">cond</span><span class="p">]</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="nx">body</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>However, the <code class="docutils literal notranslate"><span class="pre">do-while</span></code> statement are one where you want the body to run at least run then check for <code class="docutils literal notranslate"><span class="pre">while</span></code> condition,</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">do</span> <span class="p">{</span>
-    <span class="p">[</span><span class="nx">body</span><span class="p">]</span>
-<span class="p">}</span> <span class="k">while</span> <span class="p">([</span><span class="nx">cond</span><span class="p">])</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">do</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="nx">body</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">([</span><span class="nx">cond</span><span class="p">])</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="for-loop">
+</section>
+<section id="for-loop">
 <h2>For Loop<a class="headerlink" href="#for-loop" title="Permalink to this headline">#</a></h2>
 <p>There exist Java-like <code class="docutils literal notranslate"><span class="pre">for</span></code> loops</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">([</span><span class="nx">init</span><span class="p">];</span> <span class="p">[</span><span class="nx">stop</span> <span class="nx">cond</span><span class="p">];</span> <span class="p">[</span><span class="nx">increment</span><span class="p">]){</span>
-    <span class="p">[</span><span class="nx">body</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="p">([</span><span class="nx">init</span><span class="p">];</span><span class="w"> </span><span class="p">[</span><span class="nx">stop</span><span class="w"> </span><span class="nx">cond</span><span class="p">];</span><span class="w"> </span><span class="p">[</span><span class="nx">increment</span><span class="p">]){</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="nx">body</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Also Python-like <code class="docutils literal notranslate"><span class="pre">for</span></code> loops use the <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">...</span> <span class="pre">of</span></code> loop,</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">item</span> <span class="k">of</span> <span class="nx">items</span><span class="p">)</span> <span class="p">{</span>
-    <span class="p">[</span><span class="nx">body</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">item</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">items</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="nx">body</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>You may also iterate over indices or keys by the <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">...</span> <span class="pre">in</span></code> loop (<strong>not the same as Python’s</strong> <code class="docutils literal notranslate"><span class="pre">in</span></code>)</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">item</span> <span class="ow">in</span> <span class="nx">items</span><span class="p">)</span> <span class="p">{</span>
-    <span class="p">[</span><span class="nx">body</span><span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">item</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nx">items</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="nx">body</span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

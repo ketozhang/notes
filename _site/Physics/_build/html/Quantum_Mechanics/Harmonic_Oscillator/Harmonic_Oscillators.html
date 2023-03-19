@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Annihilation and Creation Operators &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1025,7 +1029,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="section" id="annihilation-and-creation-operators">
+  <section id="annihilation-and-creation-operators">
 <h1>Annihilation and Creation Operators<a class="headerlink" href="#annihilation-and-creation-operators" title="Permalink to this headline">#</a></h1>
 <p>The annihilation and creation operators (or in collection called the harmonic operators) are given by:</p>
 <div class="math notranslate nohighlight">
@@ -1038,7 +1042,7 @@ title="Print to PDF"
 \[
 \hat H = \frac{1}{2}h \omega \left(2\hat a^\dagger \hat a + 1\right)
 \]</div>
-<div class="section" id="motivation">
+<section id="motivation">
 <h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h2>
 <p>Recall the harmonic oscillator Hamiltonian,</p>
 <div class="math notranslate nohighlight">
@@ -1060,8 +1064,8 @@ title="Print to PDF"
 \[
 \hat H = \frac{1}{2}h \omega \left(2a^\dagger a + 1\right)
 \]</div>
-</div>
-<div class="section" id="number-operator-and-eigenstuff">
+</section>
+<section id="number-operator-and-eigenstuff">
 <h2>Number Operator and Eigenstuff<a class="headerlink" href="#number-operator-and-eigenstuff" title="Permalink to this headline">#</a></h2>
 <div class="math notranslate nohighlight">
 \[
@@ -1082,8 +1086,8 @@ title="Print to PDF"
 \hat H \ket n = \frac{1}{2}\hbar \omega (2 \hat N \ket n + \ket n) = \frac{1}{2} \hbar \omega (2 n \ket n + \ket n)\\
 \hat H \ket n = \underbrace{\left(n + \frac{1}{2} \right) \hbar \omega}_{E_n} \ket n
 \end{split}\]</div>
-</div>
-<div class="section" id="lowering-and-raising-operators">
+</section>
+<section id="lowering-and-raising-operators">
 <h2>Lowering and Raising Operators<a class="headerlink" href="#lowering-and-raising-operators" title="Permalink to this headline">#</a></h2>
 <p><span class="math notranslate nohighlight">\(\hat a\)</span> and <span class="math notranslate nohighlight">\(\hat a^\dagger\)</span> are also known as the <strong>lowering and raising operator</strong> respectively. This comes from applying the operator and determining the energy eigenvalue.</p>
 <p>First using the raising operator, we find the eigenstate of <span class="math notranslate nohighlight">\(\hat N\)</span> goes up by one,</p>
@@ -1092,8 +1096,8 @@ title="Print to PDF"
 \hat N \hat a^\dagger \ket n = \hat a^\dagger \hat a \hat a^\dagger \ket n\\
 \hat N \hat a^\dagger \ket n = (n+1) \hat a^\dagger \ket n
 \end{split}\]</div>
-</div>
-<div class="section" id="normalization">
+</section>
+<section id="normalization">
 <h2>Normalization<a class="headerlink" href="#normalization" title="Permalink to this headline">#</a></h2>
 <p>Now we established that the lower and raising operator transform the state from <span class="math notranslate nohighlight">\(\ket{n+1}\)</span> to <span class="math notranslate nohighlight">\(\ket{n}\)</span> or reverse respectively, we need to actually define the operation,</p>
 <div class="math notranslate nohighlight">
@@ -1101,17 +1105,17 @@ title="Print to PDF"
 \hat a \ket n = \sqrt{n} \ket{n - 1}\\
 \hat a^\dagger \ket n = \sqrt{n+1}\ket{n+1}
 \end{split}\]</div>
-</div>
-<div class="section" id="eigenstates">
+</section>
+<section id="eigenstates">
 <h2>Eigenstates<a class="headerlink" href="#eigenstates" title="Permalink to this headline">#</a></h2>
 <p>We can now define the eigenstates</p>
 <div class="math notranslate nohighlight">
 \[
 \ket n = \frac{(\hat a^\dagger)^n}{\sqrt{n!}} \ket 0
 \]</div>
-</div>
-</div>
-<div class="section" id="multiple-harmonic-oscillators">
+</section>
+</section>
+<section id="multiple-harmonic-oscillators">
 <h1>Multiple Harmonic Oscillators<a class="headerlink" href="#multiple-harmonic-oscillators" title="Permalink to this headline">#</a></h1>
 <p>To discrete a general system of harmonic oscillator let’s start out with uncoupled harmonic oscillators. The Hamiltonian for each oscillator is,</p>
 <div class="math notranslate nohighlight">
@@ -1134,7 +1138,7 @@ title="Print to PDF"
 \[
 \ket {n_1, n_2, \ldots} = \prod_{k} \frac{1}{\sqrt{n_k!}}\hat a_k^\dagger \ket{0,0,\ldots,0}
 \]</div>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {

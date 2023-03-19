@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Introduction &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1175,10 +1179,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduction">
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
 <p>Let the chain be a set of random variables with element <span class="math notranslate nohighlight">\(X_t\)</span> for the step <span class="math notranslate nohighlight">\(t \ge 0\)</span> (or link) of the chain. The chain is aid to be a Markov chain if <span class="math notranslate nohighlight">\(X_{t+1}\)</span> is only dependent on <span class="math notranslate nohighlight">\(X_t\)</span> for all <span class="math notranslate nohighlight">\(t &gt; 0\)</span></p>
-<div class="section" id="stationary-transition">
+<section id="stationary-transition">
 <h2>Stationary Transition<a class="headerlink" href="#stationary-transition" title="Permalink to this headline">#</a></h2>
 <p>A transition in a Markov-chain is a step from <span class="math notranslate nohighlight">\(X_t\)</span> to <span class="math notranslate nohighlight">\(X_{t+1}\)</span>. A <strong>stationary transition</strong> has the probability of transition that is independent on the step <span class="math notranslate nohighlight">\(t\)</span>. That must mean there is no difference between transition probability at any step,</p>
 <div class="math notranslate nohighlight">
@@ -1195,8 +1199,8 @@ P(x_t \rightarrow x_{t+1}) := P(X_t=x_t \mid X_{t+1} = x_{t+1})
 \[
 P(X_0=x_0, X_1=x_1, \ldots X_N=x_N) = P(x_0)P(x_0 \rightarrow x_1)\cdots P(x_{n-1} \rightarrow x_n)
 \]</div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

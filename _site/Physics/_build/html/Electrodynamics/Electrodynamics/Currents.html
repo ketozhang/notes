@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Currents &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -995,14 +999,14 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="currents">
+  <section class="tex2jax_ignore mathjax_ignore" id="currents">
 <h1>Currents<a class="headerlink" href="#currents" title="Permalink to this headline">#</a></h1>
 <p>Current <span class="math notranslate nohighlight">\(\bvec I\)</span> is the charge per unit time flowing through some wire. The SI unit is coulombs-per-second <span class="math notranslate nohighlight">\((\mathrm{C\cdot s^{-1}})\)</span> or <strong>amperes</strong> (<span class="math notranslate nohighlight">\(\mathrm A\)</span>),</p>
 <div class="math notranslate nohighlight">
 \[
 \bvec I \equiv \frac{\mathrm d q}{\mathrm d t} \bvec{\hat l}
 \]</div>
-<div class="section" id="line-current">
+<section id="line-current">
 <h2>Line Current<a class="headerlink" href="#line-current" title="Permalink to this headline">#</a></h2>
 <p>Speaking of a wire with a line charge <span class="math notranslate nohighlight">\(\lambda\)</span> moving through the wire at velocity <span class="math notranslate nohighlight">\(\mathbf v\)</span>, the current is given as a vector,</p>
 <div class="math notranslate nohighlight">
@@ -1015,8 +1019,8 @@ title="Print to PDF"
 \bvec F = \int{\left(\bvec I \times \bvec{B}\right) \mathrm d l} = - I \int{\bvec{B} \times \mathrm d \bvec l }
 \]</div>
 <p>Notice that the current always point along the wire (since the charge is confined to moving along the wire) thus <span class="math notranslate nohighlight">\(\mathrm{dir} \ \bvec{I} = \bvec {\hat l}\)</span></p>
-</div>
-<div class="section" id="surface-current">
+</section>
+<section id="surface-current">
 <h2>Surface Current<a class="headerlink" href="#surface-current" title="Permalink to this headline">#</a></h2>
 <p>The current of a strip is given by a <strong>surface current density</strong> <span class="math notranslate nohighlight">\(\bvec K\)</span> which is the current per unit width given by,</p>
 <div class="math notranslate nohighlight">
@@ -1028,8 +1032,8 @@ title="Print to PDF"
 \[
 \bvec K = \sigma \bvec v
 \]</div>
-</div>
-<div class="section" id="volume-current">
+</section>
+<section id="volume-current">
 <h2>Volume Current<a class="headerlink" href="#volume-current" title="Permalink to this headline">#</a></h2>
 <p>The current of an object like a cylinder is given by a <strong>volume current density</strong> <span class="math notranslate nohighlight">\(\bvec J\)</span> defined as,</p>
 <div class="math notranslate nohighlight">
@@ -1037,16 +1041,16 @@ title="Print to PDF"
 \boxed{\bvec J \equiv \frac{\mathrm d \bvec I}{\mathrm d A}}
 \]</div>
 <p>Where <span class="math notranslate nohighlight">\(\mathrm d A\)</span> is the cross-sectional area.</p>
-<div class="section" id="continunity-equation">
+<section id="continunity-equation">
 <h3>Continunity Equation<a class="headerlink" href="#continunity-equation" title="Permalink to this headline">#</a></h3>
 <p>By conservation of charges, the current inside the volume must equal to the amount of charge flowing out of the surface per second. One may derive the differential relationship called the <strong>continunity equation</strong>,</p>
 <div class="math notranslate nohighlight">
 \[
 \boxed{\nabla \cdot \bvec J = -\frac{\partial p}{\partial t}}
 \]</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

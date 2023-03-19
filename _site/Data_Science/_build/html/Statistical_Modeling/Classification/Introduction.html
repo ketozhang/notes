@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Introduction to Support Vector Machine &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1189,12 +1193,12 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduction-to-support-vector-machine">
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-support-vector-machine">
 <h1>Introduction to Support Vector Machine<a class="headerlink" href="#introduction-to-support-vector-machine" title="Permalink to this headline">#</a></h1>
-<div class="section" id="decision-bound">
+<section id="decision-bound">
 <h2>Decision Bound<a class="headerlink" href="#decision-bound" title="Permalink to this headline">#</a></h2>
 <p>A <strong>decision bound</strong> is a boundary chosen by the classifier to determine if data points are within a certain class or another. Typically a decision bound is a function <span class="math notranslate nohighlight">\(f: x \in \mathbb R^d \rightarrow \mathbb R\)</span> such that <span class="math notranslate nohighlight">\(f(x)=0\)</span>.</p>
-<div class="section" id="hyperplane-as-decision-bounds">
+<section id="hyperplane-as-decision-bounds">
 <h3>Hyperplane as Decision Bounds<a class="headerlink" href="#hyperplane-as-decision-bounds" title="Permalink to this headline">#</a></h3>
 <p>A hyperplane is a <span class="math notranslate nohighlight">\(p-1\)</span> dimension subspace living in <span class="math notranslate nohighlight">\(p\)</span>-dimension. The hyperplane is mathmetically described as the equation,</p>
 <div class="math notranslate nohighlight">
@@ -1221,9 +1225,9 @@ y = \begin{cases}
 <li><p><span class="math notranslate nohighlight">\(y=1\)</span> can be represent class A and <span class="math notranslate nohighlight">\(y=-1\)</span> can be class B</p></li>
 <li><p>You can immediately tell that hyerplane are great for <strong>linearly separable</strong> data</p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

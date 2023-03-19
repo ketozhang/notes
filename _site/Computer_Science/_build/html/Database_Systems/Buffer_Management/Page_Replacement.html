@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Page Replacement &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1021,7 +1025,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="page-replacement">
+  <section class="tex2jax_ignore mathjax_ignore" id="page-replacement">
 <h1>Page Replacement<a class="headerlink" href="#page-replacement" title="Permalink to this headline">#</a></h1>
 <p>A page replacement takes note in the buffer whether or not the page to be replaced is either pinned or dirty.</p>
 <ul class="simple">
@@ -1033,7 +1037,7 @@ title="Print to PDF"
 <li><p>Check dirty bit. If dirty write to disk.</p></li>
 <li><p>Replace page and pin.</p></li>
 </ol>
-<div class="section" id="least-recently-used-lru">
+<section id="least-recently-used-lru">
 <h2>Least Recently Used (LRU)<a class="headerlink" href="#least-recently-used-lru" title="Permalink to this headline">#</a></h2>
 <p>The LRU tracks when the page was last recently used (last unpinned).</p>
 <ul class="simple">
@@ -1041,8 +1045,8 @@ title="Print to PDF"
 <li><p>Benefits from a buffer pool larger than the requested files.</p></li>
 <li><p>Very bad on sequential scan causing sequential flooding.</p></li>
 </ul>
-</div>
-<div class="section" id="most-recently-used-mru">
+</section>
+<section id="most-recently-used-mru">
 <h2>Most Recently Used (MRU)<a class="headerlink" href="#most-recently-used-mru" title="Permalink to this headline">#</a></h2>
 <p>A counterintuitive policy opposite of the LRU.</p>
 <ul>
@@ -1052,8 +1056,8 @@ title="Print to PDF"
 \[ \frac{B-1}{N} \]</div>
 </li>
 </ul>
-</div>
-<div class="section" id="clock-policy">
+</section>
+<section id="clock-policy">
 <h2>Clock Policy<a class="headerlink" href="#clock-policy" title="Permalink to this headline">#</a></h2>
 <p>Imagine the pages gathered in a circle.</p>
 <ul class="simple">
@@ -1076,8 +1080,8 @@ title="Print to PDF"
 </ul>
 </li>
 </ol>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>k-Nearest Neighbors &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1219,11 +1223,11 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="k-nearest-neighbors">
+  <section class="tex2jax_ignore mathjax_ignore" id="k-nearest-neighbors">
 <h1>k-Nearest Neighbors<a class="headerlink" href="#k-nearest-neighbors" title="Permalink to this headline">#</a></h1>
 <p><strong>k-Nearest Neighbors</strong> (<strong>k-NN</strong>) is used in both classification and regression. The predictor predicts the aggregate of the <span class="math notranslate nohighlight">\(k\)</span> nearest training label using some distance metric <span class="math notranslate nohighlight">\(d(z,x)\)</span>.</p>
 <p>Specifically for classification, the mode of the k-NN is often used as the predicted label, while for regression, the mean of the k-NN is often used.</p>
-<div class="section" id="algorithm">
+<section id="algorithm">
 <h2>Algorithm<a class="headerlink" href="#algorithm" title="Permalink to this headline">#</a></h2>
 <p>Given a query point <span class="math notranslate nohighlight">\(z\)</span>:</p>
 <ul class="simple">
@@ -1231,8 +1235,8 @@ title="Print to PDF"
 <li><p>Add neighbors to <span class="math notranslate nohighlight">\(k\)</span> size max-heap.</p></li>
 </ul>
 <p>The computation time is <span class="math notranslate nohighlight">\(\mathcal O(nd + n \log k)\)</span></p>
-</div>
-<div class="section" id="low-dimension-algorithm">
+</section>
+<section id="low-dimension-algorithm">
 <h2>Low Dimension Algorithm<a class="headerlink" href="#low-dimension-algorithm" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>In very small dimensions (<span class="math notranslate nohighlight">\(~2-5\)</span>)
@@ -1241,7 +1245,7 @@ Use Voronoi diagrams.</p></li>
 Use k-d trees.</p></li>
 <li><p>Otherwise use traditional algorithm or preprocessing.</p></li>
 </ul>
-<div class="section" id="vornoi-diagrams">
+<section id="vornoi-diagrams">
 <h3>Vornoi Diagrams<a class="headerlink" href="#vornoi-diagrams" title="Permalink to this headline">#</a></h3>
 <p>Let <span class="math notranslate nohighlight">\(X\)</span> be a point set. The Voronoi cell of <span class="math notranslate nohighlight">\(w \in X\)</span> is</p>
 <div class="math notranslate nohighlight">
@@ -1252,8 +1256,8 @@ Use k-d trees.</p></li>
 <li><p>In <span class="math notranslate nohighlight">\(\dim d\)</span>, use binary space partition tree for point location.</p></li>
 </ul>
 <p>Other than that, the Vornoi diagram isn’t feasible for k-NN.</p>
-</div>
-<div class="section" id="k-d-trees">
+</section>
+<section id="k-d-trees">
 <h3>k-D Trees<a class="headerlink" href="#k-d-trees" title="Permalink to this headline">#</a></h3>
 <p>Very similar to decision trees with the follow differences:</p>
 <ul class="simple">
@@ -1281,9 +1285,9 @@ The algorithm maintains:</p>
 </li>
 <li><p>A better nearest point is obtained by going through the binary heap and exploring the subtree no further than the distance to the nearest neighbor so far.</p></li>
 </ol>
-</div>
-</div>
-<div class="section" id="facts-and-heuristics">
+</section>
+</section>
+<section id="facts-and-heuristics">
 <h2>Facts and Heuristics<a class="headerlink" href="#facts-and-heuristics" title="Permalink to this headline">#</a></h2>
 <p>Theorem (Cover &amp; Hart 1967)
 : As <span class="math notranslate nohighlight">\(n \rightarrow \infty\)</span>, <span class="math notranslate nohighlight">\(k=1\)</span> has the error rate bounded by <span class="math notranslate nohighlight">\(&lt; B(2-B)\)</span> where <span class="math notranslate nohighlight">\(B\)</span> is the Bayes risk.</p>
@@ -1292,8 +1296,8 @@ The algorithm maintains:</p>
 </div>
 <p>Theorem (Fix &amp; Hodges 1951)
 : As <span class="math notranslate nohighlight">\(n \rightarrow \infty\)</span>, <span class="math notranslate nohighlight">\(k \rightarrow \infty\)</span>, and <span class="math notranslate nohighlight">\(\frac{k}{n} \rightarrow 0\)</span> then k-NN error rate converges to <span class="math notranslate nohighlight">\(B\)</span> the Bayes risk.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

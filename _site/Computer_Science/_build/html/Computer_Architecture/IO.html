@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Input Output (I/O) &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1009,14 +1013,14 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="input-output-i-o">
+  <section class="tex2jax_ignore mathjax_ignore" id="input-output-i-o">
 <h1>Input Output (I/O)<a class="headerlink" href="#input-output-i-o" title="Permalink to this headline">#</a></h1>
 <p>The way a machine receives input and gives output.</p>
-<div class="section" id="polling">
+<section id="polling">
 <h2>Polling<a class="headerlink" href="#polling" title="Permalink to this headline">#</a></h2>
 <p>Constantly looping an instruction checking if there is an input</p>
-</div>
-<div class="section" id="interrupt">
+</section>
+<section id="interrupt">
 <h2>Interrupt<a class="headerlink" href="#interrupt" title="Permalink to this headline">#</a></h2>
 <p>Input signals the computer to stop what its doing and read the input.</p>
 <ol class="simple">
@@ -1029,8 +1033,8 @@ title="Print to PDF"
 </li>
 <li><p>Handler run on current stack and returns on finish</p></li>
 </ol>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

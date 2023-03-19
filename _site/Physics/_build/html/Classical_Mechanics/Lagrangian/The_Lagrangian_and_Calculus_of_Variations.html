@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>The Lagrangian and Calculus of Uariations &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -981,11 +985,11 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="the-lagrangian-and-calculus-of-uariations">
+  <section class="tex2jax_ignore mathjax_ignore" id="the-lagrangian-and-calculus-of-uariations">
 <h1>The Lagrangian and Calculus of Uariations<a class="headerlink" href="#the-lagrangian-and-calculus-of-uariations" title="Permalink to this headline">#</a></h1>
 <p>Let’s begin with motivation of the use of calculus of variations in physics by Fermat’s Principle.</p>
 <hr class="docutils" />
-<div class="section" id="fermat-s-principle-path-of-least-time">
+<section id="fermat-s-principle-path-of-least-time">
 <h2>Fermat’s Principle - Path of Least Time<a class="headerlink" href="#fermat-s-principle-path-of-least-time" title="Permalink to this headline">#</a></h2>
 <p>Fermat’s principle is a successful explanation of Snell’s Law. The principle states that light wishes to travel the least time and to do so when changing medium, light wishes to get out of the slow medium as fast as possible; this is done by traveling at an angle where the path length in the slower medium is the shortest.</p>
 <p>The length between two points in a plane follows the equation,</p>
@@ -1014,8 +1018,8 @@ title="Print to PDF"
 \end{align} \]</div>
 <hr class="docutils" />
 <p>To get the the Lagrangian, unfortunately we need more calculus. We need calculus of variations which starts out by learning about functional derivatives.</p>
-</div>
-<div class="section" id="functional-derivatives">
+</section>
+<section id="functional-derivatives">
 <h2>Functional Derivatives<a class="headerlink" href="#functional-derivatives" title="Permalink to this headline">#</a></h2>
 <p>A function is formally defined as taking some value input that lives in the one space to another value that lives in possibly another.</p>
 <div class="math notranslate nohighlight">
@@ -1048,8 +1052,8 @@ h = F[g(x)]\\
 F[g] = \int \left(\frac{\d g}{\d x}\right)^2~ \d x\\
 \frac{\partial F}{\partial g(x)} = -2g''(x)
 \end{split}\]</div>
-</div>
-<div class="section" id="lagrangian-and-the-principle-of-least-action">
+</section>
+<section id="lagrangian-and-the-principle-of-least-action">
 <h2>Lagrangian and the Principle of Least Action<a class="headerlink" href="#lagrangian-and-the-principle-of-least-action" title="Permalink to this headline">#</a></h2>
 <p>Now, the <strong>Lagrangian</strong> is a function that is simply the difference between work and potential. Intuitively though not commonly phrased, the Lagrangian amount of activity relative to its potential.</p>
 <div class="math notranslate nohighlight">
@@ -1087,8 +1091,8 @@ S = \tau(\avg{K} - \avg{U})\\
 \frac{\delta S}{\delta x(t)} = 0
 \end{split}\]</div>
 <p>This relation states that objects prefer to choose a trajectory <span class="math notranslate nohighlight">\(x(t)\)</span> that gives an extreme (or stationary) action. Intuitively this extrema should be the minimum (this is not always the case) thus this relation is called the <strong>principle of least action</strong>.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

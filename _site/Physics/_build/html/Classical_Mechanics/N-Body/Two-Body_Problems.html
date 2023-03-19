@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>N-Body Problem &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1009,9 +1013,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="n-body-problem">
+  <section class="tex2jax_ignore mathjax_ignore" id="n-body-problem">
 <h1>N-Body Problem<a class="headerlink" href="#n-body-problem" title="Permalink to this headline">#</a></h1>
-<div class="section" id="two-body-problem">
+<section id="two-body-problem">
 <h2>Two Body Problem<a class="headerlink" href="#two-body-problem" title="Permalink to this headline">#</a></h2>
 <p>The two body problem is one at which two particles interacting at vector position <span class="math notranslate nohighlight">\(\boldsymbol{r_1}\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{r_2}\)</span> away from some arbitrary origin. The insignificance of this origin is what makes this problem difficult. The interaction of the two particle is some potential energy (e.g., gravitational potential, electrical potential) that has a distance dependent. The distance between the two particle is <span class="math notranslate nohighlight">\(r = \abs{\boldsymbol{r_1}-\boldsymbol{r_2}}\)</span> thus their Lagrangian is,</p>
 <div class="math notranslate nohighlight">
@@ -1021,7 +1025,7 @@ title="Print to PDF"
 \end{align}
 \]</div>
 <p>With the natural choice of <span class="math notranslate nohighlight">\(\boldsymbol{r_1}\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{r_2}\)</span> as generalized coordinates.</p>
-<div class="section" id="center-of-mass-generalized-coordinates">
+<section id="center-of-mass-generalized-coordinates">
 <h3>Center of Mass - Generalized Coordinates<a class="headerlink" href="#center-of-mass-generalized-coordinates" title="Permalink to this headline">#</a></h3>
 <p>Often times we use the the <strong>center of mass (CM)</strong> as the frame of reference. The CM is at vector position <span class="math notranslate nohighlight">\(\boldsymbol{R}\)</span> you may recall the formula,</p>
 <div class="math notranslate nohighlight">
@@ -1070,8 +1074,8 @@ title="Print to PDF"
 \end{gather}
 \]</div>
 <p>The last line infers what we expect <span class="math notranslate nohighlight">\(F_r = -\nabla U(\boldsymbol{r})\)</span></p>
-</div>
-<div class="section" id="center-of-mass-rest-frame">
+</section>
+<section id="center-of-mass-rest-frame">
 <h3>Center of Mass - Rest Frame<a class="headerlink" href="#center-of-mass-rest-frame" title="Permalink to this headline">#</a></h3>
 <p>We never actually used the center of mass as a frame yet since we didn’t set <span class="math notranslate nohighlight">\(\dot R = 0\)</span>, doing so and rewriting everything relative to the CM frame. In this frame, we imagine two masses <span class="math notranslate nohighlight">\(m_1\)</span> and <span class="math notranslate nohighlight">\(m_2\)</span> orbitting a central rest mass <span class="math notranslate nohighlight">\(\mu\)</span> from their respective distances <span class="math notranslate nohighlight">\(\boldsymbol{r_1}\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{r}_2\)</span>.</p>
 <div class="math notranslate nohighlight">
@@ -1082,9 +1086,9 @@ title="Print to PDF"
 \end{gather}
 \end{split}\]</div>
 <p>The main purpose for this center of mass frame is to separately find the relationship between <span class="math notranslate nohighlight">\(r_1\)</span> to <span class="math notranslate nohighlight">\(\mu\)</span> and <span class="math notranslate nohighlight">\(r_2\)</span> to <span class="math notranslate nohighlight">\(\mu\)</span> separately.</p>
-</div>
-</div>
-<div class="section" id="center-of-mass-single-mass-frame">
+</section>
+</section>
+<section id="center-of-mass-single-mass-frame">
 <h2>Center of Mass - Single Mass Frame<a class="headerlink" href="#center-of-mass-single-mass-frame" title="Permalink to this headline">#</a></h2>
 <p>What is amazing about this problem is that we can further simplify the problem to be a mass <span class="math notranslate nohighlight">\(\mu\)</span> rotating around the CM at length <span class="math notranslate nohighlight">\(\boldsymbol{r}\)</span>. The reason so is because the angular momentum is the same for system of two orbiting masses of <span class="math notranslate nohighlight">\(m_1\)</span> and <span class="math notranslate nohighlight">\(m_2\)</span> than with one orbiting mass of <span class="math notranslate nohighlight">\(\mu\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1115,7 +1119,7 @@ title="Print to PDF"
     \boxed{\mu \ddot r = \mu r\dot \phi - \frac{dU}{dr}}
 \end{gather}
 \]</div>
-<div class="section" id="one-dimensional-reduction">
+<section id="one-dimensional-reduction">
 <h3>One-Dimensional Reduction<a class="headerlink" href="#one-dimensional-reduction" title="Permalink to this headline">#</a></h3>
 <p>Notice that the radial equation is a sum of two potentials where <span class="math notranslate nohighlight">\(F_r = \mu \ddot r\)</span></p>
 <div class="math notranslate nohighlight">
@@ -1142,9 +1146,9 @@ title="Print to PDF"
 \end{gather}
 \end{split}\]</div>
 <p>This is what we meant by the problem can be simplified to a single dimension of a single parameter <span class="math notranslate nohighlight">\(r\)</span> (distance away from CM). Initially the only potential was gravitational potential (for the orbital problem) but because we are in the rotating frame, there exist a fictitious force <span class="math notranslate nohighlight">\(F_\text{cf}\)</span> which the subscript really means the <strong>centrifugal force</strong>.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

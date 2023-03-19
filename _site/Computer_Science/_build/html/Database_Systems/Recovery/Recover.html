@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Recovery &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1053,9 +1057,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="recovery">
+  <section class="tex2jax_ignore mathjax_ignore" id="recovery">
 <h1>Recovery<a class="headerlink" href="#recovery" title="Permalink to this headline">#</a></h1>
-<div class="section" id="disk-buffer-management">
+<section id="disk-buffer-management">
 <h2>Disk &amp; Buffer Management<a class="headerlink" href="#disk-buffer-management" title="Permalink to this headline">#</a></h2>
 <p>A naive policy implements the following:</p>
 <ul>
@@ -1083,8 +1087,8 @@ title="Print to PDF"
 <p>Remember old values of flushed pages to an UNDO log. This enforaces atomicity (if abort -&gt; UNDO).</p>
 </li>
 </ul>
-</div>
-<div class="section" id="log-records">
+</section>
+<section id="log-records">
 <h2>Log Records<a class="headerlink" href="#log-records" title="Permalink to this headline">#</a></h2>
 <p>An ordered list of records that allow REDO/UNDO</p>
 <ul class="simple">
@@ -1095,7 +1099,7 @@ title="Print to PDF"
 <li><p>Old data</p></li>
 <li><p>New data</p></li>
 </ul>
-<div class="section" id="aries-protocol">
+<section id="aries-protocol">
 <h3>ARIES Protocol<a class="headerlink" href="#aries-protocol" title="Permalink to this headline">#</a></h3>
 <p>This log record follows the <strong>ARIES protocol</strong>.</p>
 <ul class="simple">
@@ -1133,8 +1137,8 @@ A log to insure crashes while undoing.</p>
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="aries-recovery-phases">
+</section>
+<section id="aries-recovery-phases">
 <h3>ARIES Recovery Phases<a class="headerlink" href="#aries-recovery-phases" title="Permalink to this headline">#</a></h3>
 <p>During a crash the following is ran</p>
 <ol>
@@ -1201,9 +1205,9 @@ Undo the effects of the failed transaction.</p>
 </ul>
 </li>
 </ol>
-</div>
-</div>
-<div class="section" id="sql-commands">
+</section>
+</section>
+<section id="sql-commands">
 <h2>SQL Commands<a class="headerlink" href="#sql-commands" title="Permalink to this headline">#</a></h2>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">BEGIN</span></code></p>
@@ -1225,8 +1229,8 @@ Undo the effects of the failed transaction.</p>
 <p>Rollback to the savepoint.</p>
 </li>
 </ul>
-</div>
-<div class="section" id="why-database-crash">
+</section>
+<section id="why-database-crash">
 <h2>Why Database Crash?<a class="headerlink" href="#why-database-crash" title="Permalink to this headline">#</a></h2>
 <p>From the most common to least:</p>
 <ol>
@@ -1241,8 +1245,8 @@ Undo the effects of the failed transaction.</p>
 </li>
 <li><p><strong>Hardware Failure</strong></p></li>
 </ol>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

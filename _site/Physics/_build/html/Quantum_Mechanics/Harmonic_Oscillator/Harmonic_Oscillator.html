@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Harmonic Oscillator &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -985,7 +989,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="harmonic-oscillator">
+  <section class="tex2jax_ignore mathjax_ignore" id="harmonic-oscillator">
 <h1>Harmonic Oscillator<a class="headerlink" href="#harmonic-oscillator" title="Permalink to this headline">#</a></h1>
 <p>The Hamiltonian for the harmonic oscillator follows the potential energy of Hooke’s law (recall it is negative in magntiude). We consider the system to be similar to a mass <span class="math notranslate nohighlight">\(m\)</span> attached to a spring of constant <span class="math notranslate nohighlight">\(k\)</span> where we define the natural frequency as <span class="math notranslate nohighlight">\(\omega \equiv \sqrt{k/m}\)</span>:</p>
 <div class="math notranslate nohighlight">
@@ -1015,7 +1019,7 @@ title="Print to PDF"
 \end{equation}
 \]</div>
 <p>There are two ways to solve the harmonic oscillator one clever (called the ladder operators) and one brute force. We will only use the clever way in this article becuase it’s clever and very useful later on.</p>
-<div class="section" id="ladder-operators">
+<section id="ladder-operators">
 <h2>Ladder Operators<a class="headerlink" href="#ladder-operators" title="Permalink to this headline">#</a></h2>
 <p>The clever way of the harmonic oscillator is a method that will be used almost everywhere to describe not only the harmonic oscillator but also any Hamiltonian that requires the angular momentum operators <span class="math notranslate nohighlight">\(J,L,S\)</span>. Therefore learning the clever way is most crucial.</p>
 <p>We define an operator called the <strong>ladder operator</strong> as:</p>
@@ -1038,7 +1042,7 @@ a_\pm = \frac{1}{\sqrt{2\hbar m \omega}}\left(\mp ip + m \omega x\right)
     \boxed{\psi_n(x) = \frac{1}{n!}(a_+)^n\psi_0(x)}
 \end{gather}\end{split}\]</div>
 <p>The eigenstate above are equivalent to the Hermite polynomials.</p>
-<div class="section" id="properties">
+<section id="properties">
 <h3>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">#</a></h3>
 <p>Conjugates
 : The ladder operators are hermitian conjugates of one another:</p>
@@ -1057,13 +1061,13 @@ a_\pm^\dagger = a_\mp
 \[\begin{equation}
     \boxed{p = i\sqrt{\frac{\hbar m \omega}{2}}\left(a_+ - a_-\right)}
 \end{equation}\]</div>
-</div>
-<div class="section" id="motivation">
+</section>
+<section id="motivation">
 <h3>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h3>
 <p>Here we will motivate you why the ladder operators are defined the way it is:</p>
-<!-- TODO: Motivate ladder operators Griffiths P.42 --></div>
-</div>
-</div>
+<!-- TODO: Motivate ladder operators Griffiths P.42 --></section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

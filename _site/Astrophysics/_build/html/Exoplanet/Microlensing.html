@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Microlensing &#8212; Keto | Astrophysics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -770,10 +774,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="microlensing">
+  <section class="tex2jax_ignore mathjax_ignore" id="microlensing">
 <h1>Microlensing<a class="headerlink" href="#microlensing" title="Permalink to this headline">#</a></h1>
 <p>Here we introduce discovering exoplanet with microlensing.</p>
-<div class="section" id="pros-and-cons">
+<section id="pros-and-cons">
 <h2>Pros and Cons<a class="headerlink" href="#pros-and-cons" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Does not depend on the flux of the host star and planet therefore we can detect faint ones</p></li>
@@ -784,10 +788,10 @@ title="Print to PDF"
 <li><p>Microlensing events are rare and unpredictable. Events where the planet and background star aligns are even more rare therefore we need high density regions like galactic bulges</p></li>
 <li><p>High density regions are susceptible to photometric noise and require high angular resolution to distinguish light signals.</p></li>
 </ul>
-</div>
-<div class="section" id="gravitational-lensing-review">
+</section>
+<section id="gravitational-lensing-review">
 <h2>Gravitational Lensing Review<a class="headerlink" href="#gravitational-lensing-review" title="Permalink to this headline">#</a></h2>
-<div class="section" id="lens-equation-for-point-mass">
+<section id="lens-equation-for-point-mass">
 <h3>Lens Equation for Point Mass<a class="headerlink" href="#lens-equation-for-point-mass" title="Permalink to this headline">#</a></h3>
 <p>In the setup where the lens is a point mass, we have the observer (O), lens (L), background source (S), and the observed image (I). The lensing equation relates the angular of separations</p>
 <p>[
@@ -810,19 +814,19 @@ title="Print to PDF"
 <blockquote>
 <div><p><strong>Note</strong>: Although not stated, this equation seems to assume the source light ray comes in parallel to the line of sight between the observer and lens. This is true if the <span class="math notranslate nohighlight">\(D_L\)</span> is sufficiently large.</p>
 </div></blockquote>
-</div>
-<div class="section" id="len-equation-for-multiple-point-masses">
+</section>
+<section id="len-equation-for-multiple-point-masses">
 <h3>Len Equation for Multiple Point Masses<a class="headerlink" href="#len-equation-for-multiple-point-masses" title="Permalink to this headline">#</a></h3>
 <p>For <span class="math notranslate nohighlight">\(N\)</span> lens of mass <span class="math notranslate nohighlight">\(m_i\)</span> and angular position <span class="math notranslate nohighlight">\(\theta_{m,i}\)</span> all located on a plane (i.e., face-on the observer) at distance <span class="math notranslate nohighlight">\(D_L\)</span>, the effective deflection angle is additive</p>
 <p>[
 \boldsymbol \alpha(\theta_{IL}) = \frac{4G}{D_\text{rel} c^2} \sum_i^N{m_i \frac{\boldsymbol\theta - \boldsymbol\theta_{m,i}}{\lvert\boldsymbol\theta - \boldsymbol\theta_{m,i}\rvert^2}}\
 D_\text{rel}^{-1} \equiv D_L^{-1} - D_S^{-1}
 ]</p>
-</div>
-</div>
-<div class="section" id="gravitational-microlensing">
+</section>
+</section>
+<section id="gravitational-microlensing">
 <h2>Gravitational Microlensing<a class="headerlink" href="#gravitational-microlensing" title="Permalink to this headline">#</a></h2>
-<div class="section" id="single-lens">
+<section id="single-lens">
 <h3>Single Lens<a class="headerlink" href="#single-lens" title="Permalink to this headline">#</a></h3>
 <p>[
 \theta = \beta + \frac{4GM}{c^2D_\text{rel}\theta}
@@ -859,7 +863,7 @@ A(u) = \frac{u^2 + 2}{u \sqrt{u^2 + 4}}
 <li><p>If the source-lens separation approaches infinity, the major image is the unlensed source and the minor image vanishes behind the lens.
 [ u \to \infty \implies (y_+ \to u,, A_+ \to 1); (y_- \to 0 ,, A_- \to 0)  ]</p></li>
 </ul>
-<div class="section" id="paczynski-light-curve">
+<section id="paczynski-light-curve">
 <h4>Paczynski light curve<a class="headerlink" href="#paczynski-light-curve" title="Permalink to this headline">#</a></h4>
 <p>For the single lens, the light curve is called the <strong>Pacyzynski curve</strong>.</p>
 <p>The observer, source, and lens are all in relative motion. Regardless, of the actual motion in the perspective of the source and lens, what makes affects the image is the angular separation as seen by the observer. In other words we can only have to focus on the proper motion <span class="math notranslate nohighlight">\(\mu_\text{rel}\)</span> which can be approximated as a constant.</p>
@@ -870,9 +874,9 @@ A(u) = \frac{u^2 + 2}{u \sqrt{u^2 + 4}}
 <p>[
 t_E = \frac{\theta_E}{\mu_\text{rel}}
 ]</p>
-</div>
-</div>
-<div class="section" id="multiple-lens">
+</section>
+</section>
+<section id="multiple-lens">
 <h3>Multiple Lens<a class="headerlink" href="#multiple-lens" title="Permalink to this headline">#</a></h3>
 <p>For <span class="math notranslate nohighlight">\(N\)</span> lens, we define <span class="math notranslate nohighlight">\(\boldsymbol{u}\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{y}\)</span> as the angular position vector of the lens-source and lens-image respectively. Like, single lens, these values are normalized by <span class="math notranslate nohighlight">\(\theta_E\)</span> which in this case is the Einstein angular radius for the total lens mass <span class="math notranslate nohighlight">\(M \equiv \sum M_i\)</span> as if it was a point source.</p>
 <p>The lens equation is given by,</p>
@@ -880,12 +884,12 @@ t_E = \frac{\theta_E}{\mu_\text{rel}}
 \boldsymbol{u} = \boldsymbol{y} - \sum_i^N \frac{M_i}{M} \frac{\boldsymbol y - \boldsymbol y_i}{|\boldsymbol y- \boldsymbol y_i|^2}
 ]</p>
 <p>TODO …</p>
-</div>
-<div class="section" id="planetary-lens">
+</section>
+<section id="planetary-lens">
 <h3>Planetary Lens<a class="headerlink" href="#planetary-lens" title="Permalink to this headline">#</a></h3>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

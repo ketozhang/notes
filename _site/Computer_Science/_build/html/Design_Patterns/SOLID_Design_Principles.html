@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>SOLID Design Principles &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1105,10 +1109,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="solid-design-principles">
+  <section class="tex2jax_ignore mathjax_ignore" id="solid-design-principles">
 <h1>SOLID Design Principles<a class="headerlink" href="#solid-design-principles" title="Permalink to this headline">#</a></h1>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="single-responsibility-principle">
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="single-responsibility-principle">
 <h1>Single-Responsibility Principle<a class="headerlink" href="#single-responsibility-principle" title="Permalink to this headline">#</a></h1>
 <blockquote>
 <div><p>There should never be more than one reason for a class to change.</p>
@@ -1117,7 +1121,7 @@ title="Print to PDF"
 <li><p>Reduces complexity of a single class</p></li>
 <li><p>Reduces refactoring</p></li>
 </ul>
-<div class="section" id="pragmatics">
+<section id="pragmatics">
 <h2>Pragmatics<a class="headerlink" href="#pragmatics" title="Permalink to this headline">#</a></h2>
 <ul>
 <li><p>Break down classes once they’re too big to handle</p></li>
@@ -1147,9 +1151,9 @@ Employee &lt;- TaxReport
 </div>
 </li>
 </ul>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="open-close-principle">
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="open-close-principle">
 <h1>Open/Close Principle<a class="headerlink" href="#open-close-principle" title="Permalink to this headline">#</a></h1>
 <blockquote>
 <div><p>Classes should be open for extension but closed for modification.</p>
@@ -1157,7 +1161,7 @@ Employee &lt;- TaxReport
 <ul class="simple">
 <li><p>Reduces risk of breaking a well-tested class when adding new features</p></li>
 </ul>
-<div class="section" id="id1">
+<section id="id1">
 <h2>Pragmatics<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <ul>
 <li><p>Add a new feature to a class by subclassing the common feature</p>
@@ -1206,9 +1210,9 @@ class Burger {
 </div>
 </li>
 </ul>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="liskov-substitution-principle">
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="liskov-substitution-principle">
 <h1>Liskov Substitution Principle<a class="headerlink" href="#liskov-substitution-principle" title="Permalink to this headline">#</a></h1>
 <blockquote>
 <div><p>Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it</p>
@@ -1246,14 +1250,14 @@ end note
 </pre></div>
 </div>
 <p>Say we have a function <code class="docutils literal notranslate"><span class="pre">change_aspect_ratio(rectangle,</span> <span class="pre">width,</span> <span class="pre">height)</span></code> that changes the aspect ratio by keep the area of a <code class="docutils literal notranslate"><span class="pre">Rectangle</span></code>. The issue is this method is not compatible with a Square. This examples violates (6) that mutating the width and height does not affect each other.</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="interface-segregation-principle">
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="interface-segregation-principle">
 <h1>Interface Segregation Principle<a class="headerlink" href="#interface-segregation-principle" title="Permalink to this headline">#</a></h1>
 <blockquote>
 <div><p>Many client-specific interfaces are better than one general-purpose interface</p>
 </div></blockquote>
 <p>A general-purpose interface can have a lot more methods to be implemented than the concrete class needs causing a lot of unimplemented functions.</p>
-<div class="section" id="id2">
+<section id="id2">
 <h2>Pragmatics<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Break down interfaces into many interfaces</p>
@@ -1263,21 +1267,21 @@ end note
 </li>
 <li><p>This is a double edge sword since more interfaces means more complexity</p></li>
 </ul>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="dependency-inverstion-principle">
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="dependency-inverstion-principle">
 <h1>Dependency Inverstion Principle<a class="headerlink" href="#dependency-inverstion-principle" title="Permalink to this headline">#</a></h1>
 <blockquote>
 <div><p>Depend upon abstractions, [not] concretions</p>
 </div></blockquote>
-<div class="section" id="id3">
+<section id="id3">
 <h2>Pragmatics<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Design and/or implement high-level classes first before low-level classes.</p></li>
 <li><p>Aligns with the direction of test-driven development.</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

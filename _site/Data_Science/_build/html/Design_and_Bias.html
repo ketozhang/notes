@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Design and Bias &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1229,9 +1233,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="design-and-bias">
+  <section class="tex2jax_ignore mathjax_ignore" id="design-and-bias">
 <h1>Design and Bias<a class="headerlink" href="#design-and-bias" title="Permalink to this headline">#</a></h1>
-<div class="section" id="types-of-data-sets">
+<section id="types-of-data-sets">
 <h2>Types of Data Sets<a class="headerlink" href="#types-of-data-sets" title="Permalink to this headline">#</a></h2>
 <p>The best data may be an exhaustive data set full of everything you need. This ideal data set is called a <strong>census</strong>.</p>
 <p>More commonly one often would uses a <strong>subset</strong> or <strong>sample</strong> of a census. There are many types depending on how they were collection and who participated:</p>
@@ -1240,21 +1244,21 @@ title="Print to PDF"
 <li><p>**Self-selected: ** People are able to participate by choice.</p></li>
 <li><p>**Administrative database: ** A conveniently formed data set from initially collected for administration purposes.</p></li>
 </ul>
-</div>
-<div class="section" id="types-of-samples">
+</section>
+<section id="types-of-samples">
 <h2>Types of Samples<a class="headerlink" href="#types-of-samples" title="Permalink to this headline">#</a></h2>
-<div class="section" id="judgmental-sample">
+<section id="judgmental-sample">
 <h3>Judgmental Sample<a class="headerlink" href="#judgmental-sample" title="Permalink to this headline">#</a></h3>
 <p>Only certain people are able to become participants determined by the method.</p>
-</div>
-<div class="section" id="simple-random-sample">
+</section>
+<section id="simple-random-sample">
 <h3>Simple Random Sample<a class="headerlink" href="#simple-random-sample" title="Permalink to this headline">#</a></h3>
 <p>A <strong>simple random sample (SRS)</strong> is a sample where each possible choice gets an equal chance to participate or be chosen.</p>
 <div class="math notranslate nohighlight">
 \[P_1 = P_2 = ...=P_n\]</div>
 <p>SRS is the most ideal however not always possible.</p>
-</div>
-<div class="section" id="cluster-sample">
+</section>
+<section id="cluster-sample">
 <h3>Cluster Sample<a class="headerlink" href="#cluster-sample" title="Permalink to this headline">#</a></h3>
 <p>A <strong>cluster sample</strong> is one which instead of each individual people are a sample, they are grouped into cluster or groups which are chosen as participants.</p>
 <p>For example, if odd numbered participants are in group <strong>O</strong> and even numbered participants are in group <strong>E</strong>. If we chose group <strong>O</strong> to form <span class="math notranslate nohighlight">\(\text{Sample A}\)</span>, then we know for sure the probability that odd participants are in the sample and even participants are definitely not in the sample.,</p>
@@ -1274,8 +1278,8 @@ title="Print to PDF"
 <blockquote>
 <div><p>Grouping everyone by states and randomly choosing a state.</p>
 </div></blockquote>
-</div>
-<div class="section" id="stratified-sample">
+</section>
+<section id="stratified-sample">
 <h3>Stratified Sample<a class="headerlink" href="#stratified-sample" title="Permalink to this headline">#</a></h3>
 <p>Similar to cluster sample, <strong>stratified sample</strong> groups participants however instead we allow all members of a groups to be selected. In a stratified sample one may decide to select only one participant per group.</p>
 <p>From here we may decide to choose one from each sample</p>
@@ -1283,9 +1287,9 @@ title="Print to PDF"
 <blockquote>
 <div><p>Grouping everyone by states and randomly choosing a participant from each state.</p>
 </div></blockquote>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

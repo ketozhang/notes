@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Gaussian Kernel &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1138,7 +1142,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="gaussian-kernel">
+  <section class="tex2jax_ignore mathjax_ignore" id="gaussian-kernel">
 <h1>Gaussian Kernel<a class="headerlink" href="#gaussian-kernel" title="Permalink to this headline">#</a></h1>
 <p>The <strong>gaussian kernel</strong> or the <strong>radial basis function kernel</strong> is,</p>
 <div class="math notranslate nohighlight">
@@ -1159,7 +1163,7 @@ k(x,z) = \exp\left(-\frac{|x-z|^2}{2\sigma^2}\right)
 <li><p>Can be interpreted as similarity measure which votes how on similar a point <span class="math notranslate nohighlight">\(z\)</span> is to a point <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
 <li><p>Sample points vote for the value at <span class="math notranslate nohighlight">\(z\)</span> weighted by closeness to the kernel center.</p></li>
 </ul>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {

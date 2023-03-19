@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Introduction &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1215,14 +1219,14 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduction">
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
 <p>The decision tree is a nonlinear method for classification and regression. The decision tree is a tree with two node types:</p>
 <ul class="simple">
 <li><p>Internal nodes for each features</p></li>
 <li><p>Leaf nodes for each class</p></li>
 </ul>
-<div class="section" id="tree-algorithm">
+<section id="tree-algorithm">
 <h2>Tree Algorithm<a class="headerlink" href="#tree-algorithm" title="Permalink to this headline">#</a></h2>
 <p>The tree algorithm goes as follows:</p>
 <ol class="simple">
@@ -1240,8 +1244,8 @@ title="Print to PDF"
 </li>
 </ol>
 <p>Note that if the first case in step two succeeds then we have a classified all those points where <span class="math notranslate nohighlight">\(y_i = c\)</span> as class <span class="math notranslate nohighlight">\(c\)</span>.</p>
-</div>
-<div class="section" id="splitting-feature">
+</section>
+<section id="splitting-feature">
 <h2>Splitting Feature<a class="headerlink" href="#splitting-feature" title="Permalink to this headline">#</a></h2>
 <p>Given <span class="math notranslate nohighlight">\(d\)</span> splitting features indexed by <span class="math notranslate nohighlight">\(j \in \{1,2,\ldots,d\}\)</span>, there are a few way of choosing best splitting feature to implement in the second condition of the tree algorithm at step 2.</p>
 <p>The most natural one would be to compute some loss fuction. Let <span class="math notranslate nohighlight">\(\mathcal L_j(S)\)</span> be the cost function using splitting feature <span class="math notranslate nohighlight">\(j\)</span>. The best split can be chosen to be the one that has the least weighted average cost:</p>
@@ -1250,16 +1254,16 @@ title="Print to PDF"
 d = \mathop{\arg\min}_{d} \frac{|S_L|\mathcal L_j(S_L) + |S_R|\mathcal L_j(S_R)}{|S_L| + |S_R|}
 \]</div>
 <p>Now the problem left is to choose a loss function. A heuristic choice is the cross entropy.</p>
-</div>
-<div class="section" id="splitting-boundary">
+</section>
+<section id="splitting-boundary">
 <h2>Splitting Boundary<a class="headerlink" href="#splitting-boundary" title="Permalink to this headline">#</a></h2>
 <p>An algorithm of finding the bondary cost <span class="math notranslate nohighlight">\(\mathcal O(n \cdot d \cdot \texttt{depth})\)</span>.</p>
-</div>
-<div class="section" id="regression">
+</section>
+<section id="regression">
 <h2>Regression<a class="headerlink" href="#regression" title="Permalink to this headline">#</a></h2>
 <p>Using decision trees to do regression requires choosing piecewise boundaries at every node. At the leaf you may get a subset of sample points which a single value can be outputted by taking some aggregate.</p>
-</div>
-<div class="section" id="stopping-condition">
+</section>
+<section id="stopping-condition">
 <h2>Stopping Condition<a class="headerlink" href="#stopping-condition" title="Permalink to this headline">#</a></h2>
 <p>The tree training algorithm can be stopped to:</p>
 <ul class="simple">
@@ -1287,8 +1291,8 @@ d = \mathop{\arg\min}_{d} \frac{|S_L|\mathcal L_j(S_L) + |S_R|\mathcal L_j(S_R)}
 <li><p>Return the posterior probability.</p></li>
 <li><p>Return the aggregate (regression).</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

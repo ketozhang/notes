@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Errors &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1039,13 +1043,13 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="errors">
+  <section class="tex2jax_ignore mathjax_ignore" id="errors">
 <h1>Errors<a class="headerlink" href="#errors" title="Permalink to this headline">#</a></h1>
-<div class="section" id="throw-error">
+<section id="throw-error">
 <h2>Throw Error<a class="headerlink" href="#throw-error" title="Permalink to this headline">#</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">throw</span></code> statement can take in various error types for instance <code class="docutils literal notranslate"><span class="pre">out_of_range</span></code> exceptions.</p>
-</div>
-<div class="section" id="try-catch">
+</section>
+<section id="try-catch">
 <h2>Try/Catch<a class="headerlink" href="#try-catch" title="Permalink to this headline">#</a></h2>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="p">...</span><span class="w"></span>
@@ -1055,8 +1059,8 @@ title="Print to PDF"
 <span class="p">...</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="no-exceptions">
+</section>
+<section id="no-exceptions">
 <h2>No Exceptions<a class="headerlink" href="#no-exceptions" title="Permalink to this headline">#</a></h2>
 <p>If a function should never throw an exception, <code class="docutils literal notranslate"><span class="pre">noexcept</span></code> can be declared:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">Type</span><span class="w"> </span><span class="n">arg</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1064,20 +1068,20 @@ title="Print to PDF"
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="alternatives">
+</section>
+<section id="alternatives">
 <h2>Alternatives<a class="headerlink" href="#alternatives" title="Permalink to this headline">#</a></h2>
 <p>Alternatives to throwing an exception are:</p>
 <ul class="simple">
 <li><p>Returning a failure value (e.g., <code class="docutils literal notranslate"><span class="pre">false</span></code>, <code class="docutils literal notranslate"><span class="pre">0</span></code>)</p></li>
 <li><p>Terminating the program (e.g., <code class="docutils literal notranslate"><span class="pre">terminate()</span></code>, <code class="docutils literal notranslate"><span class="pre">exit()</span></code>, <code class="docutils literal notranslate"><span class="pre">abort()</span></code>)</p></li>
 </ul>
-</div>
-<div class="section" id="static-assert">
+</section>
+<section id="static-assert">
 <h2>Static Assert<a class="headerlink" href="#static-assert" title="Permalink to this headline">#</a></h2>
 <p>An assertion can be checked during compile time for various constant/static objects using the <code class="docutils literal notranslate"><span class="pre">static_assert</span></code> function.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

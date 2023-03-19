@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Storage Hardware &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1023,7 +1027,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="storage-hardware">
+  <section class="tex2jax_ignore mathjax_ignore" id="storage-hardware">
 <h1>Storage Hardware<a class="headerlink" href="#storage-hardware" title="Permalink to this headline">#</a></h1>
 <p>Storage on hardware for DBMS differs from CPU architecture by:</p>
 <ul class="simple">
@@ -1036,7 +1040,7 @@ title="Print to PDF"
 <li><p>Very slow API calls</p></li>
 <li><p>Minimizes pointer errors</p></li>
 </ul>
-<div class="section" id="magnetic-disk-hdd">
+<section id="magnetic-disk-hdd">
 <h2>Magnetic Disk (HDD)<a class="headerlink" href="#magnetic-disk-hdd" title="Permalink to this headline">#</a></h2>
 <p>Still in use today because how cheap it is.</p>
 <p>Platter
@@ -1045,7 +1049,7 @@ title="Print to PDF"
 : Move in or out the <strong>head</strong> to a <strong>track</strong></p>
 <p>Sector
 : A fixed amount of data taking the space of a arc sector of a disk.</p>
-<div class="section" id="accessing-disk">
+<section id="accessing-disk">
 <h3>Accessing Disk<a class="headerlink" href="#accessing-disk" title="Permalink to this headline">#</a></h3>
 <p>Seek time
 : Time it takes to move disk head on track
@@ -1056,9 +1060,9 @@ title="Print to PDF"
 <p>Transfer time
 : Moving data from disk surface
 * ~0.25 ms per 64KB page</p>
-</div>
-</div>
-<div class="section" id="flash-memory-ssd">
+</section>
+</section>
+<section id="flash-memory-ssd">
 <h2>Flash Memory (SSD)<a class="headerlink" href="#flash-memory-ssd" title="Permalink to this headline">#</a></h2>
 <p>Let’s focus on NAND technology,</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>* Fine grain reads (4-8k reads), course-grain write (1-2 MB writes)
@@ -1084,8 +1088,8 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Probability Density Function &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1185,12 +1189,12 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="probability-density-function">
+  <section class="tex2jax_ignore mathjax_ignore" id="probability-density-function">
 <h1>Probability Density Function<a class="headerlink" href="#probability-density-function" title="Permalink to this headline">#</a></h1>
 <p>For a continuous random variable <span class="math notranslate nohighlight">\(X\)</span> there may exist a <strong>probability density function (PDF)</strong> <span class="math notranslate nohighlight">\(f_X\)</span> which is the density of probability among its events. We can find the probability of a continuous event <span class="math notranslate nohighlight">\(A = [a,b]\)</span> by integrating over the PDF,</p>
 <div class="math notranslate nohighlight">
 \[ P(a \le X \le b) = \int_a^b f_X ~\mathrm dx \]</div>
-<div class="section" id="properties">
+<section id="properties">
 <h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">#</a></h2>
 <ul>
 <li><p>The axioms of probability applies:</p>
@@ -1207,14 +1211,14 @@ title="Print to PDF"
 </ol>
 </li>
 </ul>
-</div>
-<div class="section" id="joint-density-functions">
+</section>
+<section id="joint-density-functions">
 <h2>Joint Density Functions<a class="headerlink" href="#joint-density-functions" title="Permalink to this headline">#</a></h2>
 <p>The probability of two events,</p>
 <div class="math notranslate nohighlight">
 \[ P(X \in A, Y \in B) = \int_B\int_A f_{XY}(x,y)~\mathrm dx \mathrm dy \]</div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

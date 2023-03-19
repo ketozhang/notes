@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Function &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1057,12 +1061,12 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="function">
+  <section class="tex2jax_ignore mathjax_ignore" id="function">
 <h1>Function<a class="headerlink" href="#function" title="Permalink to this headline">#</a></h1>
-<div class="section" id="argument-passing">
+<section id="argument-passing">
 <h2>Argument Passing<a class="headerlink" href="#argument-passing" title="Permalink to this headline">#</a></h2>
 <p>By default, arguments are pass by value copying the input to the argument varaible.</p>
-<div class="section" id="pass-by-reference">
+<section id="pass-by-reference">
 <h3>Pass by Reference<a class="headerlink" href="#pass-by-reference" title="Permalink to this headline">#</a></h3>
 <p>To not copy the input, use pass-by-reference by modifying the argument to be <code class="docutils literal notranslate"><span class="pre">&amp;arg</span></code>.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1070,14 +1074,14 @@ title="Print to PDF"
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="immutable">
+</section>
+<section id="immutable">
 <h3>Immutable<a class="headerlink" href="#immutable" title="Permalink to this headline">#</a></h3>
 <p>If an argument is mutable but you’d like to indicate that it should be immutable inside the function/local scope, you can modify the argument to be <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">arg</span></code>.</p>
 <p>It is very common to see <code class="docutils literal notranslate"><span class="pre">const</span></code> applied to pass-by-reference rather than pass-by-value.</p>
-</div>
-</div>
-<div class="section" id="return-value">
+</section>
+</section>
+<section id="return-value">
 <h2>Return Value<a class="headerlink" href="#return-value" title="Permalink to this headline">#</a></h2>
 <p>By default, object are return-by-value meaning the object return are copied.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">vector</span><span class="w"> </span><span class="nf">copy</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1091,7 +1095,7 @@ title="Print to PDF"
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<div class="section" id="return-by-pointer">
+<section id="return-by-pointer">
 <h3>Return by Pointer<a class="headerlink" href="#return-by-pointer" title="Permalink to this headline">#</a></h3>
 <p>This is not recommended. To prevent return-by-value, one may have the pointer return instead:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">vector</span><span class="o">*</span><span class="w"> </span><span class="nf">copy</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1105,8 +1109,8 @@ title="Print to PDF"
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="return-by-reference">
+</section>
+<section id="return-by-reference">
 <h3>Return by Reference<a class="headerlink" href="#return-by-reference" title="Permalink to this headline">#</a></h3>
 <p><strong>Never do this!</strong> The reference will point to nonsense because the local scope may disappear.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">vector</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">copy</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1120,9 +1124,9 @@ title="Print to PDF"
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

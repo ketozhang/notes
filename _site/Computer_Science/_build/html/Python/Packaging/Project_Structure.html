@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Single-File Project Structure &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1073,7 +1077,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="section" id="single-file-project-structure">
+  <section id="single-file-project-structure">
 <h1>Single-File Project Structure<a class="headerlink" href="#single-file-project-structure" title="Permalink to this headline">#</a></h1>
 <p>At its minimum a Python package can just be one main Python file:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">Project</span><span class="o">/</span>
@@ -1082,8 +1086,8 @@ title="Print to PDF"
    <span class="n">README</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="minimal-project-structure">
+</section>
+<section id="minimal-project-structure">
 <h1>Minimal Project Structure<a class="headerlink" href="#minimal-project-structure" title="Permalink to this headline">#</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">Project</span><span class="o">/</span>
     <span class="n">package</span><span class="o">/</span>
@@ -1101,8 +1105,8 @@ title="Print to PDF"
     <span class="n">README</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="practical-project-structure">
+</section>
+<section id="practical-project-structure">
 <h1>Practical Project Structure<a class="headerlink" href="#practical-project-structure" title="Permalink to this headline">#</a></h1>
 <p>Everyone has their own twist on project structure, so here is my very opinonated practical project structure.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">Project</span><span class="o">/</span>
@@ -1138,8 +1142,8 @@ title="Print to PDF"
 <li><p>Documentation
 The choice yours (e.g., GitHub wiki, readthedocs, sphinx, etc). However you must always have a README! Lost for words? Add a title, usage, and/or link to your full documentation.</p></li>
 </ul>
-</div>
-<div class="section" id="virtual-environment">
+</section>
+<section id="virtual-environment">
 <h1>Virtual Environment<a class="headerlink" href="#virtual-environment" title="Permalink to this headline">#</a></h1>
 <table class="colwidths-auto table">
 <thead>
@@ -1156,8 +1160,8 @@ The choice yours (e.g., GitHub wiki, readthedocs, sphinx, etc). However you must
 <p>It has not been said enough that for every project, you should have a reserved virtual environment for that project. This prevents the headache of having to make sure your Python’s base environment plays well with all the other projects you may have.</p>
 <p>There are various tools to create and manage virtual environments (e.g., <a class="reference external" href="https://docs.python.org/3/library/venv.html">venv</a>, <a class="reference external" href="https://pipenv.pypa.io/en/latest/">pipenv</a>, <a class="reference external" href="https://python-poetry.org/">poetry</a>).</p>
 <p>The virtual environment does not have to be in your project folder (recommended for organization and easy access). Another common place is <code class="docutils literal notranslate"><span class="pre">~/.local/share/virtualenvs/PROJECT_NAME</span></code>. Most virtual environment tools have options to change this.</p>
-</div>
-<div class="section" id="the-init-file">
+</section>
+<section id="the-init-file">
 <h1>The init file<a class="headerlink" href="#the-init-file" title="Permalink to this headline">#</a></h1>
 <table class="colwidths-auto table">
 <thead>
@@ -1202,8 +1206,8 @@ Becauses the init file is always ran whenever you import the package, the variab
 <p>Do be careful about circular dependency. The example above has <code class="docutils literal notranslate"><span class="pre">main.py</span></code> depending on the init file and the init file imports <code class="docutils literal notranslate"><span class="pre">main.py</span></code>. This example is not in conflict because of its sequential procedure and the init file is always first called: (1) <code class="docutils literal notranslate"><span class="pre">GLOBAL_VAR</span></code> is defined; (2) <code class="docutils literal notranslate"><span class="pre">main</span></code> is imported; (3) <code class="docutils literal notranslate"><span class="pre">main</span></code> imports <code class="docutils literal notranslate"><span class="pre">GLOBAL_VAR</span></code>; (4) <code class="docutils literal notranslate"><span class="pre">ClassA</span></code> is imported.</p>
 </li>
 </ol>
-</div>
-<div class="section" id="setup-file">
+</section>
+<section id="setup-file">
 <h1>Setup File<a class="headerlink" href="#setup-file" title="Permalink to this headline">#</a></h1>
 <table class="colwidths-auto table">
 <thead>
@@ -1217,8 +1221,8 @@ Becauses the init file is always ran whenever you import the package, the variab
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="testing">
+</section>
+<section id="testing">
 <h1>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">#</a></h1>
 <table class="colwidths-auto table">
 <thead>
@@ -1249,7 +1253,7 @@ python main_test.py
 </pre></div>
 </div>
 <p>There’s aboslutely no reason you need to fuss around with relative imports (e.g., <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">.</span> <span class="pre">import</span> <span class="pre">package</span></code>) because that should only be used in package files.</p>
-<div class="section" id="solutions-to-test-and-python-path-dependencies">
+<section id="solutions-to-test-and-python-path-dependencies">
 <h2>Solutions to Test and Python Path Dependencies<a class="headerlink" href="#solutions-to-test-and-python-path-dependencies" title="Permalink to this headline">#</a></h2>
 <p>Now, there are various ways to solve this issue and achieve this workflow floating around in the Python community:</p>
 <ul>
@@ -1319,8 +1323,8 @@ pytest test/main_test
 </div>
 </li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

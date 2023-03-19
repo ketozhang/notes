@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Imports &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1033,17 +1037,17 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="imports">
+  <section class="tex2jax_ignore mathjax_ignore" id="imports">
 <h1>Imports<a class="headerlink" href="#imports" title="Permalink to this headline">#</a></h1>
-<div class="section" id="header-file">
+<section id="header-file">
 <h2>Header File<a class="headerlink" href="#header-file" title="Permalink to this headline">#</a></h2>
 <p>The header file is the file to be imported. In general, the header file defines all able imported. For instance, the class <code class="docutils literal notranslate"><span class="pre">Vector</span></code> has its functions defined in <code class="docutils literal notranslate"><span class="pre">Vector.cpp</span></code> but its declaration in the header file <code class="docutils literal notranslate"><span class="pre">Vector.h</span></code>.</p>
-</div>
-<div class="section" id="modules">
+</section>
+<section id="modules">
 <h2>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">#</a></h2>
 <p>Due to various problems and limitations of header files, C++20 adopted modules where the interface declaration and definiton are in the same <code class="docutils literal notranslate"><span class="pre">.cpp</span></code> file.</p>
-</div>
-<div class="section" id="namespaces">
+</section>
+<section id="namespaces">
 <h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">#</a></h2>
 <p>A namespace (<code class="docutils literal notranslate"><span class="pre">namespace</span></code>) can be defined to isolate code so that their names don’t conflict with the global namespace.</p>
 <p>Here, <code class="docutils literal notranslate"><span class="pre">ns</span></code> is a namespace so that <code class="docutils literal notranslate"><span class="pre">int</span></code> are not in conflict by requiring the double colon syntax <code class="docutils literal notranslate"><span class="pre">ns::int</span></code>.</p>
@@ -1058,16 +1062,16 @@ title="Print to PDF"
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<div class="section" id="global-namespace">
+<section id="global-namespace">
 <h3>Global Namespace<a class="headerlink" href="#global-namespace" title="Permalink to this headline">#</a></h3>
 <p>A namespace is imported into the global namespace by the <code class="docutils literal notranslate"><span class="pre">using</span></code> statement,</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="w"> </span><span class="c1">// Use all of std</span>
 <span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="c1">// Use only std::cout</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

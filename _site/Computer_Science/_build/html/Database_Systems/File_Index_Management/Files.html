@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Files &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1089,7 +1093,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="files">
+  <section class="tex2jax_ignore mathjax_ignore" id="files">
 <h1>Files<a class="headerlink" href="#files" title="Permalink to this headline">#</a></h1>
 <p>The memory architecture for storing data uses a file hierarchy.</p>
 <ul class="simple">
@@ -1104,29 +1108,29 @@ title="Print to PDF"
 <li><p>Sorted files</p></li>
 <li><p>Index files</p></li>
 </ul>
-<div class="section" id="unordered-heap-files">
+<section id="unordered-heap-files">
 <h2>Unordered Heap Files<a class="headerlink" href="#unordered-heap-files" title="Permalink to this headline">#</a></h2>
 <p><img alt="" src="../../_images/2018-09-11-13-54-37.png" /></p>
 <p>Collection of records in no particular order. Not the same as min heap structure.</p>
 <ul class="simple">
 <li><p>As file size changes, the pages are (de)allocated</p></li>
 </ul>
-<div class="section" id="implementation-doubly-linked-list">
+<section id="implementation-doubly-linked-list">
 <h3>Implementation: Doubly Linked List<a class="headerlink" href="#implementation-doubly-linked-list" title="Permalink to this headline">#</a></h3>
 <p>A header file is double linked to each page which indicates the data stored and the amount of free space.</p>
 <ul class="simple">
 <li><p>Implementation is slow when determining which page has free space</p></li>
 </ul>
-</div>
-<div class="section" id="implementation-page-directory">
+</section>
+<section id="implementation-page-directory">
 <h3>Implementation: Page Directory<a class="headerlink" href="#implementation-page-directory" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>A header page consist a pointer to the page and how much free space the page has.</p></li>
 <li><p>Header page is likely cached.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="sorted-files-ordered-heap-files">
+</section>
+</section>
+<section id="sorted-files-ordered-heap-files">
 <h2>Sorted Files (Ordered Heap Files)<a class="headerlink" href="#sorted-files-ordered-heap-files" title="Permalink to this headline">#</a></h2>
 <p><img alt="" src="../../_images/2018-09-11-13-59-40.png" /></p>
 <p>Let’s take a look at the performance between a sorted file and heap file:</p>
@@ -1166,11 +1170,11 @@ title="Print to PDF"
 <li><p><strong>D</strong>: Average time to read/write disk to block
 <br><br></p></li>
 </ul>
-<div class="section" id="scan">
+<section id="scan">
 <h3>Scan<a class="headerlink" href="#scan" title="Permalink to this headline">#</a></h3>
 <p>Reading records from left to right does not matter whether or not the heap is sorted. So, the number of read is the number of pages <span class="math notranslate nohighlight">\(B\)</span>.</p>
-</div>
-<div class="section" id="equality-search-search-for-a-single-match">
+</section>
+<section id="equality-search-search-for-a-single-match">
 <h3>Equality Search: Search for a single match.<a class="headerlink" href="#equality-search-search-for-a-single-match" title="Permalink to this headline">#</a></h3>
 <p>For the heap file, since the order is random in nature we use probability. The probability that the key is on some page is</p>
 <div class="math notranslate nohighlight">
@@ -1183,8 +1187,8 @@ title="Print to PDF"
 <div class="math notranslate nohighlight">
 \[ \Expected{i} = \sum_{i=1}^{\log_2{B}} i \frac{2^{i-1}}{B} = \log_2 B - \frac{B-1}{B}  \approx \log_2{B}\]</div>
 <p>From this binary tree, we see that from the center to the next midpoint cost two IO (i.e., edges traversed) and the sub-midpoints cost an extra IO each.</p>
-</div>
-<div class="section" id="range-search-search-for-all-matches-within-a-range">
+</section>
+<section id="range-search-search-for-all-matches-within-a-range">
 <h3>Range Search: Search for all matches within a range.<a class="headerlink" href="#range-search-search-for-all-matches-within-a-range" title="Permalink to this headline">#</a></h3>
 <p>For the heap file, we must search through all pages.</p>
 <div class="math notranslate nohighlight">
@@ -1192,8 +1196,8 @@ title="Print to PDF"
 <p>For the sorted file, we only have to go down a path in the binary tree, start collecting when within range and stop when out of range. Let <span class="math notranslate nohighlight">\(i\)</span> be the page number and <span class="math notranslate nohighlight">\(R\)</span> be the range then the expected reads is,</p>
 <div class="math notranslate nohighlight">
 \[ \Expected{i} \approx \log_2 B + |\set{i: i \in R}| \]</div>
-</div>
-<div class="section" id="insertion">
+</section>
+<section id="insertion">
 <h3>Insertion<a class="headerlink" href="#insertion" title="Permalink to this headline">#</a></h3>
 <p>For the heap file, we must read the page then append,</p>
 <div class="math notranslate nohighlight">
@@ -1201,8 +1205,8 @@ title="Print to PDF"
 <p>For the sorted file, first we find where the value goes which cost <span class="math notranslate nohighlight">\(\log_2 B\)</span> and then shift the rest of the values to the right. On average the insertion is in the middle, so the rest of the values are half of <span class="math notranslate nohighlight">\(B\)</span>. However we got to do this twice so shifting cost <span class="math notranslate nohighlight">\(B\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[\Expected{i} = \log_2 B + B\]</div>
-</div>
-<div class="section" id="deletion">
+</section>
+<section id="deletion">
 <h3>Deletion<a class="headerlink" href="#deletion" title="Permalink to this headline">#</a></h3>
 <p>For the heap file, we first search for the page then delete by writing so the pages read is,</p>
 <div class="math notranslate nohighlight">
@@ -1210,9 +1214,9 @@ title="Print to PDF"
 <p>For the sorted file, we first do a search then repack the whole heap by shifting left.</p>
 <div class="math notranslate nohighlight">
 \[ \log_2{B} + B \]</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

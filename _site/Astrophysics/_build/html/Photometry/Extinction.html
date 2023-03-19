@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Extinction &#8212; Keto | Astrophysics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -736,9 +740,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="extinction">
+  <section class="tex2jax_ignore mathjax_ignore" id="extinction">
 <h1>Extinction<a class="headerlink" href="#extinction" title="Permalink to this headline">#</a></h1>
-<div class="section" id="total-extinction">
+<section id="total-extinction">
 <h2>Total Extinction<a class="headerlink" href="#total-extinction" title="Permalink to this headline">#</a></h2>
 <p>The <strong>absolute extinction</strong> is the amount of magnitude reduced from the intrinsic magnitude. Like all extinctions, this depends on the emitted wavelength.
 By definition, the absolute extinction is the difference between the observed and intrinsic magnitudes, and is always zero or positive.</p>
@@ -746,11 +750,11 @@ By definition, the absolute extinction is the difference between the observed an
 A(\lambda) \equiv m_\text{observed} - m_\text{intrinsic}
 ]</p>
 <p>This definition applies to either absolute or apparent magnitude.</p>
-</div>
-<div class="section" id="reddenning">
+</section>
+<section id="reddenning">
 <h2>Reddenning<a class="headerlink" href="#reddenning" title="Permalink to this headline">#</a></h2>
 <p>Because bluer light is more attenuated by dust, the spectral density on the bluer side is reduced. This effect is called <strong>reddening</strong>. Do not confuse this with <strong>redshift</strong> as the spectral lines due to reddenning is unaffected by dust.</p>
-<div class="section" id="color-excess">
+<section id="color-excess">
 <h3>Color Excess<a class="headerlink" href="#color-excess" title="Permalink to this headline">#</a></h3>
 <p>In practice, with filter passbands, the measured difference between the bluer and redder side of the spectral density is done by calculating the difference of two passbands. This is called the <strong>color index</strong>. The color index after extinction will increase observed color index. Taking the difference between the two gives you a quantity for reddenning called the <strong>color excess</strong>.</p>
 <p>Historically, the common passbands derived in the 1950s were the UBV photometric bands. Because of this, most literature express color index and excess using the two most abundant observation passbands (B and V) therefore the most common color index is the <span class="math notranslate nohighlight">\(B-V\)</span> color. The order of these bands set so that positive values are redder.</p>
@@ -758,28 +762,28 @@ A(\lambda) \equiv m_\text{observed} - m_\text{intrinsic}
 E(B-V) &amp;\equiv (B-V)<em>\text{observed} - (B-V)</em>\text{intrinsic} \
 &amp;= A(B) - A(V)
 \end{align}</p>
-</div>
-</div>
-<div class="section" id="absolute-extinction">
+</section>
+</section>
+<section id="absolute-extinction">
 <h2>Absolute Extinction<a class="headerlink" href="#absolute-extinction" title="Permalink to this headline">#</a></h2>
 <p>The absolute extinction is the total extinction normalized by a chosen standard total extinction to allow comparison between other wavelengths. Historically the standard is the V-band therefore the absolute extinction compares how sensitive the wavelength is to dust compared to the V-band.</p>
 <p>As a function of <span class="math notranslate nohighlight">\(\lambda\)</span>, this is called the <strong>extinction law</strong> which gives sensitivity to dust across all wavelengths.</p>
 <p>[
 f(\lambda) = \frac{A(\lambda)}{A(V)}
 ]</p>
-<div class="section" id="extinction-law">
+<section id="extinction-law">
 <h3>Extinction Law<a class="headerlink" href="#extinction-law" title="Permalink to this headline">#</a></h3>
-</div>
-</div>
-<div class="section" id="extinction-parameter">
+</section>
+</section>
+<section id="extinction-parameter">
 <h2>Extinction Parameter<a class="headerlink" href="#extinction-parameter" title="Permalink to this headline">#</a></h2>
 <p>The extinction parameter <span class="math notranslate nohighlight">\(R\)</span>, is a useful quantity because it correlates with dust grain size</p>
 <p>\begin{align}
 R_V &amp;\equiv \frac{A(V)}{E(B-V)} \
 &amp;\equiv \frac{A(V)}{A(B) - A(V)}
 \end{align}</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

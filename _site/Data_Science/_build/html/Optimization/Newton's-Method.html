@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Newton’s Method &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1175,7 +1179,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="newton-s-method">
+  <section class="tex2jax_ignore mathjax_ignore" id="newton-s-method">
 <h1>Newton’s Method<a class="headerlink" href="#newton-s-method" title="Permalink to this headline">#</a></h1>
 <p>The Newton’s method is an optimization method requiring the curvature of the interested optimization problem <span class="math notranslate nohighlight">\(L(\theta)\)</span>.</p>
 <p>Starting at an initial step <span class="math notranslate nohighlight">\(\theta(t=0)\)</span>:</p>
@@ -1184,7 +1188,7 @@ title="Print to PDF"
 <li><p>Jump to the unique critical point.</p></li>
 <li><p>Repeat 1-2 until satisfied.</p></li>
 </ol>
-<div class="section" id="taylor-expansion">
+<section id="taylor-expansion">
 <h2>Taylor Expansion<a class="headerlink" href="#taylor-expansion" title="Permalink to this headline">#</a></h2>
 <p>The quadratic function comes from the second term of the Taylor series,</p>
 <div class="math notranslate nohighlight">
@@ -1197,8 +1201,8 @@ title="Print to PDF"
 \[
 \Delta \theta = -\left[H(L(\theta))\big\rvert_{\theta(t)}\right]^{-1}\nabla L(\theta)\big\rvert_{\theta(t)}
 \]</div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

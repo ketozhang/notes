@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Kernel Trick &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1138,7 +1142,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="kernel-trick">
+  <section class="tex2jax_ignore mathjax_ignore" id="kernel-trick">
 <h1>Kernel Trick<a class="headerlink" href="#kernel-trick" title="Permalink to this headline">#</a></h1>
 <p>To explain the kernel trick we will look at the example of the polynomial design function <span class="math notranslate nohighlight">\(\Phi(x)\)</span>.</p>
 <p>Let’s define the polynomial kernel function as</p>
@@ -1152,7 +1156,7 @@ k(x, z) = (x^\top z + 1)^p
 k(x, z) = \Phi(x)^\top  \Phi(z)
 \]</div>
 <p>The computation for the first kernel function is much faster than the dot product at the second. This is the key to the performance boost in the kernel trick.</p>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Lecture 2 &#8212; Keto | Astrophysics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -732,20 +736,20 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="lecture-2">
+  <section class="tex2jax_ignore mathjax_ignore" id="lecture-2">
 <h1>Lecture 2<a class="headerlink" href="#lecture-2" title="Permalink to this headline">#</a></h1>
-<div class="section" id="likelihood-function">
+<section id="likelihood-function">
 <h2>Likelihood Function<a class="headerlink" href="#likelihood-function" title="Permalink to this headline">#</a></h2>
 <p>Assuming a gaussian error distribution for the data,</p>
 <div class="math notranslate nohighlight">
 \[
 P(D \mid \theta) = \prod_{i=1}^n{\frac{1}{\sqrt{2\pi\sigma_i^2}}\exp\left(\frac{-(y_i - \hat y_i)^2}{2\sigma_i^2}\right)}
 \]</div>
-</div>
-<div class="section" id="markov-chain-monte-carlo-mcmc">
+</section>
+<section id="markov-chain-monte-carlo-mcmc">
 <h2>Markov Chain Monte Carlo (MCMC)<a class="headerlink" href="#markov-chain-monte-carlo-mcmc" title="Permalink to this headline">#</a></h2>
 <p>A method to sample the posterior <span class="math notranslate nohighlight">\(P(\theta | D)\)</span>.</p>
-<div class="section" id="mcmc-hasting">
+<section id="mcmc-hasting">
 <h3>MCMC Hasting<a class="headerlink" href="#mcmc-hasting" title="Permalink to this headline">#</a></h3>
 <ol>
 <li><p>Begin with starting point <span class="math notranslate nohighlight">\(\theta_0\)</span></p></li>
@@ -755,13 +759,13 @@ P(D \mid \theta) = \prod_{i=1}^n{\frac{1}{\sqrt{2\pi\sigma_i^2}}\exp\left(\frac{
 \[\frac{P(\theta_{t+1} | D)}{P(\theta_{t} | D)}\]</div>
 </li>
 </ol>
-</div>
-<div class="section" id="affine-invariant-mcmc">
+</section>
+<section id="affine-invariant-mcmc">
 <h3>Affine Invariant MCMC<a class="headerlink" href="#affine-invariant-mcmc" title="Permalink to this headline">#</a></h3>
 <p>Adding multiple samplers (aka <strong>walkers</strong>) we group each walk as a pairs. The next step step for a walker is towards its partner’s line of sight. A new partner is assigned at every step.</p>
-</div>
-</div>
-<div class="section" id="goodness-of-fit">
+</section>
+</section>
+<section id="goodness-of-fit">
 <h2>Goodness of Fit<a class="headerlink" href="#goodness-of-fit" title="Permalink to this headline">#</a></h2>
 <ul>
 <li><p>Geweke Score:</p>
@@ -778,8 +782,8 @@ $<span class="math notranslate nohighlight">\(
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="periodogram">
+</section>
+<section id="periodogram">
 <h2>Periodogram<a class="headerlink" href="#periodogram" title="Permalink to this headline">#</a></h2>
 <p>A periodogram can be produced by a fourier transform of some time-series data:</p>
 <div class="math notranslate nohighlight">
@@ -804,8 +808,8 @@ $<span class="math notranslate nohighlight">\(
 \[
 \hat y = y_0 + A_f \sin\left(2\pi f\left[t - \phi_f\right]\right)
 \]</div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Joint Density &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1195,7 +1199,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="joint-density">
+  <section class="tex2jax_ignore mathjax_ignore" id="joint-density">
 <h1>Joint Density<a class="headerlink" href="#joint-density" title="Permalink to this headline">#</a></h1>
 <p>Consider two random variables <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span>. The probability of some event <span class="math notranslate nohighlight">\(A\)</span> that lies in the domain of both <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> can be expressed as,</p>
 <div class="math notranslate nohighlight">
@@ -1203,31 +1207,31 @@ title="Print to PDF"
 P((X,Y) \in A) = \iint_A f(x,y)~ dxdy
 \]</div>
 <p>Where <span class="math notranslate nohighlight">\(f(x,y)\)</span> is the joint probability density function</p>
-<div class="section" id="independence">
+<section id="independence">
 <h2>Independence<a class="headerlink" href="#independence" title="Permalink to this headline">#</a></h2>
 <p>If <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> are independent then their joint PDF is separable,</p>
 <div class="math notranslate nohighlight">
 \[
 f(x,y) = f_X(x)f_Y(y)
 \]</div>
-</div>
-<div class="section" id="marginal-density">
+</section>
+<section id="marginal-density">
 <h2>Marginal Density<a class="headerlink" href="#marginal-density" title="Permalink to this headline">#</a></h2>
 <p>The PDF of <span class="math notranslate nohighlight">\(X\)</span> can be solved using the marginal density.</p>
 <div class="math notranslate nohighlight">
 \[
 f_X(x) = \int_y f(x,y)~ dy
 \]</div>
-</div>
-<div class="section" id="conditional-density">
+</section>
+<section id="conditional-density">
 <h2>Conditional Density<a class="headerlink" href="#conditional-density" title="Permalink to this headline">#</a></h2>
 <p>The conditoinal density can be determined using the divison rule,</p>
 <div class="math notranslate nohighlight">
 \[
 f(y \mid x) = \frac{f(x,y)}{f_X(x)}
 \]</div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Operators &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1009,33 +1013,33 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="operators">
+  <section class="tex2jax_ignore mathjax_ignore" id="operators">
 <h1>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">#</a></h1>
-<div class="section" id="comparison">
+<section id="comparison">
 <h2>Comparison<a class="headerlink" href="#comparison" title="Permalink to this headline">#</a></h2>
 <p>JavaScript has the normal comparison operators <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> but differs when using equals because there are two types of equality:</p>
 <ul>
 <li><p>Type Coercion equality <code class="docutils literal notranslate"><span class="pre">==</span></code>, <code class="docutils literal notranslate"><span class="pre">!=</span></code>
 : Values at both ends are evaluated to the same type and then compared.</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="mf">123</span> <span class="o">==</span> <span class="s1">&#39;123&#39;</span> <span class="c1">// true</span>
-<span class="mf">1</span> <span class="o">==</span> <span class="kc">true</span> <span class="c1">// true</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="mf">123</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;123&#39;</span><span class="w"> </span><span class="c1">// true</span><span class="w"></span>
+<span class="mf">1</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c1">// true</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
 <li><p>Triple Equality <code class="docutils literal notranslate"><span class="pre">===</span></code>, <code class="docutils literal notranslate"><span class="pre">!==</span></code>
 : The data type of values at both ends are also compared.</p>
-<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="mf">123</span> <span class="o">===</span> <span class="s1">&#39;123&#39;</span> <span class="c1">// false</span>
-<span class="mf">1</span> <span class="o">===</span> <span class="kc">true</span> <span class="c1">// false</span>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="mf">123</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;123&#39;</span><span class="w"> </span><span class="c1">// false</span><span class="w"></span>
+<span class="mf">1</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c1">// false</span><span class="w"></span>
 </pre></div>
 </div>
 </li>
 </ul>
-</div>
-<div class="section" id="bitwise-operators">
+</section>
+<section id="bitwise-operators">
 <h2>Bitwise Operators<a class="headerlink" href="#bitwise-operators" title="Permalink to this headline">#</a></h2>
 <p>Similar to Java</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

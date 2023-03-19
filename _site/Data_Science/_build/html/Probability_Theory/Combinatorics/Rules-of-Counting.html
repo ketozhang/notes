@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Rules of Counting &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1243,10 +1247,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="rules-of-counting">
+  <section class="tex2jax_ignore mathjax_ignore" id="rules-of-counting">
 <h1>Rules of Counting<a class="headerlink" href="#rules-of-counting" title="Permalink to this headline">#</a></h1>
 <p>Combinatorics is the study of counting a systems that can be represented as a finite sets.</p>
-<div class="section" id="without-replacement">
+<section id="without-replacement">
 <h2>Without Replacement<a class="headerlink" href="#without-replacement" title="Permalink to this headline">#</a></h2>
 <p>A system without replacement can be counted either with permutation or combination,</p>
 <ol>
@@ -1260,28 +1264,28 @@ $<span class="math notranslate nohighlight">\( P(n,k) = \frac{n!}{(n-k)!} \)</sp
 <li><p><strong>Second Rule of Counting (Unordered Counting)</strong>
 $<span class="math notranslate nohighlight">\( C(n,k) = {n\choose k} = \frac{n!}{k!(n-k)!} \)</span>$</p></li>
 </ol>
-</div>
-<div class="section" id="with-replacement">
+</section>
+<section id="with-replacement">
 <h2>With Replacement<a class="headerlink" href="#with-replacement" title="Permalink to this headline">#</a></h2>
 <p>Say there are a set of length <span class="math notranslate nohighlight">\(n\)</span> and we wish to create subset of length <span class="math notranslate nohighlight">\(k\)</span></p>
-<div class="section" id="third-rule-of-counting-ordered">
+<section id="third-rule-of-counting-ordered">
 <h3>Third Rule of Counting (Ordered)<a class="headerlink" href="#third-rule-of-counting-ordered" title="Permalink to this headline">#</a></h3>
 <div class="math notranslate nohighlight">
 \[k^n\]</div>
-</div>
-<div class="section" id="fourth-rule-of-counting-unordered">
+</section>
+<section id="fourth-rule-of-counting-unordered">
 <h3>Fourth Rule of Counting (Unordered)<a class="headerlink" href="#fourth-rule-of-counting-unordered" title="Permalink to this headline">#</a></h3>
 <div class="math notranslate nohighlight">
 \[{k+n-1 \choose k} = \frac{(k+n-1)!}{k!(n-1)!}\]</div>
-<div class="section" id="example">
+<section id="example">
 <h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">#</a></h4>
 <p>Let’s say you want to invest into <span class="math notranslate nohighlight">\(k\)</span> stocks of the <span class="math notranslate nohighlight">\(n\)</span> companies. An outcome space can be generated out of the sequence of companies</p>
 <div class="math notranslate nohighlight">
 \[\Omega = \set{\omega \mid \set{C_i}^k}\]</div>
-</div>
-</div>
-</div>
-<div class="section" id="derangement">
+</section>
+</section>
+</section>
+<section id="derangement">
 <h2>Derangement<a class="headerlink" href="#derangement" title="Permalink to this headline">#</a></h2>
 <p>A derangement set <span class="math notranslate nohighlight">\(D\)</span> of two sets <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> is,</p>
 <div class="math notranslate nohighlight">
@@ -1306,13 +1310,13 @@ $<span class="math notranslate nohighlight">\( C(n,k) = {n\choose k} = \frac{n!}
     \boxed{\lim_{n\rightarrow \infty} D_n = \frac{n!}{e}}
 \end{gather*}
 \end{split}\]</div>
-</div>
-<div class="section" id="useful-identities">
+</section>
+<section id="useful-identities">
 <h2>Useful Identities<a class="headerlink" href="#useful-identities" title="Permalink to this headline">#</a></h2>
 <div class="math notranslate nohighlight">
 \[ {n \choose k + 1} = {n-1 \choose k} + {n-2 \choose k} + \ldots + {k \choose k} \]</div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

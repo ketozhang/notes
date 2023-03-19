@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Ranking &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1031,9 +1035,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="ranking">
+  <section class="tex2jax_ignore mathjax_ignore" id="ranking">
 <h1>Ranking<a class="headerlink" href="#ranking" title="Permalink to this headline">#</a></h1>
-<div class="section" id="vector-space-model">
+<section id="vector-space-model">
 <h2>Vector Space Model<a class="headerlink" href="#vector-space-model" title="Permalink to this headline">#</a></h2>
 <p>Consider each document as a vector with the basis being all possible terms of all documents.p</p>
 <ul>
@@ -1058,16 +1062,16 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="goodness-of-search">
+</section>
+<section id="goodness-of-search">
 <h2>Goodness of Search<a class="headerlink" href="#goodness-of-search" title="Permalink to this headline">#</a></h2>
 <p>We measure goodness of search by precision and recall.</p>
 <ul class="simple">
 <li><p><strong>Precision:</strong> Fraction of true positives to claimed positives</p></li>
 <li><p><strong>Recall:</strong> Fraction of true positives to actual positives</p></li>
 </ul>
-</div>
-<div class="section" id="parallelization">
+</section>
+<section id="parallelization">
 <h2>Parallelization<a class="headerlink" href="#parallelization" title="Permalink to this headline">#</a></h2>
 <p>We can parallelize by either:</p>
 <ol class="simple">
@@ -1082,8 +1086,8 @@ title="Print to PDF"
 </ul>
 </li>
 </ol>
-</div>
-<div class="section" id="ranking-algorithms">
+</section>
+<section id="ranking-algorithms">
 <h2>Ranking Algorithms<a class="headerlink" href="#ranking-algorithms" title="Permalink to this headline">#</a></h2>
 <ul>
 <li><p><strong>N-Grams</strong></p>
@@ -1108,8 +1112,8 @@ title="Print to PDF"
 <dd><p>The 80/20 rule or the Pareto distribution (discrete form is the Zipf distribution) is a power law distribution. An intuition for this used in search engine is that this distribution says things that are popular are very popular while things that aren’t are very unpopular.</p>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

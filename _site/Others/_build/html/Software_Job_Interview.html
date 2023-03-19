@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Software Job Interview &#8212; My Jupyter Book</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -408,9 +412,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="software-job-interview">
+  <section class="tex2jax_ignore mathjax_ignore" id="software-job-interview">
 <h1>Software Job Interview<a class="headerlink" href="#software-job-interview" title="Permalink to this headline">#</a></h1>
-<div class="section" id="data-structure-and-algorithms">
+<section id="data-structure-and-algorithms">
 <h2>Data Structure and Algorithms<a class="headerlink" href="#data-structure-and-algorithms" title="Permalink to this headline">#</a></h2>
 <p>For every structure understand the Big-O time and space complexity for the following operations:</p>
 <ol class="simple">
@@ -419,7 +423,7 @@ title="Print to PDF"
 <li><p>Sort</p></li>
 <li><p>Bulk Insert</p></li>
 </ol>
-<div class="section" id="basic">
+<section id="basic">
 <h3>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>List/Array</p>
@@ -471,8 +475,8 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="intermediate">
+</section>
+<section id="intermediate">
 <h3>Intermediate<a class="headerlink" href="#intermediate" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Hashmaps (CS61B)</p></li>
@@ -493,15 +497,15 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="exotic">
+</section>
+<section id="exotic">
 <h3>Exotic<a class="headerlink" href="#exotic" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>B+ Trees (CS 186)</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="resources">
+</section>
+</section>
+<section id="resources">
 <h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.google.com/document/d/1f_JZNuSEShzCPORxfSE8cAKR1RiqV7NgygyRtAncxVI/edit">Interview Behavior Question Guide</a></p></li>
@@ -514,8 +518,8 @@ title="Print to PDF"
 <li><p><a class="reference external" href="https://leetcode.com/discuss/career/216554/from-0-to-clearing-uberappleamazonlinkedingoogle">LeetCoder Advice on 0 to Clearing all Interviews</a></p></li>
 <li><p><a class="reference external" href="https://github.com/donnemartin/system-design-primer">Scalable Systems Primer</a></p></li>
 </ul>
-</div>
-<div class="section" id="systems-design">
+</section>
+<section id="systems-design">
 <h2>Systems Design<a class="headerlink" href="#systems-design" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Don’t jump into solving problems</p></li>
@@ -530,15 +534,15 @@ title="Print to PDF"
 </li>
 <li><p>Start focusing on your expertise (backend, frontend, production server)</p></li>
 </ul>
-<div class="section" id="backend">
+<section id="backend">
 <h3>Backend<a class="headerlink" href="#backend" title="Permalink to this headline">#</a></h3>
 <p>Defining the schema, just field names are fine</p>
 <ul class="simple">
 <li><p>Highlight possibly special fields to that particular product (e.g., multiple payment methods)</p></li>
 <li><p>Identify high-usage queries to determine schema indices/keys.</p></li>
 </ul>
-</div>
-<div class="section" id="web-server">
+</section>
+<section id="web-server">
 <h3>Web Server<a class="headerlink" href="#web-server" title="Permalink to this headline">#</a></h3>
 <p>Defining the API</p>
 <ul class="simple">
@@ -547,16 +551,16 @@ title="Print to PDF"
 <li><p>A POST and PUT would need a JSON input.</p></li>
 <li><p>Each definable actions can be grouped into individual services. Each services may belong to a database table, but they should interact.</p></li>
 </ul>
-</div>
-<div class="section" id="frontend">
+</section>
+<section id="frontend">
 <h3>Frontend<a class="headerlink" href="#frontend" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Start with the front page with basic services (e.g., search box)</p></li>
 <li><p>Keep asking if they expect any other services (e.g., recommendations)</p></li>
 <li><p>Head to the next page  by following a service action (e.g., clicking the search bar)</p></li>
 </ul>
-</div>
-<div class="section" id="improvements-for-performance">
+</section>
+<section id="improvements-for-performance">
 <h3>Improvements for Performance<a class="headerlink" href="#improvements-for-performance" title="Permalink to this headline">#</a></h3>
 <ul>
 <li><p><strong>Load Balancer</strong></p>
@@ -572,9 +576,9 @@ title="Print to PDF"
 <p>A network of servers (often intelligently geographically placed) to server web assets (images, videos, CSS, etc).</p>
 </li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

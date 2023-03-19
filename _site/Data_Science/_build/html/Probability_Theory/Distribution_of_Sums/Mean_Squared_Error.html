@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Mean Squared Error &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1189,14 +1193,14 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="mean-squared-error">
+  <section class="tex2jax_ignore mathjax_ignore" id="mean-squared-error">
 <h1>Mean Squared Error<a class="headerlink" href="#mean-squared-error" title="Permalink to this headline">#</a></h1>
 <p>The <strong>mean squared error</strong> or more appropriately <strong>mean squared deviance</strong> of random variables <span class="math notranslate nohighlight">\(X = [X_1, X_2, \ldots, X_n]\)</span> is a type of sums notably for an array of random variables,</p>
 <div class="math notranslate nohighlight">
 \[
 \text{MSE}(X) = \frac{1}{n} \sum_{k=1}^n (X_k - \mu_k)^2
 \]</div>
-<div class="section" id="unbiased-estimator-of-variance">
+<section id="unbiased-estimator-of-variance">
 <h2>Unbiased Estimator of Variance<a class="headerlink" href="#unbiased-estimator-of-variance" title="Permalink to this headline">#</a></h2>
 <p>:	For iid random variables in <span class="math notranslate nohighlight">\(X\)</span> with expectation <span class="math notranslate nohighlight">\(\mu\)</span> and variance <span class="math notranslate nohighlight">\(\sigma^2\)</span>, we’d like to estimator the variance without knowing the expectation thus replacing <span class="math notranslate nohighlight">\(\mu_k\)</span> with <span class="math notranslate nohighlight">\(\bar X\)</span>. This estimator is the biased estimator of variance denoted as <span class="math notranslate nohighlight">\(\hat \sigma^2\)</span>:</p>
 <div class="math notranslate nohighlight">
@@ -1211,16 +1215,16 @@ E(\hat \sigma^2) &amp;= \frac{1}{n} \sum_{k=1}^n (X_k - \bar X)^2\\
 \[
 \boxed{S^2 = \frac{1}{n-1} \sum_{k=1}^n (X_k - \bar X)^2}
 \]</div>
-<div class="section" id="relation-to-chi-square">
+<section id="relation-to-chi-square">
 <h3>Relation to Chi-Square<a class="headerlink" href="#relation-to-chi-square" title="Permalink to this headline">#</a></h3>
 <p>The unbiased estimator <span class="math notranslate nohighlight">\(S^2\)</span> is related the Chi-Square distribution with <span class="math notranslate nohighlight">\(n-1\)</span> degrees of freedom. In fact, it is just a constant multiple of the Chi-Square random variable.</p>
 <div class="math notranslate nohighlight">
 \[
 \left(\frac{n-1}{\sigma^2}\right)S^2 \sim \chi^2_{n-1}
 \]</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

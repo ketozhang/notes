@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Least Squares Regression &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1209,7 +1213,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="least-squares-regression">
+  <section class="tex2jax_ignore mathjax_ignore" id="least-squares-regression">
 <h1>Least Squares Regression<a class="headerlink" href="#least-squares-regression" title="Permalink to this headline">#</a></h1>
 <p>The <strong>linear least squares</strong> is a linear model with <span class="math notranslate nohighlight">\(L_2\)</span> lost function and mean error cost function <span class="math notranslate nohighlight">\(\mathcal L = \langle L_2(X) \rangle\)</span>. The linear model is given by,</p>
 <div class="math notranslate nohighlight">
@@ -1228,7 +1232,7 @@ title="Print to PDF"
 &amp;= \mathop{\arg\min}_{\theta} \frac{1}{n} |y-X\theta|^2
 \end{align}
 \end{split}\]</div>
-<div class="section" id="invertible-solution">
+<section id="invertible-solution">
 <h2>Invertible Solution<a class="headerlink" href="#invertible-solution" title="Permalink to this headline">#</a></h2>
 <p>Given the square of the feature matrix <span class="math notranslate nohighlight">\(X^\top X\)</span> is invertible,</p>
 <div class="math notranslate nohighlight">
@@ -1246,7 +1250,7 @@ title="Print to PDF"
 <p>Where <span class="math notranslate nohighlight">\(XX^+\)</span> is called the <strong>hat matrix</strong> often notated as <span class="math notranslate nohighlight">\(H\)</span>.</p>
 </li>
 </ul>
-<div class="section" id="normal-equation">
+<section id="normal-equation">
 <h3>Normal Equation<a class="headerlink" href="#normal-equation" title="Permalink to this headline">#</a></h3>
 <p>An alternative way for the solution without using optimization is to note that the linear model spans a <span class="math notranslate nohighlight">\(n\)</span>-dimensional hyperplane which is also the span of <span class="math notranslate nohighlight">\(\hat y\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1259,9 +1263,9 @@ title="Print to PDF"
 X^\top (\hat y - y) = 0
 \]</div>
 <p>This is then the <strong>normal equation</strong>.</p>
-</div>
-</div>
-<div class="section" id="polynomial-least-squares">
+</section>
+</section>
+<section id="polynomial-least-squares">
 <h2>Polynomial Least Squares<a class="headerlink" href="#polynomial-least-squares" title="Permalink to this headline">#</a></h2>
 <p>Let the design matrix be denoted as <span class="math notranslate nohighlight">\(\Phi(X)\)</span> that transform add polynomials features to the feature matrix.</p>
 <p>For example, we can do a degree <span class="math notranslate nohighlight">\(k\)</span> polynomial transformation with no cross terms. It’s easier to write this consider every row of <span class="math notranslate nohighlight">\(X\)</span> as <span class="math notranslate nohighlight">\(X_i\)</span>.</p>
@@ -1271,8 +1275,8 @@ X^\top (\hat y - y) = 0
     X_{i1} &amp; X_{i1}^2 &amp; \ldots &amp; X_{i1}^k &amp; \ldots &amp; X_{id} &amp; X_{id}^2 &amp; \ldots &amp; X_{id}^k
 \end{bmatrix}
 \]</div>
-</div>
-<div class="section" id="weighted-least-squares">
+</section>
+<section id="weighted-least-squares">
 <h2>Weighted Least Squares<a class="headerlink" href="#weighted-least-squares" title="Permalink to this headline">#</a></h2>
 <p>Sometimes you may want to weigh your data by some sort of importance or confidence metric (e.g., inverse of the data’s error).</p>
 <p>For simplicity we are only going to weigh each row. In this case, the weight can be represented as a diagonal weight matrix <span class="math notranslate nohighlight">\(\Omega\)</span> such that <span class="math notranslate nohighlight">\(\omega_i\)</span> is the weight the row <span class="math notranslate nohighlight">\(X_i\)</span>.</p>
@@ -1281,8 +1285,8 @@ X^\top (\hat y - y) = 0
 \[
 \mathop{\arg\min}_{\theta} \sum_{i=1}^n \omega_i(X_i^\top \theta - y_i)^2 = \mathop{\arg\min}_{\theta} (X\theta - y)^\top \Omega (X\theta - y)
 \]</div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

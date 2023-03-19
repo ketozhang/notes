@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Join Operators &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1069,7 +1073,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="join-operators">
+  <section class="tex2jax_ignore mathjax_ignore" id="join-operators">
 <h1>Join Operators<a class="headerlink" href="#join-operators" title="Permalink to this headline">#</a></h1>
 <p>A single I/O in the operator model includes:</p>
 <ul class="simple">
@@ -1079,7 +1083,7 @@ title="Print to PDF"
 <ul class="simple">
 <li><p>Predicate comparison</p></li>
 </ul>
-<div class="section" id="syntax">
+<section id="syntax">
 <h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">#</a></h2>
 <ul>
 <li><p><span class="math notranslate nohighlight">\([L]\)</span>: Number of pages to store <span class="math notranslate nohighlight">\(R\)</span></p></li>
@@ -1088,8 +1092,8 @@ title="Print to PDF"
 <p><span class="math notranslate nohighlight">\(|R| = p_R [L]\)</span></p>
 </li>
 </ul>
-</div>
-<div class="section" id="theta-join">
+</section>
+<section id="theta-join">
 <h2>Theta Join<a class="headerlink" href="#theta-join" title="Permalink to this headline">#</a></h2>
 <ul>
 <li><p><strong>Simple Nested Loops Join</strong></p>
@@ -1132,8 +1136,8 @@ $<span class="math notranslate nohighlight">\( [L] + |R| * \texttt{Search} + \te
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="sort-merge-join">
+</section>
+<section id="sort-merge-join">
 <h2>Sort-Merge Join<a class="headerlink" href="#sort-merge-join" title="Permalink to this headline">#</a></h2>
 <p>A sort-merge join is a join using lexographical ranges which has an equality join with less cost than purely doing a cartesian join.</p>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="n">mark</span><span class="p">):</span>
@@ -1153,17 +1157,17 @@ $<span class="math notranslate nohighlight">\( [L] + |R| * \texttt{Search} + \te
 <p>The cost using <span class="math notranslate nohighlight">\(B = \sqrt{\max{[L],[R]}}\)</span> is,</p>
 <div class="math notranslate nohighlight">
 \[\texttt{Sort}(R) + \texttt{Sort}(S) + ([L] +[R])\]</div>
-<div class="section" id="improvement">
+<section id="improvement">
 <h3>Improvement<a class="headerlink" href="#improvement" title="Permalink to this headline">#</a></h3>
 <p>We can increase the buffer to <span class="math notranslate nohighlight">\(B = \sqrt{[L]} + \sqrt{[R]}\)</span> and first sort both <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(S\)</span> simultaneously then at the last pass merge while finding pairs. The cost for this is,</p>
 <div class="math notranslate nohighlight">
 \[ (\#\text{passes} - 1)([L] + [R]) \]</div>
-</div>
-</div>
-<div class="section" id="hash-join">
+</section>
+</section>
+<section id="hash-join">
 <h2>Hash Join<a class="headerlink" href="#hash-join" title="Permalink to this headline">#</a></h2>
 <p>We wish to join two tables <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(S\)</span> by comparing their hash.</p>
-<div class="section" id="naive-hash-join">
+<section id="naive-hash-join">
 <h3>Naive Hash Join<a class="headerlink" href="#naive-hash-join" title="Permalink to this headline">#</a></h3>
 <p>Assuming <span class="math notranslate nohighlight">\(B &lt; [L]\)</span>, we can create a big enough buffer to compare the hashes between <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(S\)</span> by creating a hash table of size <span class="math notranslate nohighlight">\(B-2\)</span> (the remaining 2 is taken up by storing <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(S\)</span>).</p>
 <ul>
@@ -1174,8 +1178,8 @@ $<span class="math notranslate nohighlight">\( [L] + |R| * \texttt{Search} + \te
 <li><p><strong>Buffer Management</strong>
 $<span class="math notranslate nohighlight">\(B\)</span>$</p></li>
 </ul>
-</div>
-<div class="section" id="grace-hash-join">
+</section>
+<section id="grace-hash-join">
 <h3>Grace Hash Join<a class="headerlink" href="#grace-hash-join" title="Permalink to this headline">#</a></h3>
 <p>Using external hashing, for every pass we can take the partition and do <strong>Build &amp; Probe</strong> which is a pass that uses naive hash join on the partition</p>
 <p>For each partiton:</p>
@@ -1193,9 +1197,9 @@ $<span class="math notranslate nohighlight">\( 3([L] + [R])\)</span>$</p></li>
 <li><p><strong>Buffer (2-Pass)</strong>
 $<span class="math notranslate nohighlight">\( [L] = (B-1)(B-2) \)</span>$</p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

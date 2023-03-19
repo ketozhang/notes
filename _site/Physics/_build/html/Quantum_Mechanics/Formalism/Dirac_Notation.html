@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Dirac Notation &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1009,7 +1013,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="dirac-notation">
+  <section class="tex2jax_ignore mathjax_ignore" id="dirac-notation">
 <h1>Dirac Notation<a class="headerlink" href="#dirac-notation" title="Permalink to this headline">#</a></h1>
 <p><em>alias: Bra-ket notation</em></p>
 <p>The dirac notation is widely used in quantum mechanics similar how vectors are widely used in electromagnetism. We use this because quantum mechanics is natural a linear algebra problem.</p>
@@ -1021,26 +1025,26 @@ title="Print to PDF"
 <li><p><span class="math notranslate nohighlight">\(a_1, a_2, ... a_N\)</span> : the weights of their corresponding basis.</p></li>
 <li><p>Recall in cartesian basis each row correspond to the basis vectors <span class="math notranslate nohighlight">\((\hat x, \hat y, \hat z, ...)\)</span></p></li>
 </ul>
-<div class="section" id="conjugate-vector-ket">
+<section id="conjugate-vector-ket">
 <h2>Conjugate Vector - Ket<a class="headerlink" href="#conjugate-vector-ket" title="Permalink to this headline">#</a></h2>
 <p>The <strong>ket vector</strong> is the conjugate of the <strong>bra vector</strong> such that,</p>
 <div class="math notranslate nohighlight">
 \[\langle \alpha | \;\equiv\; |\alpha \rangle ^*\]</div>
-</div>
-<div class="section" id="inner-product">
+</section>
+<section id="inner-product">
 <h2>Inner Product<a class="headerlink" href="#inner-product" title="Permalink to this headline">#</a></h2>
 <p><em>alias: dot product, braket</em></p>
 <p>The inner product of two vectors is the product of a bra and ket vector.</p>
 <div class="math notranslate nohighlight">
 \[ \boxed{\langle \alpha | \beta \rangle \equiv  a_1^*b_1 + a_2^*b_2 + ... a_N^*b_N}\]</div>
-<div class="section" id="properties">
+<section id="properties">
 <h3>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\langle \alpha | \beta \rangle^* = \langle \beta | \alpha \rangle\)</span></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="hilbert-space">
+</section>
+</section>
+<section id="hilbert-space">
 <h2>Hilbert Space<a class="headerlink" href="#hilbert-space" title="Permalink to this headline">#</a></h2>
 <p>Many times it is not very useful to think of inner product as of the definition above because it is not necessary that <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> is a easy vector to comprehend. In this case how do you represent a function like <span class="math notranslate nohighlight">\(\Psi(x,t)\)</span> as a vector?</p>
 <p>The answer is you don’t; we take a look at the fact that for a <strong>square-integrable function</strong> which is defined as a function who’s conjugate square has a non-infinite area thus follows,</p>
@@ -1050,7 +1054,7 @@ title="Print to PDF"
 <div class="math notranslate nohighlight">
 \[ \langle f | g \rangle \equiv \int_a^b{f(x)^*g(x)\;dx}  \]</div>
 <p>In quantum mechanics we deal with only wavefunctions that are normalizable. You may check that all normalizable functions are also square-integrable since the area is non-infinite. We may introduce such a space where the wavefunction and all square-integrable functions live. This is called the <strong>Hilbert space</strong> or the <strong>complete inner product space</strong>.</p>
-<div class="section" id="id1">
+<section id="id1">
 <h3>Properties<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
 <ul>
 <li><p><strong>Self inner product:</strong> The self inner product is defined as,</p>
@@ -1066,9 +1070,9 @@ title="Print to PDF"
 \[ \left\lvert{\int_a^b{f(x)^*g(x)\;dx} }\right\rvert \le \sqrt{\int_a^b{|f(x)|^2\;dx}\int_a^b{|g(x)|^2\;dx}}\]</div>
 </li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

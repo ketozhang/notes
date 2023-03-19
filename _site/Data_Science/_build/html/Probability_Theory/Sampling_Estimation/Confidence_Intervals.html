@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Confidence Intervals &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1185,9 +1189,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="confidence-intervals">
+  <section class="tex2jax_ignore mathjax_ignore" id="confidence-intervals">
 <h1>Confidence Intervals<a class="headerlink" href="#confidence-intervals" title="Permalink to this headline">#</a></h1>
-<div class="section" id="general">
+<section id="general">
 <h2>General<a class="headerlink" href="#general" title="Permalink to this headline">#</a></h2>
 <div class="math notranslate nohighlight">
 \[
@@ -1197,8 +1201,8 @@ P\left( \mu \in \bar X \pm c\right) = p
 \[
 c = \Phi^{-1}(p/2 + 1/2) - 1
 \]</div>
-</div>
-<div class="section" id="number-of-sds">
+</section>
+<section id="number-of-sds">
 <h2>Number of SDs<a class="headerlink" href="#number-of-sds" title="Permalink to this headline">#</a></h2>
 <p>For the <span class="math notranslate nohighlight">\(p\)</span> confidence interval,</p>
 <div class="math notranslate nohighlight">
@@ -1208,8 +1212,8 @@ P\left( \mu \in \bar X \pm z_p \text{SD}(\bar X)\right) = p
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(z_\lambda = \Phi^{-1}(p/2 + 1/2)\)</span></p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

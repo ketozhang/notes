@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Factory Method &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1009,7 +1013,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="factory-method">
+  <section class="tex2jax_ignore mathjax_ignore" id="factory-method">
 <h1>Factory Method<a class="headerlink" href="#factory-method" title="Permalink to this headline">#</a></h1>
 <p>Separates object (<strong>product</strong>) creation from usage in the main class (<strong>creator</strong>). The creation of the object is done in the superclass but allows the subclass to alter the type of objects to be created.</p>
 <div class="highlight-puml notranslate"><div class="highlight"><pre><span></span>@startuml
@@ -1050,15 +1054,15 @@ class ConcreteCreatorB {
 @enduml
 </pre></div>
 </div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="usage">
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="usage">
 <h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">#</a></h1>
 <p>The separation of creation and usage is the core purpose of the factory method. Therefore, the advantages are:</p>
 <ul class="simple">
 <li><p>New product types are created from implementing the product and subclassing the creator.</p></li>
 <li><p>Allow external users to extend both usage and product types <em>a la</em> above</p></li>
 </ul>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {

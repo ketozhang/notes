@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Polar Coordinates &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1009,9 +1013,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="polar-coordinates">
+  <section class="tex2jax_ignore mathjax_ignore" id="polar-coordinates">
 <h1>Polar Coordinates<a class="headerlink" href="#polar-coordinates" title="Permalink to this headline">#</a></h1>
-<div class="section" id="d-polar-coordinate">
+<section id="d-polar-coordinate">
 <h2>2D Polar Coordinate<a class="headerlink" href="#d-polar-coordinate" title="Permalink to this headline">#</a></h2>
 <p>The two-dimensional polar coordinate uses the two parameter vectors <span class="math notranslate nohighlight">\(\boldsymbol{r}\)</span> and angle vector <span class="math notranslate nohighlight">\(\boldsymbol{\phi}\)</span>. It is simply defined by unit vectors,</p>
 <div class="math notranslate nohighlight">
@@ -1020,7 +1024,7 @@ title="Print to PDF"
 \]</div>
 <div class="math notranslate nohighlight">
 \[ \boldsymbol{\phi} = \phi\boldsymbol{\hat \phi} \]</div>
-<div class="section" id="cartesian-to-polar">
+<section id="cartesian-to-polar">
 <h3>Cartesian to Polar<a class="headerlink" href="#cartesian-to-polar" title="Permalink to this headline">#</a></h3>
 <p>We make the transformation given <span class="math notranslate nohighlight">\(x, y\)</span> by,</p>
 <div class="math notranslate nohighlight">
@@ -1040,8 +1044,8 @@ title="Print to PDF"
 <ul class="simple">
 <li><p>This transformation is not mathematically general since we use <span class="math notranslate nohighlight">\(\arctan\)</span>. More properly use <span class="math notranslate nohighlight">\(\arctan2\)</span></p></li>
 </ul>
-</div>
-<div class="section" id="velocity">
+</section>
+<section id="velocity">
 <h3>Velocity<a class="headerlink" href="#velocity" title="Permalink to this headline">#</a></h3>
 <p>There is an unfamiliar property for the rate of change in polar coordinates compared to cartesian coordinates. Most prominent is velocity, <span class="math notranslate nohighlight">\(\boldsymbol{\dot r}\)</span> which is,</p>
 <div class="math notranslate nohighlight">
@@ -1054,7 +1058,7 @@ title="Print to PDF"
 \end{align}\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\boxed{\boldsymbol{v} \equiv v_r \boldsymbol{\hat r} + v_\phi  \boldsymbol{\hat \phi}} \]</div>
-<div class="section" id="derivation">
+<section id="derivation">
 <h4>Derivation<a class="headerlink" href="#derivation" title="Permalink to this headline">#</a></h4>
 <p>Naively one may assume <span class="math notranslate nohighlight">\(d\boldsymbol{\hat r}/dt = 0\)</span> however this is not the case because <span class="math notranslate nohighlight">\(\boldsymbol{\hat r}\)</span> is allowed to change directions over time<a class="footnote-reference brackets" href="#directions" id="id1">1</a>. Let’s take for granted and assume <span class="math notranslate nohighlight">\(d\boldsymbol{\hat r}/dt = \dot \phi \boldsymbol{\hat \phi}\)</span></p>
 <div class="math notranslate nohighlight">
@@ -1071,9 +1075,9 @@ title="Print to PDF"
 \end{align}\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[\boxed{\boldsymbol{v} \equiv v_r \boldsymbol{\hat r} + v_\phi  \boldsymbol{\hat \phi}} \]</div>
-</div>
-</div>
-<div class="section" id="acceleration">
+</section>
+</section>
+<section id="acceleration">
 <h3>Acceleration<a class="headerlink" href="#acceleration" title="Permalink to this headline">#</a></h3>
 <p>The second time derivative or acceleration is defined as,</p>
 <div class="math notranslate nohighlight">
@@ -1101,9 +1105,9 @@ title="Print to PDF"
 <dd><p>When learning vectors in cartesian coordinates we take for granted that <span class="math notranslate nohighlight">\(d\boldsymbol{\hat x}/dt = 0\)</span> which is definitely true since <span class="math notranslate nohighlight">\(\boldsymbol{\hat x}\)</span> never changes directions.</p>
 </dd>
 </dl>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

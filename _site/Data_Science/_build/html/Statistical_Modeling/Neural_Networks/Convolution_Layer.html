@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Convolution Layer &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1185,9 +1189,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="convolution-layer">
+  <section class="tex2jax_ignore mathjax_ignore" id="convolution-layer">
 <h1>Convolution Layer<a class="headerlink" href="#convolution-layer" title="Permalink to this headline">#</a></h1>
-<div class="section" id="convolution">
+<section id="convolution">
 <h2>Convolution<a class="headerlink" href="#convolution" title="Permalink to this headline">#</a></h2>
 <p>The input data <span class="math notranslate nohighlight">\(I\)</span> of one dimension is convolved with some mask function <span class="math notranslate nohighlight">\(G\)</span> (a matrix) which can be written as</p>
 <div class="math notranslate nohighlight">
@@ -1208,8 +1212,8 @@ title="Print to PDF"
 <li><p><span class="math notranslate nohighlight">\(w, h\)</span> : Width and height of the mask matrix.</p></li>
 <li><p><span class="math notranslate nohighlight">\(s\)</span> : Stride of the convolution, <span class="math notranslate nohighlight">\(s\ge1\)</span>.</p></li>
 </ul>
-</div>
-<div class="section" id="architecture">
+</section>
+<section id="architecture">
 <h2>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline">#</a></h2>
 <p>I’ll see if I wanna stand in the rain tomorrow.
 Given some data <span class="math notranslate nohighlight">\(I\)</span> of size <span class="math notranslate nohighlight">\((W, H, C)\)</span> a convolution layer of mask function <span class="math notranslate nohighlight">\(G\)</span> of size <span class="math notranslate nohighlight">\((w,h,c)\)</span>:</p>
@@ -1217,8 +1221,8 @@ Given some data <span class="math notranslate nohighlight">\(I\)</span> of size 
 <li><p>Trains <span class="math notranslate nohighlight">\(w \cdot h \cdot c\)</span> parameters</p></li>
 <li><p>Outputs an array of size <span class="math notranslate nohighlight">\((\lfloor {1+(W-w)/s \rfloor}, \lfloor{1+(H-h)/s \rfloor}, c)\)</span></p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

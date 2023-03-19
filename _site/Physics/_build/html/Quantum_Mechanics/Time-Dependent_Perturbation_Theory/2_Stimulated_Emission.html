@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Stimulated Emission &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1001,9 +1005,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="stimulated-emission">
+  <section class="tex2jax_ignore mathjax_ignore" id="stimulated-emission">
 <h1>Stimulated Emission<a class="headerlink" href="#stimulated-emission" title="Permalink to this headline">#</a></h1>
-<div class="section" id="coherent-electromagnetic-waves">
+<section id="coherent-electromagnetic-waves">
 <h2>Coherent Electromagnetic Waves<a class="headerlink" href="#coherent-electromagnetic-waves" title="Permalink to this headline">#</a></h2>
 <p>The interaction of an electron with a photon can be described by the atomic interaction with an electromagnetic wave.</p>
 <p>Consider the simple case that we shine a light polarized light source along the <span class="math notranslate nohighlight">\(z\)</span> direction such that the wavelength is greater than the atomic size <span class="math notranslate nohighlight">\(\lambda \gg \lambda_{dB}\)</span>. We can them simplify this electromagnetic wave as,</p>
@@ -1034,8 +1038,8 @@ title="Print to PDF"
     \boxed{P_{a\rightarrow b}(t) = P_{b\rightarrow a}(t)}
 \end{equation} \]</div>
 <p>If <span class="math notranslate nohighlight">\(E_a &lt; E_b\)</span> then <span class="math notranslate nohighlight">\(a \rightarrow b\)</span> is called <strong>absorption</strong> and <span class="math notranslate nohighlight">\(b\rightarrow a\)</span> is called <strong>stimulated emission</strong>. This is amazing because you wouldn’t expect <span class="math notranslate nohighlight">\(\psi_b\)</span> to go to a lower energy level if an electromagnetic is contributed. Naturally you may have heard of an atom emitting light without any perturbation. This is called instead <strong>spontaneous emission</strong>.</p>
-</div>
-<div class="section" id="incoherent-electromagnetic-waves">
+</section>
+<section id="incoherent-electromagnetic-waves">
 <h2>Incoherent Electromagnetic Waves<a class="headerlink" href="#incoherent-electromagnetic-waves" title="Permalink to this headline">#</a></h2>
 <p>The incoherent perturbation is best described by its energy density <span class="math notranslate nohighlight">\(\mu\)</span> which is composed of all frequencies. Recall that the energy density of the electromagnetic wave is,</p>
 <div class="math notranslate nohighlight">
@@ -1062,8 +1066,8 @@ title="Print to PDF"
 \[\begin{equation}
     \boxed{P_{b\rightarrow a}(t) \simeq \frac{\pi q \abs{z_{ba}}^2}{\epsilon_0\hbar^2} \rho(\omega_0)t}
 \end{equation}\]</div>
-</div>
-<div class="section" id="isotropic-electromagnetic-waves">
+</section>
+<section id="isotropic-electromagnetic-waves">
 <h2>Isotropic Electromagnetic Waves<a class="headerlink" href="#isotropic-electromagnetic-waves" title="Permalink to this headline">#</a></h2>
 <p>Let’s now introduced unpolarized light, actually light coming from every direction isotropically. The equation no long has the electromagnetic wave coming from the <span class="math notranslate nohighlight">\(\hat z\)</span> direction but now everywhere <span class="math notranslate nohighlight">\(\abs{z_{ba}} \rightarrow \abs{r_{ba}}\)</span>.</p>
 <p>The isotropic light will be polarized along <span class="math notranslate nohighlight">\(\hat n\)</span> thus we project <span class="math notranslate nohighlight">\(\abs{r_{ba}}\)</span> to <span class="math notranslate nohighlight">\(\hat n\)</span> and take the average value as the factor of the effective electric field.,</p>
@@ -1073,8 +1077,8 @@ title="Print to PDF"
 \[\begin{equation}
     \boxed{P_{b\rightarrow a}(t) \simeq \frac{\pi q \abs{r_{ba}}^2}{3\epsilon_0\hbar^2} \rho(\omega_0)t}
 \end{equation}\]</div>
-</div>
-<div class="section" id="transition-rate">
+</section>
+<section id="transition-rate">
 <h2>Transition Rate<a class="headerlink" href="#transition-rate" title="Permalink to this headline">#</a></h2>
 <p>The transition rate has a good approximation considering statistically large numbers of photons (attempts to transition). In this approximation the transition rate is the rate of success,</p>
 <div class="math notranslate nohighlight">
@@ -1083,8 +1087,8 @@ title="Print to PDF"
 R_{b\rightarrow a} \equiv \frac{dP_{b\rightarrow a}}{dt}
 \end{equation}
 \]</div>
-</div>
-<div class="section" id="fermi-s-golden-rule">
+</section>
+<section id="fermi-s-golden-rule">
 <h2>Fermi’s Golden Rule<a class="headerlink" href="#fermi-s-golden-rule" title="Permalink to this headline">#</a></h2>
 <p>The most simplest way to memorize all of these is <strong>Fermi’s golden rule</strong>. The rule states that the transitional probability given the energy density of state <span class="math notranslate nohighlight">\(\rho\)</span> given by such integral,</p>
 <div class="math notranslate nohighlight">
@@ -1092,8 +1096,8 @@ R_{b\rightarrow a} \equiv \frac{dP_{b\rightarrow a}}{dt}
 <p>This is simply equal to,</p>
 <div class="math notranslate nohighlight">
 \[\boxed{ R_{i \rightarrow f}  = \frac{2\pi}{\hbar}\abs{H_{fi}}^2\rho}\]</div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

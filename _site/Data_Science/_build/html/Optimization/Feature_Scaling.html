@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Feature Scaling &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1175,11 +1179,11 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="feature-scaling">
+  <section class="tex2jax_ignore mathjax_ignore" id="feature-scaling">
 <h1>Feature Scaling<a class="headerlink" href="#feature-scaling" title="Permalink to this headline">#</a></h1>
 <p>Feature scaling can improve gradient descent by scaling the contours that look too long (e.g., too elliptical) to something more symmetric (e.g., more spherical). The problem comes from units of features living in different orders of magntiudes.</p>
 <p>For example, in houses area is measured in square footage which may be in the order of <span class="math notranslate nohighlight">\(10^3\)</span> while the number of rooms are in the zeroth order. We can see that the area feature would stretch the contour much more than the number of rooms feature.</p>
-<div class="section" id="standardization">
+<section id="standardization">
 <h2>Standardization<a class="headerlink" href="#standardization" title="Permalink to this headline">#</a></h2>
 <p>A common useful method of feature scaling is to shift each feature column in <span class="math notranslate nohighlight">\(X\)</span>  to a zero mean and divide it by either size or the standard deviation.</p>
 <div class="math notranslate nohighlight">
@@ -1189,8 +1193,8 @@ title="Print to PDF"
 <li><p><span class="math notranslate nohighlight">\(\mu_j\)</span> : mean of the <span class="math notranslate nohighlight">\(j\)</span>-th feature column</p></li>
 <li><p><span class="math notranslate nohighlight">\(s_j\)</span> : Either the size or standar deviation of the <span class="math notranslate nohighlight">\(j\)</span>-th feature column</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

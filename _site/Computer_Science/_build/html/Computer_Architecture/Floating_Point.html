@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Floating Point &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1025,12 +1029,12 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="floating-point">
+  <section class="tex2jax_ignore mathjax_ignore" id="floating-point">
 <h1>Floating Point<a class="headerlink" href="#floating-point" title="Permalink to this headline">#</a></h1>
 <p>A floating point is a binary representation to include non-integer numbers along with <span class="math notranslate nohighlight">\(\pm \infty\)</span> and <code class="docutils literal notranslate"><span class="pre">NaN</span></code>.</p>
 <p>The format of the floating point in binary is always,</p>
 <p>| Sign | Exponent | Manitssa |</p>
-<div class="section" id="floating-point-single-precision">
+<section id="floating-point-single-precision">
 <h2>Floating Point Single Precision<a class="headerlink" href="#floating-point-single-precision" title="Permalink to this headline">#</a></h2>
 <p>The single precision floating point is a 32-bit representation of the floating point.</p>
 <p>Where we have,</p>
@@ -1060,7 +1064,7 @@ title="Print to PDF"
 </tr>
 </tbody>
 </table>
-<div class="section" id="floating-point-to-decimal">
+<section id="floating-point-to-decimal">
 <h3>Floating Point to Decimal<a class="headerlink" href="#floating-point-to-decimal" title="Permalink to this headline">#</a></h3>
 <p>Giving the floating point <span class="math notranslate nohighlight">\(F_2\)</span> one may disect it from the definition that <span class="math notranslate nohighlight">\(F_2 \equiv S_2||E_2||M_2\)</span>. The following equation is used to construct the decimal representation <span class="math notranslate nohighlight">\(D\)</span> given the floating point.</p>
 <div class="math notranslate nohighlight">
@@ -1069,8 +1073,8 @@ title="Print to PDF"
 <li><p><span class="math notranslate nohighlight">\(\{S, E, M\}\)</span> is the decimal form of <span class="math notranslate nohighlight">\(\{S_2, E_2, M_2\}\)</span>.</p></li>
 <li><p><strong>Note:</strong> any number without a subscript is represented in decimal form.</p></li>
 </ul>
-</div>
-<div class="section" id="decimal-to-floating-point">
+</section>
+<section id="decimal-to-floating-point">
 <h3>Decimal to Floating Point<a class="headerlink" href="#decimal-to-floating-point" title="Permalink to this headline">#</a></h3>
 <p>Given a decimal representation <span class="math notranslate nohighlight">\(D\)</span> we may convert the floating point by determining each part of the floating point (sign, exponent and mantissa).</p>
 <p>Three useful equations is given as so,</p>
@@ -1096,9 +1100,9 @@ title="Print to PDF"
 <li><p>The first line is redundant math; just take the sign of <span class="math notranslate nohighlight">\(D\)</span> and consider what <span class="math notranslate nohighlight">\(S\)</span> is</p></li>
 <li><p><span class="math notranslate nohighlight">\(\lfloor x \rfloor\)</span> is the floor (round down) of <span class="math notranslate nohighlight">\(x\)</span></p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

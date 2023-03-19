@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Introduction &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1079,17 +1083,17 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduction">
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
-<div class="section" id="compile-and-run-structure">
+<section id="compile-and-run-structure">
 <h2>Compile and Run Structure<a class="headerlink" href="#compile-and-run-structure" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">.cpp</span></code>: The source file</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">.o</span></code>: The compiled file</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">.[EXECUTABLE]</span></code>: Executable file</p></li>
 </ul>
-</div>
-<div class="section" id="hello-world">
+</section>
+<section id="hello-world">
 <h2>Hello World!<a class="headerlink" href="#hello-world" title="Permalink to this headline">#</a></h2>
 <p>As usual with some imports.</p>
 <ul class="simple">
@@ -1105,8 +1109,8 @@ title="Print to PDF"
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="function">
+</section>
+<section id="function">
 <h2>Function<a class="headerlink" href="#function" title="Permalink to this headline">#</a></h2>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">TYPE</span><span class="w"> </span><span class="nf">NAME</span><span class="p">([</span><span class="n">TYPE</span><span class="w"> </span><span class="p">[</span><span class="n">ARG1</span><span class="p">],</span><span class="w"> </span><span class="p">...])</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">	</span><span class="c1">// body</span>
@@ -1123,8 +1127,8 @@ title="Print to PDF"
 <ul class="simple">
 <li><p>Function overloading, allow synonyms with different type</p></li>
 </ul>
-</div>
-<div class="section" id="variables">
+</section>
+<section id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">#</a></h2>
 <p>Features</p>
 <ul>
@@ -1141,8 +1145,8 @@ title="Print to PDF"
 <li><p>Implicit type <code class="docutils literal notranslate"><span class="pre">auto</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">auto</span> <span class="pre">b</span> <span class="pre">=</span> <span class="pre">true</span></code>) will automatically use the initialization to determine the type.</p></li>
 <li><p>Constants supported <code class="docutils literal notranslate"><span class="pre">const</span></code> (run-time constant) and <code class="docutils literal notranslate"><span class="pre">constexpr</span></code> (compile-time constant). The latter is used for performance and memory corruption reasons which applies very strict requirements (e.g., immutability) on functions with <code class="docutils literal notranslate"><span class="pre">constexpr</span></code>.</p></li>
 </ul>
-</div>
-<div class="section" id="basic-types">
+</section>
+<section id="basic-types">
 <h2>Basic Types<a class="headerlink" href="#basic-types" title="Permalink to this headline">#</a></h2>
 <p>There are many basic types for example:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">bool</span><span class="w"></span>
@@ -1152,8 +1156,8 @@ title="Print to PDF"
 <span class="kt">unsigned</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="arithmetic">
+</section>
+<section id="arithmetic">
 <h2>Arithmetic<a class="headerlink" href="#arithmetic" title="Permalink to this headline">#</a></h2>
 <p>All syntax is similar to Python.</p>
 <p>Features</p>
@@ -1161,8 +1165,8 @@ title="Print to PDF"
 <li><p>Meaningful conversion between types (e.g., addition between int and double is double unless referenced by an int variable) preserves the highest precision.</p></li>
 <li><p>Increment (<code class="docutils literal notranslate"><span class="pre">++x</span></code>) and decrement (<code class="docutils literal notranslate"><span class="pre">--x</span></code>).</p></li>
 </ul>
-</div>
-<div class="section" id="scope">
+</section>
+<section id="scope">
 <h2>Scope<a class="headerlink" href="#scope" title="Permalink to this headline">#</a></h2>
 <p>There are four scopes:</p>
 <ol class="simple">
@@ -1173,8 +1177,8 @@ A namespace is the point where the declaration is called to the end of the names
 <li><p>Global scope
 Everything else</p></li>
 </ol>
-</div>
-<div class="section" id="pointers-references-and-arrays">
+</section>
+<section id="pointers-references-and-arrays">
 <h2>Pointers, References, and Arrays<a class="headerlink" href="#pointers-references-and-arrays" title="Permalink to this headline">#</a></h2>
 <p>An array is a collection of data available to all types:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">char</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span><span class="w"></span>
@@ -1234,8 +1238,8 @@ Everything else</p></li>
 </div>
 </li>
 </ul>
-</div>
-<div class="section" id="control-statements">
+</section>
+<section id="control-statements">
 <h2>Control Statements<a class="headerlink" href="#control-statements" title="Permalink to this headline">#</a></h2>
 <p>Standard if, for, and while are provided.</p>
 <p><strong>Features</strong></p>
@@ -1255,8 +1259,8 @@ Everything else</p></li>
 </div>
 </li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

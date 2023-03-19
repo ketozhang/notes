@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Nginx &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1056,10 +1060,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="nginx">
+  <section class="tex2jax_ignore mathjax_ignore" id="nginx">
 <h1>Nginx<a class="headerlink" href="#nginx" title="Permalink to this headline">#</a></h1>
 <p>For Ubuntu 18.04+</p>
-<div class="section" id="installation">
+<section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h2>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo apt update
 sudo apt install nginx
@@ -1071,8 +1075,8 @@ sudo service nginx status
 </pre></div>
 </div>
 <p>If the firewall is set up, you can access the server at <code class="docutils literal notranslate"><span class="pre">localhost</span></code>, your public IP address, or your domain name if your router has forwarded port 80.</p>
-</div>
-<div class="section" id="firewall">
+</section>
+<section id="firewall">
 <h2>Firewall<a class="headerlink" href="#firewall" title="Permalink to this headline">#</a></h2>
 <p>Nginx provides the following applications to the firewall,</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Nginx</span> <span class="n">Full</span>
@@ -1084,8 +1088,8 @@ sudo service nginx status
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo ufw allow <span class="s1">&#39;Nginx HTTP&#39;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="virtual-host-server-block">
+</section>
+<section id="virtual-host-server-block">
 <h2>Virtual Host / Server Block<a class="headerlink" href="#virtual-host-server-block" title="Permalink to this headline">#</a></h2>
 <p>The equivalent of virtual host on Nginx is called server blocks. There already exists one by default at <code class="docutils literal notranslate"><span class="pre">/var/www/html</span></code>. To support multiple domains you need to have multiple server blocks. Regardless, it’s highly recommended to create another one for each web application (i.e., leave <code class="docutils literal notranslate"><span class="pre">/var/www/html</span></code> when you want to manually write and serve HTML which is rare).</p>
 <p>Replace <code class="docutils literal notranslate"><span class="pre">example.com</span></code> with your own domain name (without <code class="docutils literal notranslate"><span class="pre">www</span></code>).</p>
@@ -1106,7 +1110,7 @@ sudo chmod -R <span class="m">755</span> /var/www/example.com/
 </pre></div>
 </div>
 <p>This particular web page will not be accessible until we register the server block in configurations on the next section.</p>
-<div class="section" id="configuration">
+<section id="configuration">
 <h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">#</a></h3>
 <p>Server block configuration are located at <code class="docutils literal notranslate"><span class="pre">/etc/nginx/sites-available/</span></code> and enabled at <code class="docutils literal notranslate"><span class="pre">/etc/nginx/sites-enabled/</span></code>. We will first add the server block configuration to <code class="docutils literal notranslate"><span class="pre">/etc/nginx/sites-available/example.com</span></code></p>
 <div class="highlight-nginx notranslate"><div class="highlight"><pre><span></span><span class="c1"># /etc/nginx/sites-available/example.com</span>
@@ -1147,11 +1151,11 @@ http {
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo systemctl restart nginx
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="nginx-configurations">
+</section>
+</section>
+<section id="nginx-configurations">
 <h2>Nginx Configurations<a class="headerlink" href="#nginx-configurations" title="Permalink to this headline">#</a></h2>
-<div class="section" id="gunicorn">
+<section id="gunicorn">
 <h3>Gunicorn<a class="headerlink" href="#gunicorn" title="Permalink to this headline">#</a></h3>
 <p>For a gunicorn hosted project with the project folder at <code class="docutils literal notranslate"><span class="pre">/path/to/project</span></code>, the application program is <code class="docutils literal notranslate"><span class="pre">app.py</span></code> with WSGI also named <code class="docutils literal notranslate"><span class="pre">app</span></code>.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>gunicorn -b <span class="m">0</span>.0.0.0:8000 app:app
@@ -1175,9 +1179,9 @@ http {
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

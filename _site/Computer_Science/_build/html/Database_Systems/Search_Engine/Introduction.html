@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Introduction &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1049,12 +1053,12 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduction">
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
 <p>Text search is done with a search engine (aka informational retrieval system).</p>
 <p>Document
 : A file, website, or generally a collection of unstructured data that can be text searched.</p>
-<div class="section" id="architecture">
+<section id="architecture">
 <h2>Architecture<a class="headerlink" href="#architecture" title="Permalink to this headline">#</a></h2>
 <p>Informational retrieval system (IR) are structured similar to a DBMS however differs in such ways:</p>
 <ul class="simple">
@@ -1063,8 +1067,8 @@ title="Print to PDF"
 <li><p>A crawler used to import data as it updates</p></li>
 </ul>
 <p><img alt="" src="../../_images/2018-10-28-15-17-24.png" /></p>
-</div>
-<div class="section" id="bag-of-words-model">
+</section>
+<section id="bag-of-words-model">
 <h2>Bag of Words Model<a class="headerlink" href="#bag-of-words-model" title="Permalink to this headline">#</a></h2>
 <p>The bag of words model treats a document collection of searchable terms by its words. The bag of words model would implement the following methods:</p>
 <ol class="simple">
@@ -1080,25 +1084,25 @@ title="Print to PDF"
 </ul>
 </li>
 </ol>
-</div>
-<div class="section" id="boolean-text-search">
+</section>
+<section id="boolean-text-search">
 <h2>Boolean Text Search<a class="headerlink" href="#boolean-text-search" title="Permalink to this headline">#</a></h2>
 <p>A simple search algorithm that made up of simple boolean statements.</p>
 <p>For example, <em>find a document with “California” and “school”</em>.</p>
-</div>
-<div class="section" id="postings-list">
+</section>
+<section id="postings-list">
 <h2>Postings List<a class="headerlink" href="#postings-list" title="Permalink to this headline">#</a></h2>
 <p>For each documents, its words will be extracted and placed into the file system as a postings list. A postings list is a schema of <code class="docutils literal notranslate"><span class="pre">(text</span> <span class="pre">term,</span> <span class="pre">text</span> <span class="pre">docID)</span></code>. We will call this “table” the <code class="docutils literal notranslate"><span class="pre">InvertedFile</span></code></p>
-</div>
-<div class="section" id="search-index">
+</section>
+<section id="search-index">
 <h2>Search Index<a class="headerlink" href="#search-index" title="Permalink to this headline">#</a></h2>
 <p>The search engine will have a search index of the <code class="docutils literal notranslate"><span class="pre">InvertedFile</span></code> ordered by <code class="docutils literal notranslate"><span class="pre">docID</span></code>.</p>
 <p><strong>Important:</strong> From here on, queries we made must use a single table per keyword.</p>
 <ul class="simple">
 <li><p><strong>Positional data:</strong> We may add the position of the term that would benefit nearby word search.</p></li>
 </ul>
-</div>
-<div class="section" id="id1">
+</section>
+<section id="id1">
 <h2>Boolean Text Search<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <p>A simple text operation using boolean that slices the document to match the boolean query.</p>
 <p>For example this query is equivalent of an intersection between the three keywords <code class="docutils literal notranslate"><span class="pre">Berkeley,</span> <span class="pre">Database,</span> <span class="pre">Research</span></code>,</p>
@@ -1110,8 +1114,8 @@ title="Print to PDF"
 <span class="k">AND</span><span class="w"> </span><span class="n">IB</span><span class="p">.</span><span class="n">docID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ID</span><span class="p">.</span><span class="n">docID</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">ID</span><span class="p">.</span><span class="n">docID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">IR</span><span class="p">.</span><span class="n">docID</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Outcome Space and Events &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1195,24 +1199,24 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="outcome-space-and-events">
+  <section class="tex2jax_ignore mathjax_ignore" id="outcome-space-and-events">
 <h1>Outcome Space and Events<a class="headerlink" href="#outcome-space-and-events" title="Permalink to this headline">#</a></h1>
 <p>We begin with introducing probability theory by thinking about how do we think the world works — or at least a part of it. In probability theory, we assume there’s <strong>a world that has outcomes occurring by chance</strong>. It is said that in this world, random processes exists.</p>
-<div class="section" id="outcome-space">
+<section id="outcome-space">
 <h2>Outcome Space<a class="headerlink" href="#outcome-space" title="Permalink to this headline">#</a></h2>
 <p>For a system or process in this world, there exist all possible outcomes that can occur from the system. We denote this a distinct set of outcomes <span class="math notranslate nohighlight">\(\Omega = \set{\omega_1, \omega_2, \ldots, \omega_n}\)</span> known as the <strong>set of outcomes</strong>, <strong>sampling space</strong>, or <strong>outcome space</strong>.</p>
 <ul class="simple">
 <li><p>A distinct set of outcomes means there cannot be two outcomes that can both occur at the same time (e.g., a coin is either lands heads or tails, it is either past 5:00 PM or before 5:00 PM).</p></li>
 </ul>
-</div>
-<div class="section" id="event">
+</section>
+<section id="event">
 <h2>Event<a class="headerlink" href="#event" title="Permalink to this headline">#</a></h2>
 <p>We need a way to describe joint outcomes (e.g., a dice rolls even can occur from three possible outcomes: 2, 3, 4). We call these joint outcomes <strong>events</strong>, although no strictly since any one outcome can also be an event.</p>
 <p>Thus, we define an event <span class="math notranslate nohighlight">\(A\)</span> to be a subset of the outcome space:</p>
 <div class="math notranslate nohighlight">
 \[A \subseteq \Omega \]</div>
-</div>
-<div class="section" id="probability">
+</section>
+<section id="probability">
 <h2>Probability<a class="headerlink" href="#probability" title="Permalink to this headline">#</a></h2>
 <p>What is the chance that an event occurred? Well, using the foundation we’ve just built, the chance of an event occurring must depend on the chance that each outcome occurs. The probability of one outcome is denoted as,</p>
 <div class="math notranslate nohighlight">
@@ -1230,8 +1234,8 @@ If it so happens that the probability of $P(\omega)$ is equal for all $\omega$ t
 $$ P(A) = \frac{\abs{A}}{\abs{\Omega}} $$
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

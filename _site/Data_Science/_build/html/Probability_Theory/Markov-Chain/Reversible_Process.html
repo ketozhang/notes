@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Reversible Process &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1185,14 +1189,14 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="reversible-process">
+  <section class="tex2jax_ignore mathjax_ignore" id="reversible-process">
 <h1>Reversible Process<a class="headerlink" href="#reversible-process" title="Permalink to this headline">#</a></h1>
 <p>A Markov chain is considered a reversible chain if its reverse sequence <span class="math notranslate nohighlight">\(Y_0, Y_1, \ldots, Y_n\)</span> has the same one-step transition probability as the forward sequence <span class="math notranslate nohighlight">\(X_0, X_1, \ldots, X_n\)</span>. This implies, a chain is reversible if the chain is in detailed balance with positive solution <span class="math notranslate nohighlight">\(\pi(i)\)</span> for all states <span class="math notranslate nohighlight">\(i\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[
 \pi(i) P(i,j) = \pi(j)P(j,i)
 \]</div>
-<div class="section" id="proof">
+<section id="proof">
 <h2>Proof<a class="headerlink" href="#proof" title="Permalink to this headline">#</a></h2>
 <p>Given a sequence, the probability of the next step in the reverse sequence can be related to the foward sequence</p>
 <div class="math notranslate nohighlight">
@@ -1218,13 +1222,13 @@ P(Y_{m+1} = j \mid Y_i = i) = \frac{\pi(j)}{\pi(i)}P(j,i)
 \[
 \pi(i) P(i,j) = \pi(j)P(j,i)
 \]</div>
-</div>
-<div class="section" id="birth-and-death-chain">
+</section>
+<section id="birth-and-death-chain">
 <h2>Birth and Death Chain<a class="headerlink" href="#birth-and-death-chain" title="Permalink to this headline">#</a></h2>
 <p>A birth and death is one that can only go to 3 states: up <span class="math notranslate nohighlight">\(i+1\)</span>, down <span class="math notranslate nohighlight">\(i-1\)</span>, and stay <span class="math notranslate nohighlight">\(i\)</span>.</p>
 <p>This simple process makes it not surprising that all birth and death chain are all reversible processes. As we can abritrarily swap out <span class="math notranslate nohighlight">\(i\)</span> and <span class="math notranslate nohighlight">\(k\)</span> and the process is reversed.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

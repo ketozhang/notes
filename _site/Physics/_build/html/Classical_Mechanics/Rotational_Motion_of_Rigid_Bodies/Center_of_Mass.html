@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Center of Mass &#8212; Keto | Physics</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1039,7 +1043,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="center-of-mass">
+  <section class="tex2jax_ignore mathjax_ignore" id="center-of-mass">
 <h1>Center of Mass<a class="headerlink" href="#center-of-mass" title="Permalink to this headline">#</a></h1>
 <!-- TOC -->
 <ul class="simple">
@@ -1063,7 +1067,7 @@ title="Print to PDF"
 <div class="math notranslate nohighlight">
 \[ \boxed{\mathbf{R} = \frac{1}{M}\sum_{\alpha = 1}^{N}{m_\alpha \mathbf r_\alpha}} \]</div>
 <p>The following section we will look at the properties of the center of mass.</p>
-<div class="section" id="external-force-point-particle-property">
+<section id="external-force-point-particle-property">
 <h2>External Force - Point Particle Property<a class="headerlink" href="#external-force-point-particle-property" title="Permalink to this headline">#</a></h2>
 <p>The center of mass is often very useful because we can always justify almost any rigid body as point particles. This is due to,</p>
 <div class="math notranslate nohighlight">
@@ -1071,8 +1075,8 @@ title="Print to PDF"
 \boxed{\mathbf F_\text{ext} = \dot{\mathbf P} = M\ddot{\mathbf{R}}}
 \end{split}\]</div>
 <p>Of course we’re assuming the mass does not change over time (part of rigid body definition).</p>
-</div>
-<div class="section" id="total-angular-momentum">
+</section>
+<section id="total-angular-momentum">
 <h2>Total Angular Momentum<a class="headerlink" href="#total-angular-momentum" title="Permalink to this headline">#</a></h2>
 <p>The total angular momentum <span class="math notranslate nohighlight">\(\mathbf J\)</span> is composed of the angular momentun of the CM (orbital angular momentum <span class="math notranslate nohighlight">\(\mathbf L\)</span>) and the angular momentum of each rigid body particle relative to the CM (spin angular momentum <span class="math notranslate nohighlight">\(\mathbf S\)</span>).</p>
 <div class="math notranslate nohighlight">
@@ -1085,7 +1089,7 @@ title="Print to PDF"
 \[ \mathbf r_\alpha' \equiv \mathbf{\mathbf r_\alpha - \mathbf R} \]</div>
 </li>
 </ul>
-<div class="section" id="proof">
+<section id="proof">
 <h3>Proof<a class="headerlink" href="#proof" title="Permalink to this headline">#</a></h3>
 <p>This is easily proven knowing that the total angular momentum is define as the angular momentum of each particle relative to some origin,</p>
 <div class="math notranslate nohighlight">
@@ -1098,8 +1102,8 @@ title="Print to PDF"
 <p>Doing so and crossing out zeroes gives,</p>
 <div class="math notranslate nohighlight">
 \[ \mathbf J = \underbrace{\vphantom{\sum}\mathbf R \times \mathbf P}_{\mathbf L} + \underbrace{\sum\mathbf {r}'_\alpha \times m_\alpha \dot{\mathbf r}_\alpha'}_{\mathbf S} \]</div>
-</div>
-<div class="section" id="relationship-with-torque">
+</section>
+<section id="relationship-with-torque">
 <h3>Relationship with Torque<a class="headerlink" href="#relationship-with-torque" title="Permalink to this headline">#</a></h3>
 <p>Let’s define the total torque applied to the system about the origin as <span class="math notranslate nohighlight">\(\boldsymbol \tau\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1107,12 +1111,12 @@ title="Print to PDF"
 <p>As you’ve guessed it, the total torque is composed of the torque acted upon the CM <span class="math notranslate nohighlight">\(\boldsymbol{\tau}_{CM}\)</span> and the torque acted upon each particle relative to the CM <span class="math notranslate nohighlight">\(\boldsymbol{\tau}_\text{rot}\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\boxed{ \boldsymbol{\tau} = \dot{\mathbf L} + \dot{\mathbf S} = \underbrace{\vphantom{\sum}\boldsymbol{R} \times \mathbf{F}_\text{ext}}_{\boldsymbol{\tau}_{CM}} + \underbrace{\sum{\mathbf{r}'_\alpha \times \mathbf F_\alpha^\text{ext}}}_{\boldsymbol\tau_\text{rot}} }\]</div>
-</div>
-<div class="section" id="id1">
+</section>
+<section id="id1">
 <h3>Proof<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
-</div>
-</div>
-<div class="section" id="total-kinetic-energy">
+</section>
+</section>
+<section id="total-kinetic-energy">
 <h2>Total Kinetic Energy<a class="headerlink" href="#total-kinetic-energy" title="Permalink to this headline">#</a></h2>
 <p>Similar to the angular momentum, the total kinetic energy is made up of the CM’s kinetic energy and the kinetic energy (only rotational) of each rigid body relative to the CM,</p>
 <div class="math notranslate nohighlight">
@@ -1124,17 +1128,17 @@ title="Print to PDF"
 \[ K = \frac{1}{2}\sum m_\alpha {\dot{\mathbf{r}}_\alpha'}^2 \tag{$\dot{\mathbf R} = 0$} \]</div>
 </li>
 </ul>
-<div class="section" id="id2">
+<section id="id2">
 <h3>Proof<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
-</div>
-</div>
-<div class="section" id="total-potential-energy">
+</section>
+</section>
+<section id="total-potential-energy">
 <h2>Total Potential Energy<a class="headerlink" href="#total-potential-energy" title="Permalink to this headline">#</a></h2>
 <p>The total potential energy is just the external potential energy of the CM. We can do so because we consider the internal potential as a zeropoint (there should be no differential potential energy for a system of rigid bodies).</p>
 <div class="math notranslate nohighlight">
 \[\boxed{ U = U_\text{ext} }\]</div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

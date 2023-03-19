@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Loss Function &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1253,12 +1257,12 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="loss-function">
+  <section class="tex2jax_ignore mathjax_ignore" id="loss-function">
 <h1>Loss Function<a class="headerlink" href="#loss-function" title="Permalink to this headline">#</a></h1>
 <p>The <strong>loss function</strong> is a function that describe the cost, error, or loss resulting from a choice of a model. Mathematically you may interpret this as the function that calculates the deviation of the model from the actual answer/system.</p>
 <p>Say for some data <span class="math notranslate nohighlight">\(y(x)\)</span> is estimated by a prediction (model) <span class="math notranslate nohighlight">\(\theta(x)\)</span>, then the loss function <span class="math notranslate nohighlight">\(L\)</span> takes in the two functions <span class="math notranslate nohighlight">\(L(\theta,y)\)</span> and computes the error.</p>
 <p>Still confused? Just go to the next section, this requires examples.</p>
-<div class="section" id="motivation">
+<section id="motivation">
 <h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h2>
 <p>A common way to measure error between some data and model is directly get the residual (subtract the two together). This subtraction may be written as some function (the loss function) as,</p>
 <div class="math notranslate nohighlight">
@@ -1270,10 +1274,10 @@ title="Print to PDF"
 <li><p><span class="math notranslate nohighlight">\(\hat \theta\)</span> : Best parameter that minimizes the loss function.</p></li>
 </ul>
 <p>Later on we will attempt to do better by either introducing other parameters (if it exists) or use other expansion like the power series of <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
-</div>
-<div class="section" id="types-of-loss-functions">
+</section>
+<section id="types-of-loss-functions">
 <h2>Types of Loss Functions<a class="headerlink" href="#types-of-loss-functions" title="Permalink to this headline">#</a></h2>
-<div class="section" id="absolute-loss-function">
+<section id="absolute-loss-function">
 <h3>Absolute Loss Function<a class="headerlink" href="#absolute-loss-function" title="Permalink to this headline">#</a></h3>
 <p>The <strong>absolute loss function</strong> denoted as <span class="math notranslate nohighlight">\(\Bbb{L}_1​\)</span> is defined as the <strong>residual</strong> or <strong>difference</strong> the data and model is given by,</p>
 <div class="math notranslate nohighlight">
@@ -1295,8 +1299,8 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="squared-distance-loss-function">
+</section>
+<section id="squared-distance-loss-function">
 <h3>Squared Distance Loss Function<a class="headerlink" href="#squared-distance-loss-function" title="Permalink to this headline">#</a></h3>
 <p>The Euclidean distance or square distance loss function denoted as <span class="math notranslate nohighlight">\(\Bbb{L}_2​\)</span> simply computes the distance between the data and the model. It may be written as,</p>
 <div class="math notranslate nohighlight">
@@ -1319,8 +1323,8 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="huber-loss-function">
+</section>
+<section id="huber-loss-function">
 <h3>Huber Loss Function<a class="headerlink" href="#huber-loss-function" title="Permalink to this headline">#</a></h3>
 <p>A popular loss function is the Huber loss that attempts to blend the two loss functions <span class="math notranslate nohighlight">\(\Bbb L_1\)</span> and <span class="math notranslate nohighlight">\(\Bbb L_2\)</span> by a piecewise function:</p>
 <div class="math notranslate nohighlight">
@@ -1331,8 +1335,8 @@ title="Print to PDF"
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\alpha\)</span> : a parameter that adjust how much of <span class="math notranslate nohighlight">\(\Bbb{L}_2\)</span> dominates the loss function. So at <span class="math notranslate nohighlight">\(\alpha \ll 1\)</span>, the loss function is similar to <span class="math notranslate nohighlight">\(\Bbb{L}_1\)</span>.</p></li>
 </ul>
-</div>
-<div class="section" id="discrete-loss-function">
+</section>
+<section id="discrete-loss-function">
 <h3>Discrete Loss Function<a class="headerlink" href="#discrete-loss-function" title="Permalink to this headline">#</a></h3>
 <p>A discrete loss function assigns a constant value if some error is made. A very common type of this loss is called the <strong>one-zero loss function</strong> or <strong>binary loss function</strong>.</p>
 <div class="math notranslate nohighlight">
@@ -1344,23 +1348,23 @@ L(\theta, y_i) =
 \end{cases}
 \end{split}\]</div>
 <p>Other discrete loss function can be built to portray for instance great loss for false negative versus small loss for false positives (e.g., medical diagnosis).</p>
-</div>
-</div>
-<div class="section" id="ensemble-loss-function">
+</section>
+</section>
+<section id="ensemble-loss-function">
 <h2>Ensemble Loss Function<a class="headerlink" href="#ensemble-loss-function" title="Permalink to this headline">#</a></h2>
 <p>Given <span class="math notranslate nohighlight">\(n\)</span> sample points and predictions <span class="math notranslate nohighlight">\((y,\hat y )\)</span> we’d like to get a value out of the loss for among every sample point. Take the loss as a vector <span class="math notranslate nohighlight">\(L\)</span> and apply some aggregation function <span class="math notranslate nohighlight">\(f\)</span> to get the <strong>ensemble loss function</strong>.
 $<span class="math notranslate nohighlight">\(
 \mathcal L = f(L)
 \)</span>$</p>
-<div class="section" id="risk-function">
+<section id="risk-function">
 <h3>Risk Function<a class="headerlink" href="#risk-function" title="Permalink to this headline">#</a></h3>
 <p>A common example of the an ensemble loss function is to take the expected value. This is called the <strong>risk function</strong>
 $<span class="math notranslate nohighlight">\(
 R(X,\theta) = \mathbb E[L]
 \)</span>$</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

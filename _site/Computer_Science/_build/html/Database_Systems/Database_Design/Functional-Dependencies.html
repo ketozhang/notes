@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Functional Dependencies &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1011,12 +1015,12 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="functional-dependencies">
+  <section class="tex2jax_ignore mathjax_ignore" id="functional-dependencies">
 <h1>Functional Dependencies<a class="headerlink" href="#functional-dependencies" title="Permalink to this headline">#</a></h1>
 <p>A functional dependence betweeen two attributes <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> are notated as <span class="math notranslate nohighlight">\(X \rightarrow Y\)</span>. This implies for any two rows <span class="math notranslate nohighlight">\(r_1\)</span> and <span class="math notranslate nohighlight">\(r_2\)</span> in the table,</p>
 <div class="math notranslate nohighlight">
 \[ \pi_X(r_1) = \pi_X(r_2) \implies \pi_Y(r_1) = \pi_Y(r_2) \]</div>
-<div class="section" id="keys">
+<section id="keys">
 <h2>Keys<a class="headerlink" href="#keys" title="Permalink to this headline">#</a></h2>
 <p>Functional dependency plays a role on the definition of keys.</p>
 <ul class="simple">
@@ -1035,8 +1039,8 @@ A minimal set of keys <span class="math notranslate nohighlight">\(K\)</span> th
 <li><p><strong>Primary Key</strong>
 A single candidate key.</p></li>
 </ul>
-</div>
-<div class="section" id="armstrong-s-axiom">
+</section>
+<section id="armstrong-s-axiom">
 <h2>Armstrong’s Axiom<a class="headerlink" href="#armstrong-s-axiom" title="Permalink to this headline">#</a></h2>
 <ol class="simple">
 <li><p>Reflectivity: <span class="math notranslate nohighlight">\(X \supseteq Y \implies X \rightarrow Y\)</span></p></li>
@@ -1047,8 +1051,8 @@ A single candidate key.</p></li>
 <ul class="simple">
 <li><p>Union and Decomposition: <span class="math notranslate nohighlight">\(X \rightarrow Y \land X \rightarrow Z \iff X \rightarrow YZ\)</span></p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

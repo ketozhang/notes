@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Join Queries &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1009,7 +1013,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="join-queries">
+  <section class="tex2jax_ignore mathjax_ignore" id="join-queries">
 <h1>Join Queries<a class="headerlink" href="#join-queries" title="Permalink to this headline">#</a></h1>
 <p>The standard SQL join are part of the <code class="docutils literal notranslate"><span class="pre">FROM</span></code> clause. The syntax is,</p>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="n">tbl1</span><span class="o">&gt;</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="k">INNER</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">NATURAL</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">&lt;</span><span class="k">LEFT</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">RIGHT</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="k">FULL</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&lt;</span><span class="k">OUTER</span><span class="o">&gt;</span><span class="p">]</span><span class="w"></span>
@@ -1017,7 +1021,7 @@ title="Print to PDF"
 <span class="k">ON</span><span class="w"> </span><span class="o">&lt;</span><span class="n">qualification_list</span><span class="o">&gt;</span><span class="w"></span>
 </pre></div>
 </div>
-<div class="section" id="inner-or-natural-join">
+<section id="inner-or-natural-join">
 <h2>Inner or Natural Join<a class="headerlink" href="#inner-or-natural-join" title="Permalink to this headline">#</a></h2>
 <p>An <code class="docutils literal notranslate"><span class="pre">INNER</span> <span class="pre">JOIN</span></code> joins the intersection of two or more tables for columns determined by the <code class="docutils literal notranslate"><span class="pre">ON</span></code> clause.</p>
 <p>While, <code class="docutils literal notranslate"><span class="pre">NATURAL</span> <span class="pre">JOIN</span></code> is a special case of <code class="docutils literal notranslate"><span class="pre">INNER</span> <span class="pre">JOIN</span></code> which assumes that the <code class="docutils literal notranslate"><span class="pre">ON</span></code> clause is for all columns that share the same name.</p>
@@ -1027,12 +1031,12 @@ title="Print to PDF"
 <span class="k">WHERE</span><span class="w"> </span><span class="o">&lt;</span><span class="n">tbl1</span><span class="o">&gt;</span><span class="p">.</span><span class="o">&lt;</span><span class="n">col1</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;</span><span class="n">tbl2</span><span class="o">&gt;</span><span class="p">.</span><span class="o">&lt;</span><span class="n">col2</span><span class="o">&gt;</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="outer-join">
+</section>
+<section id="outer-join">
 <h2>Outer Join<a class="headerlink" href="#outer-join" title="Permalink to this headline">#</a></h2>
 <p>An outer join always return all rows of the <code class="docutils literal notranslate"><span class="pre">LEFT</span></code> table, <code class="docutils literal notranslate"><span class="pre">RIGHT</span></code> table, or <code class="docutils literal notranslate"><span class="pre">FULL</span></code> (union, both) tables. Matched rows are combined as one row and unmatched rows replaces the data with <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

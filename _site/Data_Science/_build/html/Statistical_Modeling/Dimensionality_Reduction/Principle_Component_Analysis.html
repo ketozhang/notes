@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Principle Component Analysis &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1225,10 +1229,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="principle-component-analysis">
+  <section class="tex2jax_ignore mathjax_ignore" id="principle-component-analysis">
 <h1>Principle Component Analysis<a class="headerlink" href="#principle-component-analysis" title="Permalink to this headline">#</a></h1>
 <p><strong>Principle Component Analysis (PCA)</strong> reduces the dimension by projecting onto another subspace that captures as much variation of the data as possible.</p>
-<div class="section" id="gaussian-components">
+<section id="gaussian-components">
 <h2>Gaussian Components<a class="headerlink" href="#gaussian-components" title="Permalink to this headline">#</a></h2>
 <p>Given cenetered data <span class="math notranslate nohighlight">\(X\)</span>, the covariance matrix is given by</p>
 <div class="math notranslate nohighlight">
@@ -1236,16 +1240,16 @@ title="Print to PDF"
 \hat \Sigma = \frac{1}{n}X^\top X
 \]</div>
 <p>Project <span class="math notranslate nohighlight">\(X\)</span> onto the principle coordinates of dimension <span class="math notranslate nohighlight">\(k\)</span> which are the eigenvectors <span class="math notranslate nohighlight">\(v_1 \ldots v_k\)</span> associated with a set of the largest eigenvalues <span class="math notranslate nohighlight">\(\lambda_1 \ldots \lambda_k\)</span></p>
-</div>
-<div class="section" id="variability-accounted">
+</section>
+<section id="variability-accounted">
 <h2>Variability Accounted<a class="headerlink" href="#variability-accounted" title="Permalink to this headline">#</a></h2>
 <p>The percentage of variability accounted for is given by the proportion of the sum of the eigenvalues accounted for.</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{\sum_i^k \lambda_i}{\sum_i^d \lambda_i}
 \]</div>
-</div>
-<div class="section" id="general-pca">
+</section>
+<section id="general-pca">
 <h2>General PCA<a class="headerlink" href="#general-pca" title="Permalink to this headline">#</a></h2>
 <p>In general, a gaussian fit to the data is not needed. The goal of PCA once again is to find the direction of projection that maximizes variance. This can be written as a maximization problem:</p>
 <div class="math notranslate nohighlight">
@@ -1258,20 +1262,20 @@ title="Print to PDF"
 <p>The identity is the Raleigh quotient of <span class="math notranslate nohighlight">\(X^\top X\)</span> and <span class="math notranslate nohighlight">\(w\)</span>. Therefore if <span class="math notranslate nohighlight">\(w\)</span> is an eigenvector <span class="math notranslate nohighlight">\(v_i\)</span> then the Rayleigh quotient is <span class="math notranslate nohighlight">\(\lambda_i\)</span>.</p>
 <p>Restricting <span class="math notranslate nohighlight">\(w\)</span> to be an eigenvector <span class="math notranslate nohighlight">\(v_d\)</span> maximizes the variance to <span class="math notranslate nohighlight">\(\lambda_d / n\)</span></p>
 <p>Not restricting <span class="math notranslate nohighlight">\(w\)</span> to be an eigenvector, because <span class="math notranslate nohighlight">\(w\)</span> is a linear combination of the eigenvectors <span class="math notranslate nohighlight">\(v\)</span>, the Raleyigh quotient is a linear combination of the eigenvalues.</p>
-</div>
-<div class="section" id="deriving-pca-using-projection-error">
+</section>
+<section id="deriving-pca-using-projection-error">
 <h2>Deriving PCA Using Projection Error<a class="headerlink" href="#deriving-pca-using-projection-error" title="Permalink to this headline">#</a></h2>
 <p>The sum of squared error is the projection error of PCA. We want to minimize the projection error.</p>
 <div class="math notranslate nohighlight">
 \[
 \min \sum_{i=1}^n \left | X_i - X_i' \right |^2 = \sum|X_i|^2 - \underbrace{\sum\left(X_i \cdot \frac{w}{|w|}\right)^2}_\text{Variance}
 \]</div>
-</div>
-<div class="section" id="eigenfaces">
+</section>
+<section id="eigenfaces">
 <h2>Eigenfaces<a class="headerlink" href="#eigenfaces" title="Permalink to this headline">#</a></h2>
 <p>Given <span class="math notranslate nohighlight">\(X\)</span> containing <span class="math notranslate nohighlight">\(n\)</span> faces of <span class="math notranslate nohighlight">\(d\)</span> grayscale pixels each, find the nearest neighbor to the training set. This is a slow process of <span class="math notranslate nohighlight">\(\Theta(nd)\)</span>. PCA can reduce this dimension by projection <span class="math notranslate nohighlight">\(d\)</span> to <span class="math notranslate nohighlight">\(d'\)</span>.</p>
-</div>
-<div class="section" id="random-projections">
+</section>
+<section id="random-projections">
 <h2>Random Projections<a class="headerlink" href="#random-projections" title="Permalink to this headline">#</a></h2>
 <p>An alternative to PCA as a preprocess. Choosing a small <span class="math notranslate nohighlight">\(\epsilon\)</span> and <span class="math notranslate nohighlight">\(\delta\)</span> create a random subspace <span class="math notranslate nohighlight">\(S \in \mathbb R^d\)</span> of dimension <span class="math notranslate nohighlight">\(k\)</span> where</p>
 <div class="math notranslate nohighlight">
@@ -1291,8 +1295,8 @@ k = \frac{2 \log \delta}{\epsilon^3 / 3 - \epsilon^2 / 2}
 \varepsilon \in [0.02, 0.5]\\
 \delta \in [1/n^3, 0.05]
 \end{split}\]</div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Binary Search Tree &#8212; Keto | Compute Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1013,17 +1017,17 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="binary-search-tree">
+  <section class="tex2jax_ignore mathjax_ignore" id="binary-search-tree">
 <h1>Binary Search Tree<a class="headerlink" href="#binary-search-tree" title="Permalink to this headline">#</a></h1>
 <p>A binary search tree is a binary tree (each element having at most two child nodes) and requires all parents to be greater than their left child nodes and less than or equal to their right child node.</p>
-<div class="section" id="tree">
+<section id="tree">
 <h2>2-3 Tree<a class="headerlink" href="#tree" title="Permalink to this headline">#</a></h2>
 <p>A 2-3 tree is a binary search tree that allows a node to have store two values. Upon insertion of a value that is a candidate of a 2-value node, certain resolutions must be made such that the following property is attained</p>
 <ul class="simple">
 <li><p>Tree is follows binary search tree</p></li>
 <li><p>Upon insertion, the tree cannot change in height unless all nodes are have 2 values.</p></li>
 </ul>
-<div class="section" id="insertion">
+<section id="insertion">
 <h3>Insertion<a class="headerlink" href="#insertion" title="Permalink to this headline">#</a></h3>
 <p>The insertion algorithm goes as so:</p>
 <ol class="simple">
@@ -1032,9 +1036,9 @@ title="Print to PDF"
 <li><p>If conflicted with a 2-value node, take the median value and bump it to the parent. The remain two values, split it into two separate nodes.</p></li>
 <li><p>Bubble up repeating step 3 until there is no conflicts.</p></li>
 </ol>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

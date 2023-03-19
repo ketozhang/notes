@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Ridge Regression &#8212; Keto | Data Science</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -34,10 +35,13 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -1184,7 +1188,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="ridge-regression">
+  <section class="tex2jax_ignore mathjax_ignore" id="ridge-regression">
 <h1>Ridge Regression<a class="headerlink" href="#ridge-regression" title="Permalink to this headline">#</a></h1>
 <p>The ridge regression is regression with the <span class="math notranslate nohighlight">\(L_2\)</span> regularization,
 $<span class="math notranslate nohighlight">\(
@@ -1199,7 +1203,7 @@ $<span class="math notranslate nohighlight">\(
 <li><p>Guarantees a unique solution because <span class="math notranslate nohighlight">\(\mathcal L(\theta)\)</span> is always convex even if <span class="math notranslate nohighlight">\(L(\theta)\)</span> is not (for least-square it is).</p></li>
 <li><p>Reduces overfitting by penalizing large parameters.</p></li>
 </ol>
-<div class="section" id="positive-definite-normal-equation">
+<section id="positive-definite-normal-equation">
 <h2>Positive Definite Normal Equation<a class="headerlink" href="#positive-definite-normal-equation" title="Permalink to this headline">#</a></h2>
 <p>The addition of the <span class="math notranslate nohighlight">\(L_2\)</span> regularization guarantees that <span class="math notranslate nohighlight">\(\mathcal L(\theta)\)</span> is convex simply because the  matrices in the normal equation are guaranteed to be positive definite.</p>
 <p>Let’s take for example the least-squares loss,
@@ -1213,8 +1217,8 @@ The normal equation is given by,
 \theta^* = \frac{2|y-X\theta^*|^2}{\lambda} X^\top \left({X\theta^* - y}\right)
 \end{gather}
 \)</span>$</p>
-</div>
-<div class="section" id="relationship-to-map">
+</section>
+<section id="relationship-to-map">
 <h2>Relationship to MAP<a class="headerlink" href="#relationship-to-map" title="Permalink to this headline">#</a></h2>
 <p>The addition of the <span class="math notranslate nohighlight">\(L_2\)</span> regularization is equivalent of turning an MLE problem to an MAP problem (i.e., by adding a prior).</p>
 <p>Once again we use the least-squares loss as an example. The least-squares loss is the log-likelihood function for the Gaussian likelihood. We simply attempt to write the log-posterior problem with this likelihood,
@@ -1225,8 +1229,8 @@ $<span class="math notranslate nohighlight">\(
 \end{align}
 \)</span><span class="math notranslate nohighlight">\(
 Thus the prior \)</span>P(\theta) \propto \lambda |\theta|^2$.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
