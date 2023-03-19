@@ -1,5 +1,5 @@
 # Notes
-Personal archive of notes taken for education
+Personal archive of notes taken for education.
 
 ## Deploying
 
