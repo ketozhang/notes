@@ -17,6 +17,7 @@ jobs:
         with:
           repository: "ketozhang/Journal"
           path: $GITHUB_WORKSPACE/src
+          ssh-key: ${{ secrets.ID_RSA }}
 
       - name: Setup Python
         uses: actions/setup-python@v4
