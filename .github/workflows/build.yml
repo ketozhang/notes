@@ -14,8 +14,9 @@ jobs:
 
       - name: Checkout ketozhang/Journal
         uses: actions/checkout@v3
-        repository: "https://github.com/ketozhang/Journal"
-        path: $GITHUB_WORKSPACE/src
+        with:
+          repository: "https://github.com/ketozhang/Journal"
+          path: $GITHUB_WORKSPACE/src
 
       - name: Setup Python
         uses: actions/setup-python@v4
