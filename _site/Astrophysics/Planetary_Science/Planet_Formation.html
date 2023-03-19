@@ -1,0 +1,1043 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Planet Formation &#8212; Keto | Astrophysics</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Planetary Temperature" href="planetary-temperature.html" />
+    <link rel="prev" title="Life in the Universe" href="Life_in_the_Universe.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Keto | Astrophysics</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Astrophysics
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Astrobiology/index.html">
+   Astrobiology
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Astrobiology/Life_in_the_Universe.html">
+     Life in the Universe
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../AstroLab/index.html">
+   Astrolab
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AstroLab/Lecture1.html">
+     Lecture 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AstroLab/Lecture2.html">
+     Lecture 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AstroLab/Lecture3.html">
+     Lecture 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AstroLab/Lecture4.html">
+     Lecture 4
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AstroLab/Presentation.html">
+     Presentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AstroLab/Stan.html">
+     Stan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../AstroLab/Visualization.html">
+     Visualization
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Cosmology/index.html">
+   Cosmology
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Cosmology/Cosmological_Distances.html">
+     Cosmological Distances
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Cosmology/Cosmological_Redshift.html">
+     Cosmological Redshift
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Cosmology/Expanding_Universe.html">
+     Expanding Universe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Cosmology/Gravitational_Lensing.html">
+     Gravitational Lensing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Cosmology/Hubble_Constant.html">
+     Hubble Constant
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Cosmology/Friedmann_Equation/index.html">
+     Friedmann Equation
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Cosmology/Friedmann_Equation/Energy_Density.html">
+       Energy Density
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Cosmology/Friedmann_Equation/Fluid_Equation.html">
+       Proof - Newtonian
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Cosmology/Friedmann_Equation/Friedmann_Equation.html">
+       Friedmann Equation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Cosmology/Friedmann_Equation/Friedmann_Metric.html">
+       Friedmann Robertson Walker Metric
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Cosmology/Friedmann_Equation/Model_Universe.html">
+       Model Universe
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Cosmology/Relativity/index.html">
+     Relativity
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Cosmology/Relativity/Curvature_Constant.html">
+       Curvature Constant
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Cosmology/Relativity/Einstein%27s_Field_Equations.html">
+       Einstein’s Field Equation
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Cosmology/Relativity/General_Relativity.html">
+       General Relativity
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Cosmology/Relativity/Special_Relativity.html">
+       Special Relativity
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Exoplanet/index.html">
+   Exoplanet
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Exoplanet/Microlensing.html">
+     Microlensing
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Orbital_Mechanics/index.html">
+   Orbital Mechanics
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Orbital_Mechanics/Satellite_State.html">
+     Satellite State
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Orbital_Mechanics/Specific_Angular_Momentum.html">
+     Specific Angular Momentum
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Orbital_Mechanics/Specific_Mechanical_Energy.html">
+     Specific Mechanical Energy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Orbital_Mechanics/Two_Body_Equation.html">
+     Two Body Equation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Orbital_Mechanics/Vector_Equation.html">
+     Vector Equation
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Orbital_Mechanics/Keplers_Law/index.html">
+     Keplers Law
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Orbital_Mechanics/Keplers_Law/Keplers_First_Law.html">
+       Kepler’s First Law
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Orbital_Mechanics/Keplers_Law/Keplers_Second_Law.html">
+       Kepler’s Second Law
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Orbital_Mechanics/Keplers_Law/Keplers_Third_Law.html">
+       Kepler’s Third Law
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Orbital_Mechanics/Orbital_Functions/index.html">
+     Orbital Functions
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Orbital_Mechanics/Orbital_Functions/Ellipse.html">
+       Ellipse
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Orbital_Mechanics/Orbital_Maneuvering/index.html">
+     Orbital Maneuvering
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Orbital_Mechanics/Orbital_Maneuvering/Coplanar__Maneuvers.html">
+       Coplanar Maneuvers
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Photometry/index.html">
+   Photometry
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Photometry/Extinction.html">
+     Extinction
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Photometry/Flux.html">
+     Flux
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Planetary Science
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="Asteroids.html">
+     Nomenclature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Exoplanets.html">
+     Exoplanets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Life_in_the_Universe.html">
+     Life in the Universe
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Planet Formation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="planetary-temperature.html">
+     Planetary Temperature
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Planetary_Rings.html">
+     Planetary Rings
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Supernovae/index.html">
+   Supernovae
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Supernovae/Type_Ia/index.html">
+     Type Ia
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+    <label for="toctree-checkbox-14">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Supernovae/Type_Ia/Standardization.html">
+       Tripp Standardization
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../Variable_Stars/index.html">
+   Variable Stars
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Variable_Stars/Cepheid.html">
+     Cepheid
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Variable_Stars/Period_Luminosity_Relation.html">
+     Period luminosity Relation
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/Planetary_Science/Planet_Formation.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Planet Formation
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#star-formation">
+   Star Formation
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#protoplanetary-disk">
+   Protoplanetary Disk
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#infall-stage">
+     Infall Stage
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#disk-dynamical-evolution">
+     Disk Dynamical Evolution
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chemical-evolution">
+     Chemical Evolution
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#equilibrium-concentration">
+       Equilibrium Concentration
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clearing-stage">
+     Clearing Stage
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solid-bodies-formation">
+   Solid Bodies Formation
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#planetesimal-formation">
+     Planetesimal Formation
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#planetesimals-growth">
+     Planetesimals Growth
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#planetesimal-to-planets">
+     Planetesimal to Planets
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Planet Formation</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Planet Formation
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#star-formation">
+   Star Formation
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#protoplanetary-disk">
+   Protoplanetary Disk
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#infall-stage">
+     Infall Stage
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#disk-dynamical-evolution">
+     Disk Dynamical Evolution
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#chemical-evolution">
+     Chemical Evolution
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#equilibrium-concentration">
+       Equilibrium Concentration
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clearing-stage">
+     Clearing Stage
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solid-bodies-formation">
+   Solid Bodies Formation
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#planetesimal-formation">
+     Planetesimal Formation
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#planetesimals-growth">
+     Planetesimals Growth
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#planetesimal-to-planets">
+     Planetesimal to Planets
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="planet-formation">
+<h1>Planet Formation<a class="headerlink" href="#planet-formation" title="Permalink to this headline">#</a></h1>
+<ol class="simple">
+<li><p><a class="reference external" href="#planet-formation">Planet Formation</a></p></li>
+<li><p><a class="reference external" href="#star-formation">Star Formation</a></p></li>
+<li><p><a class="reference external" href="#protoplanetary-disk">Protoplanetary Disk</a></p>
+<ol class="simple">
+<li><p><a class="reference external" href="#infall-stage">Infall Stage</a></p></li>
+<li><p><a class="reference external" href="#disk-dynamical-evolution">Disk Dynamical Evolution</a></p></li>
+<li><p><a class="reference external" href="#chemical-evolution">Chemical Evolution</a></p>
+<ol class="simple">
+<li><p><a class="reference external" href="#equilibrium-concentration">Equilibrium Concentration</a></p></li>
+</ol>
+</li>
+<li><p><a class="reference external" href="#clearing-stage">Clearing Stage</a></p></li>
+</ol>
+</li>
+<li><p><a class="reference external" href="#solid-bodies-formation">Solid Bodies Formation</a></p>
+<ol class="simple">
+<li><p><a class="reference external" href="#planetesimal-formation">Planetesimal Formation</a></p></li>
+<li><p><a class="reference external" href="#planetesimals-growth">Planetesimals Growth</a></p></li>
+<li><p><a class="reference external" href="#planetesimal-to-planets">Planetesimal to Planets</a></p></li>
+</ol>
+</li>
+</ol>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="star-formation">
+<h1>Star Formation<a class="headerlink" href="#star-formation" title="Permalink to this headline">#</a></h1>
+<p>Star formation will covered <span class="xref myst">here</span></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="protoplanetary-disk">
+<h1>Protoplanetary Disk<a class="headerlink" href="#protoplanetary-disk" title="Permalink to this headline">#</a></h1>
+<p>The protoplanetary disk forms from the interstellar medium that are leftovers of the star formation. There are three stages of the disk.</p>
+<ol class="simple">
+<li><p>Infall Stage</p></li>
+<li><p>Disk Dynamical and Chemical Evolution</p></li>
+<li><p>Clearing Stage</p></li>
+</ol>
+<section id="infall-stage">
+<h2>Infall Stage<a class="headerlink" href="#infall-stage" title="Permalink to this headline">#</a></h2>
+<p>The first stage, <strong>infall stage</strong>, occurs when molecular cloud core collapse on its own weight (gravitational inward force overpowers all) forming a protostar.</p>
+<ul class="simple">
+<li><p>This stage will occur until all cloud materials are consumed or an external force stops it (i.e., stellar winds). Overall the timescale for this stage is the <strong>free-fall time</strong>.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+t_\text{ff} = \left(\frac{3\pi}{32 G\rho} \right)^{1/2}
+\]</div>
+<ul class="simple">
+<li><p>Denser area collapse first therefore the collapse is inside out</p></li>
+<li><p>Low angular momentum particles would be part of the protostar and it stars spinning.</p></li>
+<li><p>High angular momentum particles will not reach the center due to centrifugal force. This forms a disk for the planets to form.</p></li>
+<li><p>The kinetic energy of the molecular cloud is distributed into gravitational energy and thermal energy (by the virial theorem). The thermal energy quickly dissipates through radiative cooling.<br />
+The amount of energy per unit mass is given by,</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+    E_k = E_T =  \frac{GM_\star m}{2d}\\
+\end{aligned}
+\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(v_c\)</span> - circular velocity<br />
+<span class="math notranslate nohighlight">\(d\)</span> - orbital distance</p>
+</section>
+<section id="disk-dynamical-evolution">
+<h2>Disk Dynamical Evolution<a class="headerlink" href="#disk-dynamical-evolution" title="Permalink to this headline">#</a></h2>
+<p>A significant amount of the material fails to reach the protostar thus end up at the disk.</p>
+<ul class="simple">
+<li><p>Angular moment and mass are transported in this stage</p>
+<ul>
+<li><p><strong>Magnetic Torque</strong>:<br />
+If ionic material are present, angular momentum will disperse to the outer rings due to magnetic field lines.</p>
+<ul>
+<li><p>This effect is called <strong>corotation</strong>:<br />
+Materials orbiting more rapidly than the star’s spin period loses angular momentum thus transferred to slower orbiting portions (outwards since inwards is hotter and faster)</p></li>
+</ul>
+</li>
+<li><p><strong>Gravitational Torques</strong><br />
+Spiral density waves may form distribute mass until stability limiting the disk mass <span class="math notranslate nohighlight">\(M_\text{disk} \le M_\star\)</span>. If the protoplanet are large enough, they may excite the density waves at resonant locations to transfer angular momentum outwards.</p></li>
+<li><p><strong>Viscous Torques</strong><br />
+Angular momentum transfer outward due to faster moving molecules at the inner disk colliding with slower moving outer disk.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="chemical-evolution">
+<h2>Chemical Evolution<a class="headerlink" href="#chemical-evolution" title="Permalink to this headline">#</a></h2>
+<p>Chemical evolution (mainly molecular) is crucial to determining what materials are available for planetesimals to form.</p>
+<section id="equilibrium-concentration">
+<h3>Equilibrium Concentration<a class="headerlink" href="#equilibrium-concentration" title="Permalink to this headline">#</a></h3>
+<p>As the gas in the disk starts to cool, molecules begin to form abundantly between 1200-1300 K (heavier molecule mainly liquid or gas) and below 200 K (lighter molecule mainly gas)</p>
+</section>
+</section>
+<section id="clearing-stage">
+<h2>Clearing Stage<a class="headerlink" href="#clearing-stage" title="Permalink to this headline">#</a></h2>
+<p>Later on the gas of the protoplanetary disk must be cleared (evident since there very little gas between planets). The two cause is theorize to be:</p>
+<ul class="simple">
+<li><p>UV radiation from nearby stars</p></li>
+<li><p>Unstable highly active protostar</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="solid-bodies-formation">
+<h1>Solid Bodies Formation<a class="headerlink" href="#solid-bodies-formation" title="Permalink to this headline">#</a></h1>
+<section id="planetesimal-formation">
+<h2>Planetesimal Formation<a class="headerlink" href="#planetesimal-formation" title="Permalink to this headline">#</a></h2>
+<p>Small sized solid body, <strong>planetesimals</strong>, are formed from the cooled grains.</p>
+<ul class="simple">
+<li><p>Small solid grains slowly sediment (disperse) out towards the mid-plane of the disk due to the vertical gravitational component of the star.</p></li>
+<li><p>mm to cm size grains form at areas further from the mid-plane due to the drop of sedimentation</p></li>
+<li><p>cm to km are not well known</p></li>
+<li><p>km sized planetesimals grow due to orbiting faster (at Keplerian speed) than the gas (slower because there is a pressure gradient) feeling a drag force.</p>
+<ul>
+<li><p>In Keplerian orbit if an object’s velocity decreases it would spiral inwards</p></li>
+<li><p>Planetesimals would accrete further by collecting mass as it travels.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="planetesimals-growth">
+<h2>Planetesimals Growth<a class="headerlink" href="#planetesimals-growth" title="Permalink to this headline">#</a></h2>
+<p>The planetesimal will grow (accrete) as it accumulate dust</p>
+<ul class="simple">
+<li><p>Planetesimal will be gravitationally bound if the rebound velocity <span class="math notranslate nohighlight">\(v_\text{rb}\)</span> with other object is less than the escape velocity <span class="math notranslate nohighlight">\(v_\text{rb}&lt;v_e\)</span>. The rebound velocity depends on the <strong>collision velocity</strong> (<span class="math notranslate nohighlight">\(v_i\)</span>) and the <strong>coefficient of restitution</strong> (<span class="math notranslate nohighlight">\(\epsilon\)</span>),</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{aligned}
+    v_\text{rb} &amp;= \epsilon v_i\\
+    v_i &amp;= \sqrt{v_\infty^2 + v_e^2}\\
+    v_e &amp;= \sqrt{\frac{2G(m_1+m_2)}{R_1+R_2}}
+\end{aligned}
+\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(v_\infty\)</span> - the velocity where the two masses do not gravitationally effect each other.</p>
+<ul class="simple">
+<li><p>Accretion rate for the planetesimal is comparable to its collision rate given as a mass rate,</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{aligned}
+    \frac{\rm{d} M}{\rm{d} t} &amp;= \rho_s v \pi R^2 \mathcal{F}_g\\
+    \mathcal{F}_g &amp;= \left(\frac{b_\text{max}}{a_\text{per}}\right)^2 = 1 + \left(\frac{v_e}{v_\infty}\right)^2
+\end{aligned}
+\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(v\)</span> - average relatively velocity between the large (may be called a <strong>planet embryo</strong>) and small planetesimal<br />
+<span class="math notranslate nohighlight">\(\rho_s\)</span> - mass density of small body<br />
+<span class="math notranslate nohighlight">\(\mathcal{F}_g\)</span> - gravitational enhancement factor<br />
+<span class="math notranslate nohighlight">\(b_\text{max}\)</span> - impact parameter (a distance) just when the two bodies are about to hit.<br />
+<span class="math notranslate nohighlight">\(a_\text{per}\)</span> - periapse distance</p>
+<ul class="simple">
+<li><p>Gravitational enhancement factor determines the rate of growth such that:<br />
+<span class="math notranslate nohighlight">\(\dot M \propto R^2: v&gt;v_e\)</span><br />
+<span class="math notranslate nohighlight">\(\dot M \propto R^4: v\ll v_e\)</span></p></li>
+<li><p>If the planetesimal is much larger than any other planetesimal around it; it may undergo a <strong>runaway growth</strong> where:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\dot M\propto M^{4/3}m^{-2/3}\)</span>: If velocity dispersion is governed by planetesimal mass <span class="math notranslate nohighlight">\(m\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\dot M \propto M^{2/3}\)</span>: If the massive planetesimal dominate the stirring.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="planetesimal-to-planets">
+<h2>Planetesimal to Planets<a class="headerlink" href="#planetesimal-to-planets" title="Permalink to this headline">#</a></h2>
+<p>Once the large planetesimal (planet embryo) accumulate enough mass such that there are not much surrounding planetesimals to vary its velocity.</p>
+<ul class="simple">
+<li><p>The timescale for a planet formation is <span class="math notranslate nohighlight">\(t\approx 10^8\)</span> such that 2-5 planets are fully formed.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Planetary_Science"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="Life_in_the_Universe.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Life in the Universe</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="planetary-temperature.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Planetary Temperature</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Keto D. Zhang<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
