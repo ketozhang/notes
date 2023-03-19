@@ -1,1 +1,0 @@
-# The Schrodinger Equation
