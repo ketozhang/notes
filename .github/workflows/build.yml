@@ -30,7 +30,7 @@ jobs:
         run: pip install -r requirements.lock
 
       - name: Build site
-        run: make clean all
+        run: make -j 8 clean all
 
       - name: Commit files
         run: |
