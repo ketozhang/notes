@@ -1,6 +1,6 @@
 SRC_PATH = src/Notes
 BUILD_PATH = _site
-_NOTEBOOKS = Astrophysics Computer_Science Data_Science Finance Mathematics Physics Others
+_NOTEBOOKS = Astrophysics Computer_Science Data_Science Physics Others # Finance Mathematics
 
 ROOT_PAGES = $(_ROOT_PAGES:%=$(BUILD_PATH)/%)
 NOTEBOOKS = $(_NOTEBOOKS:%=$(BUILD_PATH)/%)  # _site/Astrophyics
