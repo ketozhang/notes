@@ -1,0 +1,41 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: Build static content from ketozhang/Journal
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v3
+
+      - name: Checkout ketozhang/Journal
+        uses: actions/checkout@v3
+        repository: "https://github.com/ketozhang/Journal"
+        path: $GITHUB_WORKSPACE/src
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10.7'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.lock
+
+      - name: Build site
+        run: make all
+
+      - name: Commit files
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -a -m "[ci] Pull and build sources from https://github.com/ketozhang/Journal"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
