@@ -3,11 +3,10 @@ BUILD_PATH = _build
 SITE_PATH = _site
 _NOTEBOOKS = Astrophysics Computer_Science Data_Science Physics Others # Finance Mathematics
 
-ROOT_PAGE = $(SITE_PATH)/index.html
 NOTEBOOKS = $(_NOTEBOOKS:%=$(SITE_PATH)/%)  # _site/Astrophyics
 TOCS = $(_NOTEBOOKS:%=%/_toc.yml)
 
-build : $(ROOT_PAGE) $(NOTEBOOKS)
+build : $(NOTEBOOKS)
 
 help:
 	@echo "all      Build site"
@@ -22,10 +21,6 @@ clean:
 
 
 tocs : $(TOCS)
-
-$(ROOT_PAGE): index.html
-	mkdir -p $(@D)
-	cp $< $@
 
 $(SITE_PATH)/%: $(BUILD_PATH)/%
 	mkdir -p $(@D)
