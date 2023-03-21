@@ -1,1 +1,0 @@
-#  Friedmann Equation

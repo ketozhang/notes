@@ -1,1 +1,0 @@
-# Adiabatic Approxmation
