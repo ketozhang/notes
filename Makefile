@@ -3,7 +3,7 @@ BUILD_PATH = _build
 SITE_PATH = _site
 _NOTEBOOKS = Astrophysics Computer_Science Data_Science Physics Others # Finance Mathematics
 
-NOTEBOOKS = $(_NOTEBOOKS:%=$(SITE_PATH)/%)  # e.g., _site/Astrophyics
+NOTEBOOKS = $(_NOTEBOOKS:%=$(SITE_PATH)/%/index.html)  # e.g., _site/Astrophyics/index.html
 TOCS = $(_NOTEBOOKS:%=%/_toc.yml)
 
 build : $(NOTEBOOKS)
