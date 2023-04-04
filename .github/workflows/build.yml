@@ -41,7 +41,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add _site/
-          git commit -m "[ci] Pull and build sources from https://github.com/ketozhang/Journal"
+          git diff-index --quiet HEAD || git commit -am "[ci] Pull and build sources from https://github.com/ketozhang/Journal"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
