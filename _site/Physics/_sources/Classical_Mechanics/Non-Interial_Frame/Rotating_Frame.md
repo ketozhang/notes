@@ -72,4 +72,3 @@ $$
 * $\mathbf F_\text{cor}$ : The **coriolis force**
 * $\mathbf F_\text{cf}$ : The **centrifugal force** notice that we may deduce the equation's magntiude as something very familiar, the centripetal velocity $v_\text{cf}$ as $F_\text{cf} = -mv_\text{cf}\Omega$. This is centrifugal because of the negative sign on the centripetal velocity you're familiar with.
 * $\mathbf F$ : The force apprent to observers in the rotating frame $S$, notice that it is no longer simply $\mathbf F = m \mathbf a$ but the extra terms which most people call **ficticious force**
----
