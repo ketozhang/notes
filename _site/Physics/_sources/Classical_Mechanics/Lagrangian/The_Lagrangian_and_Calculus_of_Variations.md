@@ -1,5 +1,3 @@
-#  The Lagrangian and Calculus of Uariations
-
 Let's begin with motivation of the use of calculus of variations in physics by Fermat's Principle.
 
 ---
