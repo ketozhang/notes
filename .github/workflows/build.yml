@@ -39,7 +39,7 @@ jobs:
         run: curl -LsSf https://astral.sh/uv/install.sh | sh
 
       - name: Install Python dependencies
-        run: uv pip sync -r requirements.lock
+        run: uv pip sync requirements.lock
         env:
           UV_SYSTEM_PYTHON: 1
 
