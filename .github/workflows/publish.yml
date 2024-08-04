@@ -6,6 +6,7 @@ on:
     workflows: ["Build pages"]
     types:
       - completed
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -16,13 +17,14 @@ permissions:
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
+# Allow only latest publish pages to run
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
   deploy:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
