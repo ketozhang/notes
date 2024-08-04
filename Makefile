@@ -6,6 +6,8 @@ _NOTEBOOKS = Astrophysics Computer_Science Data_Science Physics Others # Finance
 NOTEBOOKS = $(_NOTEBOOKS:%=$(SITE_PATH)/%)  # e.g., _site/Astrophyics/
 TOCS = $(_NOTEBOOKS:%=%/_toc.yml)
 
+.PHONY: all build help tocs
+
 build : $(NOTEBOOKS)
 
 help:
