@@ -1,14 +1,18 @@
 # Notes
 Personal archive of notes taken for education.
 
-## Deploying
+GitHub Actions CI will build and deploy on changes to main.
 
-1. Run the Makefile to build notebook as static webpage
+## Local Deploy
+
+1. Clone https://github.com/ketozhang/Journal to `src/
+
+2. Run the Makefile to build notebook as static webpage
 
     ```sh
     $ make -j 8 all
     ```
 
-2. Commit and push changes to `_site/`
+3. Commit and push changes to `_site/` with commit prefix `[skip ci]`
 
-3. On push, GitHub actions will publish `_site/`
+4. Trigger the [publish workflow](https://github.com/ketozhang/notes/actions/workflows/publish.yml)
