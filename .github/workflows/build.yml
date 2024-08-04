@@ -2,6 +2,7 @@
 name: Build pages
 
 on:
+  branches: ["main"]
   schedule:
     - cron: "0 15 * * *" # Daily PST 8am
   # Allows you to run this workflow manually from the Actions tab
