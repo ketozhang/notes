@@ -33,7 +33,7 @@ $(BUILD_PATH)/%: $(SRC_PATH)/% $(SRC_PATH)/%/_toc.yml
 	jb build $< --path-output $@
 
 $(SITE_PATH) $(BUILD_PATH):
-	mkdir $@
+	-mkdir $@
 
 %/_toc.yml: $(SRC_PATH)/%
 	jb toc from-project $< -f jb-book > $@
