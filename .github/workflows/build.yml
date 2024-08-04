@@ -35,8 +35,13 @@ jobs:
           cache: 'pip'
           cache-dependency-path: "requirements.lock"
 
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+
       - name: Install Python dependencies
-        run: pip install -r requirements.lock
+        run: uv pip sync -r requirements.lock
+        env:
+          UV_SYSTEM_PYTHON: 1
 
       - name: Build site
         run: |
