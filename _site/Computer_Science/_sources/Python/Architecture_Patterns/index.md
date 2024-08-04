@@ -1,1 +1,0 @@
-These are my notes from reading through [*Architecture Patterns with Python*](https://www.cosmicpython.com/#buy_the_book) by Harry J.W. Percival & Bob Gregory.
